@@ -1,0 +1,296 @@
+import React, { useRef, useState, PureComponent } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import Button from "@mui/material/Button";
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogTitle from "@mui/material/DialogTitle";
+import Slide from "@mui/material/Slide";
+import {
+  Chart as ChartJS,
+  RadialLinearScale,
+  PointElement,
+  LineElement,
+  Filler,
+  Tooltip,
+  Legend,
+} from "chart.js";
+import { Radar } from "react-chartjs-2";
+import Paper from "@mui/material/Paper";
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
+import styles from "../../styles/Home.module.css";
+import CloseIcon from "@mui/icons-material/Close";
+import Divider from "@mui/material/Divider";
+import Badge from "@mui/material/Badge";
+import MilitaryTechIcon from "@mui/icons-material/MilitaryTech";
+import BrightnessHighIcon from "@mui/icons-material/BrightnessHigh";
+import ElectricBoltIcon from "@mui/icons-material/ElectricBolt";
+import LocalPoliceIcon from "@mui/icons-material/LocalPolice";
+import { Typography } from "@mui/material";
+
+ChartJS.register(
+  RadialLinearScale,
+  PointElement,
+  LineElement,
+  Filler,
+  Tooltip,
+  Legend
+);
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
+
+export default function CommonDialog(props) {
+  /*const [open, setOpen] = React.useState(true);
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+  */
+
+  const { realmProgressPhysics } = useSelector(
+    (state) => state.realmProgressPhysics
+  );
+  const { realmProgressChemistry } = useSelector(
+    (state) => state.realmProgressChemistry
+  );
+  const { realmProgressMathematics } = useSelector(
+    (state) => state.realmProgressMathematics
+  );
+  const { realmProgressBiology } = useSelector(
+    (state) => state.realmProgressBiology
+  );
+
+  const { medalCount } = useSelector((state) => state.medalCount);
+
+  const { superFastCount } = useSelector((state) => state.superFastCount);
+
+  let averageProgress = Math.floor(
+    (realmProgressPhysics +
+      realmProgressChemistry +
+      realmProgressMathematics +
+      realmProgressBiology) /
+      4
+  );
+
+  const chakraCount =
+    typeof averageProgress != "undefined" ? averageProgress : 0;
+
+  const realmProgressGeneral =
+    (realmProgressPhysics +
+      realmProgressChemistry +
+      realmProgressMathematics +
+      realmProgressBiology) /
+    4;
+
+  const calculateKarmaData = () => {
+    let labels = ["Physics", "Chemistry", "Mathematics", "Biology", "General"];
+    let data = [
+      realmProgressPhysics,
+      realmProgressChemistry,
+      realmProgressMathematics,
+      realmProgressBiology,
+      realmProgressGeneral,
+    ];
+
+    console.log("calculateKarmaData");
+    console.log(labels);
+    console.log(data);
+
+    return {
+      labels: labels,
+      datasets: [
+        {
+          label: "Karma Quotient is " + realmProgressGeneral,
+          data: data,
+          backgroundColor: "rgba(127, 17, 224, 0.2)",
+          borderColor: "rgba(255, 60, 172, 1)",
+          borderWidth: 1,
+        },
+      ],
+    };
+  };
+
+  const calculateLevel = () => {
+    switch (chakraCount) {
+      case 0:
+        return "The Explorer";
+      case 1:
+        return "The Rathi";
+      case 2:
+        return "The AtiRathi";
+      case 3:
+        return "The MahaRathi";
+      case 4:
+        return "The AtiMahaRathi";
+      case 5:
+        return "The MahaMahaRathi";
+      default:
+        return "";
+    }
+  };
+
+  const populateDialogContent = (modalType) => {
+    switch (modalType) {
+      case "karma":
+        return (
+          <div>
+            <Grid container direction="row">
+              <Grid item>
+                <DialogTitle>My Karma Quotient</DialogTitle>
+              </Grid>
+              {/** 
+              <Grid item sx={{ textAlign: "right" }}>
+                <CloseIcon onClick={props.onClose} />
+              </Grid>*/}
+            </Grid>
+
+            <DialogContent dividers>
+              <DialogContentText id="alert-dialog-slide-description">
+                <Paper elevation={5}>
+                  <Grid container direction="row">
+                    <Grid item>
+                      <Radar data={calculateKarmaData()} />
+                    </Grid>
+                  </Grid>
+                </Paper>
+              </DialogContentText>
+            </DialogContent>
+          </div>
+        );
+
+      case "badge":
+        return (
+          <div>
+            <DialogTitle>My Kirti Board</DialogTitle>
+            <DialogContent dividers>
+              <DialogContentText id="alert-dialog-slide-description">
+                <Grid container direction="row" spacing={1}>
+                  <Grid item>
+                    <Paper elevation={5} sx={{ padding: "0 0.75rem" }}>
+                      <Grid
+                        container
+                        direction="column"
+                        alignItems="center"
+                        justifyContent="center"
+                      >
+                        <Grid
+                          item
+                          sx={{ padding: "0.5rem", marginTop: "0.5rem" }}
+                        >
+                          <Badge
+                            badgeContent={medalCount}
+                            color="primary"
+                            showZero
+                          >
+                            <LocalPoliceIcon fontSize="large" color="action" />
+                          </Badge>
+                        </Grid>
+
+                        <Grid item>Kavach</Grid>
+                      </Grid>
+                    </Paper>
+                  </Grid>
+                  <Grid item>
+                    <Paper elevation={5} sx={{ padding: "0 0.75rem" }}>
+                      <Grid
+                        container
+                        direction="column"
+                        alignItems="center"
+                        justifyContent="center"
+                      >
+                        <Grid
+                          item
+                          sx={{ padding: "0.5rem", marginTop: "0.5rem" }}
+                        >
+                          <Badge
+                            badgeContent={chakraCount}
+                            color="primary"
+                            showZero
+                          >
+                            <BrightnessHighIcon
+                              fontSize="large"
+                              color="action"
+                            />
+                          </Badge>
+                        </Grid>
+
+                        <Grid item>Chakra</Grid>
+                      </Grid>
+                    </Paper>
+                  </Grid>
+                  <Grid item>
+                    <Paper elevation={5} sx={{ padding: "0 0.75rem" }}>
+                      <Grid
+                        container
+                        direction="column"
+                        alignItems="center"
+                        justifyContent="center"
+                      >
+                        <Grid
+                          item
+                          sx={{ padding: "0.5rem", marginTop: "0.5rem" }}
+                        >
+                          <Badge
+                            badgeContent={superFastCount}
+                            color="primary"
+                            showZero
+                          >
+                            <ElectricBoltIcon fontSize="large" color="action" />
+                          </Badge>
+                        </Grid>
+                        <Grid item>Vajra</Grid>
+                      </Grid>
+                    </Paper>
+                  </Grid>
+                </Grid>
+              </DialogContentText>
+            </DialogContent>
+            <DialogContent dividers>
+              <Typography>Level: </Typography>
+              <Typography fontSize={20} color={"purple"}>
+                {calculateLevel()}
+              </Typography>
+            </DialogContent>
+          </div>
+        );
+
+      case "leader":
+        return (
+          <div>
+            <DialogTitle>Hall of Fame</DialogTitle>
+            <DialogContent dividers>
+              <DialogContentText id="alert-dialog-slide-description">
+                To see if you stand among the Leaders of Realms of Vidya, you
+                must first login and start to explore the realms.
+              </DialogContentText>
+            </DialogContent>
+          </div>
+        );
+
+      default:
+        return <div></div>;
+    }
+  };
+
+  return (
+    <div>
+      <Dialog
+        open={props.open}
+        TransitionComponent={Transition}
+        keepMounted
+        onClose={props.onClose}
+        aria-describedby="alert-dialog-slide-description"
+      >
+        {populateDialogContent(props.modalType)}
+
+        <DialogActions>
+          <Button onClick={props.onClose}>OK, got it</Button>
+        </DialogActions>
+      </Dialog>
+    </div>
+  );
+}

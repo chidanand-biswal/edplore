@@ -1,0 +1,54 @@
+{
+  "karma": [
+    {
+      "id": 0,
+      "text": "Karma Quotient is the Resultant of your own Actions and Decisions in the Realms of Vidya"
+    },
+    {
+      "id": 1,
+      "text": "In a nutshell, as you sow...so you reap"
+    },
+    {
+      "id": 2,
+      "text": "Always aim for a 'balanced' Karma!"
+    },
+    {
+      "id": 3,
+      "text": "This means you have traversed through all the Realms in equal measure without prejudice."
+    },
+    {
+      "id": 4,
+      "text": "You will have attained a 'balanced' Karma Quotient when you have a perfectly symmetric Pentagon as Karma Quotient."
+    }
+  ],
+  "kavach": [
+    {
+      "id": 0,
+      "text": "You can win a Kavach each time you win an arena battle with perfect score."
+    },
+    {
+      "id": 1,
+      "text": "This is the indicator of your perfect mastery over the arena subject."
+    }
+  ],
+  "chakra": [
+    {
+      "id": 0,
+      "text": "Chakra count goes up when you have covered certain milestoes as you traverse all the Realms."
+    },
+    {
+      "id": 1,
+      "text": "This is the indicator of a well-planned and well-balanced campaign while exploring."
+    }
+  ],
+  "vajra": [
+    {
+      "id": 0,
+      "text": "You will win a Vajra when you are super fast and have just won the areana battle well before the time is over."
+    },
+    {
+      "id": 1,
+      "text": "This is the indicator of a lighening fast intellect."
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+{
+  "standardArenaMap": [
+    {
+      "standard": 6,
+      "stepsPhysics": [
+        {
+          "id": 0,
+          "label": "STD 6 - PHYSICS - CHAPTER 1",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 1,
+          "label": "STD 6 - PHYSICS - CHAPTER 2",
+          "description": "You are here!"
+        },
+        {
+          "id": 2,
+          "label": "STD 6 - PHYSICS - CHAPTER 3",
+          "description": "You are here!"
+        }
+      ],
+
+      "stepsChemistry": [
+        {
+          "id": 0,
+          "label": "STD 6 - CHEMISTRY - CHAPTER 1",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 1,
+          "label": "STD 6 - CHEMISTRY - CHAPTER 2",
+          "description": "You are here!"
+        },
+        {
+          "id": 2,
+          "label": "STD 6 - CHEMISTRY - CHAPTER 3",
+          "description": "You are here!"
+        }
+      ],
+      "stepsMathematics": [
+        {
+          "id": 0,
+          "label": "STD 6 - MATHEMATICS - CHAPTER 1",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 1,
+          "label": "STD 6 - MATHEMATICS - CHAPTER 2",
+          "description": "You are here!"
+        },
+        {
+          "id": 2,
+          "label": "STD 6 - MATHEMATICS - CHAPTER 3",
+          "description": "You are here!"
+        }
+      ],
+      "stepsBiology": [
+        {
+          "id": 0,
+          "label": "STD 6 - BIOLOGY - CHAPTER 1",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 1,
+          "label": "STD 6 - BIOLOGY - CHAPTER 2",
+          "description": "You are here!"
+        },
+        {
+          "id": 2,
+          "label": "STD 6 - BIOLOGY - CHAPTER 3",
+          "description": "You are here!"
+        }
+      ]
+    },
+    {
+      "standard": 7,
+      "stepsPhysics": [
+        {
+          "id": 0,
+          "label": "STD 7 - PHYSICS - CHAPTER 1",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 1,
+          "label": "STD 7 - PHYSICS - CHAPTER 2",
+          "description": "You are here!"
+        },
+        {
+          "id": 2,
+          "label": "STD 7 - PHYSICS - CHAPTER 3",
+          "description": "You are here!"
+        }
+      ],
+
+      "stepsChemistry": [
+        {
+          "id": 0,
+          "label": "STD 7 - CHEMISTRY - CHAPTER 1",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 1,
+          "label": "STD 7 - CHEMISTRY - CHAPTER 2",
+          "description": "You are here!"
+        },
+        {
+          "id": 2,
+          "label": "STD 7 - CHEMISTRY - CHAPTER 3",
+          "description": "You are here!"
+        }
+      ],
+      "stepsMathematics": [
+        {
+          "id": 0,
+          "label": "STD 7 - MATHEMATICS - CHAPTER 1",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 1,
+          "label": "STD 7 - MATHEMATICS - CHAPTER 2",
+          "description": "You are here!"
+        },
+        {
+          "id": 2,
+          "label": "STD 7 - MATHEMATICS - CHAPTER 3",
+          "description": "You are here!"
+        }
+      ],
+      "stepsBiology": [
+        {
+          "id": 0,
+          "label": "STD 7 - BIOLOGY - CHAPTER 1",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 1,
+          "label": "STD 7 - BIOLOGY - CHAPTER 2",
+          "description": "You are here!"
+        },
+        {
+          "id": 2,
+          "label": "STD 7 - BIOLOGY - CHAPTER 3",
+          "description": "You are here!"
+        }
+      ]
+    },
+    {
+      "standard": 8,
+      "stepsPhysics": [
+        {
+          "id": 0,
+          "label": "STD 8 - PHYSICS - CHAPTER 1",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 1,
+          "label": "STD 8 - PHYSICS - CHAPTER 2",
+          "description": "You are here!"
+        },
+        {
+          "id": 2,
+          "label": "STD 8 - PHYSICS - CHAPTER 3",
+          "description": "You are here!"
+        }
+      ],
+
+      "stepsChemistry": [
+        {
+          "id": 0,
+          "label": "STD 8 - CHEMISTRY - CHAPTER 1",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 1,
+          "label": "STD 8 - CHEMISTRY - CHAPTER 2",
+          "description": "You are here!"
+        },
+        {
+          "id": 2,
+          "label": "STD 8 - CHEMISTRY - CHAPTER 3",
+          "description": "You are here!"
+        }
+      ],
+      "stepsMathematics": [
+        {
+          "id": 0,
+          "label": "STD 8 - MATHEMATICS - CHAPTER 1",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 1,
+          "label": "STD 8 - MATHEMATICS - CHAPTER 2",
+          "description": "You are here!"
+        },
+        {
+          "id": 2,
+          "label": "STD 8 - MATHEMATICS - CHAPTER 3",
+          "description": "You are here!"
+        }
+      ],
+      "stepsBiology": [
+        {
+          "id": 0,
+          "label": "STD 8 - BIOLOGY - CHAPTER 1",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 1,
+          "label": "STD 8 - BIOLOGY - CHAPTER 2",
+          "description": "You are here!"
+        },
+        {
+          "id": 2,
+          "label": "STD 8 - BIOLOGY - CHAPTER 3",
+          "description": "You are here!"
+        }
+      ]
+    },
+    {
+      "standard": 9,
+      "stepsPhysics": [
+        {
+          "id": 0,
+          "label": "STD 9 - PHYSICS - CHAPTER 1",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 1,
+          "label": "STD 9 - PHYSICS - CHAPTER 2",
+          "description": "You are here!"
+        },
+        {
+          "id": 2,
+          "label": "STD 9 - PHYSICS - CHAPTER 3",
+          "description": "You are here!"
+        }
+      ],
+
+      "stepsChemistry": [
+        {
+          "id": 0,
+          "label": "STD 9 - CHEMISTRY - CHAPTER 1",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 1,
+          "label": "STD 9 - CHEMISTRY - CHAPTER 2",
+          "description": "You are here!"
+        },
+        {
+          "id": 2,
+          "label": "STD 9 - CHEMISTRY - CHAPTER 3",
+          "description": "You are here!"
+        }
+      ],
+      "stepsMathematics": [
+        {
+          "id": 0,
+          "label": "STD 9 - MATHEMATICS - CHAPTER 1",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 1,
+          "label": "STD 9 - MATHEMATICS - CHAPTER 2",
+          "description": "You are here!"
+        },
+        {
+          "id": 2,
+          "label": "STD 9 - MATHEMATICS - CHAPTER 3",
+          "description": "You are here!"
+        }
+      ],
+      "stepsBiology": [
+        {
+          "id": 0,
+          "label": "STD 9 - BIOLOGY - CHAPTER 1",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 1,
+          "label": "STD 9 - BIOLOGY - CHAPTER 2",
+          "description": "You are here!"
+        },
+        {
+          "id": 2,
+          "label": "STD 9 - BIOLOGY - CHAPTER 3",
+          "description": "You are here!"
+        }
+      ]
+    },
+    {
+      "standard": 10,
+      "stepsPhysics": [
+        {
+          "id": 0,
+          "label": "STD 10 - PHYSICS - CHAPTER 1",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 1,
+          "label": "STD 10 - PHYSICS - CHAPTER 2",
+          "description": "You are here!"
+        },
+        {
+          "id": 2,
+          "label": "STD 10 - PHYSICS - CHAPTER 3",
+          "description": "You are here!"
+        }
+      ],
+
+      "stepsChemistry": [
+        {
+          "id": 0,
+          "label": "STD 10 - CHEMISTRY - CHAPTER 1",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 1,
+          "label": "STD 10 - CHEMISTRY - CHAPTER 2",
+          "description": "You are here!"
+        },
+        {
+          "id": 2,
+          "label": "STD 10 - CHEMISTRY - CHAPTER 3",
+          "description": "You are here!"
+        }
+      ],
+      "stepsMathematics": [
+        {
+          "id": 0,
+          "label": "STD 10 - MATHEMATICS - CHAPTER 1",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 1,
+          "label": "STD 10 - MATHEMATICS - CHAPTER 2",
+          "description": "You are here!"
+        },
+        {
+          "id": 2,
+          "label": "STD 10 - MATHEMATICS - CHAPTER 3",
+          "description": "You are here!"
+        }
+      ],
+      "stepsBiology": [
+        {
+          "id": 0,
+          "label": "STD 10 - BIOLOGY - CHAPTER 1",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 1,
+          "label": "STD 10 - BIOLOGY - CHAPTER 2",
+          "description": "You are here!"
+        },
+        {
+          "id": 2,
+          "label": "STD 10 - BIOLOGY - CHAPTER 3",
+          "description": "You are here!"
+        }
+      ]
+    }
+  ]
+}
