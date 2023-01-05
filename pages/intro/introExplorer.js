@@ -141,7 +141,7 @@ export default function IntroExplorerHome() {
             </Grid>
             <Grid item>
               <div>
-                <Link href="/unauth/campaign">
+                <Link href="/campaign/">
                   <a>
                     <Button variant="contained" className={styles.buttonNormal}>
                       LAUNCH !

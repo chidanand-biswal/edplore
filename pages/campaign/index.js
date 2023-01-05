@@ -73,7 +73,7 @@ function a11yProps(index) {
   };
 }
 
-export default function Campaign() {
+export default function CampaignHome() {
   const dispatch = useDispatch();
   const { userDetails } = useSelector((state) => state.userDetails);
   const { standardDetails } = useSelector((state) => state.standardDetails);
@@ -132,7 +132,7 @@ export default function Campaign() {
 
   const submit = (activeRealm) => {
     updateRealmActiveInStore(activeRealm);
-    Router.push("/unauth/campaignTrail");
+    Router.push("/campaign/trail");
   };
 
   return (

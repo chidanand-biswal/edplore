@@ -125,7 +125,7 @@ export default function QuizAnswerHome() {
               >
                 <Grid item>
                   <div>
-                    <Link href="/unauth/campaign">
+                    <Link href="/campaign/">
                       <a>
                         <Button
                           variant="outlined"

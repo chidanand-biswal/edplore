@@ -239,7 +239,7 @@ export default function PowerHome() {
             <Grid item>
               <Zoom in={true} style={{ transitionDelay: "3000ms" }}>
                 <div>
-                  <Link href="/unauth/campaign">
+                  <Link href="/campaign/">
                     <a>
                       <Button
                         variant="contained"

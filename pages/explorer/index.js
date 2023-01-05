@@ -20,14 +20,20 @@ import { useMediaQuery } from "@mui/material";
 import { addUserDetails } from "../../store/userDetails/action";
 import { addStandardDetails } from "../../store/standardDetails/action";
 import { useSelector, useDispatch } from "react-redux";
+import { initFirebase } from "../../firebase/firebaseApp";
+import { getAuth } from "firebase/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
 
-export default function UnauthHome() {
+export default function ExplorerHome() {
+  initFirebase();
+  const auth = getAuth();
+  const [user, loading] = useAuthState(auth);
   const dispatch = useDispatch();
   const bigScreenInd = useMediaQuery("(min-width:900px)");
 
-  const [valName, setValName] = React.useState(false);
+  const [valName, setValName] = React.useState(user ? true : false);
   const [valStandard, setValStandard] = React.useState(false);
-  const [userName, setUserName] = React.useState("");
+  const [userName, setUserName] = React.useState(user ? user.displayName : "");
   const [standard, setStandard] = React.useState(1);
 
   const handleChangeName = (event) => {
@@ -95,7 +101,7 @@ export default function UnauthHome() {
                   <TextField
                     id="outlined-required"
                     label="I am"
-                    defaultValue=""
+                    defaultValue={user ? user.displayName : ""}
                     onChange={handleChangeName}
                   />
                 </FormControl>

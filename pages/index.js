@@ -53,7 +53,7 @@ export default function Home() {
           <Grid className={styles.spacerOne}>
             <motion.div
               initial={{ opacity: 1, scale: 2, y: "8rem" }}
-              animate={{ opacity: 1, scale: 1, rotate: 360, y: "0rem" }}
+              animate={{ opacity: 1, scale: 1, y: "0rem" }}
               transition={{ duration: 1 }}
             >
               <Box

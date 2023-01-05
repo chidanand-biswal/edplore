@@ -15,9 +15,15 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import styles from "../../styles/Home.module.css";
+import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
 
 export default function CardIconLargeOption(props) {
   const rookieFeatureList = [
+    {
+      index: "0",
+      feature: "Proceed without login",
+      icon: <TipsAndUpdatesIcon />,
+    },
     {
       index: "1",
       feature: "Access all the Realms",
@@ -46,6 +52,11 @@ export default function CardIconLargeOption(props) {
   ];
 
   const explorerFeatureList = [
+    {
+      index: "0",
+      feature: "Login and explore!",
+      icon: <TipsAndUpdatesIcon sx={{ color: "#FFBB73" }} />,
+    },
     {
       index: "1",
       feature: "Access all the Realms",
@@ -102,6 +113,32 @@ export default function CardIconLargeOption(props) {
             alt="Physics"
           />
         );
+      case "google":
+        return (
+          <CardMedia
+            component="img"
+            sx={{
+              width: "3.5rem",
+              height: "3.5rem",
+              display: "inline",
+            }}
+            src="/assets/google.png"
+            alt="Google"
+          />
+        );
+      case "email":
+        return (
+          <CardMedia
+            component="img"
+            sx={{
+              width: "3.5rem",
+              height: "3.5rem",
+              display: "inline",
+            }}
+            src="/assets/email.png"
+            alt="Email"
+          />
+        );
       default:
         return (
           <CardMedia
@@ -142,19 +179,22 @@ export default function CardIconLargeOption(props) {
             ))}
           </List>
         );
-      default:
+      case "google":
         return (
-          <List>
-            {rookieFeatureList.map((item, index) => (
-              <ListItem key={item.index} disablePadding>
-                <ListItemIcon>
-                  <CheckIcon />
-                </ListItemIcon>
-                <ListItemText primary={item.feature} />
-              </ListItem>
-            ))}
-          </List>
+          <Typography fontWeight={10} fontSize={3}>
+            You will be redirected to Google sign-in screen <br />
+            and be back here again!
+          </Typography>
         );
+      case "email":
+        return (
+          <Typography fontWeight={10} fontSize={3}>
+            You will be redirected to Email sign-in screen <br />
+            and be back here again!
+          </Typography>
+        );
+      default:
+        return <Box></Box>;
     }
   }
 

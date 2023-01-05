@@ -229,7 +229,7 @@ export default function LearnHome() {
                 >
                   <Grid item>
                     <div>
-                      <Link href="/unauth/campaign">
+                      <Link href="/campaign/">
                         <a>
                           <Button
                             variant="outlined"
@@ -281,7 +281,7 @@ export default function LearnHome() {
                   </Grid>
                   <Grid item>
                     <div>
-                      <Link href="/unauth/campaign">
+                      <Link href="/campaign/">
                         <a>
                           <Button
                             variant="outlined"

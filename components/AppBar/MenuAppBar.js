@@ -27,12 +27,53 @@ import CloseIcon from "@mui/icons-material/Close";
 import HandshakeIcon from "@mui/icons-material/Handshake";
 import Grid from "@mui/material/Grid";
 import Diversity1Icon from "@mui/icons-material/Diversity1";
+import { initFirebase } from "../../firebase/firebaseApp";
+import {
+  getAuth,
+  signInWithPopup,
+  signInWithRedirect,
+  GoogleAuthProvider,
+} from "firebase/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { useRouter } from "next/router";
 
 export default function MenuAppBar() {
-  const [auth, setAuth] = React.useState(true);
+  initFirebase();
+  const provider = new GoogleAuthProvider();
+  const auth = getAuth();
+  const [user, loading] = useAuthState(auth);
+  const router = useRouter();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [openLeftMenu, setOpenLeftMenu] = React.useState(false);
   const [openRightMenu, setOpenRightMenu] = React.useState(false);
+
+  if (user) {
+    //redirect to Explorer Info Screen
+    //Router.push("/explorer/");
+  }
+
+  const signIn = async () => {
+    //const result = await signInWithPopup(auth, provider);
+    await signInWithRedirect(auth, provider)
+      .then((user) => {
+        if (user) {
+          console.log(user);
+          user.user.getIdToken().then((token) => {
+            user.log(token);
+          });
+        }
+      })
+      .catch((err) => {
+        console.log(err.message);
+      })
+      .finally();
+    console.log(result.user);
+  };
+
+  const signOut = async () => {
+    auth.signOut();
+    Router.push("/launchCampaign");
+  };
 
   const handleChange = (event) => {
     setAuth(event.target.checked);
@@ -159,9 +200,9 @@ export default function MenuAppBar() {
                 <ListItemText primary={"Profile"} />
               </ListItemButton>
             </ListItem>
-            {auth ? (
+            {user ? (
               <ListItem key={"menuLogout"} disablePadding>
-                <ListItemButton>
+                <ListItemButton onClick={signOut}>
                   <ListItemIcon>
                     <LogoutIcon />
                   </ListItemIcon>
@@ -170,7 +211,7 @@ export default function MenuAppBar() {
               </ListItem>
             ) : (
               <ListItem key={"menuLogin"} disablePadding>
-                <ListItemButton>
+                <ListItemButton onClick={signIn}>
                   <ListItemIcon>
                     <LoginIcon />
                   </ListItemIcon>

@@ -85,8 +85,6 @@ export default function LaunchCampaignHome() {
           </Grid>
         </Grid>
       </Grid>
-
-      <ToolbarFooter />
     </Box>
   );
 }

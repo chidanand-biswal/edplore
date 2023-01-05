@@ -238,7 +238,7 @@ export default function CampaignTrail() {
             >
               <Grid item>
                 <div>
-                  <Link href="/unauth/campaign">
+                  <Link href="/campaign/">
                     <a>
                       <Button
                         variant="outlined"
@@ -284,7 +284,7 @@ export default function CampaignTrail() {
               </Grid>
               <Grid item>
                 <div>
-                  <Link href="/unauth/campaign">
+                  <Link href="/campaign/">
                     <a>
                       <Button
                         variant="outlined"

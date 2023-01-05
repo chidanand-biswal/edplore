@@ -174,7 +174,7 @@ export default function KarmaHome() {
           >
             <Grid item>
               <div>
-                <Link href="/unauth/campaign">
+                <Link href="/campaign/">
                   <a>
                     <Button variant="outlined" className={styles.buttonLaunch}>
                       START OVER
