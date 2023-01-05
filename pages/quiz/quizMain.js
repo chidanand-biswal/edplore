@@ -43,6 +43,7 @@ import { updateRealmProgressMathematics } from "../../store/realmMathematics/act
 import { updateRealmProgressBiology } from "../../store/realmBiology/action";
 import { updateMedalCount } from "../../store/medal/action";
 import { updateSuperFastCount } from "../../store/superFast/action";
+import { updateRealmProgress } from "../../store/realmProgress/action";
 
 function LinearProgressWithLabel(props) {
   return (
@@ -116,6 +117,12 @@ export async function getServerSideProps() {
 export default function QuizMain() {
   const dispatch = useDispatch();
   const { realmActive } = useSelector((state) => state.realmActive);
+  const { standardDetails } = useSelector((state) => state.standardDetails);
+  const { realmProgress } = useSelector((state) => state.realmProgress);
+
+  const realmProgressArray = realmProgress ? realmProgress : [];
+
+  /*
   const { realmProgressPhysics } = useSelector(
     (state) => state.realmProgressPhysics
   );
@@ -128,13 +135,17 @@ export default function QuizMain() {
   const { realmProgressBiology } = useSelector(
     (state) => state.realmProgressBiology
   );
+  */
+
   const { medalCount } = useSelector((state) => state.medalCount);
   const { superFastCount } = useSelector((state) => state.superFastCount);
 
   const { currentQuizData } = useSelector((state) => state.currentQuizData);
 
   const questions =
-    typeof currentQuizData != "undefined" ? currentQuizData : questionsMock;
+    typeof currentQuizData != "undefined" && currentQuizData.length > 0
+      ? currentQuizData
+      : questionsMock;
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedOptions, setSelectedOptions] = useState([]);
@@ -191,7 +202,8 @@ export default function QuizMain() {
 
     if (newScore >= 8) {
       console.log(`Realm to progress because score is ::: ${newScore}.`);
-      updateActiveRealmProgressInStore();
+      //updateActiveRealmProgressInStore();
+      updateActiveRealmProgressByStandardInStore();
       if (timeProgress > 0) {
         console.log(
           `Update Vajra Count because time remaining is ::: ${timeProgress}.`
@@ -215,6 +227,7 @@ export default function QuizMain() {
     }
   };
 
+  /*
   const updateActiveRealmProgressInStore = () => {
     console.log(`Realm to progress is ::: ${realmActive}.`);
 
@@ -234,6 +247,84 @@ export default function QuizMain() {
       default:
         console.log("Updating No Realm progress");
     }
+  };
+*/
+  const calculateRealmProgressByStandard = () => {
+    let existingRealmProgressPerStandard = realmProgressArray.filter(
+      (element) => element.standard === standardDetails
+    );
+    switch (realmActive) {
+      case "PHYSICS":
+        let existingRealmProgressPhysics =
+          existingRealmProgressPerStandard.length > 0
+            ? existingRealmProgressPerStandard[0].realmProgressPhysics
+            : 0;
+
+        return realmProgressArray.map((element) =>
+          element.standard === standardDetails
+            ? {
+                ...element,
+                realmProgressPhysics: existingRealmProgressPhysics + 1,
+              }
+            : element
+        );
+
+      case "CHEMISTRY":
+        let existingRealmProgressChemistry =
+          existingRealmProgressPerStandard.length > 0
+            ? existingRealmProgressPerStandard[0].realmProgressChemistry
+            : 0;
+
+        return realmProgressArray.map((element) =>
+          element.standard === standardDetails
+            ? {
+                ...element,
+                realmProgressChemistry: existingRealmProgressChemistry + 1,
+              }
+            : element
+        );
+      case "MATHEMATICS":
+        let existingRealmProgressMathematics =
+          existingRealmProgressPerStandard.length > 0
+            ? existingRealmProgressPerStandard[0].realmProgressMathematics
+            : 0;
+
+        return realmProgressArray.map((element) =>
+          element.standard === standardDetails
+            ? {
+                ...element,
+                realmProgressMathematics: existingRealmProgressMathematics + 1,
+              }
+            : element
+        );
+      case "BIOLOGY":
+        let existingRealmProgressBiology =
+          existingRealmProgressPerStandard.length > 0
+            ? existingRealmProgressPerStandard[0].realmProgressBiology
+            : 0;
+
+        return realmProgressArray.map((element) =>
+          element.standard === standardDetails
+            ? {
+                ...element,
+                realmProgressBiology: existingRealmProgressBiology + 1,
+              }
+            : element
+        );
+      default:
+        return [];
+    }
+  };
+
+  const updateActiveRealmProgressByStandardInStore = () => {
+    console.log(`Realm to progress is ::: ${realmActive}.`);
+    console.log(`Standard to progress is ::: ${standardDetails}.`);
+    const updatedRealmProgressByStandard = calculateRealmProgressByStandard();
+
+    console.log(realmProgressArray);
+    console.log(updatedRealmProgressByStandard);
+
+    dispatch(updateRealmProgress(updatedRealmProgressByStandard));
   };
 
   const updateMedalCountInStore = () => {

@@ -57,6 +57,43 @@ export async function getServerSideProps() {
 
 export default function LearnHome() {
   const { realmActive } = useSelector((state) => state.realmActive);
+  const { standardDetails } = useSelector((state) => state.standardDetails);
+
+  const { realmProgress } = useSelector((state) => state.realmProgress);
+
+  const realmProgressArray = realmProgress ? realmProgress : [];
+
+  const calculateRealmProgressByStandard = (realm) => {
+    let existingRealmProgressPerStandard = realmProgressArray.filter(
+      (element) => element.standard === standardDetails
+    );
+    switch (realm) {
+      case "PHYSICS":
+        return existingRealmProgressPerStandard.length > 0
+          ? existingRealmProgressPerStandard[0].realmProgressPhysics
+          : 0;
+
+      case "CHEMISTRY":
+        return existingRealmProgressPerStandard.length > 0
+          ? existingRealmProgressPerStandard[0].realmProgressChemistry
+          : 0;
+
+      case "MATHEMATICS":
+        return existingRealmProgressPerStandard.length > 0
+          ? existingRealmProgressPerStandard[0].realmProgressMathematics
+          : 0;
+
+      case "BIOLOGY":
+        return existingRealmProgressPerStandard.length > 0
+          ? existingRealmProgressPerStandard[0].realmProgressBiology
+          : 0;
+
+      default:
+        return 0;
+    }
+  };
+
+  /*
   const { realmProgressPhysics } = useSelector(
     (state) => state.realmProgressPhysics
   );
@@ -69,10 +106,16 @@ export default function LearnHome() {
   const { realmProgressBiology } = useSelector(
     (state) => state.realmProgressBiology
   );
-  const { standardDetails } = useSelector((state) => state.standardDetails);
+  */
   const { currentTutorialData } = useSelector(
     (state) => state.currentTutorialData
   );
+
+  const realmProgressPhysics = calculateRealmProgressByStandard("PHYSICS");
+  const realmProgressChemistry = calculateRealmProgressByStandard("CHEMISTRY");
+  const realmProgressMathematics =
+    calculateRealmProgressByStandard("MATHEMATICS");
+  const realmProgressBiology = calculateRealmProgressByStandard("BIOLOGY");
 
   const findArenaName = () => {
     const filteredArenaList = standardArenaMapData.standardArenaMap.filter(

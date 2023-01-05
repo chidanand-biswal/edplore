@@ -54,7 +54,7 @@ export default function LaunchCampaignHome() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1.5 }}
               >
-                <Link href="/unauth" passHref>
+                <Link href="/explorer" passHref>
                   <a>
                     <CardIconLargeOption
                       source="rookie"

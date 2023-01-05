@@ -77,6 +77,42 @@ export default function CampaignHome() {
   const dispatch = useDispatch();
   const { userDetails } = useSelector((state) => state.userDetails);
   const { standardDetails } = useSelector((state) => state.standardDetails);
+
+  const { realmProgress } = useSelector((state) => state.realmProgress);
+
+  const realmProgressArray = realmProgress ? realmProgress : [];
+
+  const calculateRealmProgressByStandard = (realm) => {
+    let existingRealmProgressPerStandard = realmProgressArray.filter(
+      (element) => element.standard === standardDetails
+    );
+    switch (realm) {
+      case "PHYSICS":
+        return existingRealmProgressPerStandard.length > 0
+          ? existingRealmProgressPerStandard[0].realmProgressPhysics
+          : 0;
+
+      case "CHEMISTRY":
+        return existingRealmProgressPerStandard.length > 0
+          ? existingRealmProgressPerStandard[0].realmProgressChemistry
+          : 0;
+
+      case "MATHEMATICS":
+        return existingRealmProgressPerStandard.length > 0
+          ? existingRealmProgressPerStandard[0].realmProgressMathematics
+          : 0;
+
+      case "BIOLOGY":
+        return existingRealmProgressPerStandard.length > 0
+          ? existingRealmProgressPerStandard[0].realmProgressBiology
+          : 0;
+
+      default:
+        return 0;
+    }
+  };
+
+  /*
   const { realmProgressPhysics } = useSelector(
     (state) => state.realmProgressPhysics
   );
@@ -89,18 +125,22 @@ export default function CampaignHome() {
   const { realmProgressBiology } = useSelector(
     (state) => state.realmProgressBiology
   );
-  console.log("Campaign");
-  console.log(userDetails);
-  console.log(standardDetails);
+  */
+
+  const realmProgressPhysics = calculateRealmProgressByStandard("PHYSICS");
+  const realmProgressChemistry = calculateRealmProgressByStandard("CHEMISTRY");
+  const realmProgressMathematics =
+    calculateRealmProgressByStandard("MATHEMATICS");
+  const realmProgressBiology = calculateRealmProgressByStandard("BIOLOGY");
 
   const [tabIndex, setTabIndex] = React.useState(0);
 
   const calculateRealmProgressData = (realmProgress) => {
     const exploredProgress = realmProgress * 10;
-    const UnexploredProgress = 100 - exploredProgress;
+    const unExploredProgress = 100 - exploredProgress;
 
     let labels = ["Explored", "Unexplored"];
-    let data = [exploredProgress, UnexploredProgress];
+    let data = [exploredProgress, unExploredProgress];
     let customLabels = labels.map(
       (label, index) => `${label}: ${data[index]}%`
     );
