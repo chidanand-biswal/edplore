@@ -1,4 +1,5 @@
-import * as React from "react";
+import React, { useRef, useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,13 +20,52 @@ import Router from "next/router";
 import { useMediaQuery } from "@mui/material";
 import { addUserDetails } from "../../store/userDetails/action";
 import { addStandardDetails } from "../../store/standardDetails/action";
-import { useSelector, useDispatch } from "react-redux";
-import { initFirebase } from "../../firebase/firebaseApp";
 import { getAuth } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
+import { getExplorerData, saveExplorerData } from "../../firebase/db/dbUtility";
+import { updateRealmProgress } from "../../store/realmProgress/action";
+import { updateMedalCount } from "../../store/medal/action";
+import { updateSuperFastCount } from "../../store/superFast/action";
+
+const initialRealmProgress = [
+  {
+    standard: 6,
+    realmProgressPhysics: 0,
+    realmProgressChemistry: 0,
+    realmProgressMathematics: 0,
+    realmProgressBiology: 0,
+  },
+  {
+    standard: 7,
+    realmProgressPhysics: 0,
+    realmProgressChemistry: 0,
+    realmProgressMathematics: 0,
+    realmProgressBiology: 0,
+  },
+  {
+    standard: 8,
+    realmProgressPhysics: 0,
+    realmProgressChemistry: 0,
+    realmProgressMathematics: 0,
+    realmProgressBiology: 0,
+  },
+  {
+    standard: 9,
+    realmProgressPhysics: 0,
+    realmProgressChemistry: 0,
+    realmProgressMathematics: 0,
+    realmProgressBiology: 0,
+  },
+  {
+    standard: 10,
+    realmProgressPhysics: 0,
+    realmProgressChemistry: 0,
+    realmProgressMathematics: 0,
+    realmProgressBiology: 0,
+  },
+];
 
 export default function ExplorerHome() {
-  initFirebase();
   const auth = getAuth();
   const [user, loading] = useAuthState(auth);
   const dispatch = useDispatch();
@@ -35,6 +75,13 @@ export default function ExplorerHome() {
   const [valStandard, setValStandard] = React.useState(false);
   const [userName, setUserName] = React.useState(user ? user.displayName : "");
   const [standard, setStandard] = React.useState(1);
+
+  const { realmProgress } = useSelector((state) => state.realmProgress);
+
+  const realmProgressArray = realmProgress ? realmProgress : [];
+
+  const { medalCount } = useSelector((state) => state.medalCount);
+  const { superFastCount } = useSelector((state) => state.superFastCount);
 
   const handleChangeName = (event) => {
     if (event.target.value !== "") {
@@ -75,6 +122,35 @@ export default function ExplorerHome() {
   };
 
   const submit = () => {
+    if (user) {
+      console.log("User is authenticated.");
+      console.log(user);
+
+      try {
+        let userDatafromDB = getExplorerData(user.uid);
+
+        userDatafromDB.then((data) => {
+          console.log(
+            "update realmProgress from State with realmProgress from DB"
+          );
+          console.log(data);
+          dispatch(
+            updateRealmProgress(
+              data?.realmProgress ? data.realmProgress : initialRealmProgress
+            )
+          );
+          dispatch(updateMedalCount(data?.kavachCount ? data.kavachCount : 0));
+          dispatch(
+            updateSuperFastCount(data?.vajraCount ? data.vajraCount : 0)
+          );
+        });
+      } catch (error) {
+        console.log(
+          "Error in retrieving explorer data OR the explorer is here for the first time"
+        );
+      }
+    }
+
     updateUserNameInStore();
     updateStandardInStore();
     Router.push("/intro");

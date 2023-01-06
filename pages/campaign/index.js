@@ -80,6 +80,9 @@ export default function CampaignHome() {
 
   const { realmProgress } = useSelector((state) => state.realmProgress);
 
+  console.log("realmProgress");
+  console.log(realmProgress);
+
   const realmProgressArray = realmProgress ? realmProgress : [];
 
   const calculateRealmProgressByStandard = (realm) => {

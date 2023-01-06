@@ -44,6 +44,9 @@ import { updateRealmProgressBiology } from "../../store/realmBiology/action";
 import { updateMedalCount } from "../../store/medal/action";
 import { updateSuperFastCount } from "../../store/superFast/action";
 import { updateRealmProgress } from "../../store/realmProgress/action";
+import { getAuth } from "firebase/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { getExplorerData, saveExplorerData } from "../../firebase/db/dbUtility";
 
 function LinearProgressWithLabel(props) {
   return (
@@ -115,6 +118,8 @@ export async function getServerSideProps() {
 */
 
 export default function QuizMain() {
+  const auth = getAuth();
+  const [user, loading] = useAuthState(auth);
   const dispatch = useDispatch();
   const { realmActive } = useSelector((state) => state.realmActive);
   const { standardDetails } = useSelector((state) => state.standardDetails);
@@ -200,30 +205,37 @@ export default function QuizMain() {
     setShowScore(true);
     setStar(newScore);
 
+    let updateMedal = false;
+    let updateSuperfast = false;
+
+    if (newScore >= 9) {
+      console.log(`Update Medal count because score is ::: ${newScore}.`);
+      updateMedal = true;
+      updateMedalCountInStore();
+    } else {
+      console.log(
+        `DO NOT Update Medal count because score is :::  ${newScore}.`
+      );
+    }
+
     if (newScore >= 8) {
       console.log(`Realm to progress because score is ::: ${newScore}.`);
       //updateActiveRealmProgressInStore();
-      updateActiveRealmProgressByStandardInStore();
       if (timeProgress > 0) {
         console.log(
           `Update Vajra Count because time remaining is ::: ${timeProgress}.`
         );
+        updateSuperfast = true;
         updateSuperFastCountInStore();
       } else {
         console.log(
           `DO NOT update Vajra Count because time remaining is ::: ${timeProgress}.`
         );
       }
+
+      updateActiveRealmProgressByStandardInStore(updateMedal, updateSuperfast);
     } else {
       console.log(`Realm to NOT progress because score is :::  ${newScore}.`);
-    }
-    if (newScore >= 9) {
-      console.log(`Update Medal count because score is ::: ${newScore}.`);
-      updateMedalCountInStore();
-    } else {
-      console.log(
-        `DO NOT Update Medal count because score is :::  ${newScore}.`
-      );
     }
   };
 
@@ -316,7 +328,10 @@ export default function QuizMain() {
     }
   };
 
-  const updateActiveRealmProgressByStandardInStore = () => {
+  const updateActiveRealmProgressByStandardInStore = (
+    updateMedal,
+    updateSuperfast
+  ) => {
     console.log(`Realm to progress is ::: ${realmActive}.`);
     console.log(`Standard to progress is ::: ${standardDetails}.`);
     const updatedRealmProgressByStandard = calculateRealmProgressByStandard();
@@ -325,6 +340,16 @@ export default function QuizMain() {
     console.log(updatedRealmProgressByStandard);
 
     dispatch(updateRealmProgress(updatedRealmProgressByStandard));
+
+    if (user) {
+      console.log("User is authenticated. So saving realm progress.");
+      saveExplorerData(
+        user.uid,
+        updatedRealmProgressByStandard,
+        updateMedal ? medalCount + 1 : medalCount,
+        updateSuperfast ? superFastCount + 1 : superFastCount
+      );
+    }
   };
 
   const updateMedalCountInStore = () => {
@@ -362,7 +387,7 @@ export default function QuizMain() {
     }
     setSelectedOptions(selectedOptions);
     if (minutes == 0 && seconds == 0) {
-      ///handleSubmitButton();
+      handleSubmitButton();
     }
   };
 

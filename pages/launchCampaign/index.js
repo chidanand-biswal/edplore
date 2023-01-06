@@ -21,9 +21,6 @@ import { motion } from "framer-motion";
 export default function LaunchCampaignHome() {
   const { userDetails } = useSelector((state) => state.userDetails);
   const { standardDetails } = useSelector((state) => state.standardDetails);
-  console.log("LaunchCampaignHome");
-  console.log(userDetails);
-  console.log(standardDetails);
 
   return (
     <Box className={styles.container}>
