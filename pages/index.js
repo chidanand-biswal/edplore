@@ -74,7 +74,7 @@ export default function Home() {
               transition={{ duration: 3 }}
             >
               <Typography className={styles.openingLines}>
-                Legends tell of the Realms of Vidya. <br />
+                Legends tell of the Realms of Bodhi. <br />
               </Typography>
             </motion.div>
             <br />
@@ -103,7 +103,7 @@ export default function Home() {
             <Grid item>
               <Zoom in={true} style={{ transitionDelay: "5000ms" }}>
                 <div>
-                  <Link href="/launchCampaign">
+                  <Link href="/launch">
                     <a>
                       <Button
                         variant="contained"

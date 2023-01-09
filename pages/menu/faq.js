@@ -27,7 +27,7 @@ export default function FaqHome() {
 
       <Grid container direction="row">
         <Grid item className={styles.main}>
-          <Paper elevation={5}>
+          <Paper elevation={8}>
             <Box sx={{ width: "100%", padding: "0.5rem" }}>
               <Grid
                 container

@@ -16,10 +16,13 @@ import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import React, { useState, useEffect } from "react";
 import ExplorerInfoDialog from "../../components/Modal/ExplorerInfoDialog";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { motion } from "framer-motion";
 
 export default function IntroExplorerHome() {
   const [openModal, setOpenModal] = React.useState(false);
   const [modalType, setModalType] = React.useState("");
+  const bigScreenInd = useMediaQuery("(min-width:900px)");
 
   return (
     <Box className={styles.container}>
@@ -48,11 +51,17 @@ export default function IntroExplorerHome() {
                       setModalType("karma");
                     }}
                   >
-                    <CardSmallCustomOption
-                      source="karma"
-                      title="karma"
-                      message="Karma Q"
-                    />
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.5 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 1 }}
+                    >
+                      <CardSmallCustomOption
+                        source="karma"
+                        title="karma"
+                        message="Karma Q"
+                      />
+                    </motion.div>
                   </div>
                 </Grid>
               </Grid>
@@ -79,11 +88,17 @@ export default function IntroExplorerHome() {
                       setModalType("kavach");
                     }}
                   >
-                    <CardSmallCustomOption
-                      source="badge"
-                      title="badge"
-                      message="Kavach"
-                    />
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.5 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 1.5 }}
+                    >
+                      <CardSmallCustomOption
+                        source="badge"
+                        title="badge"
+                        message="Kavach"
+                      />
+                    </motion.div>
                   </div>
                 </Grid>
                 <Grid item>
@@ -93,11 +108,17 @@ export default function IntroExplorerHome() {
                       setModalType("chakra");
                     }}
                   >
-                    <CardSmallCustomOption
-                      source="chakra"
-                      title="chakra"
-                      message="Chakra"
-                    />
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.5 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 2 }}
+                    >
+                      <CardSmallCustomOption
+                        source="chakra"
+                        title="chakra"
+                        message="Chakra"
+                      />
+                    </motion.div>
                   </div>
                 </Grid>
                 <Grid item>
@@ -107,11 +128,17 @@ export default function IntroExplorerHome() {
                       setModalType("vajra");
                     }}
                   >
-                    <CardSmallCustomOption
-                      source="superFast"
-                      title="superFast"
-                      message="Vajra"
-                    />
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.5 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 2.5 }}
+                    >
+                      <CardSmallCustomOption
+                        source="superFast"
+                        title="superFast"
+                        message="Vajra"
+                      />
+                    </motion.div>
                   </div>
                 </Grid>
               </Grid>
@@ -120,37 +147,87 @@ export default function IntroExplorerHome() {
 
           <Grid className={styles.spacerOne}></Grid>
 
-          <Grid
-            container
-            direction="row"
-            alignItems="center"
-            justifyContent="center"
-            spacing={2}
-            className={styles.spacerOne}
-          >
-            <Grid item>
-              <div>
-                <Link href="/launchCampaign">
-                  <a>
-                    <Button variant="outlined" className={styles.buttonNormal}>
-                      BACK
-                    </Button>
-                  </a>
-                </Link>
-              </div>
+          {bigScreenInd ? (
+            <Grid
+              container
+              direction="row"
+              alignItems="center"
+              justifyContent="center"
+              spacing={2}
+              className={styles.spacerOne}
+            >
+              <Grid item>
+                <div>
+                  <Link href="/intro/">
+                    <a>
+                      <Button
+                        variant="outlined"
+                        className={styles.buttonLaunch}
+                        sx={{ minWidth: "15rem" }}
+                      >
+                        I WANT TO REVISIT
+                      </Button>
+                    </a>
+                  </Link>
+                </div>
+              </Grid>
+              <Grid item>
+                <div>
+                  <Link href="/campaign/">
+                    <a>
+                      <Button
+                        variant="contained"
+                        className={styles.buttonLaunch}
+                        sx={{ minWidth: "15rem" }}
+                      >
+                        START MY CAMPAIGN
+                      </Button>
+                    </a>
+                  </Link>
+                </div>
+              </Grid>
             </Grid>
-            <Grid item>
-              <div>
-                <Link href="/campaign/">
-                  <a>
-                    <Button variant="contained" className={styles.buttonNormal}>
-                      LAUNCH !
-                    </Button>
-                  </a>
-                </Link>
-              </div>
+          ) : (
+            <Grid
+              container
+              direction="row"
+              alignItems="center"
+              justifyContent="center"
+              spacing={2}
+              className={styles.spacerOne}
+            >
+              <Grid item>
+                <div>
+                  <Link href="/campaign/">
+                    <a>
+                      <Button
+                        variant="contained"
+                        className={styles.buttonLaunch}
+                        sx={{ minWidth: "15rem" }}
+                      >
+                        START MY CAMPAIGN
+                      </Button>
+                    </a>
+                  </Link>
+                </div>
+              </Grid>
+              <Grid item>
+                <div>
+                  <Link href="/intro/">
+                    <a>
+                      <Button
+                        variant="outlined"
+                        className={styles.buttonLaunch}
+                        sx={{ minWidth: "15rem" }}
+                      >
+                        I WANT TO REVISIT
+                      </Button>
+                    </a>
+                  </Link>
+                </div>
+              </Grid>
             </Grid>
-          </Grid>
+          )}
         </Grid>
       </Grid>
 

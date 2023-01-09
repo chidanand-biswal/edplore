@@ -142,10 +142,10 @@ export default function ExplorerInfoDialog(props) {
           </div>
         ) : (
           <div>
-            <DialogTitle>Vidya</DialogTitle>
+            <DialogTitle>Bodhi</DialogTitle>
             <DialogContent>
               <DialogContentText id="alert-dialog-slide-description">
-                Realms of Vidya
+                Realms of Bodhi
               </DialogContentText>
             </DialogContent>
           </div>

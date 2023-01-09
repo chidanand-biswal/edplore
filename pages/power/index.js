@@ -109,20 +109,18 @@ export default function PowerHome() {
 
       <Grid container direction="row">
         <Grid item className={styles.main}>
-          <Paper elevation={5} sx={{ padding: "0.25rem", margin: "0.5rem" }}>
-            <Box sx={{ width: "100%" }}>
-              <Grid
-                container
-                direction="row"
-                alignItems="center"
-                justifyContent="center"
-              >
-                <Grid item>
-                  <h3 className={styles.greyText}>My Kirti Board</h3>
-                </Grid>
+          <Box sx={{ width: "100%" }}>
+            <Grid
+              container
+              direction="row"
+              alignItems="center"
+              justifyContent="center"
+            >
+              <Grid item>
+                <h3 className={styles.greyText}>My Kirti Board</h3>
               </Grid>
-            </Box>
-          </Paper>
+            </Grid>
+          </Box>
 
           <Grid
             container
@@ -139,7 +137,7 @@ export default function PowerHome() {
                 transition={{ duration: 1.5 }}
               >
                 <Paper
-                  elevation={5}
+                  elevation={8}
                   sx={{ padding: "0 1rem", maxWidth: "20rem" }}
                 >
                   <Grid
@@ -180,7 +178,7 @@ export default function PowerHome() {
                 transition={{ duration: 2 }}
               >
                 <Paper
-                  elevation={5}
+                  elevation={8}
                   sx={{ padding: "0 1rem", maxWidth: "20rem" }}
                 >
                   <Grid
@@ -221,7 +219,7 @@ export default function PowerHome() {
                 transition={{ duration: 2.5 }}
               >
                 <Paper
-                  elevation={5}
+                  elevation={8}
                   sx={{ padding: "0 1rem", maxWidth: "20rem" }}
                 >
                   <Grid

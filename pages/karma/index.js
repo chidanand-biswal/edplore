@@ -161,45 +161,37 @@ export default function KarmaHome() {
 
       <Grid container direction="row">
         <Grid item className={styles.main}>
-          <Paper
-            elevation={5}
-            sx={{
-              maxHeight: "4rem",
-              margin: "1.5rem 0 0.75rem 0",
-            }}
-          >
-            <Box sx={{ width: "100%" }}>
-              <Grid
-                container
-                direction="row"
-                alignItems="center"
-                justifyContent="center"
-              >
-                <Grid item>
-                  <Box
-                    component="img"
-                    sx={{
-                      height: "2rem",
-                      width: "2rem",
-                    }}
-                    src="/assets/mandala.png"
-                  />
-                </Grid>
-
-                <Grid item sx={{ padding: "0 0.25rem 0.25rem 0.25rem" }}>
-                  <h3 className={styles.greyText}>Karma Quotient</h3>
-                </Grid>
+          <Box sx={{ width: "100%", padding: "1rem 0" }}>
+            <Grid
+              container
+              direction="row"
+              alignItems="center"
+              justifyContent="center"
+            >
+              <Grid item>
+                <Box
+                  component="img"
+                  sx={{
+                    height: "2rem",
+                    width: "2rem",
+                  }}
+                  src="/assets/mandala.png"
+                />
               </Grid>
-            </Box>
-          </Paper>
-          <Paper elevation={5}>
+
+              <Grid item sx={{ padding: "0 0.25rem 0.25rem 0.25rem" }}>
+                <h3 className={styles.greyText}>Check your Karma Quotient</h3>
+              </Grid>
+            </Grid>
+          </Box>
+          <Paper elevation={8}>
             <Grid container direction="row">
               <Grid item className={styles.mainSmall}>
                 <Radar data={calculateKarmaData()} />
                 <Box sx={{ textAlign: "center" }}>
                   Karma Quotient is the Resultant <br />
                   of your own Actions and Decisions <br />
-                  in the Realms of Vidya.
+                  in the Realms of Bodhi.
                   <br />
                   Aim for a 'balanced' Karma!
                 </Box>
@@ -217,10 +209,10 @@ export default function KarmaHome() {
           >
             <Grid item>
               <div>
-                <Link href="/campaign/">
+                <Link href="/quiz/">
                   <a>
                     <Button variant="outlined" className={styles.buttonLaunch}>
-                      START OVER
+                      STRAIGHT TO ARENA
                     </Button>
                   </a>
                 </Link>
@@ -231,7 +223,7 @@ export default function KarmaHome() {
                 <Link href="/learn">
                   <a>
                     <Button variant="contained" className={styles.buttonLaunch}>
-                      I AM ALL IN!
+                      CONTINUE TO GURUKUL
                     </Button>
                   </a>
                 </Link>

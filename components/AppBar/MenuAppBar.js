@@ -72,7 +72,7 @@ export default function MenuAppBar() {
 
   const signOut = async () => {
     auth.signOut();
-    Router.push("/launchCampaign");
+    Router.push("/launch");
   };
 
   const handleChange = (event) => {

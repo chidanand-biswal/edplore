@@ -16,10 +16,13 @@ import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import React, { useState, useEffect } from "react";
 import RealmInfoDialog from "../../components/Modal/RealmInfoDialog";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { motion } from "framer-motion";
 
 export default function IntroRealmsHome() {
   const [openModal, setOpenModal] = React.useState(false);
   const [modalType, setModalType] = React.useState("");
+  const bigScreenInd = useMediaQuery("(min-width:900px)");
 
   return (
     <Box className={styles.container}>
@@ -43,11 +46,17 @@ export default function IntroRealmsHome() {
                       setModalType("physics");
                     }}
                   >
-                    <CardSmallCustomOption
-                      source="physics"
-                      title="Physics"
-                      message="Physics"
-                    />
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.5 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 1 }}
+                    >
+                      <CardSmallCustomOption
+                        source="physics"
+                        title="Physics"
+                        message="Physics"
+                      />
+                    </motion.div>
                   </div>
                 </Grid>
                 <Grid item>
@@ -57,11 +66,17 @@ export default function IntroRealmsHome() {
                       setModalType("chemistry");
                     }}
                   >
-                    <CardSmallCustomOption
-                      source="chemistry"
-                      title="Chemistry"
-                      message="Chemistry"
-                    />
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.5 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 1.5 }}
+                    >
+                      <CardSmallCustomOption
+                        source="chemistry"
+                        title="Chemistry"
+                        message="Chemistry"
+                      />
+                    </motion.div>
                   </div>
                 </Grid>
               </Grid>
@@ -88,11 +103,17 @@ export default function IntroRealmsHome() {
                       setModalType("mathematics");
                     }}
                   >
-                    <CardSmallCustomOption
-                      source="mathematics"
-                      title="Mathematics"
-                      message="Mathematics"
-                    />
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.5 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 2 }}
+                    >
+                      <CardSmallCustomOption
+                        source="mathematics"
+                        title="Mathematics"
+                        message="Mathematics"
+                      />
+                    </motion.div>
                   </div>
                 </Grid>
                 <Grid item>
@@ -102,11 +123,17 @@ export default function IntroRealmsHome() {
                       setModalType("biology");
                     }}
                   >
-                    <CardSmallCustomOption
-                      source="biology"
-                      title="Biology"
-                      message="Biology"
-                    />
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.5 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 2.5 }}
+                    >
+                      <CardSmallCustomOption
+                        source="biology"
+                        title="Biology"
+                        message="Biology"
+                      />
+                    </motion.div>
                   </div>
                 </Grid>
               </Grid>
@@ -115,37 +142,87 @@ export default function IntroRealmsHome() {
 
           <Grid className={styles.spacerOne}></Grid>
 
-          <Grid
-            container
-            direction="row"
-            alignItems="center"
-            justifyContent="center"
-            spacing={2}
-            className={styles.spacerOne}
-          >
-            <Grid item>
-              <div>
-                <Link href="/launchCampaign">
-                  <a>
-                    <Button variant="outlined" className={styles.buttonNormal}>
-                      BACK
-                    </Button>
-                  </a>
-                </Link>
-              </div>
+          {bigScreenInd ? (
+            <Grid
+              container
+              direction="row"
+              alignItems="center"
+              justifyContent="center"
+              spacing={2}
+              className={styles.spacerOne}
+            >
+              <Grid item>
+                <div>
+                  <Link href="/campaign">
+                    <a>
+                      <Button
+                        variant="outlined"
+                        className={styles.buttonLaunch}
+                        sx={{ minWidth: "15rem" }}
+                      >
+                        SKIP TO CAMPAIGN
+                      </Button>
+                    </a>
+                  </Link>
+                </div>
+              </Grid>
+              <Grid item>
+                <div>
+                  <Link href="/intro/introExplorer">
+                    <a>
+                      <Button
+                        variant="contained"
+                        className={styles.buttonLaunch}
+                        sx={{ minWidth: "15rem" }}
+                      >
+                        DISCOVER THE EXPLORER
+                      </Button>
+                    </a>
+                  </Link>
+                </div>
+              </Grid>
             </Grid>
-            <Grid item>
-              <div>
-                <Link href="/campaign/">
-                  <a>
-                    <Button variant="contained" className={styles.buttonNormal}>
-                      LAUNCH !
-                    </Button>
-                  </a>
-                </Link>
-              </div>
+          ) : (
+            <Grid
+              container
+              direction="row"
+              alignItems="center"
+              justifyContent="center"
+              spacing={2}
+              className={styles.spacerOne}
+            >
+              <Grid item>
+                <div>
+                  <Link href="/intro/introExplorer">
+                    <a>
+                      <Button
+                        variant="contained"
+                        className={styles.buttonLaunch}
+                        sx={{ minWidth: "15rem" }}
+                      >
+                        DISCOVER THE EXPLORER
+                      </Button>
+                    </a>
+                  </Link>
+                </div>
+              </Grid>
+              <Grid item>
+                <div>
+                  <Link href="/campaign">
+                    <a>
+                      <Button
+                        variant="outlined"
+                        className={styles.buttonLaunch}
+                        sx={{ minWidth: "15rem" }}
+                      >
+                        SKIP TO CAMPAIGN
+                      </Button>
+                    </a>
+                  </Link>
+                </div>
+              </Grid>
             </Grid>
-          </Grid>
+          )}
         </Grid>
       </Grid>
 

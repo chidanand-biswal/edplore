@@ -194,7 +194,7 @@ export default function CommonDialog(props) {
 
             <DialogContent dividers>
               <DialogContentText id="alert-dialog-slide-description">
-                <Paper elevation={5}>
+                <Paper elevation={8}>
                   <Grid container direction="row">
                     <Grid item>
                       <Radar data={calculateKarmaData()} />
@@ -214,7 +214,7 @@ export default function CommonDialog(props) {
               <DialogContentText id="alert-dialog-slide-description">
                 <Grid container direction="row" spacing={1}>
                   <Grid item>
-                    <Paper elevation={5} sx={{ padding: "0 0.75rem" }}>
+                    <Paper elevation={8} sx={{ padding: "0 0.75rem" }}>
                       <Grid
                         container
                         direction="column"
@@ -239,7 +239,7 @@ export default function CommonDialog(props) {
                     </Paper>
                   </Grid>
                   <Grid item>
-                    <Paper elevation={5} sx={{ padding: "0 0.75rem" }}>
+                    <Paper elevation={8} sx={{ padding: "0 0.75rem" }}>
                       <Grid
                         container
                         direction="column"
@@ -267,7 +267,7 @@ export default function CommonDialog(props) {
                     </Paper>
                   </Grid>
                   <Grid item>
-                    <Paper elevation={5} sx={{ padding: "0 0.75rem" }}>
+                    <Paper elevation={8} sx={{ padding: "0 0.75rem" }}>
                       <Grid
                         container
                         direction="column"
@@ -308,7 +308,7 @@ export default function CommonDialog(props) {
             <DialogTitle>Hall of Fame</DialogTitle>
             <DialogContent dividers>
               <DialogContentText id="alert-dialog-slide-description">
-                To see if you stand among the Leaders of Realms of Vidya, you
+                To see if you stand among the Leaders of Realms of Bodhi, you
                 must first login and start to explore the realms.
               </DialogContentText>
             </DialogContent>

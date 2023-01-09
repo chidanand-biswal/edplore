@@ -20,15 +20,6 @@ import { addUserDetails } from "../../store/userDetails/action";
 import { motion } from "framer-motion";
 
 export default function IntroHome() {
-  const dispatch = useDispatch();
-  const { userDetails } = useSelector((state) => state.userDetails);
-  console.log("IntroHome");
-  console.log(userDetails);
-
-  const addNewUserDetails = () => {
-    dispatch(addUserDetails("Chidanand Biswal"));
-  };
-
   return (
     <Box className={styles.container}>
       <MenuAppBar />
@@ -86,21 +77,6 @@ export default function IntroHome() {
                 </Link>
               </motion.div>
             </Grid>
-            {/** 
-            <Grid item>
-              <motion.div
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 2 }}
-              >
-                <Link href="/launchCampaign" passHref>
-                  <a onClick={addNewUserDetails}>
-                    <CardIconOption title="The Path" message="" />
-                  </a>
-                </Link>
-              </motion.div>
-            </Grid>
-            */}
           </Grid>
         </Grid>
       </Grid>

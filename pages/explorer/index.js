@@ -122,6 +122,8 @@ export default function ExplorerHome() {
   };
 
   const submit = () => {
+    Router.push("/intro/introRealms");
+
     if (user) {
       console.log("User is authenticated.");
       console.log(user);
@@ -153,7 +155,6 @@ export default function ExplorerHome() {
 
     updateUserNameInStore();
     updateStandardInStore();
-    Router.push("/intro");
   };
 
   return (
@@ -166,9 +167,7 @@ export default function ExplorerHome() {
         </Grid>
   */}
         <Grid item className={styles.main} sx={{ padding: "0 5rem" }}>
-          <h2 className={styles.greyText}>
-            Who goes there? Identify yourself!
-          </h2>
+          <h2 className={styles.greyText}>Tell more about yourself!</h2>
 
           <Box>
             <Grid container direction={"row"} spacing={3} padding="2rem 0">
@@ -220,14 +219,14 @@ export default function ExplorerHome() {
               <Grid container direction={"row"} spacing={3} padding="2rem 0">
                 <Grid item>
                   <div>
-                    <Link href="/launchCampaign">
+                    <Link href="/launch">
                       <a>
                         <Button
                           variant="outlined"
                           className={styles.buttonLaunch}
                           sx={{ minWidth: "15rem" }}
                         >
-                          MAYBE ANOTHER TIME
+                          CHANGE MY PATH
                         </Button>
                       </a>
                     </Link>
@@ -242,7 +241,7 @@ export default function ExplorerHome() {
                       disabled={valName && valStandard ? false : true}
                       onClick={() => submit()}
                     >
-                      START MY CAMPAIGN
+                      DISCOVER THE REALMS
                     </Button>
                   </div>
                 </Grid>
@@ -258,20 +257,20 @@ export default function ExplorerHome() {
                       disabled={valName && valStandard ? false : true}
                       onClick={() => submit()}
                     >
-                      START MY CAMPAIGN
+                      DISCOVER THE REALMS
                     </Button>
                   </div>
                 </Grid>
                 <Grid item>
                   <div>
-                    <Link href="/launchCampaign">
+                    <Link href="/launch">
                       <a>
                         <Button
                           variant="outlined"
                           className={styles.buttonLaunch}
                           sx={{ minWidth: "15rem" }}
                         >
-                          MAYBE ANOTHER TIME
+                          CHANGE MY PATH
                         </Button>
                       </a>
                     </Link>

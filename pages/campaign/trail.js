@@ -123,7 +123,6 @@ export default function CampaignTrail() {
   };
 
   const findActiveTrail = () => {
-    console.log(`Realm active is ::: ${realmActive}.`);
     const filteredArenaList = standardArenaMapData.standardArenaMap.filter(
       (data) => data.standard === standardDetails
     );
@@ -218,36 +217,31 @@ export default function CampaignTrail() {
 
       <Grid container direction="row">
         <Grid item className={styles.main}>
-          <Paper
-            elevation={5}
-            sx={{ margin: "2rem 0 1rem 0", padding: "0.5rem" }}
-          >
-            <Box sx={{ width: "100%" }}>
-              <Grid
-                container
-                direction="row"
-                alignItems="center"
-                justifyContent="center"
-              >
-                <Grid item>
-                  <Box
-                    component="img"
-                    sx={{
-                      height: "2.5rem",
-                      width: "2.5rem",
-                    }}
-                    src="/assets/map.png"
-                  />
-                </Grid>
-
-                <Grid item sx={{ padding: "0 1rem" }}>
-                  <h3 className={styles.greyText}>My Quest</h3>
-                </Grid>
+          <Box sx={{ width: "100%" }}>
+            <Grid
+              container
+              direction="row"
+              alignItems="center"
+              justifyContent="center"
+            >
+              <Grid item>
+                <Box
+                  component="img"
+                  sx={{
+                    height: "2.5rem",
+                    width: "2.5rem",
+                  }}
+                  src="/assets/map.png"
+                />
               </Grid>
-            </Box>
-          </Paper>
 
-          <Paper elevation={5} sx={{ minWidth: "15rem" }}>
+              <Grid item sx={{ padding: "0 1rem" }}>
+                <h3 className={styles.greyText}>Here is your Quest</h3>
+              </Grid>
+            </Grid>
+          </Box>
+
+          <Paper elevation={8} sx={{ minWidth: "15rem" }}>
             <Box sx={{ alignItem: "center", padding: "2rem" }}>
               <Stepper activeStep={activeStep} orientation="vertical">
                 {activeTrail.map((step, index) => (
@@ -297,7 +291,7 @@ export default function CampaignTrail() {
                     className={styles.buttonLaunch}
                     onClick={() => submit()}
                   >
-                    CONTINUE TO GURUKUL
+                    RESUME MY QUEST
                   </Button>
                 </div>
               </Grid>

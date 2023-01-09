@@ -80,9 +80,6 @@ export default function CampaignHome() {
 
   const { realmProgress } = useSelector((state) => state.realmProgress);
 
-  console.log("realmProgress");
-  console.log(realmProgress);
-
   const realmProgressArray = realmProgress ? realmProgress : [];
 
   const calculateRealmProgressByStandard = (realm) => {
@@ -184,12 +181,34 @@ export default function CampaignHome() {
 
       <Grid container direction="row">
         <Grid item className={styles.main}>
-          <h2 className={styles.greyText}>Now choose your Path!</h2>
+          <Box sx={{ width: "100%", padding: "1rem 0" }}>
+            <Grid
+              container
+              direction="row"
+              alignItems="center"
+              justifyContent="center"
+            >
+              <Grid item>
+                <Box
+                  component="img"
+                  sx={{
+                    height: "2.5rem",
+                    width: "2.5rem",
+                  }}
+                  src="/assets/realms.png"
+                />
+              </Grid>
+
+              <Grid item sx={{ padding: "0 1rem" }}>
+                <h2 className={styles.greyText}>Choose your Realm</h2>
+              </Grid>
+            </Grid>
+          </Box>
 
           <Box
             sx={{
-              height: "20rem",
-              width: "20rem",
+              height: "19rem",
+              width: "19rem",
             }}
           >
             <Pie

@@ -55,7 +55,7 @@ export default function CardIconOption(props) {
 
   return (
     <Box sx={{ minWidth: 250 }}>
-      <Card className={styles.cardIcon} elevation={5}>
+      <Card className={styles.cardIcon} elevation={8}>
         <React.Fragment>
           {renderCardMedia(props.source)}
           <CardContent>

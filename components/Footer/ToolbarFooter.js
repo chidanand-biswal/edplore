@@ -46,7 +46,7 @@ export default function ToolbarFooter() {
         bottom: 0,
       }}
       component="footer"
-      elevation={5}
+      elevation={8}
     >
       <Container>
         <Box sx={{ width: "100%" }}>
@@ -141,7 +141,7 @@ export default function ToolbarFooter() {
         borderBottomWidth: "0rem",
       }}
       component="footer"
-      elevation={5}
+      elevation={8}
     >
       <Container>
         <Box sx={{ width: "100%" }}>
