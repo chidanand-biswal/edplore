@@ -27,26 +27,22 @@ export default function FaqHome() {
 
       <Grid container direction="row">
         <Grid item className={styles.main}>
-          <Paper elevation={8}>
-            <Box sx={{ width: "100%", padding: "0.5rem" }}>
-              <Grid
-                container
-                direction="row"
-                alignItems="center"
-                justifyContent="center"
-              >
-                <Grid item>
-                  <LiveHelpIcon color="primary" fontSize="large" />
-                </Grid>
-
-                <Grid item sx={{ padding: "0 1rem 0.5rem 1rem" }}>
-                  <h3 className={styles.greyText}>
-                    Frequently Asked Questions
-                  </h3>
-                </Grid>
+          <Box sx={{ width: "100%", padding: "0.5rem" }}>
+            <Grid
+              container
+              direction="row"
+              alignItems="center"
+              justifyContent="center"
+            >
+              <Grid item>
+                <LiveHelpIcon color="primary" fontSize="large" />
               </Grid>
-            </Box>
-          </Paper>
+
+              <Grid item sx={{ padding: "0 1rem 0.5rem 1rem" }}>
+                <h3 className={styles.greyText}>Frequently Asked Questions</h3>
+              </Grid>
+            </Grid>
+          </Box>
 
           <Box sx={{ padding: "2rem" }}>
             <Accordion>
@@ -56,6 +52,118 @@ export default function FaqHome() {
                 id="panel1a-header"
               >
                 <Typography>What is "edplore"?</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                  eget.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>What is "the Realms of Bodhi"?</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                  eget.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>What is a "Realm"?</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                  eget.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>What is a "Quest" inside a Realm"?</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                  eget.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>What is "Karma Quotient"?</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                  eget.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>How is "Karma Quotient" calculated?</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                  eget.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>What is an "Arena" in a Realm?</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                  eget.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>What is "The Gurukul"?</Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>

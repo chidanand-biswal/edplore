@@ -117,7 +117,10 @@ export default function PowerHome() {
               justifyContent="center"
             >
               <Grid item>
-                <h3 className={styles.greyText}>My Kirti Board</h3>
+                <h3 className={styles.greyText}>
+                  Congratulations Explorer! <br />
+                  You have made this far!!
+                </h3>
               </Grid>
             </Grid>
           </Box>

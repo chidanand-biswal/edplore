@@ -25,6 +25,8 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import LoginIcon from "@mui/icons-material/Login";
 import CloseIcon from "@mui/icons-material/Close";
 import HandshakeIcon from "@mui/icons-material/Handshake";
+import EscalatorWarningIcon from "@mui/icons-material/EscalatorWarning";
+import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import Grid from "@mui/material/Grid";
 import Diversity1Icon from "@mui/icons-material/Diversity1";
 import { initFirebase } from "../../firebase/firebaseApp";
@@ -130,12 +132,15 @@ export default function MenuAppBar() {
                 <ListItemText primary={"FAQ"} />
               </ListItemButton>
             </ListItem>
-            <ListItem key={"menuCredits"} disablePadding>
-              <ListItemButton onClick={() => Router.push("/menu/credits")}>
+            <ListItem key={"menuParent"} disablePadding>
+              <ListItemButton onClick={() => Router.push("/menu/parents")}>
                 <ListItemIcon>
-                  <HandshakeIcon />
+                  <EscalatorWarningIcon color="primary" />
                 </ListItemIcon>
-                <ListItemText primary={"Credits"} />
+                <ListItemText
+                  primary={"Are you a parent?"}
+                  sx={{ color: "#556cd6" }}
+                />
               </ListItemButton>
             </ListItem>
           </List>
@@ -160,6 +165,24 @@ export default function MenuAppBar() {
               </ListItemButton>
             </ListItem>
           </List>
+
+          <Divider />
+          <ListItem key={"menuCredits"} disablePadding>
+            <ListItemButton onClick={() => Router.push("/menu/credits")}>
+              <ListItemIcon>
+                <HandshakeIcon />
+              </ListItemIcon>
+              <ListItemText primary={"Credits"} />
+            </ListItemButton>
+          </ListItem>
+          <ListItem key={"menuBlog"} disablePadding>
+            <ListItemButton onClick={() => Router.push("/menu/blog")}>
+              <ListItemIcon>
+                <AutoStoriesIcon />
+              </ListItemIcon>
+              <ListItemText primary={"The Blog"} />
+            </ListItemButton>
+          </ListItem>
         </Grid>
       </Grid>
     </Box>

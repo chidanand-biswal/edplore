@@ -14,6 +14,7 @@ import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
+import Diversity1Icon from "@mui/icons-material/Diversity1";
 
 export default function ContactHome() {
   return (
@@ -23,14 +24,7 @@ export default function ContactHome() {
       <Grid container direction="row">
         <Grid item className={styles.main} sx={{ paddingTop: "1rem" }}>
           <Grid className={styles.spacerOne}>
-            <Box
-              component="img"
-              sx={{
-                height: "5rem",
-                width: "5rem",
-              }}
-              src="/assets/compass.png"
-            />
+            <Diversity1Icon fontSize="large" />
           </Grid>
 
           <Grid className={styles.spacerOne}>

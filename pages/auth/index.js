@@ -79,7 +79,7 @@ export default function AuthHome() {
               animate={{ opacity: 1, scale: 1, y: "0rem" }}
               transition={{ duration: 1 }}
             >
-              <h2 className={styles.greyText}>Login to edplore</h2>
+              <h2 className={styles.greyText}>Enter the Realms of Bodhi</h2>
             </motion.div>
           </Grid>
 

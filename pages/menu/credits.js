@@ -28,26 +28,34 @@ export default function CreditsHome() {
 
       <Grid container direction="row">
         <Grid item className={styles.main}>
-          <Paper elevation={8}>
-            <Box sx={{ width: "100%", padding: "0.25rem" }}>
-              <Grid
-                container
-                direction="row"
-                alignItems="center"
-                justifyContent="center"
-              >
-                <Grid item>
-                  <HandshakeIcon color="primary" fontSize="large" />
-                </Grid>
+          <Grid>
+            <HandshakeIcon color="primary" fontSize="large" />
+          </Grid>
 
-                <Grid item sx={{ padding: "0 1rem 0.5rem 1rem" }}>
-                  <h3 className={styles.greyText}>Credits</h3>
-                </Grid>
+          <Grid className={styles.spacerOne}>
+            <Typography variant="h4">
+              Credits
+              <br />
+            </Typography>
+          </Grid>
+          <Box sx={{ maxWidth: "50rem" }}>
+            <Grid container direction="column">
+              <Grid item sx={{ padding: "1rem" }}>
+                <Typography>
+                  We, at "edplore", are a bootstrapped organization with a noble
+                  mission in the sector of education.
+                  <br />
+                  In order to make the application accessible to most, we have
+                  made use of open-source technology platforms and assets while
+                  building this from scratch.
+                  <br />
+                  We remain indebted to the below and announce credits as due:
+                </Typography>
               </Grid>
-            </Box>
-          </Paper>
+            </Grid>
+          </Box>
 
-          <Box sx={{ padding: "2rem" }}>
+          <Box sx={{ padding: "1rem" }}>
             <a
               href="https://www.flaticon.com/free-icons/hurdy-gurdy"
               title="hurdy gurdy icons"
