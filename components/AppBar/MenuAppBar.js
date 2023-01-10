@@ -29,6 +29,7 @@ import EscalatorWarningIcon from "@mui/icons-material/EscalatorWarning";
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import Grid from "@mui/material/Grid";
 import Diversity1Icon from "@mui/icons-material/Diversity1";
+import LiveHelpIcon from "@mui/icons-material/LiveHelp";
 import { initFirebase } from "../../firebase/firebaseApp";
 import {
   getAuth,
@@ -127,7 +128,7 @@ export default function MenuAppBar() {
             <ListItem key={"menuFAQ"} disablePadding>
               <ListItemButton onClick={() => Router.push("/menu/faq")}>
                 <ListItemIcon>
-                  <InfoIcon />
+                  <LiveHelpIcon />
                 </ListItemIcon>
                 <ListItemText primary={"FAQ"} />
               </ListItemButton>

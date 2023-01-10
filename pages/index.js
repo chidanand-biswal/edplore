@@ -84,8 +84,9 @@ export default function Home() {
               transition={{ duration: 5 }}
             >
               <Typography className={styles.openingLines}>
-                Is it really out there? Or is it a myth? <br />
-                Today you stand right at the Gateway.
+                Is it really out there? Or just a myth? <br />
+                Here you stand right at the gateway. <br /> Your quest awaits
+                you!
               </Typography>
             </motion.div>
           </Grid>

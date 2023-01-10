@@ -12,34 +12,93 @@ import Button from "@mui/material/Button";
 import Zoom from "@mui/material/Zoom";
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
+import { initFirebase } from "../../firebase/firebaseApp";
+import {
+  getAuth,
+  signInWithPopup,
+  signInWithRedirect,
+  GoogleAuthProvider,
+} from "firebase/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { useRadioGroup } from "@mui/material";
 
 export default function ProfileHome() {
+  const auth = getAuth();
+  const [user, loading] = useAuthState(auth);
+  const provider = new GoogleAuthProvider();
+
+  const signIn = async () => {
+    //const result = await signInWithPopup(auth, provider);
+    await signInWithRedirect(auth, provider)
+      .then((user) => {
+        if (user) {
+          console.log(user);
+          user.user.getIdToken().then((token) => {
+            user.log(token);
+          });
+        }
+      })
+      .catch((err) => {
+        console.log(err.message);
+      })
+      .finally();
+    console.log(result.user);
+  };
+
   return (
     <Box className={styles.container}>
       <MenuAppBar />
 
       <Grid container direction="row">
         <Grid item className={styles.main}>
-          <Grid className={styles.spacerOne}>
-            <Box
-              component="img"
-              sx={{
-                height: "5rem",
-                width: "5rem",
-              }}
-              src="/assets/compass.png"
-            />
-          </Grid>
+          {user ? (
+            <Box>
+              <Grid sx={{ textAlign: "center" }}>
+                <img
+                  sx={{
+                    height: "7rem",
+                    width: "7rem",
+                  }}
+                  src={user.photoURL ? user.photoURL : "/assets/rookie.png"}
+                  referrerpolicy="no-referrer"
+                />
+              </Grid>
 
-          <Grid className={styles.spacerOne}>
-            <Typography variant="h2">
-              Profile <br />
-            </Typography>
-            <Typography className={styles.openingLines}>
-              This is an ed-game aimed at school-goers with the goal to inrease
-              interest towards STEM subjects.
-            </Typography>
-          </Grid>
+              <Grid className={styles.spacerOne}>
+                <Typography variant="h4">
+                  Explorer profile <br />
+                </Typography>
+                <Grid className={styles.spacerOne}></Grid>
+                <Typography variant="h6" sx={{ color: "#808080" }}>
+                  Name: {user.displayName} <br />
+                  Email: {user.email}
+                </Typography>
+              </Grid>
+            </Box>
+          ) : (
+            <Box>
+              <Grid sx={{ textAlign: "center" }}>
+                <Box
+                  component="img"
+                  sx={{
+                    height: "5rem",
+                    width: "5rem",
+                  }}
+                  src="/assets/rookie.png"
+                />
+              </Grid>
+              <Grid className={styles.spacerOne}>
+                <Typography variant="h4">
+                  Explorer profile <br />
+                </Typography>
+                <Grid className={styles.spacerOne}></Grid>
+                <Typography variant="h6">
+                  You are not yet logged in. <br />
+                  Login to 'edplore' to fully experience the Realms of Bodhi.
+                </Typography>
+              </Grid>
+            </Box>
+          )}
 
           <Grid className={styles.spacerOne}></Grid>
 
@@ -52,15 +111,30 @@ export default function ProfileHome() {
             className={styles.spacerOne}
           >
             <Grid item>
-              <div>
-                <Link href="/">
-                  <a>
-                    <Button variant="contained" className={styles.buttonLaunch}>
-                      BACK TO HOME
-                    </Button>
-                  </a>
-                </Link>
-              </div>
+              {user ? (
+                <div>
+                  <Link href="/">
+                    <a>
+                      <Button
+                        variant="contained"
+                        className={styles.buttonLaunch}
+                      >
+                        BACK TO HOME
+                      </Button>
+                    </a>
+                  </Link>
+                </div>
+              ) : (
+                <div>
+                  <Button
+                    variant="contained"
+                    className={styles.buttonLaunch}
+                    onClick={signIn}
+                  >
+                    LOGIN TO EDPLORE
+                  </Button>
+                </div>
+              )}
             </Grid>
           </Grid>
         </Grid>

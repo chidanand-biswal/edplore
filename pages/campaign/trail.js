@@ -236,7 +236,7 @@ export default function CampaignTrail() {
               </Grid>
 
               <Grid item sx={{ padding: "0 1rem" }}>
-                <h3 className={styles.greyText}>Here is your Quest</h3>
+                <h2 className={styles.greyText}>Your Quest awaits you!</h2>
               </Grid>
             </Grid>
           </Box>
