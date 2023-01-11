@@ -32,12 +32,15 @@ export default function AboutHome() {
           </Grid>
 
           <Grid className={styles.spacerOne}>
-            <Typography variant="h2">
+            <Typography variant="h3">
               edplore <br />
             </Typography>
-            <Typography className={styles.openingLines}>
-              This is an ed-game aimed at school-goers with the goal to increase
-              interest towards STEM subjects.
+            <Typography className={styles.greyText} variant="h6">
+              edplore = educate + explore <br /> <br />
+              This is an ed-game (educational game) aimed at school-goers with
+              the goal to increase interest towards STEM subjects like science,
+              technology, engineering and mathematics. <br />
+              It hopes to inspire and install a positive sense of explorations.
             </Typography>
           </Grid>
 

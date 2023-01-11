@@ -24,7 +24,7 @@ export default function SupportHome() {
       <Grid container direction="row">
         <Grid item className={styles.main}>
           <Grid className={styles.spacerOne}>
-            <SupportAgentIcon fontSize="large" />
+            <SupportAgentIcon color="primary" fontSize="large" />
           </Grid>
 
           <Grid className={styles.spacerOne}>

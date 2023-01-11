@@ -217,7 +217,7 @@ export default function CampaignTrail() {
 
       <Grid container direction="row">
         <Grid item className={styles.main}>
-          <Box sx={{ width: "100%" }}>
+          <Box sx={{ width: "100%", paddingBottom: "8rem" }}>
             <Grid
               container
               direction="row"

@@ -29,7 +29,7 @@ export default function Home() {
         <Grid container direction="row">
           <Grid item className={styles.main}>
             <Head>
-              <title>Edplore</title>
+              <title>edplore</title>
               <meta name="description" content="Edplore" />
               <link rel="icon" href="/favicon.ico" />
             </Head>

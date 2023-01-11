@@ -24,7 +24,7 @@ export default function ContactHome() {
       <Grid container direction="row">
         <Grid item className={styles.main} sx={{ paddingTop: "1rem" }}>
           <Grid className={styles.spacerOne}>
-            <Diversity1Icon fontSize="large" />
+            <Diversity1Icon color="primary" fontSize="large" />
           </Grid>
 
           <Grid className={styles.spacerOne}>
@@ -37,7 +37,7 @@ export default function ContactHome() {
                 <Grid item sx={{ padding: "1rem 0" }}>
                   <Typography>
                     We are a family of educators spanning across three
-                    generations for more than three quarters of a century.
+                    generations and for more than three quarters of a century.
                     <br />
                     We share a passion for education and everything that helps
                     make it interesting, affordable and liberating. <br />

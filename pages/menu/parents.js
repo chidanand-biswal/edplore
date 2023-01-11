@@ -22,26 +22,39 @@ export default function ParentHome() {
       <Grid container direction="row">
         <Grid item className={styles.main} sx={{ paddingTop: "1rem" }}>
           <Grid className={styles.spacerOne}>
-            <EscalatorWarningIcon fontSize="large" />
+            <EscalatorWarningIcon color="primary" fontSize="large" />
           </Grid>
 
           <Grid className={styles.spacerOne}>
-            <Typography variant="h5">
-              Dearest Parent,
-              <br />
-            </Typography>
+            <Typography variant="h6">Dearest Parent,</Typography>
             <Box sx={{ padding: "1rem 0", maxWidth: "50rem" }}>
               <Grid container direction="column">
-                <Grid item sx={{ padding: "1rem 0" }}>
+                <Grid item sx={{ padding: "0.25rem 0" }}>
                   <Typography>
-                    We are a family of educators spanning across three
-                    generations for more than three quarters of a century.
+                    Are you tired of your kid killing precious hours with
+                    mind-less violent video games or soulless social media?
                     <br />
-                    We share a passion for education and everything that helps
-                    make it interesting, affordable and liberating. <br />
+                    Do you sometimes find yourself helpless in ensuring a
+                    quality educative experience for your kid that the kid
+                    really loves?
                     <br />
-                    Do you have a feedback that can make us better or just wish
-                    to join us in our passion and endeavour? <br />
+                    Well, you are not alone! We know exactly how you feel.{" "}
+                    <br /> We, at BISWAL Technologies, are a family of educators
+                    spanning across three generations. We all share a passion
+                    for education and everything that helps make it interesting,
+                    affordable and liberating.
+                    <br />
+                    The 'edplore' application is developed with lots of thoughts
+                    and love after taking feedbacks from hundereds of similarly
+                    anguished parents and teachers.
+                    <br />
+                    Not just making education interesting, another goal of this
+                    is to help our young ones understand the life lessons in a
+                    fun way. Life lessons like 'as you sow, so you reap', 'being
+                    responsible for your decisions and actions', 'Karma' etc.
+                    <br />
+                    It is an innovation to help install a sense of explorations
+                    in our kids. Do give it a try today! <br />
                     <br />
                     With warmest regards, <br />
                   </Typography>

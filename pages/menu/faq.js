@@ -51,13 +51,14 @@ export default function FaqHome() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography>What is "edplore"?</Typography>
+                <Typography sx={{ fontWeight: "500" }}>
+                  What is "edplore"?
+                </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
+                  An ed-game aimed at school-goers with the goal to increase
+                  interest towards STEM subjects.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -67,13 +68,16 @@ export default function FaqHome() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography>What is "the Realms of Bodhi"?</Typography>
+                <Typography sx={{ fontWeight: "500" }}>
+                  What are "the Realms of Bodhi"?
+                </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
+                  The fictional multiverse that each explorer is going to
+                  discover here. <br />
+                  In reality, it is the aggregation of STEM subjects tailored to
+                  meet a specific standard's syllabus.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -83,13 +87,16 @@ export default function FaqHome() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography>What is a "Realm"?</Typography>
+                <Typography sx={{ fontWeight: "500" }}>
+                  What is a "Realm"?
+                </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
+                  Realm is refers to one of the STEM subjects for a specific
+                  standard as prescribed by CBSE and ICSE boards. <br />
+                  At this moment, it may be one of Physics, Chemistry, Biology
+                  or Mathematics.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -99,13 +106,19 @@ export default function FaqHome() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography>What is a "Quest" inside a Realm"?</Typography>
+                <Typography sx={{ fontWeight: "500" }}>
+                  What is a "Quest" inside a Realm"?
+                </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
+                  A Quest is the completion progress that the explorer has made
+                  at certain preriod of time. <br />
+                  If the explorer is logged-in, then she/he has the advantage of
+                  seeing the quest completed till the last session and then try
+                  to pick it up again. <br /> If not logged-in, then the
+                  explorer can still go on a quest but the quest data will be
+                  lost after the session i.e. close of the browser.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -115,13 +128,22 @@ export default function FaqHome() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography>What is "Karma Quotient"?</Typography>
+                <Typography sx={{ fontWeight: "500" }}>
+                  What is "Karma Quotient"?
+                </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
+                  That is the eternal question, isn't it? <br />
+                  Here KQ goes up or down based on the explorer's performances
+                  and decisions just like the real 'Karma'! <br />
+                  A good KQ can help the explorer open gates to new Realms and
+                  win awards. <br />
+                  Always aim for the perfect KQ which is symoblised by the
+                  'perfect pentagon'
+                  <br />
+                  Click the 'Karma' icon available on toolbar in screens to know
+                  more.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -131,13 +153,20 @@ export default function FaqHome() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography>How is "Karma Quotient" calculated?</Typography>
+                <Typography sx={{ fontWeight: "500" }}>
+                  How is "Karma Quotient" calculated?
+                </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
+                  It is complex! <br />
+                  Well, actually no as long as the explorer understands what is
+                  Karma Quotient. <br />
+                  It is the weighted average of quest progresses achieved in
+                  each of the Realms.
+                  <br />
+                  That means those who attempt to make over-all progress in all
+                  the Realms have a better chance at a high and balanced KQ.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -147,13 +176,19 @@ export default function FaqHome() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography>What is an "Arena" in a Realm?</Typography>
+                <Typography sx={{ fontWeight: "500" }}>
+                  What is an "Arena" in a Realm?
+                </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
+                  It is the assessment of the explorer to find if she/he really
+                  conquered the concepts in that quest. <br />
+                  In simpler words, it is short test at the end of a quest and
+                  determines the completion status. <br />
+                  Win the 'Arena' to earn various recognitions and get a 'level
+                  up'. Lose in the arena and go back in the quest. <br />
+                  Bloody... much like the arenas for the gladiators!
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -163,13 +198,19 @@ export default function FaqHome() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography>What is "The Gurukul"?</Typography>
+                <Typography sx={{ fontWeight: "500" }}>
+                  What is "The Gurukul"?
+                </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
+                  It is the place to learn or rather 'refresh' the learnings in
+                  a particular concept. <br />
+                  It does not aim to replace the lessons from school testbook!{" "}
+                  <br />
+                  It aims to provide a snapshot of the concept, much like a
+                  refresher course, to help the explorer gain confidence before
+                  the Arena. <br />
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -179,13 +220,15 @@ export default function FaqHome() {
                 aria-controls="panel2a-content"
                 id="panel2a-header"
               >
-                <Typography>How do I start a Quest in "edplore"?</Typography>
+                <Typography sx={{ fontWeight: "500" }}>
+                  How do I start a Quest in "the Realms of Bodhi"?
+                </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
+                  Quite simple! <br />
+                  Start with the 'EXPLORE' button on the first screen and then
+                  just follow the flow.
                 </Typography>
               </AccordionDetails>
             </Accordion>
