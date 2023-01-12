@@ -36,7 +36,7 @@ export default function LaunchCampaignHome() {
               animate={{ opacity: 1, scale: 1, y: "0rem" }}
               transition={{ duration: 1 }}
             >
-              <h2 className={styles.greyText}>Choose your Path</h2>
+              <h2 className={styles.greyText}>First choose your path</h2>
             </motion.div>
           </Grid>
 

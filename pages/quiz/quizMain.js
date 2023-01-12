@@ -208,7 +208,7 @@ export default function QuizMain() {
     let updateMedal = false;
     let updateSuperfast = false;
 
-    if (newScore >= 9) {
+    if (newScore >= 10) {
       console.log(`Update Medal count because score is ::: ${newScore}.`);
       updateMedal = true;
       updateMedalCountInStore();

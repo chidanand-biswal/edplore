@@ -30,6 +30,7 @@ import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import Grid from "@mui/material/Grid";
 import Diversity1Icon from "@mui/icons-material/Diversity1";
 import LiveHelpIcon from "@mui/icons-material/LiveHelp";
+import Avatar from "@mui/material/Avatar";
 import { initFirebase } from "../../firebase/firebaseApp";
 import {
   getAuth,
@@ -39,6 +40,36 @@ import {
 } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useRouter } from "next/router";
+
+function stringToColor(string) {
+  let hash = 0;
+  let i;
+
+  /* eslint-disable no-bitwise */
+  for (i = 0; i < string.length; i += 1) {
+    hash = string.charCodeAt(i) + ((hash << 5) - hash);
+  }
+
+  let color = "#";
+
+  for (i = 0; i < 3; i += 1) {
+    const value = (hash >> (i * 8)) & 0xff;
+    color += `00${value.toString(16)}`.slice(-2);
+  }
+  /* eslint-enable no-bitwise */
+
+  return color;
+}
+
+function stringAvatar(name) {
+  return {
+    sx: {
+      //bgcolor: stringToColor(name),
+      bgcolor: "#FF3CAC",
+    },
+    children: `${name.split(" ")[0][0]}${name.split(" ")[1][0]}`,
+  };
+}
 
 export default function MenuAppBar() {
   initFirebase();
@@ -278,7 +309,23 @@ export default function MenuAppBar() {
             </IconButton>
             re
           </Typography>
-          {auth && (
+
+          {user ? (
+            <div>
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                color="inherit"
+                onClick={() => {
+                  setOpenRightMenu(true);
+                }}
+              >
+                <Avatar {...stringAvatar(user.displayName)} />
+              </IconButton>
+            </div>
+          ) : (
             <div>
               <IconButton
                 size="large"

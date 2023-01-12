@@ -37,7 +37,7 @@ export default function ExplorerInfoDialog(props) {
             <DialogTitle>
               <Grid container direction="row">
                 <Grid item>
-                  <PentagonIcon fontSize="large" />
+                  <PentagonIcon fontSize="large" color="primary" />
                 </Grid>
                 <Grid item sx={{ paddingLeft: "1rem" }}>
                   My Karma Quotient
@@ -48,8 +48,12 @@ export default function ExplorerInfoDialog(props) {
               <DialogContentText id="alert-dialog-slide-description">
                 <List>
                   {infoExplorer.karma.map((item) => (
-                    <ListItem key={item.text} disablePadding>
-                      <ListItemIcon>
+                    <ListItem
+                      key={item.text}
+                      disablePadding
+                      sx={{ alignItems: "flex-start" }}
+                    >
+                      <ListItemIcon sx={{ paddingTop: "0.35rem" }}>
                         <TipsAndUpdatesIcon />
                       </ListItemIcon>
                       <ListItemText primary={item.text} />
@@ -64,7 +68,7 @@ export default function ExplorerInfoDialog(props) {
             <DialogTitle>
               <Grid container direction="row">
                 <Grid item>
-                  <LocalPoliceIcon fontSize="large" />
+                  <LocalPoliceIcon fontSize="large" color="primary" />
                 </Grid>
                 <Grid item sx={{ paddingLeft: "1rem" }}>
                   Kavach
@@ -75,8 +79,12 @@ export default function ExplorerInfoDialog(props) {
               <DialogContentText id="alert-dialog-slide-description">
                 <List>
                   {infoExplorer.kavach.map((item) => (
-                    <ListItem key={item.text} disablePadding>
-                      <ListItemIcon>
+                    <ListItem
+                      key={item.text}
+                      disablePadding
+                      sx={{ alignItems: "flex-start" }}
+                    >
+                      <ListItemIcon sx={{ paddingTop: "0.35rem" }}>
                         <TipsAndUpdatesIcon />
                       </ListItemIcon>
                       <ListItemText primary={item.text} />
@@ -91,7 +99,7 @@ export default function ExplorerInfoDialog(props) {
             <DialogTitle>
               <Grid container direction="row">
                 <Grid item>
-                  <BrightnessHighIcon fontSize="large" />
+                  <BrightnessHighIcon fontSize="large" color="primary" />
                 </Grid>
                 <Grid item sx={{ paddingLeft: "1rem" }}>
                   Chakra
@@ -102,8 +110,12 @@ export default function ExplorerInfoDialog(props) {
               <DialogContentText id="alert-dialog-slide-description">
                 <List>
                   {infoExplorer.chakra.map((item) => (
-                    <ListItem key={item.text} disablePadding>
-                      <ListItemIcon>
+                    <ListItem
+                      key={item.text}
+                      disablePadding
+                      sx={{ alignItems: "flex-start" }}
+                    >
+                      <ListItemIcon sx={{ paddingTop: "0.35rem" }}>
                         <TipsAndUpdatesIcon />
                       </ListItemIcon>
                       <ListItemText primary={item.text} />
@@ -118,7 +130,7 @@ export default function ExplorerInfoDialog(props) {
             <DialogTitle>
               <Grid container direction="row">
                 <Grid item>
-                  <ElectricBoltIcon fontSize="large" />
+                  <ElectricBoltIcon fontSize="large" color="primary" />
                 </Grid>
                 <Grid item sx={{ paddingLeft: "1rem" }}>
                   Vajra
@@ -129,8 +141,12 @@ export default function ExplorerInfoDialog(props) {
               <DialogContentText id="alert-dialog-slide-description">
                 <List>
                   {infoExplorer.vajra.map((item) => (
-                    <ListItem key={item.text} disablePadding>
-                      <ListItemIcon>
+                    <ListItem
+                      key={item.text}
+                      disablePadding
+                      sx={{ alignItems: "flex-start" }}
+                    >
+                      <ListItemIcon sx={{ paddingTop: "0.35rem" }}>
                         <TipsAndUpdatesIcon />
                       </ListItemIcon>
                       <ListItemText primary={item.text} />

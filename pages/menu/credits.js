@@ -28,21 +28,28 @@ export default function CreditsHome() {
 
       <Grid container direction="row">
         <Grid item className={styles.main}>
-          <Grid>
-            <HandshakeIcon color="primary" fontSize="large" />
-          </Grid>
+          <Box sx={{ width: "100%", paddingTop: "1rem" }}>
+            <Grid
+              container
+              direction="row"
+              alignItems="center"
+              justifyContent="center"
+            >
+              <Grid item>
+                <HandshakeIcon color="primary" fontSize="large" />
+              </Grid>
 
-          <Grid className={styles.spacerOne}>
-            <Typography variant="h4">
-              Credits
-              <br />
-            </Typography>
-          </Grid>
+              <Grid item sx={{ padding: "0 1rem 0.5rem 1rem" }}>
+                <h2 className={styles.greyText}>Credits</h2>
+              </Grid>
+            </Grid>
+          </Box>
+
           <Box sx={{ maxWidth: "50rem" }}>
             <Grid container direction="column">
               <Grid item sx={{ padding: "1rem" }}>
                 <Typography>
-                  We, at "edplore", are a bootstrapped organization with a noble
+                  We at "edplore", are a bootstrapped organization with a noble
                   mission in the sector of education.
                   <br />
                   In order to make the application accessible to most, we have
@@ -57,11 +64,91 @@ export default function CreditsHome() {
 
           <Box sx={{ padding: "1rem" }}>
             <a
+              title="Subhashish Panigrahi, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+              href="https://commons.wikimedia.org/wiki/File:Konarka.svg"
+            >
+              <img
+                width="32"
+                alt="Konarka"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Konarka.svg/32px-Konarka.svg.png"
+              />
+              Subhashish Panigrahi, CC BY-SA 4.0 via Wikimedia Commons
+            </a>
+            <br />
+            <a
               href="https://www.flaticon.com/free-icons/hurdy-gurdy"
               title="hurdy gurdy icons"
             >
               Hurdy gurdy icons created by Freepik - Flaticon
+            </a>{" "}
+            <br />
+            <a
+              href="https://www.flaticon.com/free-icons/knight"
+              title="knight icons"
+            >
+              Knight icons created by Freepik - Flaticon
             </a>
+            <br />
+            <a
+              href="https://www.flaticon.com/free-icons/knight"
+              title="knight icons"
+            >
+              Knight icons created by Freepik - Flaticon
+            </a>
+            <br />
+            <a
+              href="https://www.flaticon.com/free-icons/physics"
+              title="physics icons"
+            >
+              Physics icons created by Freepik - Flaticon
+            </a>
+            <br />
+            <a
+              href="https://www.flaticon.com/free-icons/chemistry"
+              title="chemistry icons"
+            >
+              Chemistry icons created by Freepik - Flaticon
+            </a>
+            <br />
+            <a
+              href="https://www.flaticon.com/free-icons/mathematics"
+              title="mathematics icons"
+            >
+              Mathematics icons created by Freepik - Flaticon
+            </a>
+            <br />
+            <a
+              href="https://www.flaticon.com/free-icons/biology"
+              title="biology icons"
+            >
+              Biology icons created by Eucalyp - Flaticon
+            </a>
+            <br />
+            <a
+              href="https://www.flaticon.com/free-icons/planet"
+              title="planet icons"
+            >
+              Planet icons created by smalllikeart - Flaticon
+            </a>
+            <br />
+            <a href="https://www.flaticon.com/free-icons/map" title="map icons">
+              Map icons created by Freepik - Flaticon
+            </a>
+            <br />
+            <a
+              href="https://www.flaticon.com/free-icons/banyan"
+              title="banyan icons"
+            >
+              Banyan icons created by Freepik - Flaticon
+            </a>
+            <br />
+            <a
+              href="https://www.flaticon.com/free-icons/stadium"
+              title="stadium icons"
+            >
+              Stadium icons created by Freepik - Flaticon
+            </a>
+            <br />
           </Box>
 
           <Grid

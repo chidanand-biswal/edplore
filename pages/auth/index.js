@@ -20,6 +20,7 @@ import Grid from "@mui/material/Grid";
 import { motion } from "framer-motion";
 import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
+import Typography from "@mui/material/Typography";
 
 export default function AuthHome() {
   initFirebase();
@@ -43,7 +44,15 @@ export default function AuthHome() {
 
         <Grid container direction="row">
           <Grid item className={styles.main}>
-            <CircularProgress color="inherit" />
+            <Grid className={styles.spacerOne}>
+              <CircularProgress color="inherit" />
+            </Grid>
+
+            <Grid className={styles.spacerOne}>
+              <Typography variant="h5">
+                Entering the Realms of Bodhi...
+              </Typography>
+            </Grid>
           </Grid>
         </Grid>
       </Box>
