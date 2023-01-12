@@ -179,8 +179,8 @@ export default function KarmaHome() {
                 />
               </Grid>
 
-              <Grid item sx={{ padding: "0 0.25rem 0.25rem 0.25rem" }}>
-                <h3 className={styles.greyText}>Check your Karma Quotient</h3>
+              <Grid item sx={{ padding: "0 0.25rem 0.35rem 1rem" }}>
+                <h2 className={styles.greyText}>Know your Karma</h2>
               </Grid>
             </Grid>
           </Box>

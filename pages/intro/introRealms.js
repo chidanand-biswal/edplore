@@ -175,7 +175,7 @@ export default function IntroRealmsHome() {
                         className={styles.buttonLaunch}
                         sx={{ minWidth: "15rem" }}
                       >
-                        DISCOVER THE EXPLORER
+                        KNOW THE EXPLORER
                       </Button>
                     </a>
                   </Link>
@@ -200,7 +200,7 @@ export default function IntroRealmsHome() {
                         className={styles.buttonLaunch}
                         sx={{ minWidth: "15rem" }}
                       >
-                        DISCOVER THE EXPLORER
+                        KNOW THE EXPLORER
                       </Button>
                     </a>
                   </Link>

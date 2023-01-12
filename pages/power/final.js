@@ -45,7 +45,7 @@ import { motion } from "framer-motion";
 import Zoom from "@mui/material/Zoom";
 import TipsAndUpdatesTwoToneIcon from "@mui/icons-material/TipsAndUpdatesTwoTone";
 
-export default function PowerHome() {
+export default function FinalHome() {
   const { standardDetails } = useSelector((state) => state.standardDetails);
 
   const { realmProgress } = useSelector((state) => state.realmProgress);
@@ -112,14 +112,49 @@ export default function PowerHome() {
           <Box sx={{ width: "100%" }}>
             <Grid
               container
-              direction="row"
+              direction="column"
               alignItems="center"
               justifyContent="center"
             >
               <Grid item>
                 <h2 className={styles.greyText}>
-                  Many congratulations, Explorer!
+                  The Mystic One <br />
                 </h2>
+              </Grid>
+
+              <Grid item className={styles.spacerOne}>
+                <motion.div
+                  initial={{ opacity: 1, scale: 2, y: "8rem" }}
+                  animate={{ opacity: 1, scale: 1, y: "0rem" }}
+                  transition={{ duration: 1 }}
+                >
+                  <Box
+                    component="img"
+                    sx={{
+                      height: "5rem",
+                      width: "5rem",
+                    }}
+                    src="/assets/konark_sun.svg"
+                  />
+                </motion.div>
+              </Grid>
+
+              <Grid item className={styles.spacerOne}>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.25 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 2 }}
+                >
+                  <Typography className={styles.openingLines}>
+                    Have you heard the prophecies?
+                    <br />
+                    The Mystic One will go on to conquest all the Realms. <br />
+                    And all the five Chakras will be claimed in the course of
+                    the quest.
+                    <br />
+                    Find out where you are on your way to be 'The Mystic One'.
+                  </Typography>
+                </motion.div>
               </Grid>
             </Grid>
           </Box>
@@ -136,49 +171,7 @@ export default function PowerHome() {
               <motion.div
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 1.5 }}
-              >
-                <Paper
-                  elevation={8}
-                  sx={{ padding: "0 1rem", maxWidth: "20rem" }}
-                >
-                  <Grid
-                    container
-                    direction="column"
-                    alignItems="center"
-                    justifyContent="center"
-                  >
-                    <Grid item>
-                      <Typography variant="h6">Kavach</Typography>
-                    </Grid>
-                    <Grid item sx={{ padding: "0.5rem" }}>
-                      <Paper elevation={8} sx={{ padding: "1rem" }}>
-                        <Badge
-                          badgeContent={medalCount}
-                          color="primary"
-                          showZero
-                        >
-                          <LocalPoliceIcon fontSize="large" color="action" />
-                        </Badge>
-                      </Paper>
-                    </Grid>
-                    <Grid item>
-                      <Typography sx={{ fontWeight: "1" }}>
-                        <TipsAndUpdatesTwoToneIcon />
-                        You win a "Kavach" each time you have scored a 'perfect
-                        10' in the battle!
-                      </Typography>
-                    </Grid>
-                  </Grid>
-                </Paper>
-              </motion.div>
-            </Grid>
-            {/** 
-            <Grid item>
-              <motion.div
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 2 }}
+                transition={{ duration: 3 }}
               >
                 <Paper
                   elevation={8}
@@ -214,48 +207,6 @@ export default function PowerHome() {
                 </Paper>
               </motion.div>
             </Grid>
-*/}
-            <Grid item>
-              <motion.div
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 2 }}
-              >
-                <Paper
-                  elevation={8}
-                  sx={{ padding: "0 1rem", maxWidth: "20rem" }}
-                >
-                  <Grid
-                    container
-                    direction="column"
-                    alignItems="center"
-                    justifyContent="center"
-                  >
-                    <Grid item>
-                      <Typography variant="h6">Vajra</Typography>
-                    </Grid>
-                    <Grid item sx={{ padding: "0.5rem" }}>
-                      <Paper elevation={8} sx={{ padding: "1rem" }}>
-                        <Badge
-                          badgeContent={superFastCount}
-                          color="primary"
-                          showZero
-                        >
-                          <ElectricBoltIcon fontSize="large" color="action" />
-                        </Badge>
-                      </Paper>
-                    </Grid>
-                    <Grid item>
-                      <Typography sx={{ fontWeight: "1" }}>
-                        <TipsAndUpdatesTwoToneIcon />
-                        To win a "Vajra", you must win the arena battle before
-                        the time is over!
-                      </Typography>
-                    </Grid>
-                  </Grid>
-                </Paper>
-              </motion.div>
-            </Grid>
           </Grid>
 
           <Grid
@@ -267,15 +218,15 @@ export default function PowerHome() {
             sx={{ marginTop: "0.75rem" }}
           >
             <Grid item>
-              <Zoom in={true} style={{ transitionDelay: "2000ms" }}>
+              <Zoom in={true} style={{ transitionDelay: "4000ms" }}>
                 <div>
-                  <Link href="/power/final">
+                  <Link href="/campaign/">
                     <a>
                       <Button
                         variant="contained"
                         className={styles.buttonLaunch}
                       >
-                        ARE YOU 'THE MYSTIC ONE'?
+                        CONTINUE TO EXPLORE
                       </Button>
                     </a>
                   </Link>

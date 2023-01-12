@@ -215,7 +215,7 @@ export default function LearnHome() {
                       </Grid>
 
                       <Grid item sx={{ padding: "0 1rem" }}>
-                        <h3 className={styles.greyText}>Gurukul</h3>
+                        <h2 className={styles.greyText}>Gurukul</h2>
                       </Grid>
                     </Grid>
                   </Grid>

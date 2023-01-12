@@ -75,9 +75,9 @@ export default function Home() {
             >
               <Typography className={styles.openingLines}>
                 Legends tell of the Realms of Bodhi. <br />
+                <br />
               </Typography>
             </motion.div>
-            <br />
             <motion.div
               initial={{ opacity: 0, scale: 0.25 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -85,8 +85,8 @@ export default function Home() {
             >
               <Typography className={styles.openingLines}>
                 Is it really out there? Or just a myth? <br />
-                Here you stand right at the gateway. <br /> Your quest awaits
-                you!
+                You stand here right at the gateways. <br /> <br />
+                An epic quest awaits!
               </Typography>
             </motion.div>
           </Grid>

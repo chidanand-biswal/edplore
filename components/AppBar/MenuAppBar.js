@@ -65,7 +65,11 @@ function stringAvatar(name) {
   return {
     sx: {
       //bgcolor: stringToColor(name),
-      bgcolor: "#FF3CAC",
+      height: "2rem",
+      width: "2rem",
+      fontSize: "1rem",
+      bgcolor: "transparent",
+      border: "3px solid white",
     },
     children: `${name.split(" ")[0][0]}${name.split(" ")[1][0]}`,
   };
@@ -337,7 +341,7 @@ export default function MenuAppBar() {
                   setOpenRightMenu(true);
                 }}
               >
-                <AccountCircle />
+                <AccountCircle fontSize="medium" />
               </IconButton>
             </div>
           )}

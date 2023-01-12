@@ -44,6 +44,7 @@ import { updateRealmProgressBiology } from "../../store/realmBiology/action";
 import { updateMedalCount } from "../../store/medal/action";
 import { updateSuperFastCount } from "../../store/superFast/action";
 import { updateRealmProgress } from "../../store/realmProgress/action";
+import QuizDialog from "../../components/Modal/QuizDialog";
 import { getAuth } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { getExplorerData, saveExplorerData } from "../../firebase/db/dbUtility";
@@ -120,6 +121,8 @@ export async function getServerSideProps() {
 export default function QuizMain() {
   const auth = getAuth();
   const [user, loading] = useAuthState(auth);
+  const [openModal, setOpenModal] = React.useState(false);
+  const [modalType, setModalType] = React.useState("");
   const dispatch = useDispatch();
   const { realmActive } = useSelector((state) => state.realmActive);
   const { standardDetails } = useSelector((state) => state.standardDetails);
@@ -181,6 +184,16 @@ export default function QuizMain() {
     prevQues >= 0 && setCurrentQuestion(prevQues);
 
     setProgress((prevQues + 1) * 10);
+  };
+
+  const handleReport = () => {
+    setOpenModal(true);
+    setModalType("report");
+  };
+
+  const handleLove = () => {
+    setOpenModal(true);
+    setModalType("like");
   };
 
   const handleNext = () => {
@@ -688,7 +701,8 @@ export default function QuizMain() {
                       <Grid item>
                         <Stack direction="row">
                           <IconButton
-                            aria-label="delete"
+                            color="primary"
+                            aria-label="previous"
                             size="large"
                             className={styles.cardIconButtonLabel}
                             onClick={handlePrevious}
@@ -697,11 +711,10 @@ export default function QuizMain() {
                             <div>Back</div>
                           </IconButton>
                           <IconButton
-                            aria-label="delete"
-                            disabled
-                            color="primary"
+                            aria-label="report"
                             size="large"
                             className={styles.cardIconButtonLabel}
+                            onClick={handleReport}
                           >
                             <FlagIcon />
                             <div>Report</div>
@@ -711,12 +724,14 @@ export default function QuizMain() {
                             aria-label="add an alarm"
                             size="large"
                             className={styles.cardIconButtonLabel}
+                            onClick={handleLove}
                           >
                             <FavoriteIcon />
                             <div>Love it!</div>
                           </IconButton>
                           {currentQuestion + 1 === questions.length ? (
                             <IconButton
+                              color="primary"
                               className={styles.cardIconButtonLabel}
                               onClick={handleSubmitButton}
                             >
@@ -725,6 +740,7 @@ export default function QuizMain() {
                             </IconButton>
                           ) : (
                             <IconButton
+                              color="primary"
                               className={styles.cardIconButtonLabel}
                               onClick={handleNext}
                             >
@@ -745,6 +761,15 @@ export default function QuizMain() {
       </Grid>
 
       {/*<CommonFooter />*/}
+      {openModal && (
+        <QuizDialog
+          open={openModal}
+          onClose={() => {
+            setOpenModal(false);
+          }}
+          modalType={modalType}
+        />
+      )}
     </Box>
   );
 }
