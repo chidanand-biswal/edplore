@@ -52,7 +52,7 @@ export default function FaqHome() {
                 id="panel1a-header"
               >
                 <Typography sx={{ fontWeight: "500" }}>
-                  What is "edplore"?
+                  What is &quot;edplore&quot;?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
@@ -69,7 +69,7 @@ export default function FaqHome() {
                 id="panel1a-header"
               >
                 <Typography sx={{ fontWeight: "500" }}>
-                  What are "the Realms of Bodhi"?
+                  What are &quot;the Realms of Bodhi&quot;?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
@@ -77,7 +77,7 @@ export default function FaqHome() {
                   The fictional multiverse that each explorer is going to
                   discover here. <br />
                   In reality, it is the aggregation of STEM subjects tailored to
-                  meet a specific standard's syllabus.
+                  meet a specific standard&apos;s syllabus.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -88,7 +88,7 @@ export default function FaqHome() {
                 id="panel1a-header"
               >
                 <Typography sx={{ fontWeight: "500" }}>
-                  What is a "Realm"?
+                  What is a &quot;Realm&quot;?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
@@ -107,7 +107,7 @@ export default function FaqHome() {
                 id="panel1a-header"
               >
                 <Typography sx={{ fontWeight: "500" }}>
-                  What is a "Quest" inside a Realm"?
+                  What is a &quot;Quest&quot; inside a Realm?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
@@ -129,21 +129,22 @@ export default function FaqHome() {
                 id="panel1a-header"
               >
                 <Typography sx={{ fontWeight: "500" }}>
-                  What is "Karma Quotient"?
+                  What is &quot;Karma Quotient&quot;?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  That is the eternal question, isn't it? <br />
-                  Here KQ goes up or down based on the explorer's performances
-                  and decisions just like the real 'Karma'! <br />
+                  That is the eternal question, isn&apos;t it? <br />
+                  Here KQ goes up or down based on the explorer&apos;s
+                  performances and decisions just like the real
+                  &quot;Karma&quot;! <br />
                   A good KQ can help the explorer open gates to new Realms and
                   win awards. <br />
                   Always aim for the perfect KQ which is symoblised by the
-                  'perfect pentagon'
+                  &quot;perfect pentagon&quot;
                   <br />
-                  Click the 'Karma' icon available on toolbar in screens to know
-                  more.
+                  Click the &quot;Karma&quot; icon available on toolbar in
+                  screens to know more.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -154,7 +155,7 @@ export default function FaqHome() {
                 id="panel1a-header"
               >
                 <Typography sx={{ fontWeight: "500" }}>
-                  How is "Karma Quotient" calculated?
+                  How is &quot;Karma Quotient&quot; calculated?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
@@ -177,7 +178,7 @@ export default function FaqHome() {
                 id="panel1a-header"
               >
                 <Typography sx={{ fontWeight: "500" }}>
-                  What is an "Arena" in a Realm?
+                  What is an &quot;Arena&quot; in a Realm?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
@@ -186,8 +187,9 @@ export default function FaqHome() {
                   conquered the concepts in that quest. <br />
                   In simpler words, it is short test at the end of a quest and
                   determines the completion status. <br />
-                  Win the 'Arena' to earn various recognitions and get a 'level
-                  up'. Lose in the arena and go back in the quest. <br />
+                  Win the &quot;Arena&quot; to earn various recognitions and get
+                  a &quot;level up&quot;. Lose in the arena and go back in the
+                  quest. <br />
                   Bloody... much like the arenas for the gladiators!
                 </Typography>
               </AccordionDetails>
@@ -199,13 +201,13 @@ export default function FaqHome() {
                 id="panel1a-header"
               >
                 <Typography sx={{ fontWeight: "500" }}>
-                  What is "The Gurukul"?
+                  What is &quot;The Gurukul&quot;?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  It is the place to learn or rather 'refresh' the learnings in
-                  a particular concept. <br />
+                  It is the place to learn or rather &quot;refresh&quot; the
+                  learnings in a particular concept. <br />
                   It does not aim to replace the lessons from school testbook!{" "}
                   <br />
                   It aims to provide a snapshot of the concept, much like a
@@ -221,14 +223,14 @@ export default function FaqHome() {
                 id="panel2a-header"
               >
                 <Typography sx={{ fontWeight: "500" }}>
-                  How do I start a Quest in "the Realms of Bodhi"?
+                  How do I start a Quest in &quot;the Realms of Bodhi&quot;?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
                   Quite simple! <br />
-                  Start with the 'EXPLORE' button on the first screen and then
-                  just follow the flow.
+                  Start with the &quot;EXPLORE&quot; button on the first screen
+                  and then just follow the flow.
                 </Typography>
               </AccordionDetails>
             </Accordion>

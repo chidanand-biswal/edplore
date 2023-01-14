@@ -193,7 +193,7 @@ export default function KarmaHome() {
                   of your own Actions and Decisions <br />
                   in the Realms of Bodhi.
                   <br />
-                  Aim for a 'balanced' Karma!
+                  Aim for a &quot;balanced&quot; Karma!
                 </Box>
               </Grid>
             </Grid>

@@ -40,6 +40,7 @@ import {
 } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useRouter } from "next/router";
+import { Image } from "next/image";
 
 function stringToColor(string) {
   let hash = 0;
@@ -85,11 +86,6 @@ export default function MenuAppBar() {
   const [openLeftMenu, setOpenLeftMenu] = React.useState(false);
   const [openRightMenu, setOpenRightMenu] = React.useState(false);
 
-  if (user) {
-    //redirect to Explorer Info Screen
-    //Router.push("/explorer/");
-  }
-
   const signIn = async () => {
     //const result = await signInWithPopup(auth, provider);
     await signInWithRedirect(auth, provider)
@@ -104,17 +100,12 @@ export default function MenuAppBar() {
       .catch((err) => {
         console.log(err.message);
       })
-      .finally();
-    console.log(result.user);
+      .finally(Router.push("/"));
   };
 
   const signOut = async () => {
     auth.signOut();
     Router.push("/launch");
-  };
-
-  const handleChange = (event) => {
-    setAuth(event.target.checked);
   };
 
   const handleMenu = (event) => {
@@ -246,7 +237,20 @@ export default function MenuAppBar() {
         </Grid>
         <Grid item sx={{ textAlign: "center" }}>
           <Divider>
-            <AccountCircle fontSize="large" color="primary" />
+            {user ? (
+              <img
+                alt="profile"
+                sx={{
+                  height: "1rem",
+                  width: "1rem",
+                }}
+                src={user.photoURL ? user.photoURL : "/assets/rookie.png"}
+                referrerPolicy="no-referrer"
+                unoptimized="true"
+              />
+            ) : (
+              <AccountCircle fontSize="large" color="primary" />
+            )}
           </Divider>
         </Grid>
         <Grid item>

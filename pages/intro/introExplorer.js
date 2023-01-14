@@ -32,17 +32,12 @@ export default function IntroExplorerHome() {
         <Grid item className={styles.main}>
           <Grid>
             <Grid className={styles.mainSmall}>
-              <Grid className={styles.spacerOne}>
-                <Typography className={styles.openingLinesSub}>
-                  Know thyself!
-                </Typography>
-              </Grid>
               <Grid
                 container
                 direction="row"
                 alignItems="center"
                 justifyContent="center"
-                spacing={1}
+                spacing={2}
               >
                 <Grid item>
                   <div
@@ -60,6 +55,26 @@ export default function IntroExplorerHome() {
                         source="karma"
                         title="karma"
                         message="Karma Q"
+                      />
+                    </motion.div>
+                  </div>
+                </Grid>
+                <Grid item>
+                  <div
+                    onClick={() => {
+                      setOpenModal(true);
+                      setModalType("chakra");
+                    }}
+                  >
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.5 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 1.5 }}
+                    >
+                      <CardSmallCustomOption
+                        source="chakra"
+                        title="chakra"
+                        message="Chakra"
                       />
                     </motion.div>
                   </div>
@@ -91,7 +106,7 @@ export default function IntroExplorerHome() {
                     <motion.div
                       initial={{ opacity: 0, scale: 0.5 }}
                       animate={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 1.5 }}
+                      transition={{ duration: 2 }}
                     >
                       <CardSmallCustomOption
                         source="badge"
@@ -101,26 +116,7 @@ export default function IntroExplorerHome() {
                     </motion.div>
                   </div>
                 </Grid>
-                <Grid item>
-                  <div
-                    onClick={() => {
-                      setOpenModal(true);
-                      setModalType("chakra");
-                    }}
-                  >
-                    <motion.div
-                      initial={{ opacity: 0, scale: 0.5 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 2 }}
-                    >
-                      <CardSmallCustomOption
-                        source="chakra"
-                        title="chakra"
-                        message="Chakra"
-                      />
-                    </motion.div>
-                  </div>
-                </Grid>
+
                 <Grid item>
                   <div
                     onClick={() => {

@@ -27,7 +27,9 @@ import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import FlagIcon from "@mui/icons-material/Flag";
+import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import QuizIcon from "@mui/icons-material/Quiz";
 import HourglassTopIcon from "@mui/icons-material/HourglassTop";
 import questionsMock from "../api/mockData.json";
@@ -520,7 +522,7 @@ export default function QuizMain() {
                                     variant="contained"
                                     className={styles.buttonLaunch}
                                   >
-                                    WHAT'S NEXT?
+                                    WHAT&apos;S NEXT?
                                   </Button>
                                 </a>
                               </Link>
@@ -716,7 +718,7 @@ export default function QuizMain() {
                             className={styles.cardIconButtonLabel}
                             onClick={handleReport}
                           >
-                            <FlagIcon />
+                            <FlagOutlinedIcon />
                             <div>Report</div>
                           </IconButton>
                           <IconButton
@@ -726,7 +728,7 @@ export default function QuizMain() {
                             className={styles.cardIconButtonLabel}
                             onClick={handleLove}
                           >
-                            <FavoriteIcon />
+                            <FavoriteBorderIcon />
                             <div>Love it!</div>
                           </IconButton>
                           {currentQuestion + 1 === questions.length ? (

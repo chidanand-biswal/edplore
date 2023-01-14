@@ -165,8 +165,8 @@ export default function PowerHome() {
                     <Grid item>
                       <Typography sx={{ fontWeight: "1" }}>
                         <TipsAndUpdatesTwoToneIcon />
-                        You win a "Kavach" each time you have scored a 'perfect
-                        10' in the battle!
+                        You win a &apos;Kavach&apos; each time you have scored a
+                        &apos;perfect 10&apos; in the battle!
                       </Typography>
                     </Grid>
                   </Grid>
@@ -248,8 +248,8 @@ export default function PowerHome() {
                     <Grid item>
                       <Typography sx={{ fontWeight: "1" }}>
                         <TipsAndUpdatesTwoToneIcon />
-                        To win a "Vajra", you must win the arena battle before
-                        the time is over!
+                        To win a &apos;Vajra&apos;, you must win the arena
+                        battle before the time is over!
                       </Typography>
                     </Grid>
                   </Grid>
@@ -275,7 +275,7 @@ export default function PowerHome() {
                         variant="contained"
                         className={styles.buttonLaunch}
                       >
-                        ARE YOU 'THE MYSTIC ONE'?
+                        ARE YOU &apos;THE MYSTIC ONE&apos;?
                       </Button>
                     </a>
                   </Link>

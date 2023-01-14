@@ -44,14 +44,15 @@ export default function ParentHome() {
                     for education and everything that helps make it interesting,
                     affordable and liberating.
                     <br />
-                    The 'edplore' application is developed with lots of thoughts
-                    and love after taking feedbacks from hundereds of similarly
-                    anguished parents and teachers.
+                    The &apos;edplore&apos; application is developed with lots
+                    of thoughts and love after taking feedbacks from hundereds
+                    of similarly anguished parents and teachers.
                     <br />
                     Not just making education interesting, another goal of this
                     is to help our young ones understand the life lessons in a
-                    fun way. Life lessons like 'as you sow, so you reap', 'being
-                    responsible for your decisions and actions', 'Karma' etc.
+                    fun way. Life lessons like &apos;as you sow, so you
+                    reap&apos;, &apos;being responsible for your decisions and
+                    actions&apos;, &apos;Karma&apos; etc.
                     <br />
                     It is an innovation to help install a sense of explorations
                     in our kids. Do give it a try today! <br />

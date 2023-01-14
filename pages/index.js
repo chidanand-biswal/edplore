@@ -15,9 +15,13 @@ import Button from "@mui/material/Button";
 import Zoom from "@mui/material/Zoom";
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
+import { getAuth } from "firebase/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
 
 export default function Home() {
   const [loadingLogo, showLoadingLogo] = useState(true);
+  const auth = getAuth();
+  const [user, loading] = useAuthState(auth);
 
   useEffect(() => {
     setTimeout(() => showLoadingLogo(false), 3000);
@@ -31,7 +35,7 @@ export default function Home() {
             <Head>
               <title>edplore</title>
               <meta name="description" content="Edplore" />
-              <link rel="icon" href="/favicon.ico" />
+              <link rel="icon" href="/konark.png" />
             </Head>
 
             <h1 className={styles.title}>
@@ -91,8 +95,6 @@ export default function Home() {
             </motion.div>
           </Grid>
 
-          <Grid className={styles.spacerOne}></Grid>
-
           <Grid
             container
             direction="row"
@@ -104,19 +106,33 @@ export default function Home() {
             <Grid item>
               <Zoom in={true} style={{ transitionDelay: "5000ms" }}>
                 <div>
-                  <Link href="/launch">
-                    <a>
-                      <Button
-                        variant="contained"
-                        className={styles.buttonExplore}
-                        sx={{ fontSize: "larger" }}
-                      >
-                        EXPL
-                        <ExploreIcon fontSize="small" />
-                        RE
-                      </Button>
-                    </a>
-                  </Link>
+                  {user ? (
+                    <Link href="/explorer">
+                      <a>
+                        <Button
+                          variant="contained"
+                          className={styles.buttonExplore}
+                          sx={{ fontSize: "larger" }}
+                        >
+                          RESUME QUEST
+                        </Button>
+                      </a>
+                    </Link>
+                  ) : (
+                    <Link href="/launch">
+                      <a>
+                        <Button
+                          variant="contained"
+                          className={styles.buttonExplore}
+                          sx={{ fontSize: "larger" }}
+                        >
+                          EXPL
+                          <ExploreIcon fontSize="small" />
+                          RE
+                        </Button>
+                      </a>
+                    </Link>
+                  )}
                 </div>
               </Zoom>
             </Grid>

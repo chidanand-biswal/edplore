@@ -29,23 +29,14 @@ export default function CardIconLargeOption(props) {
       feature: "Access all the Realms",
       icon: <CheckIcon color="success" />,
     },
+
     {
       index: "2",
-      feature: "View 'My KARMA Quotient'",
-      icon: <CheckIcon color="success" />,
-    },
-    {
-      index: "3",
-      feature: "View 'My KIRTI Board'",
-      icon: <CheckIcon color="success" />,
-    },
-    {
-      index: "4",
       feature: "Resume Quest where you left off",
       icon: <CloseIcon color="error" />,
     },
     {
-      index: "5",
+      index: "3",
       feature: "Hall of Fame",
       icon: <CloseIcon color="error" />,
     },
@@ -62,24 +53,15 @@ export default function CardIconLargeOption(props) {
       feature: "Access all the Realms",
       icon: <CheckIcon color="success" />,
     },
+
     {
       index: "2",
-      feature: "View 'My KARMA Quotient'",
-      icon: <CheckIcon color="success" />,
-    },
-    {
-      index: "3",
-      feature: "View 'My KIRTI Board'",
-      icon: <CheckIcon color="success" />,
-    },
-    {
-      index: "4",
       feature: "Resume Quest where you left off",
       icon: <CheckIcon color="success" />,
     },
     ,
     {
-      index: "5",
+      index: "3",
       feature: "Hall of Fame",
       icon: <CheckIcon color="success" />,
     },

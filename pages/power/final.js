@@ -134,7 +134,7 @@ export default function FinalHome() {
                       height: "5rem",
                       width: "5rem",
                     }}
-                    src="/assets/konark_sun.svg"
+                    src="/assets/theone.png"
                   />
                 </motion.div>
               </Grid>
@@ -146,13 +146,13 @@ export default function FinalHome() {
                   transition={{ duration: 2 }}
                 >
                   <Typography className={styles.openingLines}>
-                    Have you heard the prophecies?
+                    Have you not heard the prophecies?
                     <br />
-                    The Mystic One will go on to conquest all the Realms. <br />
-                    And all the five Chakras will be claimed in the course of
-                    the quest.
+                    The Mystic One will conquer all the Realms and reach the far
+                    edges of Bodhi.
                     <br />
-                    Find out where you are on your way to be 'The Mystic One'.
+                    Find out where you are on your way to be &apos;The Mystic
+                    One&apos;.
                   </Typography>
                 </motion.div>
               </Grid>
@@ -199,8 +199,9 @@ export default function FinalHome() {
                     </Grid>
                     <Grid item>
                       <Typography sx={{ fontWeight: "1" }}>
-                        <TipsAndUpdatesTwoToneIcon />A new "Chakra" whenever
-                        your Karma Q goes past a milestone!
+                        <TipsAndUpdatesTwoToneIcon />
+                        Win five &apos;Chakras&apos; to be <br />
+                        The Mystic One!
                       </Typography>
                     </Grid>
                   </Grid>

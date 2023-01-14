@@ -55,12 +55,14 @@ export default function ProfileHome() {
             <Box>
               <Grid sx={{ textAlign: "center" }}>
                 <img
+                  alt="profile"
                   sx={{
-                    height: "7rem",
-                    width: "7rem",
+                    height: "1rem",
+                    width: "1rem",
                   }}
                   src={user.photoURL ? user.photoURL : "/assets/rookie.png"}
-                  referrerpolicy="no-referrer"
+                  referrerPolicy="no-referrer"
+                  unoptimized="true"
                 />
               </Grid>
 
@@ -94,7 +96,8 @@ export default function ProfileHome() {
                 <Grid className={styles.spacerOne}></Grid>
                 <Typography variant="h6">
                   You are not yet logged in. <br />
-                  Login to 'edplore' to fully experience the Realms of Bodhi.
+                  Login to &apos;edplore&apos; to fully experience the Realms of
+                  Bodhi.
                 </Typography>
               </Grid>
             </Box>

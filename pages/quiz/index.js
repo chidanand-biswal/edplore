@@ -40,7 +40,7 @@ import quizData from "../api/quizData.json";
 import { setCurrentQuizData } from "../../store/quiz/action";
 import standardArenaMapData from "../../static/standardArenaMap.json";
 
-const renderTime = ({ remainingTime }) => {
+const RenderTime = ({ remainingTime }) => {
   const currentTime = useRef(remainingTime);
   const prevTime = useRef(null);
   const isNewTimeFirstTick = useRef(false);
@@ -311,7 +311,7 @@ export default function QuizHome() {
                   colors={["#004777", "#F7B801", "#A30000", "#A30000"]}
                   colorsTime={[10, 6, 3, 0]}
                 >
-                  {renderTime}
+                  {RenderTime}
                 </CountdownCircleTimer>
               </div>
             </Box>

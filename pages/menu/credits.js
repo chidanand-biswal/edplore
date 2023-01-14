@@ -49,8 +49,8 @@ export default function CreditsHome() {
             <Grid container direction="column">
               <Grid item sx={{ padding: "1rem" }}>
                 <Typography>
-                  We at "edplore", are a bootstrapped organization with a noble
-                  mission in the sector of education.
+                  We at &quot;edplore&quot;, are a bootstrapped organization
+                  with a noble mission in the sector of education.
                   <br />
                   In order to make the application accessible to most, we have
                   made use of open-source technology platforms and assets while
@@ -67,11 +67,6 @@ export default function CreditsHome() {
               title="Subhashish Panigrahi, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
               href="https://commons.wikimedia.org/wiki/File:Konarka.svg"
             >
-              <img
-                width="32"
-                alt="Konarka"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Konarka.svg/32px-Konarka.svg.png"
-              />
               Subhashish Panigrahi, CC BY-SA 4.0 via Wikimedia Commons
             </a>
             <br />
@@ -149,6 +144,12 @@ export default function CreditsHome() {
               Stadium icons created by Freepik - Flaticon
             </a>
             <br />
+            <a
+              href="https://www.flaticon.com/free-icons/mindfulness"
+              title="mindfulness icons"
+            >
+              Mindfulness icons created by Freepik - Flaticon
+            </a>
           </Box>
 
           <Grid

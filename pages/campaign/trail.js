@@ -102,7 +102,7 @@ export default function CampaignTrail() {
   console.log("realmProgressMathematics::: " + realmProgressMathematics);
   console.log("realmProgressBiology::: " + realmProgressBiology);
 
-  const bigScreenInd = useMediaQuery("(min-width:400px)");
+  const bigScreenInd = useMediaQuery("(min-width:350px)");
 
   const findCurrentStep = () => {
     console.log(`Realm active is ::: ${realmActive}.`);
@@ -312,7 +312,7 @@ export default function CampaignTrail() {
                     className={styles.buttonLaunch}
                     onClick={() => submit()}
                   >
-                    CONTINUE TO GURUKUL
+                    RESUME MY QUEST
                   </Button>
                 </div>
               </Grid>
