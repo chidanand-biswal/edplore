@@ -1,4 +1,6 @@
-import * as React from "react";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import FlagIcon from "@mui/icons-material/Flag";
+import { Grid } from "@mui/material";
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
@@ -6,16 +8,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Slide from "@mui/material/Slide";
-import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
-import PentagonIcon from "@mui/icons-material/Pentagon";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import infoExplorer from "../../static/infoExplorer.json";
-import FlagIcon from "@mui/icons-material/Flag";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import { Grid } from "@mui/material";
+import * as React from "react";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;

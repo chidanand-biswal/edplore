@@ -1,34 +1,29 @@
-import React, { useRef, useState, PureComponent } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import BrightnessHighIcon from "@mui/icons-material/BrightnessHigh";
+import ElectricBoltIcon from "@mui/icons-material/ElectricBolt";
+import LocalPoliceIcon from "@mui/icons-material/LocalPolice";
+import { Typography } from "@mui/material";
+import Badge from "@mui/material/Badge";
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
 import Slide from "@mui/material/Slide";
 import {
   Chart as ChartJS,
-  RadialLinearScale,
-  PointElement,
-  LineElement,
   Filler,
-  Tooltip,
   Legend,
+  LineElement,
+  PointElement,
+  RadialLinearScale,
+  Tooltip,
 } from "chart.js";
+import React from "react";
 import { Radar } from "react-chartjs-2";
-import Paper from "@mui/material/Paper";
-import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
-import styles from "../../styles/Home.module.css";
-import CloseIcon from "@mui/icons-material/Close";
-import Divider from "@mui/material/Divider";
-import Badge from "@mui/material/Badge";
-import MilitaryTechIcon from "@mui/icons-material/MilitaryTech";
-import BrightnessHighIcon from "@mui/icons-material/BrightnessHigh";
-import ElectricBoltIcon from "@mui/icons-material/ElectricBolt";
-import LocalPoliceIcon from "@mui/icons-material/LocalPolice";
-import { Typography } from "@mui/material";
+import { useSelector } from "react-redux";
 
 ChartJS.register(
   RadialLinearScale,

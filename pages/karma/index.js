@@ -1,49 +1,23 @@
-import React, { useRef, useState, PureComponent } from "react";
-import { CountdownCircleTimer } from "react-countdown-circle-timer";
-import { useSelector, useDispatch } from "react-redux";
-import PropTypes from "prop-types";
-import CircularProgress from "@mui/material/CircularProgress";
-import Typography from "@mui/material/Typography";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import styles from "../../styles/Home.module.css";
-import ExploreIcon from "@mui/icons-material/Explore";
 import Box from "@mui/material/Box";
-import Avatar from "@mui/material/Avatar";
-import MenuAppBar from "../../components/AppBar/MenuAppBar";
-import CardQuizOption from "../../components/Card/CardQuizOption";
-import ToolbarFooter from "../../components/Footer/ToolbarFooter";
-import SpeedDialCustom from "../../components/SpeedDial/SpeedDialCustom";
+import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
-import BottomNavigation from "@mui/material/BottomNavigation";
-import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-import RestoreIcon from "@mui/icons-material/Restore";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import Button from "@mui/material/Button";
-import DeleteIcon from "@mui/icons-material/Delete";
-import SendIcon from "@mui/icons-material/Send";
-import Stack from "@mui/material/Stack";
-import ButtonGroup from "@mui/material/ButtonGroup";
-import IconButton from "@mui/material/IconButton";
-import AlarmIcon from "@mui/icons-material/Alarm";
-import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import FlagIcon from "@mui/icons-material/Flag";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import {
   Chart as ChartJS,
-  RadialLinearScale,
-  PointElement,
-  LineElement,
   Filler,
-  Tooltip,
   Legend,
+  LineElement,
+  PointElement,
+  RadialLinearScale,
+  Tooltip,
 } from "chart.js";
+import Link from "next/link";
+import React from "react";
 import { Radar } from "react-chartjs-2";
+import { useSelector } from "react-redux";
+import MenuAppBar from "../../components/AppBar/MenuAppBar";
+import ToolbarFooter from "../../components/Footer/ToolbarFooter";
+import styles from "../../styles/Home.module.css";
 
 ChartJS.register(
   RadialLinearScale,

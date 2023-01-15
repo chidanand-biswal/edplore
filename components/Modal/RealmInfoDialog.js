@@ -1,18 +1,18 @@
-import * as React from "react";
+import StadiumIcon from "@mui/icons-material/Stadium";
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
-import Slide from "@mui/material/Slide";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
 import ListItemIcon from "@mui/material/ListItemIcon";
-import StadiumIcon from "@mui/icons-material/Stadium";
+import ListItemText from "@mui/material/ListItemText";
+import Slide from "@mui/material/Slide";
+import * as React from "react";
+import { useSelector } from "react-redux";
 import standardArenaMapData from "../../static/standardArenaMap.json";
-import { useSelector, useDispatch } from "react-redux";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;

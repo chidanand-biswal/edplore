@@ -1,55 +1,33 @@
-import React, { useRef, useState, useEffect } from "react";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import styles from "../../styles/Home.module.css";
-import ExploreIcon from "@mui/icons-material/Explore";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
+import HourglassTopIcon from "@mui/icons-material/HourglassTop";
+import QuizIcon from "@mui/icons-material/Quiz";
+import StarIcon from "@mui/icons-material/Star";
 import Box from "@mui/material/Box";
-import Avatar from "@mui/material/Avatar";
+import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
+import IconButton from "@mui/material/IconButton";
+import LinearProgress from "@mui/material/LinearProgress";
+import Paper from "@mui/material/Paper";
+import Rating from "@mui/material/Rating";
+import Stack from "@mui/material/Stack";
+import { getAuth } from "firebase/auth";
+import Link from "next/link";
+import PropTypes from "prop-types";
+import React, { useEffect, useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { useDispatch, useSelector } from "react-redux";
 import MenuAppBar from "../../components/AppBar/MenuAppBar";
 import CardQuizOption from "../../components/Card/CardQuizOption";
-import CommonFooter from "../../components/Footer/CommonFooter";
-import SpeedDialCustom from "../../components/SpeedDial/SpeedDialCustom";
-import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
-import BottomNavigation from "@mui/material/BottomNavigation";
-import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-import RestoreIcon from "@mui/icons-material/Restore";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import Button from "@mui/material/Button";
-import DeleteIcon from "@mui/icons-material/Delete";
-import SendIcon from "@mui/icons-material/Send";
-import Stack from "@mui/material/Stack";
-import ButtonGroup from "@mui/material/ButtonGroup";
-import IconButton from "@mui/material/IconButton";
-import AlarmIcon from "@mui/icons-material/Alarm";
-import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import FlagIcon from "@mui/icons-material/Flag";
-import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import QuizIcon from "@mui/icons-material/Quiz";
-import HourglassTopIcon from "@mui/icons-material/HourglassTop";
-import questionsMock from "../api/mockData.json";
-import PropTypes from "prop-types";
-import LinearProgress from "@mui/material/LinearProgress";
-import Typography from "@mui/material/Typography";
-import Rating from "@mui/material/Rating";
-import StarIcon from "@mui/icons-material/Star";
-import { useSelector, useDispatch } from "react-redux";
-import { updateRealmProgressPhysics } from "../../store/realmPhysics/action";
-import { updateRealmProgressChemistry } from "../../store/realmChemistry/action";
-import { updateRealmProgressMathematics } from "../../store/realmMathematics/action";
-import { updateRealmProgressBiology } from "../../store/realmBiology/action";
-import { updateMedalCount } from "../../store/medal/action";
-import { updateSuperFastCount } from "../../store/superFast/action";
-import { updateRealmProgress } from "../../store/realmProgress/action";
 import QuizDialog from "../../components/Modal/QuizDialog";
-import { getAuth } from "firebase/auth";
-import { useAuthState } from "react-firebase-hooks/auth";
-import { getExplorerData, saveExplorerData } from "../../firebase/db/dbUtility";
+import { saveExplorerData } from "../../firebase/db/dbUtility";
+import { updateMedalCount } from "../../store/medal/action";
+import { updateRealmProgress } from "../../store/realmProgress/action";
+import { updateSuperFastCount } from "../../store/superFast/action";
+import styles from "../../styles/Home.module.css";
+import questionsMock from "../api/mockData.json";
 
 function LinearProgressWithLabel(props) {
   return (
@@ -378,7 +356,7 @@ export default function QuizMain() {
   /* Timer start */
   //const Ref = useRef(null);
 
-  const [timer, setTimer] = useState("01:00");
+  const [timer, setTimer] = useState("02:00");
 
   const getTimeRemaining = (e) => {
     const total = Date.parse(e) - Date.parse(new Date());
@@ -416,7 +394,7 @@ export default function QuizMain() {
 
   const getDeadTime = () => {
     let deadline = new Date();
-    deadline.setSeconds(deadline.getSeconds() + 60);
+    deadline.setSeconds(deadline.getSeconds() + 120);
     return deadline;
   };
 
@@ -427,7 +405,7 @@ export default function QuizMain() {
       setTimeProgress((prevTimeProgress) =>
         prevTimeProgress >= 100 ? 100 : prevTimeProgress + 1
       );
-    }, 600);
+    }, 1200);
     return () => {
       clearInterval(timeProgress);
     };
@@ -629,6 +607,13 @@ export default function QuizMain() {
                                 sx={{ textAlign: "right" }}
                               >
                                 Hurry Up!
+                              </Box>
+                            ) : timer == "01:00" ? (
+                              <Box
+                                className={styles.quizCardTextGreen}
+                                sx={{ textAlign: "right" }}
+                              >
+                                One minute left
                               </Box>
                             ) : (
                               <Box

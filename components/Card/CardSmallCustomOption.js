@@ -1,16 +1,15 @@
-import * as React from "react";
+import BrightnessHighIcon from "@mui/icons-material/BrightnessHigh";
+import ElectricBoltIcon from "@mui/icons-material/ElectricBolt";
+import LocalPoliceIcon from "@mui/icons-material/LocalPolice";
+import PentagonIcon from "@mui/icons-material/Pentagon";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import * as React from "react";
 import styles from "../../styles/Home.module.css";
-import PentagonIcon from "@mui/icons-material/Pentagon";
-import BrightnessHighIcon from "@mui/icons-material/BrightnessHigh";
-import ElectricBoltIcon from "@mui/icons-material/ElectricBolt";
-import LocalPoliceIcon from "@mui/icons-material/LocalPolice";
 
 export default function CardSmallCustomOption(props) {
   function renderCardMedia(param) {

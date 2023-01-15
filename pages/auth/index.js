@@ -1,26 +1,15 @@
-import { initFirebase } from "../../firebase/firebaseApp";
-import {
-  getAuth,
-  signInWithPopup,
-  signInWithRedirect,
-  GoogleAuthProvider,
-  browserPopupRedirectResolver,
-} from "firebase/auth";
-import { useAuthState } from "react-firebase-hooks/auth";
-import Router from "next/router";
-import styles from "../../styles/Home.module.css";
-import ExploreIcon from "@mui/icons-material/Explore";
 import Box from "@mui/material/Box";
-import Avatar from "@mui/material/Avatar";
-import MenuAppBar from "../../components/AppBar/MenuAppBar";
-import CardCustomOption from "../../components/Card/CardCustomOption";
-import CardIconLargeOption from "../../components/Card/CardIconLargeOption";
-import ToolbarFooter from "../../components/Footer/ToolbarFooter";
-import Grid from "@mui/material/Grid";
-import { motion } from "framer-motion";
-import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
+import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
+import { getAuth, GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
+import { motion } from "framer-motion";
+import Router from "next/router";
+import { useAuthState } from "react-firebase-hooks/auth";
+import MenuAppBar from "../../components/AppBar/MenuAppBar";
+import CardIconLargeOption from "../../components/Card/CardIconLargeOption";
+import { initFirebase } from "../../firebase/firebaseApp";
+import styles from "../../styles/Home.module.css";
 
 export default function AuthHome() {
   initFirebase();

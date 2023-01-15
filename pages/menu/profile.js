@@ -1,26 +1,14 @@
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import styles from "../../styles/Home.module.css";
-import ExploreIcon from "@mui/icons-material/Explore";
 import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
+import { getAuth, GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
+import Link from "next/link";
+import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import MenuAppBar from "../../components/AppBar/MenuAppBar";
 import CommonFooter from "../../components/Footer/CommonFooter";
-import Grid from "@mui/material/Grid";
-import Button from "@mui/material/Button";
-import Zoom from "@mui/material/Zoom";
-import { motion } from "framer-motion";
-import React, { useState, useEffect } from "react";
-import { initFirebase } from "../../firebase/firebaseApp";
-import {
-  getAuth,
-  signInWithPopup,
-  signInWithRedirect,
-  GoogleAuthProvider,
-} from "firebase/auth";
-import { useAuthState } from "react-firebase-hooks/auth";
-import { useRadioGroup } from "@mui/material";
+import styles from "../../styles/Home.module.css";
 
 export default function ProfileHome() {
   const auth = getAuth();

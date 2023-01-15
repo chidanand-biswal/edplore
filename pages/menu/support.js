@@ -1,20 +1,15 @@
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import styles from "../../styles/Home.module.css";
-import ExploreIcon from "@mui/icons-material/Explore";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import MenuAppBar from "../../components/AppBar/MenuAppBar";
-import CommonFooter from "../../components/Footer/CommonFooter";
-import Grid from "@mui/material/Grid";
-import Button from "@mui/material/Button";
-import Zoom from "@mui/material/Zoom";
-import { motion } from "framer-motion";
-import React, { useState, useEffect } from "react";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
+import Link from "next/link";
+import React from "react";
+import MenuAppBar from "../../components/AppBar/MenuAppBar";
+import CommonFooter from "../../components/Footer/CommonFooter";
+import styles from "../../styles/Home.module.css";
 
 export default function SupportHome() {
   return (

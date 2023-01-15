@@ -1,31 +1,27 @@
-import React, { useRef, useState, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import styles from "../../styles/Home.module.css";
-import Stack from "@mui/material/Stack";
-import Button from "@mui/material/Button";
+import { useMediaQuery } from "@mui/material";
 import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
+import FormControl from "@mui/material/FormControl";
 import Grid from "@mui/material/Grid";
-import MenuAppBar from "../../components/AppBar/MenuAppBar";
-import ToolbarFooter from "../../components/Footer/ToolbarFooter";
-import SpeedDialCustom from "../../components/SpeedDial/SpeedDialCustom";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-import Router from "next/router";
-import { useMediaQuery } from "@mui/material";
-import { addUserDetails } from "../../store/userDetails/action";
-import { addStandardDetails } from "../../store/standardDetails/action";
+import TextField from "@mui/material/TextField";
 import { getAuth } from "firebase/auth";
+import Link from "next/link";
+import Router from "next/router";
+import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { getExplorerData, saveExplorerData } from "../../firebase/db/dbUtility";
-import { updateRealmProgress } from "../../store/realmProgress/action";
+import { useDispatch, useSelector } from "react-redux";
+import MenuAppBar from "../../components/AppBar/MenuAppBar";
+import ToolbarFooter from "../../components/Footer/ToolbarFooter";
+import { getExplorerData } from "../../firebase/db/dbUtility";
 import { updateMedalCount } from "../../store/medal/action";
+import { updateRealmProgress } from "../../store/realmProgress/action";
+import { addStandardDetails } from "../../store/standardDetails/action";
 import { updateSuperFastCount } from "../../store/superFast/action";
+import { addUserDetails } from "../../store/userDetails/action";
+import styles from "../../styles/Home.module.css";
 
 const initialRealmProgress = [
   {

@@ -1,5 +1,5 @@
-import { initFirebase, database } from "../firebaseApp";
-import { doc, getDoc, setDoc, Timestamp } from "firebase/firestore";
+import { doc, getDoc, setDoc } from "firebase/firestore";
+import { database } from "../firebaseApp";
 
 export const getExplorerData = async (explorerId) => {
   const explorerRef = doc(database, "edploreUser", explorerId);

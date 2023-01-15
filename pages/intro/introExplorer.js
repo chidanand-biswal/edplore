@@ -1,23 +1,17 @@
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import styles from "../../styles/Home.module.css";
-import ExploreIcon from "@mui/icons-material/Explore";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import MenuAppBar from "../../components/AppBar/MenuAppBar";
-import CardSmallCustomOption from "../../components/Card/CardSmallCustomOption";
-import CardCustomOption from "../../components/Card/CardCustomOption";
-import CardButton from "../../components/Card/CardButton";
-import ToolbarFooter from "../../components/Footer/ToolbarFooter";
-import SpeedDialCustom from "../../components/SpeedDial/SpeedDialCustom";
+import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import Grid from "@mui/material/Grid";
-import Button from "@mui/material/Button";
-import React, { useState, useEffect } from "react";
-import ExplorerInfoDialog from "../../components/Modal/ExplorerInfoDialog";
+import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import React from "react";
+import MenuAppBar from "../../components/AppBar/MenuAppBar";
+import CardSmallCustomOption from "../../components/Card/CardSmallCustomOption";
+import ToolbarFooter from "../../components/Footer/ToolbarFooter";
+import ExplorerInfoDialog from "../../components/Modal/ExplorerInfoDialog";
+import styles from "../../styles/Home.module.css";
 
 export default function IntroExplorerHome() {
   const [openModal, setOpenModal] = React.useState(false);
@@ -54,7 +48,7 @@ export default function IntroExplorerHome() {
                       <CardSmallCustomOption
                         source="karma"
                         title="karma"
-                        message="Karma Q"
+                        message="Karma"
                       />
                     </motion.div>
                   </div>

@@ -1,23 +1,12 @@
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import styles from "../../styles/Home.module.css";
-import ExploreIcon from "@mui/icons-material/Explore";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import Paper from "@mui/material/Paper";
-import Grow from "@mui/material/Grow";
-import Fade from "@mui/material/Fade";
+import Grid from "@mui/material/Grid";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import React from "react";
 import MenuAppBar from "../../components/AppBar/MenuAppBar";
-import CardCustomOption from "../../components/Card/CardCustomOption";
 import CardIconOption from "../../components/Card/CardIconOption";
 import ToolbarFooter from "../../components/Footer/ToolbarFooter";
-import SpeedDialCustom from "../../components/SpeedDial/SpeedDialCustom";
-import Grid from "@mui/material/Grid";
-import React, { useState, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { addUserDetails } from "../../store/userDetails/action";
-import { motion } from "framer-motion";
+import styles from "../../styles/Home.module.css";
 
 export default function IntroHome() {
   return (

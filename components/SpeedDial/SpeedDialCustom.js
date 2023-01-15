@@ -1,15 +1,13 @@
-import * as React from "react";
-import { styled } from "@mui/material/styles";
+import BrightnessHighIcon from "@mui/icons-material/BrightnessHigh";
+import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
+import ExploreIcon from "@mui/icons-material/Explore";
+import ShareIcon from "@mui/icons-material/Share";
 import Box from "@mui/material/Box";
 import SpeedDial from "@mui/material/SpeedDial";
-import SpeedDialIcon from "@mui/material/SpeedDialIcon";
 import SpeedDialAction from "@mui/material/SpeedDialAction";
-import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
-import SaveIcon from "@mui/icons-material/Save";
-import PrintIcon from "@mui/icons-material/Print";
-import ShareIcon from "@mui/icons-material/Share";
-import BrightnessHighIcon from "@mui/icons-material/BrightnessHigh";
-import ExploreIcon from "@mui/icons-material/Explore";
+import SpeedDialIcon from "@mui/material/SpeedDialIcon";
+import { styled } from "@mui/material/styles";
+import * as React from "react";
 
 const actions = [
   { icon: <BrightnessHighIcon />, name: "Karma" },

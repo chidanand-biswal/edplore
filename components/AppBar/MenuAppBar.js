@@ -1,46 +1,37 @@
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
 import AccountCircle from "@mui/icons-material/AccountCircle";
+import AutoStoriesIcon from "@mui/icons-material/AutoStories";
+import CloseIcon from "@mui/icons-material/Close";
+import Diversity1Icon from "@mui/icons-material/Diversity1";
+import EscalatorWarningIcon from "@mui/icons-material/EscalatorWarning";
 import ExploreIcon from "@mui/icons-material/Explore";
-import styles from "../../styles/Home.module.css";
-import Router from "next/router";
-import Drawer from "@mui/material/Drawer";
-import List from "@mui/material/List";
+import HandshakeIcon from "@mui/icons-material/Handshake";
+import HomeIcon from "@mui/icons-material/Home";
+import LiveHelpIcon from "@mui/icons-material/LiveHelp";
+import LoginIcon from "@mui/icons-material/Login";
+import LogoutIcon from "@mui/icons-material/Logout";
+import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
+import MenuIcon from "@mui/icons-material/Menu";
+import SupportAgentIcon from "@mui/icons-material/SupportAgent";
+import AppBar from "@mui/material/AppBar";
+import Avatar from "@mui/material/Avatar";
+import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
+import Drawer from "@mui/material/Drawer";
+import Grid from "@mui/material/Grid";
+import IconButton from "@mui/material/IconButton";
+import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import ContactMailIcon from "@mui/icons-material/ContactMail";
-import HomeIcon from "@mui/icons-material/Home";
-import InfoIcon from "@mui/icons-material/Info";
-import SupportAgentIcon from "@mui/icons-material/SupportAgent";
-import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
-import LogoutIcon from "@mui/icons-material/Logout";
-import LoginIcon from "@mui/icons-material/Login";
-import CloseIcon from "@mui/icons-material/Close";
-import HandshakeIcon from "@mui/icons-material/Handshake";
-import EscalatorWarningIcon from "@mui/icons-material/EscalatorWarning";
-import AutoStoriesIcon from "@mui/icons-material/AutoStories";
-import Grid from "@mui/material/Grid";
-import Diversity1Icon from "@mui/icons-material/Diversity1";
-import LiveHelpIcon from "@mui/icons-material/LiveHelp";
-import Avatar from "@mui/material/Avatar";
-import { initFirebase } from "../../firebase/firebaseApp";
-import {
-  getAuth,
-  signInWithPopup,
-  signInWithRedirect,
-  GoogleAuthProvider,
-} from "firebase/auth";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import { getAuth, GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
+import Router, { useRouter } from "next/router";
+import * as React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { useRouter } from "next/router";
-import { Image } from "next/image";
+import { initFirebase } from "../../firebase/firebaseApp";
+import styles from "../../styles/Home.module.css";
 
 function stringToColor(string) {
   let hash = 0;

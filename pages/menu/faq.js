@@ -1,24 +1,17 @@
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import styles from "../../styles/Home.module.css";
-import ExploreIcon from "@mui/icons-material/Explore";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import MenuAppBar from "../../components/AppBar/MenuAppBar";
-import CommonFooter from "../../components/Footer/CommonFooter";
-import Grid from "@mui/material/Grid";
-import Button from "@mui/material/Button";
-import Zoom from "@mui/material/Zoom";
-import { motion } from "framer-motion";
-import React, { useState, useEffect } from "react";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import LiveHelpIcon from "@mui/icons-material/LiveHelp";
-import Paper from "@mui/material/Paper";
+import Accordion from "@mui/material/Accordion";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
+import Link from "next/link";
+import React from "react";
+import MenuAppBar from "../../components/AppBar/MenuAppBar";
 import ToolbarFooter from "../../components/Footer/ToolbarFooter";
+import styles from "../../styles/Home.module.css";
 
 export default function FaqHome() {
   return (

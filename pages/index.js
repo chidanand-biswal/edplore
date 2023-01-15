@@ -1,22 +1,18 @@
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import styles from "../styles/Home.module.css";
 import ExploreIcon from "@mui/icons-material/Explore";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import MenuAppBar from "../components/AppBar/MenuAppBar";
-import CardCustomOption from "../components/Card/CardCustomOption";
-import CardSmallCustomOption from "../components/Card/CardSmallCustomOption";
-import CommonFooter from "../components/Footer/CommonFooter";
-import SpeedDialCustom from "../components/SpeedDial/SpeedDialCustom";
-import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
 import Zoom from "@mui/material/Zoom";
-import { motion } from "framer-motion";
-import React, { useState, useEffect } from "react";
 import { getAuth } from "firebase/auth";
+import { motion } from "framer-motion";
+import Head from "next/head";
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
+import MenuAppBar from "../components/AppBar/MenuAppBar";
+import CommonFooter from "../components/Footer/CommonFooter";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const [loadingLogo, showLoadingLogo] = useState(true);
