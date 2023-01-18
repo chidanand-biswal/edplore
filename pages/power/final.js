@@ -164,7 +164,10 @@ export default function FinalHome() {
                           color="primary"
                           showZero
                         >
-                          <BrightnessHighIcon fontSize="large" color="action" />
+                          <BrightnessHighIcon
+                            fontSize="large"
+                            sx={{ color: "purple" }}
+                          />
                         </Badge>
                       </Paper>
                     </Grid>

@@ -200,7 +200,7 @@ export default function CampaignTrail() {
 
       <Grid container direction="row">
         <Grid item className={styles.main}>
-          <Box sx={{ width: "100%", paddingBottom: "3rem" }}>
+          <Box sx={{ width: "100%", padding: "1rem 0" }}>
             <Grid
               container
               direction="row"
@@ -225,7 +225,7 @@ export default function CampaignTrail() {
           </Box>
 
           <Paper elevation={8} sx={{ minWidth: "15rem" }}>
-            <Box sx={{ alignItem: "center", padding: "2rem" }}>
+            <Box sx={{ alignItem: "center", padding: "1rem" }}>
               <Stepper activeStep={activeStep} orientation="vertical">
                 {activeTrail.map((step, index) => (
                   <Step key={step.label}>

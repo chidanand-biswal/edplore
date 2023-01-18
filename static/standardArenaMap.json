@@ -5,70 +5,120 @@
       "stepsPhysics": [
         {
           "id": 0,
-          "label": "STD 6 - PHYSICS - CHAPTER 1",
-          "description": "Let's start here!"
+          "label": "Matter",
+          "description": "Meaning, composition and states of Matter"
         },
         {
           "id": 1,
-          "label": "STD 6 - PHYSICS - CHAPTER 2",
-          "description": "You are here!"
+          "label": "Physical Quantities",
+          "description": "Measurement of physical quantities"
         },
         {
           "id": 2,
-          "label": "STD 6 - PHYSICS - CHAPTER 3",
-          "description": "You are here!"
+          "label": "Force",
+          "description": "Definition and effects of Force"
+        },
+        {
+          "id": 3,
+          "label": "Energy",
+          "description": "Energy and Simple Machines"
+        },
+        {
+          "id": 4,
+          "label": "Light",
+          "description": "Phenomena of Light"
+        },
+        {
+          "id": 5,
+          "label": "Magnetism",
+          "description": "Concepts of Magnetism"
         }
       ],
 
       "stepsChemistry": [
         {
           "id": 0,
-          "label": "STD 6 - CHEMISTRY - CHAPTER 1",
-          "description": "Let's start here!"
+          "label": "Concepts of Chemistry",
+          "description": "Introduction to Chemistry Elements"
         },
         {
           "id": 1,
-          "label": "STD 6 - CHEMISTRY - CHAPTER 2",
-          "description": "You are here!"
+          "label": "Elements",
+          "description": "Elements, Compounds and Mixtures"
         },
         {
           "id": 2,
-          "label": "STD 6 - CHEMISTRY - CHAPTER 3",
-          "description": "You are here!"
+          "label": "Matter",
+          "description": "States of Matter"
+        },
+        {
+          "id": 3,
+          "label": "Water",
+          "description": "Importance, usage, resources and concepts of water"
+        },
+        {
+          "id": 4,
+          "label": "Air and Atmosphere",
+          "description": "Concepts involving Air and Atmosphere"
         }
       ],
       "stepsMathematics": [
         {
           "id": 0,
-          "label": "STD 6 - MATHEMATICS - CHAPTER 1",
+          "label": "Number System",
           "description": "Let's start here!"
         },
         {
           "id": 1,
-          "label": "STD 6 - MATHEMATICS - CHAPTER 2",
+          "label": "Ratio and Proportion",
           "description": "You are here!"
         },
         {
           "id": 2,
-          "label": "STD 6 - MATHEMATICS - CHAPTER 3",
+          "label": "Algebra",
+          "description": "You are here!"
+        },
+        {
+          "id": 3,
+          "label": "Geometry",
+          "description": "You are here!"
+        },
+        {
+          "id": 4,
+          "label": "Mensuration",
+          "description": "You are here!"
+        },
+        {
+          "id": 5,
+          "label": "Data Handling",
           "description": "You are here!"
         }
       ],
       "stepsBiology": [
         {
           "id": 0,
-          "label": "STD 6 - BIOLOGY - CHAPTER 1",
-          "description": "Let's start here!"
+          "label": "Plant Life",
+          "description": "Plant Life, the Leaf and the Flower"
         },
         {
           "id": 1,
-          "label": "STD 6 - BIOLOGY - CHAPTER 2",
-          "description": "You are here!"
+          "label": "The Cell",
+          "description": "Plant and Animal Cells"
         },
         {
           "id": 2,
-          "label": "STD 6 - BIOLOGY - CHAPTER 3",
-          "description": "You are here!"
+          "label": "Human Body",
+          "description": "Digestive System, Respiratory System and Circulatory System"
+        },
+        {
+          "id": 3,
+          "label": "Health and Hygiene",
+          "description": "Types and modes of transmission of diseases and how to prevent"
+        },
+        {
+          "id": 4,
+          "label": "Adaptation",
+          "description": "Habitat and Adaptation"
         }
       ]
     },
@@ -77,70 +127,135 @@
       "stepsPhysics": [
         {
           "id": 0,
-          "label": "STD 7 - PHYSICS - CHAPTER 1",
-          "description": "Let's start here!"
+          "label": "Physical Quantities",
+          "description": "Measurement of physical quantities"
         },
         {
           "id": 1,
-          "label": "STD 7 - PHYSICS - CHAPTER 2",
-          "description": "You are here!"
+          "label": "Motion",
+          "description": "Concepts of Force and Pressure"
         },
         {
           "id": 2,
-          "label": "STD 7 - PHYSICS - CHAPTER 3",
-          "description": "You are here!"
+          "label": "Energy",
+          "description": "Concepts and laws of Energy"
+        },
+        {
+          "id": 3,
+          "label": "Light Energy",
+          "description": "Concepts of Light Energy"
+        },
+        {
+          "id": 4,
+          "label": "Heat Energy",
+          "description": "Concepts of Heat Energy"
+        },
+        {
+          "id": 5,
+          "label": "Sound",
+          "description": "Phenomena of Sound"
+        },
+        {
+          "id": 6,
+          "label": "Electricity and Magnetism",
+          "description": "Concepts of Electricity and Magnetism"
         }
       ],
 
       "stepsChemistry": [
         {
           "id": 0,
-          "label": "STD 7 - CHEMISTRY - CHAPTER 1",
-          "description": "Let's start here!"
+          "label": "Matter",
+          "description": "Matter and its Composition"
         },
         {
           "id": 1,
-          "label": "STD 7 - CHEMISTRY - CHAPTER 2",
-          "description": "You are here!"
+          "label": "Changes",
+          "description": "Physical and Chemical Changes"
         },
         {
           "id": 2,
-          "label": "STD 7 - CHEMISTRY - CHAPTER 3",
-          "description": "You are here!"
+          "label": "Elements, Compounds and Mixtures",
+          "description": "Identification of Elements, Compounds and Mixtures"
+        },
+        {
+          "id": 3,
+          "label": "Atomic Structure",
+          "description": "Concepts of Atomic Structure"
+        },
+        {
+          "id": 4,
+          "label": "Language of Chemistry",
+          "description": "Chemical Reactions & equations"
+        },
+        {
+          "id": 5,
+          "label": "Metals and Non-Metals",
+          "description": "Properties of Metals and Non-Metals"
+        },
+        {
+          "id": 6,
+          "label": "Air and Atmosphere",
+          "description": "Properties of Air and Atmosphere"
         }
       ],
       "stepsMathematics": [
         {
           "id": 0,
-          "label": "STD 7 - MATHEMATICS - CHAPTER 1",
+          "label": "Number System",
           "description": "Let's start here!"
         },
         {
           "id": 1,
-          "label": "STD 7 - MATHEMATICS - CHAPTER 2",
+          "label": "Ratio and Proportion",
           "description": "You are here!"
         },
         {
           "id": 2,
-          "label": "STD 7 - MATHEMATICS - CHAPTER 3",
+          "label": "Algebra",
+          "description": "You are here!"
+        },
+        {
+          "id": 3,
+          "label": "Geometry",
+          "description": "You are here!"
+        },
+        {
+          "id": 4,
+          "label": "Mensuration",
+          "description": "You are here!"
+        },
+        {
+          "id": 5,
+          "label": "Data Handling",
           "description": "You are here!"
         }
       ],
       "stepsBiology": [
         {
           "id": 0,
-          "label": "STD 7 - BIOLOGY - CHAPTER 1",
-          "description": "Let's start here!"
+          "label": "Tissue",
+          "description": "Plant Tissues and Animal Tissues"
         },
         {
           "id": 1,
-          "label": "STD 7 - BIOLOGY - CHAPTER 2",
-          "description": "You are here!"
+          "label": "Kingdom Classification",
+          "description": "Concepts of Classification"
         },
         {
           "id": 2,
-          "label": "STD 7 - BIOLOGY - CHAPTER 3",
-          "description": "You are here!"
+          "label": "Plant Life",
+          "description": "Photosynthesis and Respiration"
+        },
+        {
+          "id": 3,
+          "label": "Human Body",
+          "description": "Excretory System and Nervous System"
+        },
+        {
+          "id": 4,
+          "label": "Health and Hygiene",
+          "description": "Concepts of Health and Hygiene and Allergies"
         }
       ]
     },
@@ -149,70 +264,150 @@
       "stepsPhysics": [
         {
           "id": 0,
-          "label": "STD 8 - PHYSICS - CHAPTER 1",
-          "description": "Let's start here!"
+          "label": "Matter",
+          "description": "Kinetic Theory of Matter"
         },
         {
           "id": 1,
-          "label": "STD 8 - PHYSICS - CHAPTER 2",
-          "description": "You are here!"
+          "label": "Physical Quantities",
+          "description": "Measurement of physical quantities"
         },
         {
           "id": 2,
-          "label": "STD 8 - PHYSICS - CHAPTER 3",
-          "description": "You are here!"
+          "label": "Force and Pressure",
+          "description": "Effects of Force and Pressure"
+        },
+        {
+          "id": 3,
+          "label": "Light Energy",
+          "description": "Concepts of Light Energy"
+        },
+        {
+          "id": 4,
+          "label": "Heat Energy",
+          "description": "Concepts of Heat Transfer"
+        },
+        {
+          "id": 5,
+          "label": "Sound",
+          "description": "Concepts of Pitch and Frequency"
+        },
+        {
+          "id": 6,
+          "label": "Electricity",
+          "description": "Concepts of Electricity"
         }
       ],
 
       "stepsChemistry": [
         {
           "id": 0,
-          "label": "STD 8 - CHEMISTRY - CHAPTER 1",
-          "description": "Let's start here!"
+          "label": "Matter",
+          "description": "Matter and its Composition"
         },
         {
           "id": 1,
-          "label": "STD 8 - CHEMISTRY - CHAPTER 2",
-          "description": "You are here!"
+          "label": "Changes",
+          "description": "Physical and Chemical Changes"
         },
         {
           "id": 2,
-          "label": "STD 8 - CHEMISTRY - CHAPTER 3",
-          "description": "You are here!"
+          "label": "Elements, Compounds and Mixtures",
+          "description": "Identification of Elements, Compounds and Mixtures"
+        },
+        {
+          "id": 3,
+          "label": "Atomic Structure",
+          "description": "Concepts of Atomic Structure"
+        },
+        {
+          "id": 4,
+          "label": "Language of Chemistry",
+          "description": "Chemical Reactions & equations"
+        },
+        {
+          "id": 5,
+          "label": "Chemical Reactions",
+          "description": "Classifications of Chemical Reactions"
+        },
+        {
+          "id": 6,
+          "label": "Hydrogen",
+          "description": "Properties and uses of Hydrogen"
+        },
+        {
+          "id": 7,
+          "label": "Water",
+          "description": "Water: Solutions, Suspensions and Colloids"
+        },
+        {
+          "id": 8,
+          "label": "Carbon and its Compounds",
+          "description": "Allotropes, Physical properties and Chemical properties"
         }
       ],
       "stepsMathematics": [
         {
           "id": 0,
-          "label": "STD 8 - MATHEMATICS - CHAPTER 1",
+          "label": "Number System",
           "description": "Let's start here!"
         },
         {
           "id": 1,
-          "label": "STD 8 - MATHEMATICS - CHAPTER 2",
+          "label": "Ratio and Proportion",
           "description": "You are here!"
         },
         {
           "id": 2,
-          "label": "STD 8 - MATHEMATICS - CHAPTER 3",
+          "label": "Algebra",
+          "description": "You are here!"
+        },
+        {
+          "id": 3,
+          "label": "Geometry",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 4,
+          "label": "Mensuration",
+          "description": "You are here!"
+        },
+        {
+          "id": 5,
+          "label": "Data Handling",
           "description": "You are here!"
         }
       ],
       "stepsBiology": [
         {
           "id": 0,
-          "label": "STD 8 - BIOLOGY - CHAPTER 1",
-          "description": "Let's start here!"
+          "label": "Transport of Food and Minerals in Plants",
+          "description": "Diffusion, Osmosis and Transpiration"
         },
         {
           "id": 1,
-          "label": "STD 8 - BIOLOGY - CHAPTER 2",
-          "description": "You are here!"
+          "label": "Reproduction in Plant and Animals",
+          "description": "Concepts of Reproduction"
         },
         {
           "id": 2,
-          "label": "STD 8 - BIOLOGY - CHAPTER 3",
-          "description": "You are here!"
+          "label": "Ecosystems",
+          "description": "Interdependence of components in Ecosystems"
+        },
+        {
+          "id": 3,
+          "label": "Human Body",
+          "description": "Endocrine, Circulatory and Nervous System"
+        },
+        {
+          "id": 4,
+          "label": "Health and Hygiene",
+          "description": "Ideas on Diseases and First Aid"
+        },
+        {
+          "id": 5,
+          "label": "Food Production",
+          "description": "Categories of Food Production"
         }
       ]
     },
@@ -221,70 +416,145 @@
       "stepsPhysics": [
         {
           "id": 0,
-          "label": "STD 9 - PHYSICS - CHAPTER 1",
-          "description": "Let's start here!"
+          "label": "Measurements",
+          "description": "Measurements and Experimentation"
         },
         {
           "id": 1,
-          "label": "STD 9 - PHYSICS - CHAPTER 2",
-          "description": "You are here!"
+          "label": "Motion",
+          "description": "Laws of Motion and Motion in one dimension"
         },
         {
           "id": 2,
-          "label": "STD 9 - PHYSICS - CHAPTER 3",
-          "description": "You are here!"
+          "label": "Fluids",
+          "description": "Concepts of Fluids"
+        },
+        {
+          "id": 3,
+          "label": "Heat and Energy",
+          "description": "Concepts of Heat and Energy"
+        },
+        {
+          "id": 4,
+          "label": "Light Energy",
+          "description": "Concepts of Light Energy"
+        },
+        {
+          "id": 5,
+          "label": "Sound",
+          "description": "Phenomena of Sound"
+        },
+        {
+          "id": 6,
+          "label": "Electricity and Magnetism",
+          "description": "Concepts of Electricity and Magnetism"
         }
       ],
 
       "stepsChemistry": [
         {
           "id": 0,
-          "label": "STD 9 - CHEMISTRY - CHAPTER 1",
+          "label": "The Language of Chemistry",
           "description": "Let's start here!"
         },
         {
           "id": 1,
-          "label": "STD 9 - CHEMISTRY - CHAPTER 2",
+          "label": "Chemical changes and reactions",
           "description": "You are here!"
         },
         {
           "id": 2,
-          "label": "STD 9 - CHEMISTRY - CHAPTER 3",
+          "label": "Water",
+          "description": "You are here!"
+        },
+        {
+          "id": 3,
+          "label": "Atomic Structure and Chemical bonding",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 4,
+          "label": "The Periodic Table",
+          "description": "You are here!"
+        },
+        {
+          "id": 5,
+          "label": "Hydrogen",
+          "description": "You are here!"
+        },
+        {
+          "id": 6,
+          "label": "Study of Gas Laws",
           "description": "You are here!"
         }
       ],
       "stepsMathematics": [
         {
           "id": 0,
-          "label": "STD 9 - MATHEMATICS - CHAPTER 1",
-          "description": "Let's start here!"
+          "label": "Pure Arithmetic",
+          "description": "Rational & Irrational numbers"
         },
         {
           "id": 1,
-          "label": "STD 9 - MATHEMATICS - CHAPTER 2",
-          "description": "You are here!"
+          "label": "Commercial Mathematics",
+          "description": "Compound Interest"
         },
         {
           "id": 2,
-          "label": "STD 9 - MATHEMATICS - CHAPTER 3",
-          "description": "You are here!"
+          "label": "Algebra",
+          "description": "Expansions, Factorisation and Simultaneous Linear Equations"
+        },
+        {
+          "id": 3,
+          "label": "Geometry",
+          "description": "Triangles and Circle"
+        },
+        {
+          "id": 4,
+          "label": "Statistics",
+          "description": "Graphical representation, Mean, Median"
+        },
+        {
+          "id": 5,
+          "label": "Mensuration",
+          "description": "Area and perimeter of a triangle and circle"
+        },
+        {
+          "id": 6,
+          "label": "Trigonometry",
+          "description": "Trigonometric Ratios, Simple 2-D problems"
+        },
+        {
+          "id": 7,
+          "label": "Co-ordinate Geometry",
+          "description": "Cartesian System"
         }
       ],
       "stepsBiology": [
         {
           "id": 0,
-          "label": "STD 9 - BIOLOGY - CHAPTER 1",
-          "description": "Let's start here!"
+          "label": "Basic Biology",
+          "description": "Cell and Tissues"
         },
         {
           "id": 1,
-          "label": "STD 9 - BIOLOGY - CHAPTER 2",
-          "description": "You are here!"
+          "label": "Flowering Plants",
+          "description": "Flower, Pollination and Fertilisation"
         },
         {
           "id": 2,
-          "label": "STD 9 - BIOLOGY - CHAPTER 3",
-          "description": "You are here!"
+          "label": "Plant Physiology",
+          "description": "Germination of seeds and Respiration in plants"
+        },
+        {
+          "id": 3,
+          "label": "Diversity in living organisms",
+          "description": "Economic importance of Bacteria and Fungi"
+        },
+        {
+          "id": 4,
+          "label": "Human Anatomy and Physiology",
+          "description": "Nutrition, Skeleton, Skin and Respiratory System"
         }
       ]
     },
@@ -293,70 +563,140 @@
       "stepsPhysics": [
         {
           "id": 0,
-          "label": "STD 10 - PHYSICS - CHAPTER 1",
-          "description": "Let's start here!"
+          "label": "Force, Work, Power and Energy",
+          "description": "Core concepts, their relations, types and Principle of Conservation of energy"
         },
         {
           "id": 1,
-          "label": "STD 10 - PHYSICS - CHAPTER 2",
-          "description": "You are here!"
+          "label": "Light",
+          "description": "Refraction, reflection, converging and diverging lenses"
         },
         {
           "id": 2,
-          "label": "STD 10 - PHYSICS - CHAPTER 3",
-          "description": "You are here!"
+          "label": "Sound",
+          "description": "Reflection, vibrations, Loudness, pitch and quality"
+        },
+        {
+          "id": 3,
+          "label": "Electricity and Magnetism",
+          "description": "Electrical power and energy, Household circuits, Magnetic effects"
+        },
+        {
+          "id": 4,
+          "label": "Heat",
+          "description": "Calorimetry and Latent heat"
+        },
+        {
+          "id": 5,
+          "label": "Modern Physics",
+          "description": "Radioactivity, background radiation and safety precautions"
         }
       ],
 
       "stepsChemistry": [
         {
           "id": 0,
-          "label": "STD 10 - CHEMISTRY - CHAPTER 1",
-          "description": "Let's start here!"
+          "label": "Periodic Properties",
+          "description": "Variations of Properties - Physical and Chemical"
         },
         {
           "id": 1,
-          "label": "STD 10 - CHEMISTRY - CHAPTER 2",
-          "description": "You are here!"
+          "label": "Chemical Bonding",
+          "description": "Electrovalent, covalent and co-ordinate bonding"
         },
         {
           "id": 2,
-          "label": "STD 10 - CHEMISTRY - CHAPTER 3",
-          "description": "You are here!"
+          "label": "Acids, Bases and Salts",
+          "description": "Definitions, types, test for acidity and alkalinity"
+        },
+        {
+          "id": 3,
+          "label": "Mole Concept and Stoichiometry",
+          "description": "Law of Combining Volumes, Vapour Density"
+        },
+        {
+          "id": 4,
+          "label": "Electrolysis",
+          "description": "Electrolytes and non-electrolytes, Applications of electrolysis"
+        },
+        {
+          "id": 5,
+          "label": "Metallurgy",
+          "description": "Occurrence and extraction of metals, Alloys"
+        },
+        {
+          "id": 6,
+          "label": "Study of Compounds",
+          "description": "Hydrogen Chloride, Ammonia, Nitric Acid, Sulphuric Acid"
+        },
+        {
+          "id": 7,
+          "label": "Organic Chemistry",
+          "description": "Structure and Isomerism, nomenclature, Hydrocarbons"
         }
       ],
       "stepsMathematics": [
         {
           "id": 0,
-          "label": "STD 10 - MATHEMATICS - CHAPTER 1",
+          "label": "Commercial Mathematics",
           "description": "Let's start here!"
         },
         {
           "id": 1,
-          "label": "STD 10 - MATHEMATICS - CHAPTER 2",
+          "label": "Algebra",
           "description": "You are here!"
         },
         {
           "id": 2,
-          "label": "STD 10 - MATHEMATICS - CHAPTER 3",
+          "label": "Geometry",
+          "description": "You are here!"
+        },
+        {
+          "id": 3,
+          "label": "Mensuration",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 4,
+          "label": "Trigonometry",
+          "description": "You are here!"
+        },
+        {
+          "id": 5,
+          "label": "Statistics",
+          "description": "You are here!"
+        },
+        {
+          "id": 6,
+          "label": "Probability",
           "description": "You are here!"
         }
       ],
       "stepsBiology": [
         {
           "id": 0,
-          "label": "STD 10 - BIOLOGY - CHAPTER 1",
-          "description": "Let's start here!"
+          "label": "Basic Biology",
+          "description": "Cell Cycle and Cell Division, Chromosome, Genetics"
         },
         {
           "id": 1,
-          "label": "STD 10 - BIOLOGY - CHAPTER 2",
-          "description": "You are here!"
+          "label": "Plant Physiology",
+          "description": "Absorption, Transpiration, Photosynthesis and Chemical coordination"
         },
         {
           "id": 2,
-          "label": "STD 10 - BIOLOGY - CHAPTER 3",
-          "description": "You are here!"
+          "label": "Human Anatomy and Physiology",
+          "description": "Circulatory, Excretory, Nervous, Endocrine and Reproductive Systems"
+        },
+        {
+          "id": 3,
+          "label": "Population",
+          "description": "Population explosion and control measures"
+        },
+        {
+          "id": 4,
+          "label": "Pollution",
+          "description": "Types, sources and effects of pollution and control measures"
         }
       ]
     }

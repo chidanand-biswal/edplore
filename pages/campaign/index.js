@@ -197,8 +197,8 @@ export default function CampaignHome() {
 
           <Box
             sx={{
-              height: "19rem",
-              width: "19rem",
+              height: "15rem",
+              width: "15rem",
             }}
           >
             <Pie

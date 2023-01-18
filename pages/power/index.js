@@ -213,7 +213,10 @@ export default function PowerHome() {
                           color="primary"
                           showZero
                         >
-                          <ElectricBoltIcon fontSize="large" color="action" />
+                          <ElectricBoltIcon
+                            fontSize="large"
+                            sx={{ color: "blue" }}
+                          />
                         </Badge>
                       </Paper>
                     </Grid>

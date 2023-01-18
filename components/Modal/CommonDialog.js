@@ -160,13 +160,13 @@ export default function CommonDialog(props) {
       case 1:
         return "The Rathi";
       case 2:
-        return "The AtiRathi";
+        return "The Ati-Rathi";
       case 3:
-        return "The MahaRathi";
+        return "The Maha-Rathi";
       case 4:
-        return "The AtiMahaRathi";
+        return "The Ati-Maha-Rathi";
       case 5:
-        return "The MahaMahaRathi";
+        return "The Maha-Maha-Rathi";
       default:
         return "";
     }
@@ -252,7 +252,7 @@ export default function CommonDialog(props) {
                           >
                             <BrightnessHighIcon
                               fontSize="large"
-                              color="action"
+                              sx={{ color: "purple" }}
                             />
                           </Badge>
                         </Grid>
@@ -278,7 +278,10 @@ export default function CommonDialog(props) {
                             color="primary"
                             showZero
                           >
-                            <ElectricBoltIcon fontSize="large" color="action" />
+                            <ElectricBoltIcon
+                              fontSize="large"
+                              sx={{ color: "blue" }}
+                            />
                           </Badge>
                         </Grid>
                         <Grid item>Vajra</Grid>

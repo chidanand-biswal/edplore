@@ -1,7 +1,9 @@
+import { Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import {
   Chart as ChartJS,
   Filler,
@@ -42,6 +44,7 @@ export const mockData = {
 };
 
 export default function KarmaHome() {
+  const bigScreenInd = useMediaQuery("(min-width:350px)");
   const { standardDetails } = useSelector((state) => state.standardDetails);
 
   const { realmProgress } = useSelector((state) => state.realmProgress);
@@ -135,7 +138,7 @@ export default function KarmaHome() {
 
       <Grid container direction="row">
         <Grid item className={styles.main}>
-          <Box sx={{ width: "100%", padding: "1rem 0" }}>
+          <Box sx={{ width: "100%", paddingTop: "1rem" }}>
             <Grid
               container
               direction="row"
@@ -163,47 +166,95 @@ export default function KarmaHome() {
               <Grid item className={styles.mainSmall}>
                 <Radar data={calculateKarmaData()} />
                 <Box sx={{ textAlign: "center" }}>
-                  Karma Quotient is the Resultant <br />
-                  of your own Actions and Decisions <br />
-                  in the Realms of Bodhi.
-                  <br />
-                  Aim for a &quot;balanced&quot; Karma!
+                  <Typography>
+                    Karma Quotient is the Resultant <br />
+                    of your own Actions and Decisions <br />
+                    in the Realms of Bodhi.
+                    <br />
+                    Aim for a &quot;balanced&quot; Karma!
+                  </Typography>
                 </Box>
               </Grid>
             </Grid>
           </Paper>
 
-          <Grid
-            container
-            direction="row"
-            alignItems="center"
-            justifyContent="center"
-            spacing={2}
-            sx={{ marginTop: "2rem" }}
-          >
-            <Grid item>
-              <div>
-                <Link href="/quiz/">
-                  <a>
-                    <Button variant="outlined" className={styles.buttonLaunch}>
-                      STRAIGHT TO ARENA
-                    </Button>
-                  </a>
-                </Link>
-              </div>
+          {bigScreenInd ? (
+            <Grid
+              container
+              direction="row"
+              alignItems="center"
+              justifyContent="center"
+              spacing={2}
+              sx={{ marginTop: "2rem" }}
+            >
+              <Grid item>
+                <div>
+                  <Link href="/quiz/">
+                    <a>
+                      <Button
+                        variant="outlined"
+                        className={styles.buttonLaunch}
+                      >
+                        STRAIGHT TO ARENA
+                      </Button>
+                    </a>
+                  </Link>
+                </div>
+              </Grid>
+              <Grid item>
+                <div>
+                  <Link href="/learn">
+                    <a>
+                      <Button
+                        variant="contained"
+                        className={styles.buttonLaunch}
+                      >
+                        CONTINUE TO GURUKUL
+                      </Button>
+                    </a>
+                  </Link>
+                </div>
+              </Grid>
             </Grid>
-            <Grid item>
-              <div>
-                <Link href="/learn">
-                  <a>
-                    <Button variant="contained" className={styles.buttonLaunch}>
-                      CONTINUE TO GURUKUL
-                    </Button>
-                  </a>
-                </Link>
-              </div>
+          ) : (
+            <Grid
+              container
+              direction="row"
+              alignItems="center"
+              justifyContent="center"
+              spacing={2}
+              sx={{ marginTop: "2rem" }}
+            >
+              <Grid item>
+                <div>
+                  <Link href="/learn">
+                    <a>
+                      <Button
+                        variant="contained"
+                        className={styles.buttonLaunch}
+                      >
+                        CONTINUE TO GURUKUL
+                      </Button>
+                    </a>
+                  </Link>
+                </div>
+              </Grid>
+              <Grid item>
+                <div>
+                  <Link href="/quiz/">
+                    <a>
+                      <Button
+                        variant="outlined"
+                        className={styles.buttonLaunch}
+                      >
+                        STRAIGHT TO ARENA
+                      </Button>
+                    </a>
+                  </Link>
+                </div>
+              </Grid>
             </Grid>
-          </Grid>
+          )}
         </Grid>
       </Grid>
 

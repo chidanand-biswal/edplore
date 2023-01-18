@@ -7,6 +7,12 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 import TextField from "@mui/material/TextField";
+import Alert from "@mui/material/Alert";
+import IconButton from "@mui/material/IconButton";
+import Collapse from "@mui/material/Collapse";
+import CloseIcon from "@mui/icons-material/Close";
+import AlertTitle from "@mui/material/AlertTitle";
+import Stack from "@mui/material/Stack";
 import { getAuth } from "firebase/auth";
 import Link from "next/link";
 import Router from "next/router";
@@ -66,6 +72,7 @@ export default function ExplorerHome() {
   const [user, loading] = useAuthState(auth);
   const dispatch = useDispatch();
   const bigScreenInd = useMediaQuery("(min-width:900px)");
+  const [openAlert, setOpenAlert] = React.useState(true);
 
   const [valName, setValName] = React.useState(user ? true : false);
   const [valStandard, setValStandard] = React.useState(false);
@@ -100,6 +107,7 @@ export default function ExplorerHome() {
       setStandard(event.target.value);
       if (event.target.value !== "") {
         setValStandard(true);
+        setOpenAlert(false);
       } else {
         setValStandard(false);
       }
@@ -164,7 +172,27 @@ export default function ExplorerHome() {
   */}
         <Grid item className={styles.main} sx={{ padding: "0 5rem" }}>
           <h2 className={styles.greyText}>Tell more about yourself!</h2>
-
+          <Collapse in={openAlert}>
+            <Alert
+              severity="info"
+              sx={{ marginBottom: "0.5rem" }}
+              action={
+                <IconButton
+                  aria-label="close"
+                  color="inherit"
+                  size="small"
+                  onClick={() => {
+                    setOpenAlert(false);
+                  }}
+                >
+                  <CloseIcon fontSize="inherit" />
+                </IconButton>
+              }
+            >
+              <AlertTitle>Standard</AlertTitle>
+              Arenas in Realms will be based on, but not limited to standard.
+            </Alert>
+          </Collapse>
           <Box>
             <Grid container direction={"row"} spacing={3} padding="2rem 0">
               <Grid item>
@@ -277,7 +305,7 @@ export default function ExplorerHome() {
           </Box>
         </Grid>
       </Grid>
-      <ToolbarFooter />
+      {/*<ToolbarFooter />*/}
     </Box>
   );
 }

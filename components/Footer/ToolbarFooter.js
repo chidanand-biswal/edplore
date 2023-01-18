@@ -79,7 +79,7 @@ export default function ToolbarFooter() {
                   }}
                 >
                   <PentagonIcon />
-                  <div>KarmaQ</div>
+                  <div>Karma</div>
                 </IconButton>
                 <Divider orientation="vertical" flexItem />
                 <IconButton
