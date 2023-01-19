@@ -12,6 +12,7 @@ import IconButton from "@mui/material/IconButton";
 import Collapse from "@mui/material/Collapse";
 import CloseIcon from "@mui/icons-material/Close";
 import AlertTitle from "@mui/material/AlertTitle";
+import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 import { getAuth } from "firebase/auth";
 import Link from "next/link";
@@ -27,6 +28,7 @@ import { updateRealmProgress } from "../../store/realmProgress/action";
 import { addStandardDetails } from "../../store/standardDetails/action";
 import { updateSuperFastCount } from "../../store/superFast/action";
 import { addUserDetails } from "../../store/userDetails/action";
+import { addBoardDetails } from "../../store/boardDetails/action";
 import styles from "../../styles/Home.module.css";
 
 const initialRealmProgress = [
@@ -73,11 +75,15 @@ export default function ExplorerHome() {
   const dispatch = useDispatch();
   const bigScreenInd = useMediaQuery("(min-width:900px)");
   const [openAlert, setOpenAlert] = React.useState(true);
+  const [cbseActive, setCbseActive] = React.useState(false);
+  const [icseActive, setIcseActive] = React.useState(false);
+  const [otherActive, setOtherActive] = React.useState(false);
 
   const [valName, setValName] = React.useState(user ? true : false);
   const [valStandard, setValStandard] = React.useState(false);
   const [userName, setUserName] = React.useState(user ? user.displayName : "");
   const [standard, setStandard] = React.useState(1);
+  const [board, setBoard] = React.useState("CBSE");
 
   const { realmProgress } = useSelector((state) => state.realmProgress);
 
@@ -117,12 +123,29 @@ export default function ExplorerHome() {
     }
   };
 
+  const handleBoardSelection = (board) => {
+    switch (board) {
+      case "cbse":
+        setBoard("CBSE");
+      case "icse":
+        setBoard("ICSE");
+      case "other":
+        setBoard("OTHER");
+      default:
+        setBoard("OTHER");
+    }
+  };
+
   const updateUserNameInStore = () => {
     dispatch(addUserDetails(userName));
   };
 
   const updateStandardInStore = () => {
     dispatch(addStandardDetails(standard));
+  };
+
+  const updateBoardInStore = () => {
+    dispatch(addBoardDetails(board));
   };
 
   const submit = () => {
@@ -190,7 +213,7 @@ export default function ExplorerHome() {
               }
             >
               <AlertTitle>Standard</AlertTitle>
-              Arenas in Realms will be based on, but not limited to standard.
+              Arenas in Realms will be set up based on standard and board.
             </Alert>
           </Collapse>
           <Box>
@@ -239,6 +262,62 @@ export default function ExplorerHome() {
                 </FormControl>
               </Grid>
             </Grid>
+            <Box>
+              <Stack direction="row" spacing={1}>
+                <InputLabel
+                  id="standard-prefer-label"
+                  sx={{ marginTop: "0.25rem" }}
+                >
+                  I prefer:
+                </InputLabel>
+                <Chip
+                  label="CBSE"
+                  variant={cbseActive ? "filled" : "outlined"}
+                  color="primary"
+                  onClick={() => {
+                    setCbseActive(!cbseActive);
+                    handleBoardSelection("cbse");
+                  }}
+                />
+                <Chip
+                  label="ICSE"
+                  variant={icseActive ? "filled" : "outlined"}
+                  color="primary"
+                  onClick={() => {
+                    setIcseActive(!icseActive);
+                    handleBoardSelection("icse");
+                  }}
+                />
+                <Chip
+                  label="Other"
+                  variant={otherActive ? "filled" : "outlined"}
+                  color="primary"
+                  onClick={() => {
+                    setOtherActive(!otherActive);
+                    handleBoardSelection("other");
+                  }}
+                />
+              </Stack>
+              {otherActive ? (
+                <FormControl sx={{ minWidth: "15rem", marginTop: "1rem" }}>
+                  <InputLabel id="standard-board-label">State</InputLabel>
+                  <Select
+                    labelId="standard-board-label"
+                    id="standard-board-id"
+                    label="board"
+                    defaultValue=""
+                  >
+                    <MenuItem value={1}>Odisha</MenuItem>
+                    <MenuItem value={2}>Kerala</MenuItem>
+                    <MenuItem value={3}>Madhya Pradesh</MenuItem>
+                    <MenuItem value={4}>Maharashtra</MenuItem>
+                    <MenuItem value={5}>Punjab</MenuItem>
+                  </Select>
+                </FormControl>
+              ) : (
+                <div></div>
+              )}
+            </Box>
             {bigScreenInd ? (
               <Grid container direction={"row"} spacing={3} padding="2rem 0">
                 <Grid item>

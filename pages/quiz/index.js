@@ -5,6 +5,11 @@ import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
+import Alert from "@mui/material/Alert";
+import IconButton from "@mui/material/IconButton";
+import Collapse from "@mui/material/Collapse";
+import CloseIcon from "@mui/icons-material/Close";
+import AlertTitle from "@mui/material/AlertTitle";
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
 import MenuAppBar from "../../components/AppBar/MenuAppBar";
@@ -12,6 +17,7 @@ import standardArenaMapData from "../../static/standardArenaMap.json";
 import { setCurrentQuizData } from "../../store/quiz/action";
 import styles from "../../styles/Home.module.css";
 import quizData from "../api/quizData.json";
+import { Stack } from "@mui/material";
 
 const RenderTime = ({ remainingTime }) => {
   const currentTime = useRef(remainingTime);
@@ -90,6 +96,8 @@ function randomize(array) {
 
 export default function QuizHome() {
   const dispatch = useDispatch();
+  const [openAlert, setOpenAlert] = React.useState(true);
+  const [openAlertWarn, setOpenAlertWarn] = React.useState(true);
   const { realmActive } = useSelector((state) => state.realmActive);
   const { standardDetails } = useSelector((state) => state.standardDetails);
 
@@ -249,7 +257,7 @@ export default function QuizHome() {
 
       <Grid container direction="row">
         <Grid item className={styles.main}>
-          <Paper elevation={8} sx={{ padding: "0.5rem" }}>
+          <Paper elevation={8} sx={{ marginTop: "2rem", padding: "0.5rem" }}>
             <Box sx={{ width: "100%" }}>
               <Grid
                 container
@@ -276,7 +284,7 @@ export default function QuizHome() {
           </Paper>
           <Paper elevation={8} sx={{ marginTop: "1rem", padding: "0.5rem" }}>
             <Box className={styles.mainSmall}>
-              <h3 className={styles.greyText}>Countdown to the Arena!</h3>
+              <h3 className={styles.greyText}>Opening gates to Arena...</h3>
               <div className={styles.timerWrapper}>
                 <CountdownCircleTimer
                   isPlaying
@@ -289,6 +297,54 @@ export default function QuizHome() {
               </div>
             </Box>
           </Paper>
+          <Stack>
+            <Collapse in={openAlert}>
+              <Alert
+                severity="info"
+                sx={{ marginTop: "2rem" }}
+                action={
+                  <IconButton
+                    aria-label="close"
+                    color="inherit"
+                    size="small"
+                    onClick={() => {
+                      setOpenAlert(false);
+                    }}
+                  >
+                    <CloseIcon fontSize="inherit" />
+                  </IconButton>
+                }
+              >
+                <AlertTitle>Infromation</AlertTitle>
+                The Explorer gets to survive a maximum of TWO minutes in the
+                Arena. <br />
+                That is all the time needed in this world to write new legends!
+              </Alert>
+            </Collapse>
+            <Collapse in={openAlertWarn}>
+              <Alert
+                severity="warning"
+                sx={{ marginTop: "0.5rem" }}
+                action={
+                  <IconButton
+                    aria-label="close"
+                    color="inherit"
+                    size="small"
+                    onClick={() => {
+                      setOpenAlertWarn(false);
+                    }}
+                  >
+                    <CloseIcon fontSize="inherit" />
+                  </IconButton>
+                }
+              >
+                <AlertTitle>Instructions</AlertTitle>
+                While inside the Arena, <br />
+                DO NOT refresh the page and <br />
+                DO NOT click on Next or Previous buttons on the broswer
+              </Alert>
+            </Collapse>
+          </Stack>
         </Grid>
       </Grid>
 

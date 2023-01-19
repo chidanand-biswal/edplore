@@ -15,6 +15,7 @@ import currentTutorialData from "./tutorial/reducer";
 import medalCount from "./medal/reducer";
 import superFastCount from "./superFast/reducer";
 import realmProgress from "./realmProgress/reducer";
+import boardDetails from "./boardDetails/reducer";
 
 const combinedReducer = combineReducers({
   counter,
@@ -31,6 +32,7 @@ const combinedReducer = combineReducers({
   medalCount,
   superFastCount,
   realmProgress,
+  boardDetails,
 });
 
 const masterReducer = (state, action) => {

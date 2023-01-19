@@ -44,7 +44,7 @@ export const mockData = {
 };
 
 export default function KarmaHome() {
-  const bigScreenInd = useMediaQuery("(min-width:350px)");
+  const bigScreenInd = useMediaQuery("(min-width:380px)");
   const { standardDetails } = useSelector((state) => state.standardDetails);
 
   const { realmProgress } = useSelector((state) => state.realmProgress);

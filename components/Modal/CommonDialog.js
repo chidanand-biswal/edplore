@@ -280,7 +280,7 @@ export default function CommonDialog(props) {
                           >
                             <ElectricBoltIcon
                               fontSize="large"
-                              sx={{ color: "blue" }}
+                              sx={{ color: "blue", borderColor: "pink" }}
                             />
                           </Badge>
                         </Grid>
