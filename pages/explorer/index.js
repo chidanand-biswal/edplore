@@ -81,6 +81,7 @@ export default function ExplorerHome() {
 
   const [valName, setValName] = React.useState(user ? true : false);
   const [valStandard, setValStandard] = React.useState(false);
+
   const [userName, setUserName] = React.useState(user ? user.displayName : "");
   const [standard, setStandard] = React.useState(1);
   const [board, setBoard] = React.useState("CBSE");

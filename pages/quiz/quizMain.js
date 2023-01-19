@@ -104,6 +104,7 @@ export default function QuizMain() {
   const [openModal, setOpenModal] = React.useState(false);
   const [modalType, setModalType] = React.useState("");
   const dispatch = useDispatch();
+  const { userDetails } = useSelector((state) => state.userDetails);
   const { realmActive } = useSelector((state) => state.realmActive);
   const { standardDetails } = useSelector((state) => state.standardDetails);
   const { realmProgress } = useSelector((state) => state.realmProgress);
@@ -340,7 +341,9 @@ export default function QuizMain() {
         user.uid,
         updatedRealmProgressByStandard,
         updateMedal ? medalCount + 1 : medalCount,
-        updateSuperfast ? superFastCount + 1 : superFastCount
+        updateSuperfast ? superFastCount + 1 : superFastCount,
+        userDetails,
+        standardDetails
       );
     }
   };

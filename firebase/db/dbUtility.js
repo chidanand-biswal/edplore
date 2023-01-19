@@ -19,17 +19,23 @@ export const saveExplorerData = (
   explorerId,
   realmProgressData,
   medalCount,
-  superFastCount
+  superFastCount,
+  userDetails,
+  standardDetails
 ) => {
   const explorerRef = doc(database, "edploreUser", explorerId);
   console.log("saveExplorerData");
   console.log(realmProgressData);
   console.log(medalCount);
   console.log(superFastCount);
+  console.log(userDetails);
+  console.log(standardDetails);
   setDoc(explorerRef, {
     realmProgress: realmProgressData,
     kavachCount: medalCount,
     vajraCount: superFastCount,
+    explorerName: userDetails,
+    activeStandard: standardDetails,
   }).catch((err) => {
     console.log(err.message);
   });
