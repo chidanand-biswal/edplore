@@ -24,7 +24,6 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { getAuth, GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
@@ -68,7 +67,7 @@ function stringAvatar(name) {
   };
 }
 
-export default function MenuAppBar() {
+export default function MenuAppBarHome() {
   initFirebase();
   const provider = new GoogleAuthProvider();
   const auth = getAuth();
@@ -285,20 +284,16 @@ export default function MenuAppBar() {
       <AppBar position="fixed" className={styles.appBar}>
         <Toolbar>
           <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
             onClick={() => {
               setOpenLeftMenu(true);
             }}
           >
-            <Avatar
-              sx={{
-                height: "2rem",
-                width: "2rem",
-                bgcolor: "transparent",
-                border: "2px solid white",
-              }}
-            >
-              <MenuIcon />
-            </Avatar>
+            <MenuIcon />
           </IconButton>
 
           <Typography
@@ -307,14 +302,17 @@ export default function MenuAppBar() {
             sx={{ flexGrow: 1, textAlign: "center" }}
             onClick={() => Router.push("/")}
           >
+            edpl
             <IconButton className={styles.exploreIconMenuAppBar}>
-              <ExploreIcon sx={{ width: "2.5rem", height: "2.5rem" }} />
+              <ExploreIcon fontSize="small" />
             </IconButton>
+            re
           </Typography>
 
           {user ? (
             <div>
               <IconButton
+                size="large"
                 aria-label="account of current user"
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
@@ -338,7 +336,7 @@ export default function MenuAppBar() {
                   setOpenRightMenu(true);
                 }}
               >
-                <AccountCircle sx={{ width: "2rem", height: "2rem" }} />
+                <AccountCircle fontSize="medium" />
               </IconButton>
             </div>
           )}

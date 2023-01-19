@@ -90,7 +90,9 @@ export default function PowerHome() {
             >
               <Grid item>
                 <h2 className={styles.greyText}>
-                  Many congratulations, Explorer!
+                  Dear Explorer,
+                  <br />
+                  You are awesome!
                 </h2>
               </Grid>
             </Grid>

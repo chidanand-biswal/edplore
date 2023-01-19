@@ -225,7 +225,7 @@ export default function CampaignTrail() {
           </Box>
 
           <Paper elevation={8} sx={{ minWidth: "15rem" }}>
-            <Box sx={{ alignItem: "center", padding: "1rem" }}>
+            <Box sx={{ alignItem: "center", padding: "0.5rem" }}>
               <Stepper activeStep={activeStep} orientation="vertical">
                 {activeTrail.map((step, index) => (
                   <Step key={step.label}>
@@ -238,83 +238,47 @@ export default function CampaignTrail() {
                     </StepLabel>
                     <StepContent>
                       <Typography>{step.description}</Typography>
+                      <div>
+                        <Button
+                          variant="contained"
+                          className={styles.buttonLaunch}
+                          onClick={() => submit()}
+                        >
+                          RESUME MY QUEST
+                        </Button>
+                      </div>
                     </StepContent>
                   </Step>
                 ))}
               </Stepper>
+              {activeStep === activeTrail.length && (
+                <Typography>
+                  All steps completed - you&apos;re awesome!
+                </Typography>
+              )}
             </Box>
           </Paper>
-          {bigScreenInd ? (
-            <Grid
-              container
-              direction="row"
-              alignItems="center"
-              justifyContent="center"
-              spacing={2}
-              sx={{ marginTop: "2rem" }}
-            >
-              <Grid item>
-                <div>
-                  <Link href="/campaign/">
-                    <a>
-                      <Button
-                        variant="outlined"
-                        className={styles.buttonLaunch}
-                      >
-                        CHOOSE OTHER REALM
-                      </Button>
-                    </a>
-                  </Link>
-                </div>
-              </Grid>
-              <Grid item>
-                <div>
-                  <Button
-                    variant="contained"
-                    className={styles.buttonLaunch}
-                    onClick={() => submit()}
-                  >
-                    RESUME MY QUEST
-                  </Button>
-                </div>
-              </Grid>
+
+          <Grid
+            container
+            direction="row"
+            alignItems="center"
+            justifyContent="center"
+            spacing={2}
+            sx={{ marginTop: "1rem" }}
+          >
+            <Grid item>
+              <div>
+                <Link href="/campaign/">
+                  <a>
+                    <Button variant="outlined" className={styles.buttonLaunch}>
+                      I WANT TO CHOOSE ANOTHER REALM
+                    </Button>
+                  </a>
+                </Link>
+              </div>
             </Grid>
-          ) : (
-            <Grid
-              container
-              direction="row"
-              alignItems="center"
-              justifyContent="center"
-              spacing={2}
-              sx={{ marginTop: "2rem" }}
-            >
-              <Grid item>
-                <div>
-                  <Button
-                    variant="contained"
-                    className={styles.buttonLaunch}
-                    onClick={() => submit()}
-                  >
-                    RESUME MY QUEST
-                  </Button>
-                </div>
-              </Grid>
-              <Grid item>
-                <div>
-                  <Link href="/campaign/">
-                    <a>
-                      <Button
-                        variant="outlined"
-                        className={styles.buttonLaunch}
-                      >
-                        CHOOSE OTHER REALM
-                      </Button>
-                    </a>
-                  </Link>
-                </div>
-              </Grid>
-            </Grid>
-          )}
+          </Grid>
         </Grid>
       </Grid>
 

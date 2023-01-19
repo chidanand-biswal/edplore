@@ -10,7 +10,7 @@ import Head from "next/head";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import MenuAppBar from "../components/AppBar/MenuAppBar";
+import MenuAppBarHome from "../components/AppBar/MenuAppBarHome";
 import CommonFooter from "../components/Footer/CommonFooter";
 import styles from "../styles/Home.module.css";
 
@@ -46,7 +46,7 @@ export default function Home() {
     </Box>
   ) : (
     <Box className={styles.container}>
-      <MenuAppBar />
+      <MenuAppBarHome />
 
       <Grid container direction="row">
         <Grid item className={styles.main}>
