@@ -1,262 +1,528 @@
 [
   {
-    "id": 0,
+    "id": "P-6-0-0",
     "subject": "PHYSICS",
     "standard": 6,
     "chapter": 0,
-    "question": "Physics - quizStandard6 - quizChapter0 - question 1",
+    "question": "The intermolecular spacing is ___ in the solids, ___in liquids and ___in gases",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "more, less, equally less" },
+      { "answer": "more, less, still less" },
+      { "answer": "less, more, still more", "isCorrect": true },
+      { "answer": "more, equally more, less" }
     ]
   },
   {
-    "id": 0,
+    "id": "P-6-0-1",
     "subject": "PHYSICS",
     "standard": 6,
     "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "question": "The molecular motion in liquid and gas is in ___ path.",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "zig-zag", "isCorrect": true },
+      { "answer": "straight-line" },
+      { "answer": "circular" },
+      { "answer": "curved" }
     ]
   },
   {
-    "id": 0,
+    "id": "P-6-0-2",
     "subject": "PHYSICS",
     "standard": 6,
     "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "question": "The intermolecular forces are the weakest in ___",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "solid" },
+      { "answer": "liquid" },
+      { "answer": "gas", "isCorrect": true },
+      { "answer": "semi-solid" }
     ]
   },
   {
-    "id": 0,
+    "id": "P-6-0-3",
     "subject": "PHYSICS",
     "standard": 6,
     "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "question": "In a ___, the molecules vibrate to and fro but remain at their fixed positions.",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "gas" },
+      { "answer": "solid", "isCorrect": true },
+      { "answer": "liquid" },
+      { "answer": "semi-liquid" }
     ]
   },
   {
-    "id": 0,
+    "id": "P-6-0-4",
     "subject": "PHYSICS",
     "standard": 6,
     "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "question": "The liquids are less viscous than the gases. True or false?",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "True" },
+      { "answer": "False", "isCorrect": true },
+      { "answer": "Indeterminate" },
+      { "answer": "Both" }
     ]
   },
   {
-    "id": 0,
+    "id": "P-6-0-5",
     "subject": "PHYSICS",
     "standard": 6,
     "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "question": "The intermolecular forces in liquids are:",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "As strong as in solids" },
+      { "answer": "Stronger than in solids" },
+      { "answer": "Weaker than in solids", "isCorrect": true },
+      { "answer": "Weaker than in gases" }
     ]
   },
   {
-    "id": 0,
+    "id": "P-6-0-6",
     "subject": "PHYSICS",
     "standard": 6,
     "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "question": "The solids are:",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Highly compressible" },
+      { "answer": "Least dense" },
+      { "answer": "Less dense" },
+      { "answer": "More dense", "isCorrect": true }
     ]
   },
   {
-    "id": 0,
+    "id": "P-6-0-7",
     "subject": "PHYSICS",
     "standard": 6,
     "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "question": "The intermolecular forces are strongest in:",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Solids", "isCorrect": true },
+      { "answer": "Liquids" },
+      { "answer": "Gases" },
+      { "answer": "Both liquids and gases" }
     ]
   },
   {
-    "id": 0,
+    "id": "P-6-0-8",
     "subject": "PHYSICS",
     "standard": 6,
     "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "question": "The intermolecular forces are effective at all distances between the two molecules. True or false",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "True" },
+      { "answer": "False", "isCorrect": true },
+      { "answer": "Indeterminate" },
+      { "answer": "Both" }
     ]
   },
   {
-    "id": 0,
+    "id": "P-6-0-9",
     "subject": "PHYSICS",
     "standard": 6,
     "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "question": "The molecules in a substance are in random motion. True or false?",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "True", "isCorrect": true },
+      { "answer": "False" },
+      { "answer": "Indeterminate" },
+      { "answer": "Both" }
     ]
   },
   {
-    "id": 0,
+    "id": "P-6-1-0",
     "subject": "PHYSICS",
     "standard": 6,
     "chapter": 1,
-    "question": "quizStandard6 - quizChapter1 - question 1",
+    "question": "The S.I. unit of length is ___, of time is ___ and of mass is ___",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "second, minute, hour" },
+      { "answer": "second, metre, kilogram" },
+      { "answer": "metre, second, kilogram", "isCorrect": true },
+      { "answer": "day, week, year" }
     ]
   },
   {
-    "id": 0,
+    "id": "P-6-1-1",
     "subject": "PHYSICS",
     "standard": 6,
     "chapter": 1,
-    "question": "Would you like to answer this question?",
+    "question": "The normal temparature of human body is ___ degrees celcius and ___ degrees fahrenheit",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "37.6, 98" },
+      { "answer": "98.6, 37" },
+      { "answer": "37, 98.6", "isCorrect": true },
+      { "answer": "37.5, 98.5" }
     ]
   },
   {
-    "id": 0,
+    "id": "P-6-1-2",
     "subject": "PHYSICS",
     "standard": 6,
     "chapter": 1,
-    "question": "Would you like to answer this question?",
+    "question": "One metric tonne is equal to how many kilograms?",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "10000" },
+      { "answer": "10" },
+      { "answer": "100" },
+      { "answer": "1000", "isCorrect": true }
     ]
   },
   {
-    "id": 0,
+    "id": "P-6-1-3",
     "subject": "PHYSICS",
     "standard": 6,
     "chapter": 1,
-    "question": "Would you like to answer this question?",
+    "question": "The zero mark in Celsius thermomemter is the meliting point of ___",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "iron" },
+      { "answer": "ice", "isCorrect": true },
+      { "answer": "gold" },
+      { "answer": "mercury" }
     ]
   },
   {
-    "id": 0,
+    "id": "P-6-1-4",
     "subject": "PHYSICS",
     "standard": 6,
     "chapter": 1,
-    "question": "Would you like to answer this question?",
+    "question": "The thermomemter used to measure human body temprature is called ___ ",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "body thermometer" },
+      { "answer": "scientific thermometer" },
+      { "answer": "clinical thermometer", "isCorrect": true },
+      { "answer": "mechanical thermometer" }
     ]
   },
   {
-    "id": 0,
+    "id": "P-6-1-5",
     "subject": "PHYSICS",
     "standard": 6,
     "chapter": 1,
-    "question": "Would you like to answer this question?",
+    "question": "What property of an object is measured with the help of a beam balance?",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Mass", "isCorrect": true },
+      { "answer": "Surface area" },
+      { "answer": "Volume" },
+      { "answer": "Density" }
     ]
   },
   {
-    "id": 0,
+    "id": "P-6-1-6",
     "subject": "PHYSICS",
     "standard": 6,
     "chapter": 1,
-    "question": "Would you like to answer this question?",
+    "question": "The amount of surface occupied by an object is called its ___",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "density" },
+      { "answer": "volume" },
+      { "answer": "area", "isCorrect": true },
+      { "answer": "mass" }
     ]
   },
   {
-    "id": 0,
+    "id": "P-6-1-7",
     "subject": "PHYSICS",
     "standard": 6,
     "chapter": 1,
-    "question": "Would you like to answer this question?",
+    "question": "The S.I. unit of temparture is fahrenheit. True or false",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "True" },
+      { "answer": "False", "isCorrect": true },
+      { "answer": "Indeterminate" },
+      { "answer": "Both" }
     ]
   },
   {
-    "id": 0,
+    "id": "P-6-1-8",
     "subject": "PHYSICS",
     "standard": 6,
     "chapter": 1,
-    "question": "Would you like to answer this question?",
+    "question": "10 mm is equal to ___",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "1 km" },
+      { "answer": "1 m" },
+      { "answer": "1 cm", "isCorrect": true },
+      { "answer": "1 dm" }
     ]
   },
   {
-    "id": 0,
+    "id": "P-6-1-9",
     "subject": "PHYSICS",
     "standard": 6,
     "chapter": 1,
-    "question": "Would you like to answer this question?",
+    "question": "Mass is the measure of quantity of matter. True or false?",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "True", "isCorrect": true },
+      { "answer": "False" },
+      { "answer": "Indeterminate" },
+      { "answer": "Both" }
+    ]
+  },
+  {
+    "id": "P-6-2-0",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Friction is reduced by:",
+    "answerOptions": [
+      { "answer": "making the surfaces wet.", "isCorrect": true },
+      { "answer": "making the surfaces dry." },
+      { "answer": "making the surfaces rough." },
+      { "answer": "sprinkling sand on the surfaces." }
+    ]
+  },
+  {
+    "id": "P-6-2-1",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Friction",
+    "answerOptions": [
+      { "answer": "promotes motion" },
+      { "answer": "acts in the direction of motion" },
+      { "answer": "opposes motion", "isCorrect": true },
+      { "answer": "is always a nuisance." }
+    ]
+  },
+  {
+    "id": "P-6-2-2",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "A force to be expressed correctly requires",
+    "answerOptions": [
+      { "answer": "only the magnitude" },
+      { "answer": "only the direction" },
+      { "answer": "both the magnitude and direction", "isCorrect": true },
+      { "answer": "none of the options" }
+    ]
+  },
+  {
+    "id": "P-6-2-3",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "A force does not change ___",
+    "answerOptions": [
+      { "answer": "mass", "isCorrect": true },
+      { "answer": "length" },
+      { "answer": "shape" },
+      { "answer": "state of motion" }
+    ]
+  },
+  {
+    "id": "P-6-2-4",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "A body falls downwards because of ___",
+    "answerOptions": [
+      { "answer": "electrical force" },
+      { "answer": "gravitational force", "isCorrect": true },
+      { "answer": "mechanical force" },
+      { "answer": "magnetic force" }
+    ]
+  },
+  {
+    "id": "P-6-2-5",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Lubricants are used to ___ the friction.",
+    "answerOptions": [
+      { "answer": "reduce", "isCorrect": true },
+      { "answer": "increase" },
+      { "answer": "maximize" },
+      { "answer": "maintain" }
+    ]
+  },
+  {
+    "id": "P-6-2-6",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "The sliding friction is more than the rolling friction. True or false?",
+    "answerOptions": [
+      { "answer": "True", "isCorrect": true },
+      { "answer": "False" },
+      { "answer": "Indeterminate" },
+      { "answer": "Both" }
+    ]
+  },
+  {
+    "id": "P-6-2-7",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Liquids offer more friction than gases. True or false?",
+    "answerOptions": [
+      { "answer": "True", "isCorrect": true },
+      { "answer": "False" },
+      { "answer": "Indeterminate" },
+      { "answer": "Both" }
+    ]
+  },
+  {
+    "id": "P-6-2-8",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Friction can...",
+    "answerOptions": [
+      { "answer": "cause wear and tear" },
+      { "answer": "produce heat" },
+      { "answer": "stop a moving body" },
+      { "answer": "do all of the given options", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "P-6-2-9",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "A force increases mass of the body when applied on it. True or false?",
+    "answerOptions": [
+      { "answer": "True" },
+      { "answer": "False", "isCorrect": true },
+      { "answer": "Indeterminate" },
+      { "answer": "Both" }
+    ]
+  },
+  {
+    "id": "P-6-3-0",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "For an ideal machine, the efficiency is:",
+    "answerOptions": [
+      { "answer": "equal to unity", "isCorrect": true },
+      { "answer": "greater than unity" },
+      { "answer": "less than unity" },
+      { "answer": "depends on the value of load" }
+    ]
+  },
+  {
+    "id": "P-6-3-1",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Mechanical advantage of a machine is defined as:",
+    "answerOptions": [
+      { "answer": "Load * Effort" },
+      { "answer": "Load / Effort", "isCorrect": true },
+      { "answer": "Load + Effort" },
+      { "answer": "Effort / Load" }
+    ]
+  },
+  {
+    "id": "P-6-3-2",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Mechanical advantage of a lever is equal to: ",
+    "answerOptions": [
+      { "answer": "Load arm / Effort arm" },
+      { "answer": "Effort arm / Load arm" },
+      { "answer": "Load arm + Effort arm" },
+      { "answer": "Load arm - Effort arm", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "P-6-3-3",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "A pulley is used because it ___",
+    "answerOptions": [
+      { "answer": "has the mechanical advantage greater than one" },
+      { "answer": "has 100% efficiency" },
+      {
+        "answer": "helps to apply the force in a convenient direction",
+        "isCorrect": true
+      },
+      { "answer": "requires more effort to raise less load" }
+    ]
+  },
+  {
+    "id": "P-6-3-4",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Wheel is used with axle because ___",
+    "answerOptions": [
+      { "answer": "sliding friction is less than the rolling friction." },
+      {
+        "answer": "rolling friction is less than the sliding friction.",
+        "isCorrect": true
+      },
+      { "answer": "they work as the inclined plane." },
+      { "answer": "they help us to change the direction of force." }
+    ]
+  },
+  {
+    "id": "P-6-3-5",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "An inclined plane always has the mechanical advantage more than 1. True or false?",
+    "answerOptions": [
+      { "answer": "True", "isCorrect": true },
+      { "answer": "False" },
+      { "answer": "Indeterminate" },
+      { "answer": "Both" }
+    ]
+  },
+  {
+    "id": "P-6-3-6",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "A machine performs work by itself. True or false?",
+    "answerOptions": [
+      { "answer": "True" },
+      { "answer": "False", "isCorrect": true },
+      { "answer": "Indeterminate" },
+      { "answer": "Both" }
+    ]
+  },
+  {
+    "id": "P-6-3-7",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "The load is in between fulcrum and effort in class ___ levers.",
+    "answerOptions": [
+      { "answer": "I" },
+      { "answer": "II", "isCorrect": true },
+      { "answer": "III" },
+      { "answer": "IV" }
+    ]
+  },
+  {
+    "id": "P-6-3-8",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "What is Efficiency of a machine?",
+    "answerOptions": [
+      { "answer": "Output energy / Input energy", "isCorrect": true },
+      { "answer": "Input energy / Output energy" },
+      { "answer": "Output energy * Input energy" },
+      { "answer": "Input energy - Output energy" }
+    ]
+  },
+  {
+    "id": "P-6-3-9",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "All levers are force multipliers.",
+    "answerOptions": [
+      { "answer": "True" },
+      { "answer": "False", "isCorrect": true },
+      { "answer": "Indeterminate" },
+      { "answer": "Both" }
     ]
   },
   {

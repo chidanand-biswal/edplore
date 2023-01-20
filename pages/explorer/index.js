@@ -213,8 +213,8 @@ export default function ExplorerHome() {
                 </IconButton>
               }
             >
-              <AlertTitle>Standard</AlertTitle>
-              Arenas in Realms will be set up based on standard and board.
+              Arenas in Realms will be set up based on the information that you
+              enter here.
             </Alert>
           </Collapse>
           <Box>
@@ -263,62 +263,64 @@ export default function ExplorerHome() {
                 </FormControl>
               </Grid>
             </Grid>
-            <Box>
-              <Stack direction="row" spacing={1}>
-                <InputLabel
-                  id="standard-prefer-label"
-                  sx={{ marginTop: "0.25rem" }}
-                >
-                  I prefer:
-                </InputLabel>
-                <Chip
-                  label="CBSE"
-                  variant={cbseActive ? "filled" : "outlined"}
-                  color="primary"
-                  onClick={() => {
-                    setCbseActive(!cbseActive);
-                    handleBoardSelection("cbse");
-                  }}
-                />
-                <Chip
-                  label="ICSE"
-                  variant={icseActive ? "filled" : "outlined"}
-                  color="primary"
-                  onClick={() => {
-                    setIcseActive(!icseActive);
-                    handleBoardSelection("icse");
-                  }}
-                />
-                <Chip
-                  label="Other"
-                  variant={otherActive ? "filled" : "outlined"}
-                  color="primary"
-                  onClick={() => {
-                    setOtherActive(!otherActive);
-                    handleBoardSelection("other");
-                  }}
-                />
-              </Stack>
-              {otherActive ? (
-                <FormControl sx={{ minWidth: "15rem", marginTop: "1rem" }}>
-                  <InputLabel id="standard-board-label">State</InputLabel>
-                  <Select
-                    labelId="standard-board-label"
-                    id="standard-board-id"
-                    label="board"
-                    defaultValue=""
+            {valStandard && (
+              <Box>
+                <Stack direction="row" spacing={1}>
+                  <InputLabel
+                    id="standard-prefer-label"
+                    sx={{ marginTop: "0.25rem" }}
                   >
-                    <MenuItem value={1}>Odisha</MenuItem>
-                    <MenuItem value={2}>Kerala</MenuItem>
-                    <MenuItem value={3}>Madhya Pradesh</MenuItem>
-                    <MenuItem value={4}>Maharashtra</MenuItem>
-                    <MenuItem value={5}>Punjab</MenuItem>
-                  </Select>
-                </FormControl>
-              ) : (
-                <div></div>
-              )}
-            </Box>
+                    I prefer:
+                  </InputLabel>
+                  <Chip
+                    label="CBSE"
+                    variant={cbseActive ? "filled" : "outlined"}
+                    color="primary"
+                    onClick={() => {
+                      setCbseActive(!cbseActive);
+                      handleBoardSelection("cbse");
+                    }}
+                  />
+                  <Chip
+                    label="ICSE"
+                    variant={icseActive ? "filled" : "outlined"}
+                    color="primary"
+                    onClick={() => {
+                      setIcseActive(!icseActive);
+                      handleBoardSelection("icse");
+                    }}
+                  />
+                  <Chip
+                    label="Other"
+                    variant={otherActive ? "filled" : "outlined"}
+                    color="primary"
+                    onClick={() => {
+                      setOtherActive(!otherActive);
+                      handleBoardSelection("other");
+                    }}
+                  />
+                </Stack>
+                {otherActive ? (
+                  <FormControl sx={{ minWidth: "15rem", marginTop: "1rem" }}>
+                    <InputLabel id="standard-board-label">State</InputLabel>
+                    <Select
+                      labelId="standard-board-label"
+                      id="standard-board-id"
+                      label="board"
+                      defaultValue=""
+                    >
+                      <MenuItem value={1}>Odisha</MenuItem>
+                      <MenuItem value={2}>Kerala</MenuItem>
+                      <MenuItem value={3}>Madhya Pradesh</MenuItem>
+                      <MenuItem value={4}>Maharashtra</MenuItem>
+                      <MenuItem value={5}>Punjab</MenuItem>
+                    </Select>
+                  </FormControl>
+                ) : (
+                  <div></div>
+                )}
+              </Box>
+            )}
             {bigScreenInd ? (
               <Grid container direction={"row"} spacing={3} padding="2rem 0">
                 <Grid item>
