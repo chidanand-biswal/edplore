@@ -49,7 +49,7 @@ export default function ContactHome() {
                     </Grid>
                     <Grid item sx={{ padding: "0 1rem" }}>
                       <Typography className={styles.openingLines}>
-                        chidanand.biswal@gmail.com
+                        edplore.help@gmail.com
                       </Typography>
                     </Grid>
                   </Grid>

@@ -74,7 +74,7 @@ export default function Home() {
               transition={{ duration: 3 }}
             >
               <Typography className={styles.openingLines}>
-                Legends tell of the Realms of Bodhi. <br />
+                The Realms of Bodhi. <br />
                 <br />
               </Typography>
             </motion.div>
@@ -84,8 +84,10 @@ export default function Home() {
               transition={{ duration: 5 }}
             >
               <Typography className={styles.openingLines}>
-                Is it really out there? Or just a myth? <br />
-                You stand here right at the gateways. <br /> <br />
+                Legends tell it is still out there.
+                <br />
+                Is it true? Or just a myth? <br />
+                You stand right at the gateways. <br /> <br />
                 An epic quest awaits!
               </Typography>
             </motion.div>

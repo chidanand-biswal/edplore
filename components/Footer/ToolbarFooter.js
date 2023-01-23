@@ -16,12 +16,14 @@ import * as React from "react";
 
 import styles from "../../styles/Home.module.css";
 import CommonDialog from "../Modal/CommonDialog";
+import HelpDialog from "../Modal/HelpDialog";
 
 export default function ToolbarFooter() {
   const bigScreenInd = useMediaQuery("(min-width:900px)");
 
   const [openModal, setOpenModal] = React.useState(false);
   const [modalType, setModalType] = React.useState("");
+  const [openHelpModal, setOpenHelpModal] = React.useState(false);
 
   return bigScreenInd ? (
     <Paper
@@ -97,7 +99,9 @@ export default function ToolbarFooter() {
                 <Divider orientation="vertical" flexItem />
                 <IconButton
                   className={styles.toolBarButtonLabel}
-                  onClick={() => {}}
+                  onClick={() => {
+                    setOpenHelpModal(true);
+                  }}
                 >
                   <HelpCenterIcon />
                   <div>Help</div>
@@ -114,6 +118,14 @@ export default function ToolbarFooter() {
             setOpenModal(false);
           }}
           modalType={modalType}
+        />
+      )}
+      {openHelpModal && (
+        <HelpDialog
+          open={openHelpModal}
+          onClose={() => {
+            setOpenHelpModal(false);
+          }}
         />
       )}
     </Paper>
@@ -192,7 +204,9 @@ export default function ToolbarFooter() {
                 <Divider orientation="vertical" flexItem />
                 <IconButton
                   className={styles.toolBarButtonLabel}
-                  onClick={() => {}}
+                  onClick={() => {
+                    setOpenHelpModal(true);
+                  }}
                 >
                   <HelpCenterIcon />
                   <div>Help</div>
@@ -209,6 +223,14 @@ export default function ToolbarFooter() {
             setOpenModal(false);
           }}
           modalType={modalType}
+        />
+      )}
+      {openHelpModal && (
+        <HelpDialog
+          open={openHelpModal}
+          onClose={() => {
+            setOpenHelpModal(false);
+          }}
         />
       )}
     </Paper>

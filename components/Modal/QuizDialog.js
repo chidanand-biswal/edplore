@@ -29,7 +29,7 @@ export default function QuizDialog(props) {
             <DialogTitle>
               <Grid container direction="row">
                 <Grid item>
-                  <FavoriteIcon fontSize="large" color="error" />
+                  <FavoriteIcon fontSize="medium" color="error" />
                 </Grid>
                 <Grid item sx={{ paddingLeft: "1rem" }}>
                   You love this!
@@ -48,7 +48,7 @@ export default function QuizDialog(props) {
             <DialogTitle>
               <Grid container direction="row">
                 <Grid item>
-                  <FlagIcon fontSize="large" color="primary" />
+                  <FlagIcon fontSize="medium" color="primary" />
                 </Grid>
                 <Grid item sx={{ paddingLeft: "1rem" }}>
                   You want to report this

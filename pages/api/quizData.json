@@ -526,16 +526,268 @@
     ]
   },
   {
-    "id": 0,
+    "id": "P-6-4-0",
     "subject": "PHYSICS",
-    "standard": 7,
-    "chapter": 0,
-    "question": "quizStandard7 - quizChapter0 - question 1",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Lunar eclipse occurs on",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "every full moon's night" },
+      { "answer": "certain full moon's night", "isCorrect": true },
+      { "answer": "every new moon's day" },
+      { "answer": "certain new moon's day" }
+    ]
+  },
+  {
+    "id": "P-6-4-1",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Solar eclipse occurs on",
+    "answerOptions": [
+      { "answer": "every full moon's night" },
+      { "answer": "certain full moon's night" },
+      { "answer": "every new moon's day" },
+      { "answer": "certain new moon's day", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "P-6-4-2",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Penumbra is a region of ",
+    "answerOptions": [
+      { "answer": "complete darkness" },
+      { "answer": "complete brightness" },
+      { "answer": "partial brightness", "isCorrect": true },
+      { "answer": "None of the options" }
+    ]
+  },
+  {
+    "id": "P-6-4-3",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Umbra is a region of ",
+    "answerOptions": [
+      { "answer": "complete darkness", "isCorrect": true },
+      { "answer": "complete brightness" },
+      { "answer": "partial brightness" },
+      { "answer": "None of the options" }
+    ]
+  },
+  {
+    "id": "P-6-4-4",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Example of a luminous body is ",
+    "answerOptions": [
+      { "answer": "earth" },
+      {
+        "answer": "a lighted bulb",
+        "isCorrect": true
+      },
+      { "answer": "noon" },
+      { "answer": "table" }
+    ]
+  },
+  {
+    "id": "P-6-4-5",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "The natural source of light is ",
+    "answerOptions": [
+      { "answer": "candle flame" },
+      { "answer": "electric lamp" },
+      { "answer": "the Sun", "isCorrect": true },
+      { "answer": "kerosene lamp" }
+    ]
+  },
+  {
+    "id": "P-6-4-6",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "A medium through which light can not pass is called the ___ medium.",
+    "answerOptions": [
+      { "answer": "transparent" },
+      { "answer": "opaque", "isCorrect": true },
+      { "answer": "translucent" },
+      { "answer": "none of the options" }
+    ]
+  },
+  {
+    "id": "P-6-4-7",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "A medium which allows light to pass through it easily is called the ___ medium.",
+    "answerOptions": [
+      { "answer": "transparent", "isCorrect": true },
+      { "answer": "opaque" },
+      { "answer": "translucent" },
+      { "answer": "none of the options" }
+    ]
+  },
+  {
+    "id": "P-6-4-8",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Light travels in a ___ path.",
+    "answerOptions": [
+      { "answer": "straight-line", "isCorrect": true },
+      { "answer": "zig-zag" },
+      { "answer": "circular" },
+      { "answer": "none of the options" }
+    ]
+  },
+  {
+    "id": "P-6-4-9",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "In a pin hole camera, the image formed is ___",
+    "answerOptions": [
+      { "answer": "inverted and real", "isCorrect": true },
+      { "answer": "erect and real" },
+      { "answer": "erect and virtual" },
+      { "answer": "inverted and virtual" }
+    ]
+  },
+  {
+    "id": "P-6-5-0",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "The artificial magnet used to detect direction is ___",
+    "answerOptions": [
+      { "answer": "U-shaped magnet" },
+      { "answer": "horse-shoe magnet" },
+      { "answer": "electromagnet" },
+      { "answer": "magnetic compass", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "P-6-5-1",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "An example of natural magnet is:",
+    "answerOptions": [
+      { "answer": "iron" },
+      { "answer": "steel" },
+      { "answer": "lodestone", "isCorrect": true },
+      { "answer": "none of the options" }
+    ]
+  },
+  {
+    "id": "P-6-5-2",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "Making a magnetic substance a magnet by bringing it closer to another magnet without touching it is called: ",
+    "answerOptions": [
+      { "answer": "magnetic induction method", "isCorrect": true },
+      { "answer": "single touch method" },
+      { "answer": "double touch method" },
+      { "answer": "electrical method" }
+    ]
+  },
+  {
+    "id": "P-6-5-3",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "If we suspend a magnet freely, it will settle in ___. ",
+    "answerOptions": [
+      { "answer": "east-west direction" },
+      { "answer": "north-south direction", "isCorrect": true },
+      { "answer": "north-east direction" },
+      { "answer": "south-west direction" }
+    ]
+  },
+  {
+    "id": "P-6-5-4",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "A magnet has ___ poles. ",
+    "answerOptions": [
+      { "answer": "4" },
+      {
+        "answer": "3"
+      },
+      { "answer": "1" },
+      { "answer": "2", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "P-6-5-5",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "Like poles ___ each other. ",
+    "answerOptions": [
+      { "answer": "attract" },
+      { "answer": "repel", "isCorrect": true },
+      { "answer": "are neutral to" },
+      { "answer": "do not react to" }
+    ]
+  },
+  {
+    "id": "P-6-5-6",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "Is it possible that magnetic north pole exist without a magnetic south pole?",
+    "answerOptions": [
+      { "answer": "Yes" },
+      { "answer": "Never", "isCorrect": true },
+      { "answer": "Probably" },
+      { "answer": "Indeterminate" }
+    ]
+  },
+  {
+    "id": "P-6-5-7",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "The north pole of a compass needle points towards the ___ pole of the earth.",
+    "answerOptions": [
+      { "answer": "geographical south" },
+      { "answer": "magnetic south", "isCorrect": true },
+      { "answer": "geographical north" },
+      { "answer": "magnetic north" }
+    ]
+  },
+  {
+    "id": "P-6-5-8",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "Magnetic lines of force ___",
+    "answerOptions": [
+      { "answer": "never intersect each other", "isCorrect": true },
+      { "answer": "always intersect each other" },
+      { "answer": "are parallel to each other" },
+      { "answer": "are perpendicular to each other" }
+    ]
+  },
+  {
+    "id": "P-6-5-9",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "Which of the following is the magnetic material used in temporary magnets?",
+    "answerOptions": [
+      { "answer": "Hard Steel" },
+      { "answer": "Cobalt" },
+      { "answer": "Soft Iron", "isCorrect": true },
+      { "answer": "Tungsten" }
     ]
   },
   {
