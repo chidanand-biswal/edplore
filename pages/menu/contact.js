@@ -19,14 +19,20 @@ export default function ContactHome() {
       <Grid container direction="row">
         <Grid item className={styles.main} sx={{ paddingTop: "1rem" }}>
           <Grid className={styles.spacerOne}>
-            <Diversity1Icon color="primary" fontSize="large" />
-          </Grid>
+            <Grid
+              container
+              direction="row"
+              alignItems="center"
+              justifyContent="center"
+            >
+              <Grid item>
+                <Diversity1Icon color="primary" fontSize="large" />
+              </Grid>
+              <Grid item sx={{ padding: "0 0 0 1rem" }}>
+                <h2 className={styles.greyText}>Who we are</h2>
+              </Grid>
+            </Grid>
 
-          <Grid className={styles.spacerOne}>
-            <Typography variant="h4">
-              Who we are
-              <br />
-            </Typography>
             <Box sx={{ padding: "1rem 0", maxWidth: "50rem" }}>
               <Grid container direction="column">
                 <Grid item sx={{ padding: "1rem 0" }}>
@@ -49,7 +55,9 @@ export default function ContactHome() {
                     </Grid>
                     <Grid item sx={{ padding: "0 1rem" }}>
                       <Typography className={styles.openingLines}>
-                        edplore.help@gmail.com
+                        <a target="_top" href="mailto:edplore.help@gmail.com">
+                          edplore.help@gmail.com
+                        </a>
                       </Typography>
                     </Grid>
                   </Grid>
@@ -62,7 +70,7 @@ export default function ContactHome() {
                       </Grid>
                       <Grid item sx={{ padding: "0 1rem" }}>
                         <Typography className={styles.openingLines}>
-                          +91-1234567890
+                          <a href="tel:+918583878899">+91 85 83 87 88 99</a>
                         </Typography>
                       </Grid>
                     </Grid>
