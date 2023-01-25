@@ -791,7 +791,164 @@
     ]
   },
   {
+    "id": "C-6-0-0",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Mortar is used as ",
+    "answerOptions": [
+      { "answer": "an insecticide" },
+      { "answer": "a medicine" },
+      { "answer": "a building material", "isCorrect": true },
+      { "answer": "plastic material" }
+    ]
+  },
+  {
+    "id": "C-6-0-1",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Urea is used as ",
+    "answerOptions": [
+      { "answer": "fertilizer", "isCorrect": true },
+      { "answer": "food item" },
+      { "answer": "medicine" },
+      { "answer": "cosmetics" }
+    ]
+  },
+  {
+    "id": "C-6-0-2",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "The chemical prescribed by a doctor in treatment of infectious diseases are called",
+    "answerOptions": [
+      { "answer": "antigens" },
+      { "answer": "lotions" },
+      { "answer": "antibiotics", "isCorrect": true },
+      { "answer": "oral solutions" }
+    ]
+  },
+  {
+    "id": "C-6-0-3",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Which one of the following is an insecticide?",
+    "answerOptions": [
+      { "answer": "benzoic acid" },
+      { "answer": "aldrin", "isCorrect": true },
+      { "answer": "sugar" },
+      { "answer": "gunpowder" }
+    ]
+  },
+  {
+    "id": "C-6-0-4",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Antibiotics are used as preservatives. True or false?",
+    "answerOptions": [
+      { "answer": "True" },
+      { "answer": "False", "isCorrect": true },
+      { "answer": "Indeterminate" },
+      { "answer": "None of the options" }
+    ]
+  },
+  {
+    "id": "C-6-0-5",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "D.D.T. is a fertilizer. True or false?",
+    "answerOptions": [
+      { "answer": "True" },
+      { "answer": "False", "isCorrect": true },
+      { "answer": "Indeterminate" },
+      { "answer": "None of the options" }
+    ]
+  },
+  {
+    "id": "C-6-0-6",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Enzymes secreted by our bodies are chemicals. True or false?",
+    "answerOptions": [
+      { "answer": "True", "isCorrect": true },
+      { "answer": "False" },
+      { "answer": "Indeterminate" },
+      { "answer": "None of the options" }
+    ]
+  },
+  {
+    "id": "C-6-0-7",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "___ is used help increase production of food.",
+    "answerOptions": [
+      { "answer": "Medicine" },
+      { "answer": "Mortar" },
+      { "answer": "Antibiotic" },
+      { "answer": "Fertlizer", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "C-6-0-8",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "L.P.G. is used for ___",
+    "answerOptions": [
+      { "answer": "preparing clothes" },
+      { "answer": "preparing insecticide" },
+      { "answer": "medical purposes" },
+      { "answer": "fuel", "isCorrect": true }
+    ]
+  },
+
+  {
+    "id": "C-6-0-9",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Oxygen was discovered by",
+    "answerOptions": [
+      { "answer": "R.W. Boyle" },
+      { "answer": "Sir Humphry Darvy" },
+      { "answer": "Joseph Priestly", "isCorrect": true },
+      { "answer": "John Dalton" }
+    ]
+  },
+  {
     "id": 0,
+    "subject": "PHYSICS",
+    "standard": 7,
+    "chapter": 0,
+    "question": "Would you like to answer this question?",
+    "answerOptions": [
+      { "answer": "Option A" },
+      { "answer": "Option B" },
+      { "answer": "Option C", "isCorrect": true },
+      { "answer": "Option D" }
+    ]
+  },
+  {
+    "id": "C-6-0-8",
+    "subject": "PHYSICS",
+    "standard": 7,
+    "chapter": 0,
+    "question": "Would you like to answer this question?",
+    "answerOptions": [
+      { "answer": "Option A" },
+      { "answer": "Option B" },
+      { "answer": "Option C", "isCorrect": true },
+      { "answer": "Option D" }
+    ]
+  },
+  {
+    "id": "C-6-0-9",
     "subject": "PHYSICS",
     "standard": 7,
     "chapter": 0,
@@ -881,162 +1038,7 @@
       { "answer": "Option D" }
     ]
   },
-  {
-    "id": 0,
-    "subject": "PHYSICS",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "PHYSICS",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 6,
-    "chapter": 0,
-    "question": "Chemistry - quizStandard6 - quizChapter0 - question 1",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 6,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 6,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 6,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 6,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 6,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 6,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 6,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 6,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 6,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
+
   {
     "id": 0,
     "subject": "CHEMISTRY",

@@ -197,9 +197,12 @@ export default function MenuAppBar() {
           <ListItem key={"menuBlog"} disablePadding>
             <ListItemButton onClick={() => Router.push("/menu/blog")}>
               <ListItemIcon>
-                <AutoStoriesIcon />
+                <AutoStoriesIcon sx={{ color: "purple" }} />
               </ListItemIcon>
-              <ListItemText primary={"The Blog"} />
+              <ListItemText
+                sx={{ color: "purple" }}
+                primary={"Chronicles of Bodhi"}
+              />
             </ListItemButton>
           </ListItem>
         </Grid>

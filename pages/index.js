@@ -59,8 +59,8 @@ export default function Home() {
               <Box
                 component="img"
                 sx={{
-                  height: "7rem",
-                  width: "7rem",
+                  height: "5rem",
+                  width: "5rem",
                 }}
                 src="/assets/konark_sun.svg"
               />
@@ -71,7 +71,7 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, scale: 0.25 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 3 }}
+              transition={{ duration: 2 }}
             >
               <Typography className={styles.openingLines}>
                 The Realms of Bodhi. <br />
@@ -81,13 +81,21 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, scale: 0.25 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 5 }}
+              transition={{ duration: 3 }}
             >
               <Typography className={styles.openingLines}>
                 Legends tell it is still out there.
                 <br />
                 Is it true? Or just a myth? <br />
                 You stand right at the gateways. <br /> <br />
+              </Typography>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.25 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 4 }}
+            >
+              <Typography className={styles.openingLines}>
                 An epic quest awaits!
               </Typography>
             </motion.div>
@@ -102,7 +110,7 @@ export default function Home() {
             className={styles.spacerOne}
           >
             <Grid item>
-              <Zoom in={true} style={{ transitionDelay: "5000ms" }}>
+              <Zoom in={true} style={{ transitionDelay: "4500ms" }}>
                 <div>
                   {user ? (
                     <Link href="/explorer">

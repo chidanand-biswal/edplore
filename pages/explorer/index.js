@@ -314,6 +314,7 @@ export default function ExplorerHome() {
                       <MenuItem value={3}>Madhya Pradesh</MenuItem>
                       <MenuItem value={4}>Maharashtra</MenuItem>
                       <MenuItem value={5}>Punjab</MenuItem>
+                      <MenuItem value={6}>None</MenuItem>
                     </Select>
                   </FormControl>
                 ) : (

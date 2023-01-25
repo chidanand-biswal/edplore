@@ -1,6 +1,8 @@
 import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
 import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
+import TaskAltIcon from "@mui/icons-material/TaskAlt";
+import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -18,24 +20,24 @@ export default function CardIconLargeOption(props) {
   const rookieFeatureList = [
     {
       index: "0",
-      feature: "Proceed without login",
+      feature: "Proceed with no login",
       icon: <TipsAndUpdatesIcon />,
     },
     {
       index: "1",
       feature: "Access all the Realms",
-      icon: <CheckIcon color="success" />,
+      icon: <TaskAltIcon color="success" />,
     },
 
     {
       index: "2",
-      feature: "Resume Quest where you left off",
-      icon: <CloseIcon color="error" />,
+      feature: "Resume Quest",
+      icon: <RadioButtonUncheckedIcon color="success" />,
     },
     {
       index: "3",
       feature: "Hall of Fame",
-      icon: <CloseIcon color="error" />,
+      icon: <RadioButtonUncheckedIcon color="success" />,
     },
   ];
 
@@ -48,19 +50,19 @@ export default function CardIconLargeOption(props) {
     {
       index: "1",
       feature: "Access all the Realms",
-      icon: <CheckIcon color="success" />,
+      icon: <TaskAltIcon color="success" />,
     },
 
     {
       index: "2",
-      feature: "Resume Quest where you left off",
-      icon: <CheckIcon color="success" />,
+      feature: "Resume Quest",
+      icon: <TaskAltIcon color="success" />,
     },
     ,
     {
       index: "3",
       feature: "Hall of Fame",
-      icon: <CheckIcon color="success" />,
+      icon: <TaskAltIcon color="success" />,
     },
   ];
 

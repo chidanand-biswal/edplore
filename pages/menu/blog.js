@@ -43,7 +43,7 @@ export default function BlogHome() {
                 <AutoStoriesIcon color="primary" fontSize="large" />
               </Grid>
               <Grid item sx={{ padding: "0 0 0 1rem" }}>
-                <h2 className={styles.greyText}>The Blog</h2>
+                <h3 className={styles.greyText}>The Chronicles of Bodhi</h3>
               </Grid>
             </Grid>
           </Grid>

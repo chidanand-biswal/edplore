@@ -47,7 +47,7 @@ export default function HelpDialog(props) {
               <Grid container direction={"column"} spacing={3} padding="2rem 0">
                 <Grid item>
                   <FormControl sx={{ minWidth: "15rem" }}>
-                    <InputLabel id="location-select-label">WHERE</InputLabel>
+                    <InputLabel id="location-select-label">Where</InputLabel>
                     <Select
                       labelId="location-select-label"
                       id="location-select-id"
@@ -68,7 +68,7 @@ export default function HelpDialog(props) {
                   <FormControl sx={{ minWidth: "15rem" }}>
                     <TextField
                       id="outlined-required"
-                      label="WHAT"
+                      label="What"
                       multiline
                       maxRows={3}
                     />
