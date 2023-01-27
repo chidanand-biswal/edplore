@@ -63,7 +63,8 @@ function stringAvatar(name) {
       bgcolor: "transparent",
       border: "3px solid white",
     },
-    children: `${name.split(" ")[0][0]}${name.split(" ")[1][0]}`,
+    //children: `${name.split(" ")[0][0]}${name.split(" ")[1][0]}`,
+    children: `${name.split(" ")[0][0]}`,
   };
 }
 
@@ -78,7 +79,9 @@ export default function MenuAppBarHome() {
   const [openRightMenu, setOpenRightMenu] = React.useState(false);
 
   const signIn = async () => {
+    Router.push("/auth");
     //const result = await signInWithPopup(auth, provider);
+    /*
     await signInWithRedirect(auth, provider)
       .then((user) => {
         if (user) {
@@ -92,6 +95,7 @@ export default function MenuAppBarHome() {
         console.log(err.message);
       })
       .finally(Router.push("/"));
+      */
   };
 
   const signOut = async () => {

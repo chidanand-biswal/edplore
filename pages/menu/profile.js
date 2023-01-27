@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import { getAuth, GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
 import Link from "next/link";
 import React from "react";
+import Router, { useRouter } from "next/router";
 import { useAuthState } from "react-firebase-hooks/auth";
 import MenuAppBar from "../../components/AppBar/MenuAppBar";
 import CommonFooter from "../../components/Footer/CommonFooter";
@@ -16,8 +17,9 @@ export default function ProfileHome() {
   const provider = new GoogleAuthProvider();
 
   const signIn = async () => {
+    Router.push("/auth");
     //const result = await signInWithPopup(auth, provider);
-    await signInWithRedirect(auth, provider)
+    /*await signInWithRedirect(auth, provider)
       .then((user) => {
         if (user) {
           console.log(user);
@@ -31,6 +33,7 @@ export default function ProfileHome() {
       })
       .finally();
     console.log(result.user);
+    */
   };
 
   return (
@@ -48,7 +51,7 @@ export default function ProfileHome() {
                     height: "1rem",
                     width: "1rem",
                   }}
-                  src={user.photoURL ? user.photoURL : "/assets/rookie.png"}
+                  src={user.photoURL}
                   referrerPolicy="no-referrer"
                   unoptimized="true"
                 />

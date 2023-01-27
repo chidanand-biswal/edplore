@@ -107,6 +107,19 @@ export default function CardIconLargeOption(props) {
             alt="Google"
           />
         );
+      case "facebook":
+        return (
+          <CardMedia
+            component="img"
+            sx={{
+              width: "3.5rem",
+              height: "3.5rem",
+              display: "inline",
+            }}
+            src="/assets/facebook.png"
+            alt="Facebook"
+          />
+        );
       case "email":
         return (
           <CardMedia
@@ -160,7 +173,7 @@ export default function CardIconLargeOption(props) {
             ))}
           </List>
         );
-      case "google":
+      /*case "google":
         return (
           <Typography fontWeight={10} fontSize={3}>
             You will be redirected to Google sign-in screen <br />
@@ -173,7 +186,7 @@ export default function CardIconLargeOption(props) {
             You will be redirected to Email sign-in screen <br />
             and be back here again!
           </Typography>
-        );
+        );*/
       default:
         return <Box></Box>;
     }

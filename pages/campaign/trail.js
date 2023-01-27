@@ -85,7 +85,7 @@ export default function CampaignTrail() {
   console.log("realmProgressMathematics::: " + realmProgressMathematics);
   console.log("realmProgressBiology::: " + realmProgressBiology);
 
-  const bigScreenInd = useMediaQuery("(min-width:350px)");
+  const bigScreenInd = useMediaQuery("(min-width:800px)");
 
   const findCurrentStep = () => {
     console.log(`Realm active is ::: ${realmActive}.`);
@@ -226,31 +226,51 @@ export default function CampaignTrail() {
 
           <Paper elevation={8} sx={{ minWidth: "15rem" }}>
             <Box sx={{ alignItem: "center", padding: "0.5rem" }}>
-              <Stepper activeStep={activeStep} orientation="vertical">
-                {activeTrail.map((step, index) => (
-                  <Step key={step.label}>
-                    <StepLabel
-                      StepIconComponent={
-                        index < activeStep ? WhereToVoteIcon : PlaceIcon
-                      }
-                    >
-                      {step.label}
-                    </StepLabel>
-                    <StepContent>
-                      <Typography>{step.description}</Typography>
-                      <div>
-                        <Button
-                          variant="contained"
-                          className={styles.buttonLaunch}
-                          onClick={() => submit()}
-                        >
-                          RESUME MY QUEST
-                        </Button>
-                      </div>
-                    </StepContent>
-                  </Step>
-                ))}
-              </Stepper>
+              {bigScreenInd && (
+                <Stepper activeStep={activeStep} alternativeLabel>
+                  {activeTrail.map((step, index) => (
+                    <Step key={step.label}>
+                      <StepLabel
+                        StepIconComponent={
+                          index < activeStep ? WhereToVoteIcon : PlaceIcon
+                        }
+                      >
+                        {step.label}
+                      </StepLabel>
+                      {index === activeStep && (
+                        <Typography>{step.description}</Typography>
+                      )}
+                    </Step>
+                  ))}
+                </Stepper>
+              )}
+              {!bigScreenInd && (
+                <Stepper activeStep={activeStep} orientation="vertical">
+                  {activeTrail.map((step, index) => (
+                    <Step key={step.label}>
+                      <StepLabel
+                        StepIconComponent={
+                          index < activeStep ? WhereToVoteIcon : PlaceIcon
+                        }
+                      >
+                        {step.label}
+                      </StepLabel>
+                      <StepContent>
+                        <Typography>{step.description}</Typography>
+                        <div>
+                          <Button
+                            variant="contained"
+                            className={styles.buttonLaunch}
+                            onClick={() => submit()}
+                          >
+                            RESUME MY QUEST
+                          </Button>
+                        </div>
+                      </StepContent>
+                    </Step>
+                  ))}
+                </Stepper>
+              )}
               {activeStep === activeTrail.length && (
                 <Typography>
                   All steps completed - you&apos;re awesome!
@@ -277,6 +297,19 @@ export default function CampaignTrail() {
                   </a>
                 </Link>
               </div>
+            </Grid>
+            <Grid item>
+              {bigScreenInd && (
+                <div>
+                  <Button
+                    variant="contained"
+                    className={styles.buttonLaunch}
+                    onClick={() => submit()}
+                  >
+                    RESUME MY QUEST
+                  </Button>
+                </div>
+              )}
             </Grid>
           </Grid>
         </Grid>

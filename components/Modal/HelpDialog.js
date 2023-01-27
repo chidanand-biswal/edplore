@@ -34,7 +34,7 @@ export default function HelpDialog(props) {
           <DialogTitle>
             <Grid container direction="row">
               <Grid item sx={{ padding: "0.5rem 0.75rem 0.5rem 0" }}>
-                <HelpCenterIcon fontSize="medium" color="primary" />
+                <HelpCenterIcon fontSize="large" color="primary" />
               </Grid>
               <Grid item>
                 <Typography>Describe your problem.</Typography>
@@ -42,7 +42,7 @@ export default function HelpDialog(props) {
               </Grid>
             </Grid>
           </DialogTitle>
-          <DialogContent dividers>
+          <DialogContent>
             <DialogContentText id="alert-dialog-slide-description">
               <Grid container direction={"column"} spacing={3} padding="2rem 0">
                 <Grid item>
@@ -79,7 +79,7 @@ export default function HelpDialog(props) {
           </DialogContent>
         </div>
 
-        <DialogActions sx={{ justifyContent: "center" }}>
+        <DialogActions sx={{ justifyContent: "center", paddingBottom: "2rem" }}>
           <Button
             onClick={props.onClose}
             variant="contained"

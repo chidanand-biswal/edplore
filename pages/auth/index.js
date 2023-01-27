@@ -2,7 +2,12 @@ import Box from "@mui/material/Box";
 import CircularProgress from "@mui/material/CircularProgress";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import { getAuth, GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
+import {
+  getAuth,
+  GoogleAuthProvider,
+  FacebookAuthProvider,
+  signInWithRedirect,
+} from "firebase/auth";
 import { motion } from "framer-motion";
 import Router from "next/router";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -15,8 +20,10 @@ export default function AuthHome() {
   initFirebase();
   const auth = getAuth();
 
-  const provider = new GoogleAuthProvider();
+  const googleProvider = new GoogleAuthProvider();
   //provider.addScope("https://www.googleapis.com/auth/contacts.readonly");
+  const facebookProvider = new FacebookAuthProvider();
+  facebookProvider.addScope("gaming_user_picture");
 
   const [user, loading] = useAuthState(auth);
 
@@ -50,7 +57,44 @@ export default function AuthHome() {
 
   const signIn = async () => {
     //const result = await signInWithPopup(auth, provider);
-    await signInWithRedirect(auth, provider)
+
+    await signInWithRedirect(auth, googleProvider)
+      .then((user) => {
+        if (user) {
+          console.log(user);
+          user.user.getIdToken().then((token) => {
+            user.log(token);
+          });
+        }
+      })
+      .catch((err) => {
+        console.log(err.message);
+      })
+      .finally();
+  };
+
+  const signInWithGoogle = async () => {
+    //const result = await signInWithPopup(auth, provider);
+
+    await signInWithRedirect(auth, googleProvider)
+      .then((user) => {
+        if (user) {
+          console.log(user);
+          user.user.getIdToken().then((token) => {
+            user.log(token);
+          });
+        }
+      })
+      .catch((err) => {
+        console.log(err.message);
+      })
+      .finally();
+  };
+
+  const signInWithFacebook = async () => {
+    //const result = await signInWithPopup(auth, provider);
+
+    await signInWithRedirect(auth, facebookProvider)
       .then((user) => {
         if (user) {
           console.log(user);
@@ -95,7 +139,10 @@ export default function AuthHome() {
                 transition={{ duration: 1.5 }}
               >
                 <div onClick={signIn}>
-                  <CardIconLargeOption source="google" title="With Google" />
+                  <CardIconLargeOption
+                    source="google"
+                    title="Continue with Google"
+                  />
                 </div>
               </motion.div>
             </Grid>
@@ -105,8 +152,25 @@ export default function AuthHome() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 2 }}
               >
-                <div onClick={signIn}>
-                  <CardIconLargeOption source="email" title="With Email" />
+                <div onClick={signInWithFacebook}>
+                  <CardIconLargeOption
+                    source="facebook"
+                    title="Continue with Facebook"
+                  />
+                </div>
+              </motion.div>
+            </Grid>
+            <Grid item>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 2.5 }}
+              >
+                <div onClick={signInWithGoogle}>
+                  <CardIconLargeOption
+                    source="email"
+                    title="Continue with Email"
+                  />
                 </div>
               </motion.div>
             </Grid>
