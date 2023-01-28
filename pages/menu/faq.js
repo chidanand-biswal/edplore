@@ -10,7 +10,7 @@ import Typography from "@mui/material/Typography";
 import Link from "next/link";
 import React from "react";
 import MenuAppBar from "../../components/AppBar/MenuAppBar";
-import ToolbarFooter from "../../components/Footer/ToolbarFooter";
+import CommonFooter from "../../components/Footer/CommonFooter";
 import styles from "../../styles/Home.module.css";
 
 export default function FaqHome() {
@@ -252,7 +252,7 @@ export default function FaqHome() {
         </Grid>
       </Grid>
 
-      <ToolbarFooter />
+      <CommonFooter />
     </Box>
   );
 }

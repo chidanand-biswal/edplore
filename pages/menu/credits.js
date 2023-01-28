@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import Link from "next/link";
 import React from "react";
 import MenuAppBar from "../../components/AppBar/MenuAppBar";
-import ToolbarFooter from "../../components/Footer/ToolbarFooter";
+import CommonFooter from "../../components/Footer/CommonFooter";
 import styles from "../../styles/Home.module.css";
 
 export default function CreditsHome() {
@@ -50,7 +50,7 @@ export default function CreditsHome() {
             </Grid>
           </Box>
 
-          <Box sx={{ padding: "1rem" }}>
+          <Box sx={{ padding: "1rem", maxHeight: "15rem", overflow: "auto" }}>
             <a
               title="Subhashish Panigrahi, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
               href="https://commons.wikimedia.org/wiki/File:Konarka.svg"
@@ -64,13 +64,6 @@ export default function CreditsHome() {
             >
               Hurdy gurdy icons created by Freepik - Flaticon
             </a>{" "}
-            <br />
-            <a
-              href="https://www.flaticon.com/free-icons/knight"
-              title="knight icons"
-            >
-              Knight icons created by Freepik - Flaticon
-            </a>
             <br />
             <a
               href="https://www.flaticon.com/free-icons/knight"
@@ -137,6 +130,20 @@ export default function CreditsHome() {
               title="mindfulness icons"
             >
               Mindfulness icons created by Freepik - Flaticon
+            </a>{" "}
+            <br />
+            <a
+              href="https://www.flaticon.com/free-icons/facebook"
+              title="facebook icons"
+            >
+              Facebook icons created by Freepik - Flaticon
+            </a>
+            <br />
+            <a
+              href="https://www.flaticon.com/free-icons/mail"
+              title="mail icons"
+            >
+              Mail icons created by Freepik - Flaticon
             </a>
           </Box>
 
@@ -163,7 +170,7 @@ export default function CreditsHome() {
         </Grid>
       </Grid>
 
-      <ToolbarFooter />
+      <CommonFooter />
     </Box>
   );
 }

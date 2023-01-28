@@ -160,7 +160,7 @@ export default function LearnHome() {
       <Grid container direction="row">
         <Grid item className={styles.main}>
           <Box>
-            <Paper elevation={8} sx={{ marginTop: "1rem", padding: "0.5rem" }}>
+            <Paper elevation={8} sx={{ padding: "0.5rem" }}>
               <Box sx={{ width: "100%" }}>
                 <Grid
                   container

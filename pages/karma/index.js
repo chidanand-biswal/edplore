@@ -166,12 +166,11 @@ export default function KarmaHome() {
               <Grid item className={styles.mainSmall}>
                 <Radar data={calculateKarmaData()} />
                 <Box sx={{ textAlign: "center" }}>
-                  <Typography>
-                    Karma Quotient is the Resultant <br />
-                    of your own Actions and Decisions <br />
-                    in the Realms of Bodhi.
-                    <br />
-                    Aim for a &quot;balanced&quot; Karma!
+                  <Typography fontSize={10}>
+                    Karma Quotient is the Resultant of your own Actions and
+                    Decisions <br />
+                    in the Realms of Bodhi. Always aim for a
+                    &quot;balanced&quot; Karma!
                   </Typography>
                 </Box>
               </Grid>
@@ -185,7 +184,7 @@ export default function KarmaHome() {
               alignItems="center"
               justifyContent="center"
               spacing={2}
-              sx={{ marginTop: "2rem" }}
+              sx={{ marginTop: "0.5rem" }}
             >
               <Grid item>
                 <div>
@@ -223,7 +222,7 @@ export default function KarmaHome() {
               alignItems="center"
               justifyContent="center"
               spacing={2}
-              sx={{ marginTop: "2rem" }}
+              sx={{ marginTop: "0.5rem" }}
             >
               <Grid item>
                 <div>

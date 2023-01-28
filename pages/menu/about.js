@@ -13,7 +13,7 @@ export default function AboutHome() {
     <Box className={styles.container}>
       <MenuAppBar />
 
-      <Grid container direction="row">
+      <Grid container direction="row" sx={{ paddingTop: "2rem" }}>
         <Grid item className={styles.main}>
           <Grid className={styles.spacerOne}>
             <Box
@@ -26,20 +26,21 @@ export default function AboutHome() {
             />
           </Grid>
 
-          <Grid className={styles.spacerOne}>
-            <Typography variant="h3">
-              edplore <br />
-            </Typography>
-            <Typography className={styles.greyText} variant="h6">
-              edplore = educate + explore <br /> <br />
-              This is an ed-game (educational game) aimed at school-goers with
-              the goal to increase interest towards STEM subjects like science,
-              technology, engineering and mathematics. <br />
-              It hopes to inspire and install a positive sense of explorations.
-            </Typography>
-          </Grid>
-
-          <Grid className={styles.spacerOne}></Grid>
+          <Box sx={{ padding: "1rem 0", maxWidth: "50rem" }}>
+            <Grid className={styles.spacerOne}>
+              <Typography variant="h3">
+                edplore <br />
+              </Typography>
+              <Typography className={styles.greyText} variant="h6">
+                edplore = educate + explore <br /> <br />
+                This is an ed-game (educational game) aimed at school-goers with
+                the goal to increase interest towards STEM subjects like
+                science, technology, engineering and mathematics. <br />
+                It hopes to inspire and install a positive sense of
+                explorations.
+              </Typography>
+            </Grid>
+          </Box>
 
           <Grid
             container

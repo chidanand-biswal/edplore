@@ -32,19 +32,18 @@ export default function BlogHome() {
 
       <Grid container direction="row">
         <Grid item className={styles.main}>
-          <Grid>
-            <Grid
-              container
-              direction="row"
-              alignItems="center"
-              justifyContent="center"
-            >
-              <Grid item>
-                <AutoStoriesIcon color="primary" fontSize="large" />
-              </Grid>
-              <Grid item sx={{ padding: "0 0 0 1rem" }}>
-                <h3 className={styles.greyText}>The Chronicles of Bodhi</h3>
-              </Grid>
+          <Grid
+            container
+            direction="row"
+            alignItems="center"
+            justifyContent="center"
+            sx={{ paddingTop: "1rem" }}
+          >
+            <Grid item>
+              <AutoStoriesIcon color="primary" fontSize="large" />
+            </Grid>
+            <Grid item sx={{ padding: "0 0 0 1rem" }}>
+              <h3 className={styles.greyText}>The Chronicles of Bodhi</h3>
             </Grid>
           </Grid>
 
