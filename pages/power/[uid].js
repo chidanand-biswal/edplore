@@ -25,7 +25,7 @@ export default function FinalAuthHome({ authUserMetaData }) {
   console.log("FinalAuthHome");
   console.log(authUserMetaData);
   const addressInDB =
-    typeof authUserMetaData === "undefined" ? authUserMetaData.address : "";
+    typeof authUserMetaData != "undefined" ? authUserMetaData.address : "";
   const auth = getAuth();
   const [user, loading] = useAuthState(auth);
   const [openModal, setOpenModal] = React.useState(false);
