@@ -1,30 +1,81 @@
-import CloseIcon from "@mui/icons-material/Close";
 import { useMediaQuery } from "@mui/material";
-import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import Chip from "@mui/material/Chip";
-import Collapse from "@mui/material/Collapse";
 import FormControl from "@mui/material/FormControl";
 import Grid from "@mui/material/Grid";
-import IconButton from "@mui/material/IconButton";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
-import Stack from "@mui/material/Stack";
-import Switch from "@mui/material/Switch";
 import TextField from "@mui/material/TextField";
+import Alert from "@mui/material/Alert";
+import IconButton from "@mui/material/IconButton";
+import Collapse from "@mui/material/Collapse";
+import CloseIcon from "@mui/icons-material/Close";
+import AlertTitle from "@mui/material/AlertTitle";
+import Switch from "@mui/material/Switch";
+import Chip from "@mui/material/Chip";
+import Stack from "@mui/material/Stack";
+import { getAuth } from "firebase/auth";
 import Link from "next/link";
 import Router from "next/router";
 import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { useDispatch, useSelector } from "react-redux";
 import MenuAppBar from "../../components/AppBar/MenuAppBar";
-import { addBoardDetails } from "../../store/boardDetails/action";
+import ToolbarFooter from "../../components/Footer/ToolbarFooter";
+import {
+  getExplorerData,
+  saveExplorerMetaData,
+} from "../../firebase/db/dbUtility";
+import { updateMedalCount } from "../../store/medal/action";
+import { updateRealmProgress } from "../../store/realmProgress/action";
 import { addStandardDetails } from "../../store/standardDetails/action";
+import { updateSuperFastCount } from "../../store/superFast/action";
 import { addUserDetails } from "../../store/userDetails/action";
+import { addBoardDetails } from "../../store/boardDetails/action";
 import styles from "../../styles/Home.module.css";
 
-export default function ExplorerHome() {
+const initialRealmProgress = [
+  {
+    standard: 6,
+    realmProgressPhysics: 0,
+    realmProgressChemistry: 0,
+    realmProgressMathematics: 0,
+    realmProgressBiology: 0,
+  },
+  {
+    standard: 7,
+    realmProgressPhysics: 0,
+    realmProgressChemistry: 0,
+    realmProgressMathematics: 0,
+    realmProgressBiology: 0,
+  },
+  {
+    standard: 8,
+    realmProgressPhysics: 0,
+    realmProgressChemistry: 0,
+    realmProgressMathematics: 0,
+    realmProgressBiology: 0,
+  },
+  {
+    standard: 9,
+    realmProgressPhysics: 0,
+    realmProgressChemistry: 0,
+    realmProgressMathematics: 0,
+    realmProgressBiology: 0,
+  },
+  {
+    standard: 10,
+    realmProgressPhysics: 0,
+    realmProgressChemistry: 0,
+    realmProgressMathematics: 0,
+    realmProgressBiology: 0,
+  },
+];
+
+export default function ExplorerAuthHome({ authUserData }) {
+  const auth = getAuth();
+  const [user, loading] = useAuthState(auth);
   const dispatch = useDispatch();
   const bigScreenInd = useMediaQuery("(min-width:900px)");
   const [openAlert, setOpenAlert] = React.useState(true);
@@ -34,13 +85,15 @@ export default function ExplorerHome() {
   const [otherActive, setOtherActive] = React.useState(false);
   const [showAddress, setShowAddress] = React.useState(false);
 
-  const [valName, setValName] = React.useState(false);
+  const [valName, setValName] = React.useState(user ? true : false);
   const [valStandard, setValStandard] = React.useState(false);
 
-  const [userName, setUserName] = React.useState("");
+  const [userName, setUserName] = React.useState(user ? user.displayName : "");
   const [standard, setStandard] = React.useState(1);
-  const [email, setEmail] = React.useState("");
-  const [phoneNumber, setPhoneNumber] = React.useState("");
+  const [email, setEmail] = React.useState(user ? user.email : "");
+  const [phoneNumber, setPhoneNumber] = React.useState(
+    user ? user.phoneNumber : ""
+  );
   const [address, setAddress] = React.useState("");
 
   const { realmProgress } = useSelector((state) => state.realmProgress);
@@ -125,9 +178,53 @@ export default function ExplorerHome() {
     dispatch(addBoardDetails(board));
   };
 
+  const updateRealmProgressInStore = () => {
+    dispatch(
+      updateRealmProgress(
+        authUserData?.realmProgress
+          ? authUserData.realmProgress
+          : initialRealmProgress
+      )
+    );
+  };
+  const updateMedalCountInStore = () => {
+    dispatch(
+      updateMedalCount(authUserData?.kavachCount ? authUserData.kavachCount : 0)
+    );
+  };
+  const updateSuperFastCountInStore = () => {
+    dispatch(
+      updateSuperFastCount(
+        authUserData?.vajraCount ? authUserData.vajraCount : 0
+      )
+    );
+  };
+
   const submit = () => {
+    console.log("update realmProgress in State with realmProgress from DB");
+    console.log(authUserData);
+
     updateUserNameInStore();
     updateStandardInStore();
+    updateRealmProgressInStore();
+    updateMedalCountInStore();
+    updateSuperFastCountInStore();
+
+    try {
+      console.log("Saving explorer meta data in DB");
+      saveExplorerMetaData(
+        user.uid,
+        userName ? userName : user.displayName,
+        email ? email : user.email,
+        phoneNumber ? phoneNumber : user.phoneNumber,
+        calculateBoardSelection(),
+        address
+      );
+    } catch (error) {
+      console.log("Error in saving explorer meta data");
+      console.log(error);
+    }
+
     Router.push("/intro/introRealms");
   };
 
@@ -191,7 +288,7 @@ export default function ExplorerHome() {
                   <TextField
                     id="outlined-required"
                     label="I am"
-                    defaultValue={""}
+                    defaultValue={user ? user.displayName : ""}
                     onChange={handleChangeName}
                   />
                 </FormControl>
@@ -420,4 +517,13 @@ export default function ExplorerHome() {
       {/*<ToolbarFooter />*/}
     </Box>
   );
+}
+
+export async function getServerSideProps(context) {
+  const { uid } = context.params;
+
+  let userDatafromDB = await getExplorerData(uid);
+  return {
+    props: { authUserData: userDatafromDB },
+  };
 }
