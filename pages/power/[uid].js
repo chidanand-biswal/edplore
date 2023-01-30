@@ -24,7 +24,8 @@ import { useAuthState } from "react-firebase-hooks/auth";
 export default function FinalAuthHome({ authUserMetaData }) {
   console.log("FinalAuthHome");
   console.log(authUserMetaData);
-  const addressInDB = authUserMetaData.address;
+  const addressInDB =
+    typeof authUserMetaData === "undefined" ? authUserMetaData.address : "";
   const auth = getAuth();
   const [user, loading] = useAuthState(auth);
   const [openModal, setOpenModal] = React.useState(false);
@@ -255,6 +256,8 @@ export const getStaticPaths = async () => {
 };
 
 export async function getStaticProps(context) {
+  console.log("getStaticProps of final");
+  console.log(context);
   const { uid } = context.params;
 
   let userMetaDatafromDB = await getExplorerMetaData(uid);

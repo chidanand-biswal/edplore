@@ -113,7 +113,7 @@ export default function Home() {
               <Zoom in={true} style={{ transitionDelay: "4500ms" }}>
                 <div>
                   {user ? (
-                    <Link href="/explorer">
+                    <Link href={"/explorer/" + user.uid}>
                       <a>
                         <Button
                           variant="contained"

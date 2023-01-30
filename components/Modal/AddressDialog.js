@@ -48,8 +48,13 @@ export default function AddressDialog(props) {
         </div>
 
         <DialogActions sx={{ justifyContent: "center", paddingBottom: "2rem" }}>
-          <Button onClick={props.onClose} variant="oulined">
-            Not this time
+          <Button
+            onClick={() => {
+              Router.push("/campaign/");
+            }}
+            variant="outlined"
+          >
+            I will update address later
           </Button>
           <Button
             onClick={() => {
@@ -57,7 +62,7 @@ export default function AddressDialog(props) {
             }}
             variant="contained"
           >
-            I will update address
+            I will update address now
           </Button>
         </DialogActions>
       </Dialog>
