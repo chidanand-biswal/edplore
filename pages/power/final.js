@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
 import BrightnessHighIcon from "@mui/icons-material/BrightnessHigh";
@@ -15,8 +15,21 @@ import Link from "next/link";
 import MenuAppBar from "../../components/AppBar/MenuAppBar";
 import ToolbarFooter from "../../components/Footer/ToolbarFooter";
 import styles from "../../styles/Home.module.css";
+import { getAuth } from "firebase/auth";
+import Router from "next/router";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { getExplorerMetaData } from "../../firebase/db/dbUtility";
+import AddressDialog from "../../components/Modal/AddressDialog";
 
 export default function FinalHome() {
+  const auth = getAuth();
+  const [user, loading] = useAuthState(auth);
+  const [userName, setUserName] = React.useState("");
+  const [standard, setStandard] = React.useState(1);
+  const [email, setEmail] = React.useState("");
+  const [phoneNumber, setPhoneNumber] = React.useState("");
+  const [address, setAddress] = React.useState("");
+  const [openModal, setOpenModal] = React.useState(false);
   const { standardDetails } = useSelector((state) => state.standardDetails);
 
   const { realmProgress } = useSelector((state) => state.realmProgress);
@@ -74,6 +87,25 @@ export default function FinalHome() {
   const realmProgressGeneral =
     typeof averageProgress != "undefined" ? averageProgress : 0;
 
+  useEffect(() => {
+    const fetchUserMetaData = async () => {
+      let userMetaData = await getExplorerMetaData(user.uid);
+      setUserName(userMetaData.displayName);
+      setAddress(userMetaData.address);
+    };
+    if (user) {
+      fetchUserMetaData();
+    }
+  }, [userName]);
+
+  const navigate = () => {
+    if (address.length > 0) {
+      Router.push("/campaign/");
+    } else {
+      setOpenModal(true);
+    }
+  };
+
   return (
     <Box className={styles.container}>
       <MenuAppBar />
@@ -117,7 +149,8 @@ export default function FinalHome() {
                   transition={{ duration: 2 }}
                 >
                   <Typography className={styles.openingLines}>
-                    Have you not heard the prophecies?
+                    Hey {userName.length > 0 ? userName : "Explorer"}, have you
+                    not heard the prophecies?
                     <br />
                     The Mystic One will conquer all the Realms and reach the far
                     edges of Bodhi.
@@ -195,16 +228,13 @@ export default function FinalHome() {
             <Grid item>
               <Zoom in={true} style={{ transitionDelay: "4000ms" }}>
                 <div>
-                  <Link href="/campaign/">
-                    <a>
-                      <Button
-                        variant="contained"
-                        className={styles.buttonLaunch}
-                      >
-                        CONTINUE TO EXPLORE
-                      </Button>
-                    </a>
-                  </Link>
+                  <Button
+                    variant="contained"
+                    className={styles.buttonLaunch}
+                    onClick={navigate}
+                  >
+                    CONTINUE TO EXPLORE
+                  </Button>
                 </div>
               </Zoom>
             </Grid>
@@ -213,6 +243,14 @@ export default function FinalHome() {
       </Grid>
 
       <ToolbarFooter />
+      {openModal && address.length === 0 && (
+        <AddressDialog
+          open={openModal}
+          onClose={() => {
+            setOpenModal(false);
+          }}
+        />
+      )}
     </Box>
   );
 }

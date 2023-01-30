@@ -78,11 +78,7 @@ export default function PowerHome() {
   );
 
   const navigatePath = () => {
-    if (user) {
-      Router.push("/power/" + user.uid);
-    } else {
-      Router.push("/power/final");
-    }
+    Router.push("/power/final");
   };
 
   const realmProgressGeneral =

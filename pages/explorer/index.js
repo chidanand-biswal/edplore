@@ -16,16 +16,28 @@ import Switch from "@mui/material/Switch";
 import TextField from "@mui/material/TextField";
 import Link from "next/link";
 import Router from "next/router";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import MenuAppBar from "../../components/AppBar/MenuAppBar";
-import { addBoardDetails } from "../../store/boardDetails/action";
+import {
+  getExplorerData,
+  getExplorerMetaData,
+  saveExplorerMetaData,
+} from "../../firebase/db/dbUtility";
+import { updateMedalCount } from "../../store/medal/action";
+import { updateRealmProgress } from "../../store/realmProgress/action";
 import { addStandardDetails } from "../../store/standardDetails/action";
+import { updateSuperFastCount } from "../../store/superFast/action";
 import { addUserDetails } from "../../store/userDetails/action";
+import { addBoardDetails } from "../../store/boardDetails/action";
+import { getAuth } from "firebase/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
 import styles from "../../styles/Home.module.css";
 
 export default function ExplorerHome() {
   const dispatch = useDispatch();
+  const auth = getAuth();
+  const [user, loading] = useAuthState(auth);
   const bigScreenInd = useMediaQuery("(min-width:900px)");
   const [openAlert, setOpenAlert] = React.useState(true);
   const [openAddressAlert, setOpenAddressAlert] = React.useState(false);
@@ -33,6 +45,7 @@ export default function ExplorerHome() {
   const [icseActive, setIcseActive] = React.useState(false);
   const [otherActive, setOtherActive] = React.useState(false);
   const [showAddress, setShowAddress] = React.useState(false);
+  const [userData, setUserData] = React.useState();
 
   const [valName, setValName] = React.useState(false);
   const [valStandard, setValStandard] = React.useState(false);
@@ -43,6 +56,7 @@ export default function ExplorerHome() {
   const [phoneNumber, setPhoneNumber] = React.useState("");
   const [address, setAddress] = React.useState("");
 
+  const { userDetails } = useSelector((state) => state.userDetails);
   const { realmProgress } = useSelector((state) => state.realmProgress);
 
   const realmProgressArray = realmProgress ? realmProgress : [];
@@ -125,11 +139,72 @@ export default function ExplorerHome() {
     dispatch(addBoardDetails(board));
   };
 
+  const updateRealmProgressInStore = () => {
+    dispatch(
+      updateRealmProgress(
+        userData?.realmProgress ? userData.realmProgress : initialRealmProgress
+      )
+    );
+  };
+  const updateMedalCountInStore = () => {
+    dispatch(
+      updateMedalCount(userData?.kavachCount ? userData.kavachCount : 0)
+    );
+  };
+  const updateSuperFastCountInStore = () => {
+    dispatch(
+      updateSuperFastCount(userData?.vajraCount ? userData.vajraCount : 0)
+    );
+  };
+
   const submit = () => {
     updateUserNameInStore();
     updateStandardInStore();
     Router.push("/intro/introRealms");
+    if (user) {
+      updateRealmProgressInStore();
+      updateMedalCountInStore();
+      updateSuperFastCountInStore();
+      console.log("update realmProgress in State with realmProgress from DB");
+
+      try {
+        console.log("Saving explorer meta data in DB");
+        saveExplorerMetaData(
+          user.uid,
+          userName ? userName : user.displayName,
+          email ? email : user.email,
+          phoneNumber ? phoneNumber : user.phoneNumber,
+          calculateBoardSelection(),
+          address
+        );
+      } catch (error) {
+        console.log("Error in saving explorer meta data");
+        console.log(error);
+      }
+    }
   };
+
+  useEffect(() => {
+    const fetchUserData = async () => {
+      let userDataInDB = await getExplorerData(user.uid);
+      setUserData(userDataInDB);
+      setUserName(userDataInDB.explorerName);
+      setStandard(userDataInDB.activeStandard);
+      setValName(true);
+    };
+    const fetchUserMetaData = async () => {
+      let userMetaData = await getExplorerMetaData(user.uid);
+      setUserName(userMetaData.displayName);
+      setEmail(userMetaData.email);
+      setPhoneNumber(userMetaData.phoneNumber);
+      setAddress(userMetaData.address);
+    };
+
+    if (user) {
+      fetchUserData();
+      fetchUserMetaData();
+    }
+  }, [userName]);
 
   return (
     <Box className={styles.container}>
@@ -191,7 +266,7 @@ export default function ExplorerHome() {
                   <TextField
                     id="outlined-required"
                     label="I am"
-                    defaultValue={""}
+                    defaultValue={user ? user.displayName : userDetails}
                     onChange={handleChangeName}
                   />
                 </FormControl>
@@ -204,7 +279,7 @@ export default function ExplorerHome() {
                     id="standard-select-id"
                     label="standard"
                     onChange={handleStandardSelectChange}
-                    defaultValue=""
+                    defaultValue={""}
                   >
                     <MenuItem value={1} disabled>
                       Standard I
@@ -271,7 +346,7 @@ export default function ExplorerHome() {
                       labelId="standard-board-label"
                       id="standard-board-id"
                       label="board"
-                      defaultValue=""
+                      defaultValue={""}
                     >
                       <MenuItem value={1}>Odisha</MenuItem>
                       <MenuItem value={2}>Kerala</MenuItem>

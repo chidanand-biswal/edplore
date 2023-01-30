@@ -58,7 +58,7 @@ export default function AddressDialog(props) {
           </Button>
           <Button
             onClick={() => {
-              Router.push("/explorer/" + props.uid);
+              Router.push("/explorer/");
             }}
             variant="contained"
           >

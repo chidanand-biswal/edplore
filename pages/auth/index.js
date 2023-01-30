@@ -29,7 +29,7 @@ export default function AuthHome() {
 
   if (user) {
     //Redirect to Explorer Info screen
-    Router.push("/explorer/" + user.uid);
+    Router.push("/explorer/");
   }
 
   if (loading) {
