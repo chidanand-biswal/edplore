@@ -16,7 +16,7 @@ import styles from "../../styles/Home.module.css";
 import { default as tutorialMock } from "../api/mockTutorial.json";
 
 /*
-export async function getServerSideProps() {
+export async function getStaticProps() {
   // Fetch data from external API
   const res = await fetch(`http://localhost:3000/api/mockData.json`);
   const data = await res.json();
