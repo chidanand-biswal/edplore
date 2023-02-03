@@ -1,7 +1,7 @@
 import { usersActionTypes } from "./action";
 
 const usersInitialState = {
-  userDetails: "Explorer",
+  userDetails: "",
 };
 
 export default function reducer(state = usersInitialState, action) {

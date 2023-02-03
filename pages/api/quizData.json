@@ -922,6 +922,570 @@
     ]
   },
   {
+    "id": "C-6-1-0",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Which of the following is the symbol of gold?",
+    "answerOptions": [
+      { "answer": "Au", "isCorrect": true },
+      { "answer": "Ag" },
+      { "answer": "Ni" },
+      { "answer": "Fe" }
+    ]
+  },
+  {
+    "id": "C-6-1-1",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Which of the following techniques are used for separation of mixture?",
+    "answerOptions": [
+      { "answer": "Distillation" },
+      { "answer": "Decanting" },
+      { "answer": "Filtration" },
+      { "answer": "All of the given options", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "C-6-1-2",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Iron can be separated from mixture by which of the following process?",
+    "answerOptions": [
+      { "answer": "Decantation" },
+      { "answer": "Sieving" },
+      { "answer": "Magnetic separation", "isCorrect": true },
+      { "answer": "Sedimentation" }
+    ]
+  },
+  {
+    "id": "C-6-1-3",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "What always contains the same elements combined together chemically in a fixed ratio?",
+    "answerOptions": [
+      { "answer": "Elements" },
+      { "answer": "Compound", "isCorrect": true },
+      { "answer": "Metal" },
+      { "answer": "Mixture" }
+    ]
+  },
+  {
+    "id": "C-6-1-4",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "A compound is pure and homogeneous. True or false?",
+    "answerOptions": [
+      { "answer": "True", "isCorrect": true },
+      { "answer": "False" },
+      { "answer": "Indeterminate" },
+      { "answer": "None of the options" }
+    ]
+  },
+  {
+    "id": "C-6-1-5",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "What is a pure chemical substance made of two or more different chemical elements called?",
+    "answerOptions": [
+      { "answer": "Material" },
+      { "answer": "Compound", "isCorrect": true },
+      { "answer": "Elements" },
+      { "answer": "Mixture" }
+    ]
+  },
+  {
+    "id": "C-6-1-6",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Which of the following is not a compound?",
+    "answerOptions": [
+      { "answer": "Oxygen", "isCorrect": true },
+      { "answer": "Water" },
+      { "answer": "Carbon dioxide" },
+      { "answer": "Hydrochloric acid" }
+    ]
+  },
+  {
+    "id": "C-6-1-7",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Which of the following is made up of iron clamp at the front and wood handle at the other end?",
+    "answerOptions": [
+      { "answer": "Mortar and pestle" },
+      { "answer": "Porcelain" },
+      { "answer": "Wire gauze" },
+      { "answer": "Test tube holder", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "C-6-1-8",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "What is the substance called which is dissolved in the water?",
+    "answerOptions": [
+      { "answer": "Solute", "isCorrect": true },
+      { "answer": "Solvent" },
+      { "answer": "Solution" },
+      { "answer": "Mixture" }
+    ]
+  },
+
+  {
+    "id": "C-6-1-9",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Which two elements are combined to form rust?",
+    "answerOptions": [
+      { "answer": "Oxygen and Water", "isCorrect": true },
+      { "answer": "Hydrogen and Water" },
+      { "answer": "Oxygen and Hydrogen" },
+      { "answer": "Sodium and oxygen" }
+    ]
+  },
+
+  {
+    "id": "C-6-2-0",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "What determines atomic number of atom?",
+    "answerOptions": [
+      { "answer": "Electron" },
+      { "answer": "Proton", "isCorrect": true },
+      { "answer": "Neutron" },
+      { "answer": "Nucleus" }
+    ]
+  },
+  {
+    "id": "C-6-2-1",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "How many neutrons does a protium has?",
+    "answerOptions": [
+      { "answer": "None", "isCorrect": true },
+      { "answer": "1" },
+      { "answer": "2" },
+      { "answer": "3" }
+    ]
+  },
+  {
+    "id": "C-6-2-2",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "What happens when an electron jumps from lower orbit to higher orbit?",
+    "answerOptions": [
+      { "answer": "Energy is emitted" },
+      { "answer": "Energy is absorbed", "isCorrect": true },
+      { "answer": "No change in energy levels" },
+      { "answer": "Energy is emitted and then absorbed." }
+    ]
+  },
+  {
+    "id": "C-6-2-3",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "In which state of matter are particles packed tightly together in fixed positions?",
+    "answerOptions": [
+      { "answer": "liquid" },
+      { "answer": "solid", "isCorrect": true },
+      { "answer": "gas" },
+      { "answer": "compound" }
+    ]
+  },
+  {
+    "id": "C-6-2-4",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "What is the boiling point of water on Celsius and Kelvin scale?",
+    "answerOptions": [
+      { "answer": "373, 273" },
+      { "answer": "0, 273" },
+      { "answer": "273, 373" },
+      { "answer": "100, 373", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "C-6-2-5",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "What happens to liquids at higher altitudes? ",
+    "answerOptions": [
+      { "answer": "Boiling point of a liquid decreases", "isCorrect": true },
+      { "answer": "Boiling point of a liquid increases" },
+      { "answer": "No change in boiling point" },
+      { "answer": "Melting point of solid increases" }
+    ]
+  },
+  {
+    "id": "C-6-2-6",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Arrange these states of Matter in descending order of Intermolecular force. Solid, Liquid, Gas",
+    "answerOptions": [
+      { "answer": "Gas, Liquid, Solid" },
+      { "answer": "Gas, Solid, Liquid" },
+      { "answer": "Solid, Liquid, Gas", "isCorrect": true },
+      { "answer": "Solid, Gas, Liquid" }
+    ]
+  },
+  {
+    "id": "C-6-2-7",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "The state of matter which has no definite shape or volume is called ___",
+    "answerOptions": [
+      { "answer": "None of the options" },
+      { "answer": "Liquid" },
+      { "answer": "Solid" },
+      { "answer": "Gas", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "C-6-2-8",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Which of the following occurs when heat is applied on state of matter?",
+    "answerOptions": [
+      { "answer": "Expansion", "isCorrect": true },
+      { "answer": "Compression" },
+      { "answer": "Freezing" },
+      { "answer": "Evaporation" }
+    ]
+  },
+
+  {
+    "id": "C-6-2-9",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Diffusion can be defined as ",
+    "answerOptions": [
+      {
+        "answer": "intermixing of particles of two different types of matter on their own",
+        "isCorrect": true
+      },
+      { "answer": "Intermixing of particles of same type" },
+      { "answer": "Process of converting solid into gas" },
+      { "answer": "None of these" }
+    ]
+  },
+  {
+    "id": "C-6-3-0",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Identify the reason behind the floating of Iceberg on ocean water?",
+    "answerOptions": [
+      { "answer": "Density of ice is more than water" },
+      { "answer": "Density of ice is less than water", "isCorrect": true },
+      { "answer": "Density of ice is similar to water" },
+      { "answer": "Mass of ice is more than water" }
+    ]
+  },
+  {
+    "id": "C-6-3-1",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Alum is a compound of which of the following two elements?",
+    "answerOptions": [
+      { "answer": "Sodium and nitrate" },
+      { "answer": "Aluminum and nitrate" },
+      { "answer": "Aluminum and sulfate", "isCorrect": true },
+      { "answer": "Sodium and sulfate" }
+    ]
+  },
+  {
+    "id": "C-6-3-2",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Which of the following is true for desalination plants?",
+    "answerOptions": [
+      { "answer": "It convert cold water to hot water" },
+      { "answer": "It convert tasteless water to salty water" },
+      {
+        "answer": "It convert salty water to drinkable water",
+        "isCorrect": true
+      },
+      { "answer": "It convert hot water to cold water" }
+    ]
+  },
+  {
+    "id": "C-6-3-3",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Name the method which is used to obtain freshwater?",
+    "answerOptions": [
+      { "answer": "Distillation", "isCorrect": true },
+      { "answer": "Filtration" },
+      { "answer": "Chlorination" },
+      { "answer": "Evaporation" }
+    ]
+  },
+  {
+    "id": "C-6-3-4",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Which of the following is not used to get safe drinking water ?",
+    "answerOptions": [
+      { "answer": "Sulphuric acid", "isCorrect": true },
+      { "answer": "Chlorine tablets" },
+      { "answer": "Pottasium Permagnate" },
+      { "answer": "Heat" }
+    ]
+  },
+  {
+    "id": "C-6-3-5",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "What do you mean by Solvent ? ",
+    "answerOptions": [
+      { "answer": "A solvent is a homogeneous mixture." },
+      {
+        "answer": "A solvent is a medium in which solute dissolves.",
+        "isCorrect": true
+      },
+      { "answer": "A solvent is a substance which dissolves in any medium." },
+      { "answer": "None of the options" }
+    ]
+  },
+  {
+    "id": "C-6-3-6",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Solution is defined as ",
+    "answerOptions": [
+      {
+        "answer": "A homogeneous uniform mixture formed by solute and  solvent.",
+        "isCorrect": true
+      },
+      { "answer": "A medium in which solute dissolves." },
+      { "answer": "A medium in which no solute can be added." },
+      { "answer": "None of the options" }
+    ]
+  },
+  {
+    "id": "C-6-3-7",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "When does the solution said to be in equlibrium ?",
+    "answerOptions": [
+      {
+        "answer": "When rate of dissolution and rate of recystallisation become equal",
+        "isCorrect": true
+      },
+      {
+        "answer": "When rate of dissolution is more from the rate of recrystallisation."
+      },
+      { "answer": "When amount of solute and solvent becomes equal." },
+      { "answer": "When amount of solvent is too large as compared to solute." }
+    ]
+  },
+  {
+    "id": "C-6-3-8",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Water harvesting basically describes:",
+    "answerOptions": [
+      { "answer": "Using water in efficient manner.", "isCorrect": true },
+      { "answer": "Throwing garbages in water." },
+      { "answer": "Pump out water from ground." },
+      { "answer": "Using water in agriculture." }
+    ]
+  },
+
+  {
+    "id": "C-6-3-9",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Which of these is a major reason which make agriculture waste a cause of water pollution ?",
+    "answerOptions": [
+      {
+        "answer": "Pesticides",
+        "isCorrect": true
+      },
+      { "answer": "Silts" },
+      { "answer": "Soils" },
+      { "answer": "None of these" }
+    ]
+  },
+
+  {
+    "id": "C-6-4-0",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "What happens to the capacity of water vapour when temperature of air increases?",
+    "answerOptions": [
+      { "answer": "Decreases" },
+      { "answer": "Increases", "isCorrect": true },
+      { "answer": "Remains constant" },
+      { "answer": "Is indeterminate" }
+    ]
+  },
+  {
+    "id": "C-6-4-1",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Name the greenhouse gas that absorbs energy and maintains the earth's temperature?",
+    "answerOptions": [
+      { "answer": "O2" },
+      { "answer": "N2" },
+      { "answer": "CO2", "isCorrect": true },
+      { "answer": "Ar" }
+    ]
+  },
+  {
+    "id": "C-6-4-2",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Exhaled air contains 16% O2 and about 4% of CO2, the rest of 80% is ___ gas.",
+    "answerOptions": [
+      { "answer": "Ar" },
+      { "answer": "H2" },
+      {
+        "answer": "N2",
+        "isCorrect": true
+      },
+      { "answer": "Ne" }
+    ]
+  },
+  {
+    "id": "C-6-4-3",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Chemical formula of ozone is ",
+    "answerOptions": [
+      { "answer": "O3", "isCorrect": true },
+      { "answer": "O2" },
+      { "answer": "O4" },
+      { "answer": "O5" }
+    ]
+  },
+  {
+    "id": "C-6-4-4",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Plants produce the maximum amount of oxygen during the ___",
+    "answerOptions": [
+      { "answer": "night time" },
+      { "answer": "day time", "isCorrect": true },
+      { "answer": "evening time" },
+      { "answer": "Plants don't produce oxygen" }
+    ]
+  },
+  {
+    "id": "C-6-4-5",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Acid rain is caused primarily due to the emission of ___",
+    "answerOptions": [
+      { "answer": "Carbon dioxide and Oxygen" },
+      {
+        "answer": "Carbon dioxide and Sulphur dioxide"
+      },
+      { "answer": "Sulfur dioxide and Oxides of Nitrogen", "isCorrect": true },
+      { "answer": "Oxygen and Oxides of Nitrogen" }
+    ]
+  },
+  {
+    "id": "C-6-4-6",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "The composition of nitrogen in the air is approximately",
+    "answerOptions": [
+      {
+        "answer": "21%"
+      },
+      { "answer": "65%" },
+      { "answer": "33%" },
+      { "answer": "78%", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "C-6-4-7",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "which gas is used to make fertilizers?",
+    "answerOptions": [
+      {
+        "answer": "Oxygen"
+      },
+      {
+        "answer": "Nitrogen",
+        "isCorrect": true
+      },
+      { "answer": "Carbon dioxide" },
+      { "answer": "Inert gases" }
+    ]
+  },
+  {
+    "id": "C-6-4-8",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Which of the following gas is required for photosynthesis?",
+    "answerOptions": [
+      {
+        "answer": "Oxygen"
+      },
+      {
+        "answer": "Nitrogen"
+      },
+      { "answer": "Carbon dioxide", "isCorrect": true },
+      { "answer": "Inert gases" }
+    ]
+  },
+
+  {
+    "id": "C-6-4-9",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Name the layer that is 50 to 80 km above the earth.",
+    "answerOptions": [
+      {
+        "answer": "Troposphere"
+      },
+      { "answer": "Thermosphere" },
+      { "answer": "Stratosphere" },
+      { "answer": "Mesosphere", "isCorrect": true }
+    ]
+  },
+  {
     "id": 0,
     "subject": "PHYSICS",
     "standard": 7,
