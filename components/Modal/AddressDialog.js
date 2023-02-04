@@ -41,7 +41,7 @@ export default function AddressDialog(props) {
               Dear Explorer, <br />
               We can see you are destined for greatness. <br />
               And you stand a chance to win glory and awards. <br />
-              We need your address details to be able to ship your award if and
+              We need your contact details to be able to ship your award if and
               when you win.
             </DialogContentText>
           </DialogContent>
@@ -54,7 +54,7 @@ export default function AddressDialog(props) {
             }}
             variant="outlined"
           >
-            I will update address later
+            I will update later
           </Button>
           <Button
             onClick={() => {
@@ -62,7 +62,7 @@ export default function AddressDialog(props) {
             }}
             variant="contained"
           >
-            I will update address now
+            I will update right now
           </Button>
         </DialogActions>
       </Dialog>

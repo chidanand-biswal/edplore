@@ -92,6 +92,7 @@ export default function FinalHome() {
       let userMetaData = await getExplorerMetaData(user.uid);
       setUserName(userMetaData.displayName);
       setAddress(userMetaData.address);
+      setPhoneNumber(userMetaData.phoneNumber);
     };
     if (user) {
       fetchUserMetaData();
@@ -243,7 +244,7 @@ export default function FinalHome() {
       </Grid>
 
       <ToolbarFooter />
-      {openModal && address.length === 0 && (
+      {openModal && phoneNumber.length === 0 && (
         <AddressDialog
           open={openModal}
           onClose={() => {

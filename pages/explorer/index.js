@@ -33,6 +33,7 @@ import { addBoardDetails } from "../../store/boardDetails/action";
 import { getAuth } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import styles from "../../styles/Home.module.css";
+import { MuiTelInput } from "mui-tel-input";
 
 export default function ExplorerHome() {
   const dispatch = useDispatch();
@@ -77,11 +78,19 @@ export default function ExplorerHome() {
       setEmail(event.target.value);
     }
   };
+  /*
   const handleChangePhoneNumber = (event) => {
     if (event.target.value !== "") {
       setPhoneNumber(event.target.value);
     }
   };
+  */
+  const handleChangePhoneNumber = (value, info) => {
+    if (value !== "") {
+      setPhoneNumber(value);
+    }
+  };
+
   const handleChangeAddress = (event) => {
     if (event.target.value !== "") {
       setAddress(event.target.value);
@@ -255,24 +264,26 @@ export default function ExplorerHome() {
                 </IconButton>
               }
             >
-              You can of course go on Quest without entering address. <br />
-              However address is need to ship your award if and when you win!
+              You can of course go on Quest without entering contact details.{" "}
+              <br />
+              However it is needed to ship your award if and when you win!
             </Alert>
           </Collapse>
           <Box>
             <Grid container direction={"row"} spacing={3} padding="2rem 0">
               <Grid item>
-                <FormControl sx={{ minWidth: "15rem" }}>
+                <FormControl sx={{ minWidth: "16rem" }}>
                   <TextField
                     id="outlined-required"
                     label="I am"
                     defaultValue={user ? user.displayName : userDetails}
                     onChange={handleChangeName}
+                    helperText="Enter full name"
                   />
                 </FormControl>
               </Grid>
               <Grid item>
-                <FormControl sx={{ minWidth: "15rem" }}>
+                <FormControl sx={{ minWidth: "16rem" }}>
                   <InputLabel id="standard-select-label">I study in</InputLabel>
                   <Select
                     labelId="standard-select-label"
@@ -299,8 +310,12 @@ export default function ExplorerHome() {
                     <MenuItem value={6}>Standard VI</MenuItem>
                     <MenuItem value={7}>Standard VII</MenuItem>
                     <MenuItem value={8}>Standard VIII</MenuItem>
-                    <MenuItem value={9}>Standard IX</MenuItem>
-                    <MenuItem value={10}>Standard X</MenuItem>
+                    <MenuItem value={9} disabled>
+                      Standard IX
+                    </MenuItem>
+                    <MenuItem value={10} disabled>
+                      Standard X
+                    </MenuItem>
                   </Select>
                 </FormControl>
               </Grid>
@@ -312,7 +327,7 @@ export default function ExplorerHome() {
                     id="standard-prefer-label"
                     sx={{ marginTop: "0.25rem" }}
                   >
-                    I prefer:
+                    Board:
                   </InputLabel>
                   <Chip
                     label="CBSE"
@@ -340,7 +355,7 @@ export default function ExplorerHome() {
                   />
                 </Stack>
                 {otherActive ? (
-                  <FormControl sx={{ minWidth: "15rem", marginTop: "1rem" }}>
+                  <FormControl sx={{ minWidth: "16rem", marginTop: "1rem" }}>
                     <InputLabel id="standard-board-label">State</InputLabel>
                     <Select
                       labelId="standard-board-label"
@@ -353,7 +368,7 @@ export default function ExplorerHome() {
                       <MenuItem value={3}>Madhya Pradesh</MenuItem>
                       <MenuItem value={4}>Maharashtra</MenuItem>
                       <MenuItem value={5}>Punjab</MenuItem>
-                      <MenuItem value={6}>None</MenuItem>
+                      <MenuItem value={6}>Other</MenuItem>
                     </Select>
                   </FormControl>
                 ) : (
@@ -369,7 +384,7 @@ export default function ExplorerHome() {
                     id="standard-prefer-label"
                     sx={{ marginTop: "0.5rem" }}
                   >
-                    I wish to add address:
+                    I will add contact details:
                   </InputLabel>
                   <Switch
                     size="large"
@@ -389,7 +404,7 @@ export default function ExplorerHome() {
                     <Grid item>
                       <Grid container direction={"row"} spacing={3}>
                         <Grid item>
-                          <FormControl sx={{ minWidth: "15rem" }}>
+                          <FormControl sx={{ minWidth: "16rem" }}>
                             <TextField
                               id="outlined-required"
                               label="Email"
@@ -399,11 +414,30 @@ export default function ExplorerHome() {
                           </FormControl>
                         </Grid>
                         <Grid item>
-                          <FormControl sx={{ minWidth: "15rem" }}>
+                          <FormControl sx={{ minWidth: "16rem" }}>
+                            {/*}
                             <TextField
                               id="outlined-required"
                               label="Phone"
                               defaultValue={phoneNumber}
+                              onChange={handleChangePhoneNumber}
+                            />
+                */}
+                            <MuiTelInput
+                              label="Phone"
+                              defaultCountry="IN"
+                              preferredCountries={["IN", "US"]}
+                              onlyCountries={[
+                                "IN",
+                                "US",
+                                "GB",
+                                "AU",
+                                "DE",
+                                "FR",
+                                "MX",
+                                "ES",
+                              ]}
+                              value={phoneNumber}
                               onChange={handleChangePhoneNumber}
                             />
                           </FormControl>
@@ -411,10 +445,10 @@ export default function ExplorerHome() {
                       </Grid>
                     </Grid>
                     <Grid item>
-                      <FormControl sx={{ minWidth: "15rem" }}>
+                      <FormControl sx={{ minWidth: "16rem" }}>
                         <TextField
                           id="outlined-required"
-                          label="Address"
+                          label="School"
                           defaultValue={""}
                           onChange={handleChangeAddress}
                           multiline
@@ -435,7 +469,7 @@ export default function ExplorerHome() {
                         <Button
                           variant="outlined"
                           className={styles.buttonLaunch}
-                          sx={{ minWidth: "15rem" }}
+                          sx={{ minWidth: "16rem" }}
                         >
                           CHANGE MY PATH
                         </Button>
@@ -448,7 +482,7 @@ export default function ExplorerHome() {
                     <Button
                       variant="contained"
                       className={styles.buttonLaunch}
-                      sx={{ minWidth: "15rem" }}
+                      sx={{ minWidth: "16rem" }}
                       disabled={valName && valStandard ? false : true}
                       onClick={() => submit()}
                     >
@@ -464,7 +498,7 @@ export default function ExplorerHome() {
                     <Button
                       variant="contained"
                       className={styles.buttonLaunch}
-                      sx={{ minWidth: "15rem" }}
+                      sx={{ minWidth: "16rem" }}
                       disabled={valName && valStandard ? false : true}
                       onClick={() => submit()}
                     >
@@ -479,7 +513,7 @@ export default function ExplorerHome() {
                         <Button
                           variant="outlined"
                           className={styles.buttonLaunch}
-                          sx={{ minWidth: "15rem" }}
+                          sx={{ minWidth: "16rem" }}
                         >
                           CHANGE MY PATH
                         </Button>
