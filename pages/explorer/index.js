@@ -1,5 +1,5 @@
 import CloseIcon from "@mui/icons-material/Close";
-import { useMediaQuery } from "@mui/material";
+import { Typography, useMediaQuery } from "@mui/material";
 import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
@@ -34,6 +34,11 @@ import { getAuth } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import styles from "../../styles/Home.module.css";
 import { MuiTelInput } from "mui-tel-input";
+import InputAdornment from "@mui/material/InputAdornment";
+import AccountCircle from "@mui/icons-material/AccountCircle";
+import SchoolIcon from "@mui/icons-material/School";
+import EmailIcon from "@mui/icons-material/Email";
+import PhoneIcon from "@mui/icons-material/Phone";
 
 export default function ExplorerHome() {
   const dispatch = useDispatch();
@@ -224,7 +229,7 @@ export default function ExplorerHome() {
           <SpeedDialCustom />
         </Grid>
   */}
-        <Grid item className={styles.main} sx={{ padding: "0 5rem" }}>
+        <Grid item className={styles.main} sx={{ padding: "0 2rem 0 3.5rem" }}>
           <h2 className={styles.greyText}>Tell more about yourself!</h2>
           <Collapse in={openAlert}>
             <Alert
@@ -272,18 +277,24 @@ export default function ExplorerHome() {
           <Box>
             <Grid container direction={"row"} spacing={3} padding="2rem 0">
               <Grid item>
-                <FormControl sx={{ minWidth: "16rem" }}>
+                <FormControl sx={{ minWidth: "17rem" }}>
                   <TextField
                     id="outlined-required"
                     label="I am"
                     defaultValue={user ? user.displayName : userDetails}
                     onChange={handleChangeName}
-                    helperText="Enter full name"
+                    InputProps={{
+                      endAdornment: (
+                        <InputAdornment position="end">
+                          <AccountCircle />
+                        </InputAdornment>
+                      ),
+                    }}
                   />
                 </FormControl>
               </Grid>
               <Grid item>
-                <FormControl sx={{ minWidth: "16rem" }}>
+                <FormControl sx={{ minWidth: "17rem" }}>
                   <InputLabel id="standard-select-label">I study in</InputLabel>
                   <Select
                     labelId="standard-select-label"
@@ -327,7 +338,7 @@ export default function ExplorerHome() {
                     id="standard-prefer-label"
                     sx={{ marginTop: "0.25rem" }}
                   >
-                    Board:
+                    I prefer:
                   </InputLabel>
                   <Chip
                     label="CBSE"
@@ -384,7 +395,7 @@ export default function ExplorerHome() {
                     id="standard-prefer-label"
                     sx={{ marginTop: "0.5rem" }}
                   >
-                    I will add contact details:
+                    I shall add contact details:
                   </InputLabel>
                   <Switch
                     size="large"
@@ -404,17 +415,24 @@ export default function ExplorerHome() {
                     <Grid item>
                       <Grid container direction={"row"} spacing={3}>
                         <Grid item>
-                          <FormControl sx={{ minWidth: "16rem" }}>
+                          <FormControl sx={{ minWidth: "17rem" }}>
                             <TextField
                               id="outlined-required"
                               label="Email"
                               defaultValue={email}
                               onChange={handleChangeEmail}
+                              InputProps={{
+                                endAdornment: (
+                                  <InputAdornment position="end">
+                                    <EmailIcon />
+                                  </InputAdornment>
+                                ),
+                              }}
                             />
                           </FormControl>
                         </Grid>
                         <Grid item>
-                          <FormControl sx={{ minWidth: "16rem" }}>
+                          <FormControl sx={{ minWidth: "17rem" }}>
                             {/*}
                             <TextField
                               id="outlined-required"
@@ -424,6 +442,7 @@ export default function ExplorerHome() {
                             />
                 */}
                             <MuiTelInput
+                              sx={{ width: "17rem" }}
                               label="Phone"
                               defaultCountry="IN"
                               preferredCountries={["IN", "US"]}
@@ -439,19 +458,33 @@ export default function ExplorerHome() {
                               ]}
                               value={phoneNumber}
                               onChange={handleChangePhoneNumber}
+                              InputProps={{
+                                endAdornment: (
+                                  <InputAdornment position="end">
+                                    <PhoneIcon />
+                                  </InputAdornment>
+                                ),
+                              }}
                             />
                           </FormControl>
                         </Grid>
                       </Grid>
                     </Grid>
                     <Grid item>
-                      <FormControl sx={{ minWidth: "16rem" }}>
+                      <FormControl sx={{ minWidth: "17rem" }}>
                         <TextField
                           id="outlined-required"
                           label="School"
                           defaultValue={""}
                           onChange={handleChangeAddress}
                           multiline
+                          InputProps={{
+                            endAdornment: (
+                              <InputAdornment position="end">
+                                <SchoolIcon />
+                              </InputAdornment>
+                            ),
+                          }}
                         />
                       </FormControl>
                     </Grid>
@@ -460,6 +493,47 @@ export default function ExplorerHome() {
               </Box>
             )}
 
+            <Box>
+              <Typography sx={{ fontSize: "0.75rem", fontWeight: 10 }}>
+                By proceeding, I agree to the{" "}
+                <Link href="/menu/policy">
+                  <a>
+                    <span
+                      style={{
+                        color: "royalblue",
+                      }}
+                    >
+                      Terms of Service
+                    </span>
+                  </a>
+                </Link>{" "}
+                and{" "}
+                <Link href="/menu/policy">
+                  <a>
+                    <span
+                      style={{
+                        color: "royalblue",
+                      }}
+                    >
+                      Privacy Policy
+                    </span>
+                  </a>
+                </Link>
+                , including{" "}
+                <Link href="/menu/policy">
+                  <a>
+                    <span
+                      style={{
+                        color: "royalblue",
+                      }}
+                    >
+                      Cookie Use
+                    </span>
+                  </a>
+                </Link>
+                .
+              </Typography>
+            </Box>
             {bigScreenInd ? (
               <Grid container direction={"row"} spacing={3} padding="1rem 0">
                 <Grid item>
@@ -469,7 +543,7 @@ export default function ExplorerHome() {
                         <Button
                           variant="outlined"
                           className={styles.buttonLaunch}
-                          sx={{ minWidth: "16rem" }}
+                          sx={{ minWidth: "17rem" }}
                         >
                           CHANGE MY PATH
                         </Button>
@@ -482,7 +556,7 @@ export default function ExplorerHome() {
                     <Button
                       variant="contained"
                       className={styles.buttonLaunch}
-                      sx={{ minWidth: "16rem" }}
+                      sx={{ minWidth: "17rem" }}
                       disabled={valName && valStandard ? false : true}
                       onClick={() => submit()}
                     >
@@ -498,7 +572,7 @@ export default function ExplorerHome() {
                     <Button
                       variant="contained"
                       className={styles.buttonLaunch}
-                      sx={{ minWidth: "16rem" }}
+                      sx={{ minWidth: "17rem" }}
                       disabled={valName && valStandard ? false : true}
                       onClick={() => submit()}
                     >
@@ -513,7 +587,7 @@ export default function ExplorerHome() {
                         <Button
                           variant="outlined"
                           className={styles.buttonLaunch}
-                          sx={{ minWidth: "16rem" }}
+                          sx={{ minWidth: "17rem" }}
                         >
                           CHANGE MY PATH
                         </Button>

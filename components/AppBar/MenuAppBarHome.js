@@ -23,6 +23,7 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
+import PolicyIcon from "@mui/icons-material/Policy";
 import ListItemText from "@mui/material/ListItemText";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
@@ -189,6 +190,14 @@ export default function MenuAppBarHome() {
           </List>
 
           <Divider />
+          <ListItem key={"menuPolicy"} disablePadding>
+            <ListItemButton onClick={() => Router.push("/menu/policy")}>
+              <ListItemIcon>
+                <PolicyIcon />
+              </ListItemIcon>
+              <ListItemText primary={"Our policies"} />
+            </ListItemButton>
+          </ListItem>
           <ListItem key={"menuCredits"} disablePadding>
             <ListItemButton onClick={() => Router.push("/menu/credits")}>
               <ListItemIcon>

@@ -12,6 +12,7 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
 import MenuIcon from "@mui/icons-material/Menu";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
+import PolicyIcon from "@mui/icons-material/Policy";
 import AppBar from "@mui/material/AppBar";
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
@@ -188,6 +189,14 @@ export default function MenuAppBar() {
           </List>
 
           <Divider />
+          <ListItem key={"menuPolicy"} disablePadding>
+            <ListItemButton onClick={() => Router.push("/menu/policy")}>
+              <ListItemIcon>
+                <PolicyIcon />
+              </ListItemIcon>
+              <ListItemText primary={"Our policies"} />
+            </ListItemButton>
+          </ListItem>
           <ListItem key={"menuCredits"} disablePadding>
             <ListItemButton onClick={() => Router.push("/menu/credits")}>
               <ListItemIcon>
