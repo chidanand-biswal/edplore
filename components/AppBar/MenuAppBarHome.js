@@ -161,7 +161,7 @@ export default function MenuAppBarHome() {
                   <EscalatorWarningIcon color="primary" />
                 </ListItemIcon>
                 <ListItemText
-                  primary={"Are you a parent?"}
+                  primary={"For parents"}
                   sx={{ color: "#556cd6" }}
                 />
               </ListItemButton>
