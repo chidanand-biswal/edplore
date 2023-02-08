@@ -17,6 +17,7 @@ import * as React from "react";
 import styles from "../../styles/Home.module.css";
 import CommonDialog from "../Modal/CommonDialog";
 import HelpDialog from "../Modal/HelpDialog";
+import LeaderBoardDialog from "../Modal/LeaderBoardDialog";
 
 export default function ToolbarFooter() {
   const bigScreenInd = useMediaQuery("(min-width:900px)");
@@ -24,6 +25,7 @@ export default function ToolbarFooter() {
   const [openModal, setOpenModal] = React.useState(false);
   const [modalType, setModalType] = React.useState("");
   const [openHelpModal, setOpenHelpModal] = React.useState(false);
+  const [openLeaderModal, setOpenLeaderModal] = React.useState(false);
 
   return bigScreenInd ? (
     <Paper
@@ -89,8 +91,7 @@ export default function ToolbarFooter() {
                   size="large"
                   className={styles.toolBarButtonLabel}
                   onClick={() => {
-                    setOpenModal(true);
-                    setModalType("leader");
+                    setOpenLeaderModal(true);
                   }}
                 >
                   <LeaderboardIcon />
@@ -125,6 +126,14 @@ export default function ToolbarFooter() {
           open={openHelpModal}
           onClose={() => {
             setOpenHelpModal(false);
+          }}
+        />
+      )}
+      {openLeaderModal && (
+        <LeaderBoardDialog
+          open={openLeaderModal}
+          onClose={() => {
+            setOpenLeaderModal(false);
           }}
         />
       )}
@@ -194,8 +203,7 @@ export default function ToolbarFooter() {
                   size="large"
                   className={styles.toolBarButtonLabel}
                   onClick={() => {
-                    setOpenModal(true);
-                    setModalType("leader");
+                    setOpenLeaderModal(true);
                   }}
                 >
                   <LeaderboardIcon />
@@ -230,6 +238,14 @@ export default function ToolbarFooter() {
           open={openHelpModal}
           onClose={() => {
             setOpenHelpModal(false);
+          }}
+        />
+      )}
+      {openLeaderModal && (
+        <LeaderBoardDialog
+          open={openLeaderModal}
+          onClose={() => {
+            setOpenLeaderModal(false);
           }}
         />
       )}
