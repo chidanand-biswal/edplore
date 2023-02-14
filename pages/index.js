@@ -74,7 +74,7 @@ export default function Home() {
               transition={{ duration: 2 }}
             >
               <Typography className={styles.openingLines}>
-                The Realms of Bodhi. <br />
+                The Realms of Bodhi <br />
                 <br />
               </Typography>
             </motion.div>

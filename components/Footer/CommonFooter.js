@@ -2,6 +2,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Divider from "@mui/material/Divider";
@@ -47,7 +48,9 @@ export default function CommonFooter() {
           </Box>
           <Divider orientation="vertical" flexItem />
           <Box sx={{ padding: "0 0.5rem" }}>
-            <EmailIcon fontSize="medium" />
+            <a target="_top" href="mailto:edplore.help@gmail.com">
+              <EmailIcon fontSize="medium" />
+            </a>
           </Box>
         </Box>
 
@@ -56,11 +59,26 @@ export default function CommonFooter() {
             flexGrow: 1,
             justifyContent: "center",
             display: "flex",
-            mb: 2,
           }}
         >
           <Typography variant="caption" color="initial">
-            ©{new Date().getFullYear()} BISWAL Technologies Pvt. Ltd.
+            Created with
+            <FavoriteIcon fontSize="small" color="error" />
+            by a family of educators for the young ignited minds.
+          </Typography>
+        </Box>
+
+        <Box
+          sx={{
+            flexGrow: 1,
+            justifyContent: "center",
+            display: "flex",
+            mb: 1,
+          }}
+        >
+          <Typography variant="caption" color="initial">
+            ©{new Date().getFullYear()} BISWAL Technologies. All rights
+            reserved.
           </Typography>
         </Box>
       </Container>
@@ -84,7 +102,7 @@ export default function CommonFooter() {
             flexGrow: 1,
             justifyContent: "center",
             display: "flex",
-            my: 1,
+            my: 0.5,
           }}
         >
           <Box sx={{ padding: "0 0.5rem" }}>
@@ -100,7 +118,9 @@ export default function CommonFooter() {
           </Box>
           <Divider orientation="vertical" flexItem />
           <Box sx={{ padding: "0 0.5rem" }}>
-            <EmailIcon fontSize="medium" />
+            <a target="_top" href="mailto:edplore.help@gmail.com">
+              <EmailIcon fontSize="medium" />
+            </a>
           </Box>
         </Box>
 
@@ -109,11 +129,28 @@ export default function CommonFooter() {
             flexGrow: 1,
             justifyContent: "center",
             display: "flex",
-            mb: 0,
+            textAlign: "center",
           }}
         >
           <Typography variant="caption" color="initial">
-            ©{new Date().getFullYear()} BISWAL Technologies Private Limited
+            Created with
+            <FavoriteIcon fontSize="small" color="error" />
+            by a family of educators <br />
+            for the young ignited minds.
+          </Typography>
+        </Box>
+
+        <Box
+          sx={{
+            flexGrow: 1,
+            justifyContent: "center",
+            display: "flex",
+            mb: 1,
+          }}
+        >
+          <Typography variant="caption" color="initial">
+            ©{new Date().getFullYear()} BISWAL Technologies. All rights
+            reserved.
           </Typography>
         </Box>
       </Container>

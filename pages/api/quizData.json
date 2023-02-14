@@ -1486,1161 +1486,786 @@
     ]
   },
   {
-    "id": 0,
-    "subject": "PHYSICS",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": "0",
-    "subject": "PHYSICS",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": "0",
-    "subject": "PHYSICS",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "PHYSICS",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "PHYSICS",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "PHYSICS",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "PHYSICS",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "PHYSICS",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "PHYSICS",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 6,
-    "chapter": 1,
-    "question": "quizStandard6 - quizChapter1 - question 1",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 6,
-    "chapter": 1,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 6,
-    "chapter": 1,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 6,
-    "chapter": 1,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 6,
-    "chapter": 1,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 6,
-    "chapter": 1,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 6,
-    "chapter": 1,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 6,
-    "chapter": 1,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 6,
-    "chapter": 1,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 6,
-    "chapter": 1,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 7,
-    "chapter": 0,
-    "question": "quizStandard7 - quizChapter0 - question 1",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "CHEMISTRY",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 6,
-    "chapter": 0,
-    "question": "Mathematics - quizStandard6 - quizChapter0 - question 1",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 6,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 6,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 6,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 6,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 6,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 6,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 6,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 6,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 6,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 6,
-    "chapter": 1,
-    "question": "quizStandard6 - quizChapter1 - question 1",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 6,
-    "chapter": 1,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 6,
-    "chapter": 1,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 6,
-    "chapter": 1,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 6,
-    "chapter": 1,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 6,
-    "chapter": 1,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 6,
-    "chapter": 1,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 6,
-    "chapter": 1,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 6,
-    "chapter": 1,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 6,
-    "chapter": 1,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 7,
-    "chapter": 0,
-    "question": "quizStandard7 - quizChapter0 - question 1",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
-    "subject": "MATHEMATICS",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
+    "id": "B-6-0-0",
     "subject": "BIOLOGY",
     "standard": 6,
     "chapter": 0,
-    "question": "BIOLOGY - quizStandard6 - quizChapter0 - question 1",
+    "question": "Which is the correct ground tissue of leaf?",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Mesophyll tissue", "isCorrect": true },
+      { "answer": "Guard cell" },
+      { "answer": "Stomata" },
+      { "answer": "Sclerenchyma" }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-0-1",
     "subject": "BIOLOGY",
     "standard": 6,
     "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "question": "What is the point on the stem from where the leaf arises?",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Node", "isCorrect": true },
+      { "answer": "Trunk" },
+      { "answer": "Lamina" },
+      { "answer": "Petiole" }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-0-2",
     "subject": "BIOLOGY",
     "standard": 6,
     "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "question": "___ is the arrangement of leaves on the stem branches.",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Ptyxis" },
+      { "answer": "Phyllotaxy", "isCorrect": true },
+      { "answer": "Prefoliation" },
+      { "answer": "Vernation" }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-0-3",
     "subject": "BIOLOGY",
     "standard": 6,
     "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "question": "What type of venation involve all veins running parallel to each other and they do not form any network?",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Complex" },
+      { "answer": "Reticulate" },
+      { "answer": "Parallel", "isCorrect": true },
+      { "answer": "Simple" }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-0-4",
     "subject": "BIOLOGY",
     "standard": 6,
     "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "question": "What type of venation is generally found in monocots.",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Parallel", "isCorrect": true },
+      { "answer": "Reticulate" },
+      { "answer": "Simple" },
+      { "answer": "Complex" }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-0-5",
     "subject": "BIOLOGY",
     "standard": 6,
     "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "question": "If the number of leaflet is even, then leaf is known as ___",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Bipinnate" },
+      { "answer": "Tripinnate" },
+      { "answer": "Paripinnate", "isCorrect": true },
+      { "answer": "None of the options" }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-0-6",
     "subject": "BIOLOGY",
     "standard": 6,
     "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "question": "___ is responsible for transpiration in plants.",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Xylem" },
+      { "answer": "Phloem" },
+      { "answer": "Epidermal cells" },
+      { "answer": "Stomata", "isCorrect": true }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-0-7",
     "subject": "BIOLOGY",
     "standard": 6,
     "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "question": "For synthesis of chlorophyll in plants, elements needed are:",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Iron & Magnesium", "isCorrect": true },
+      { "answer": "Iron & Calcium" },
+      { "answer": "Sodium & Copper" },
+      { "answer": "Calcium & Potassium" }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-0-8",
     "subject": "BIOLOGY",
     "standard": 6,
     "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "question": "From the following identify the condition in which plants are without leaves during one season?",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Deciduous", "isCorrect": true },
+      { "answer": "Caducous" },
+      { "answer": "Semigreen" },
+      { "answer": "Evergreen" }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-0-9",
     "subject": "BIOLOGY",
     "standard": 6,
     "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "question": "Pollen grains of wind pollinated flowers are ___",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "light weight and small", "isCorrect": true },
+      { "answer": "sticky and light weight" },
+      { "answer": "sticky and huge" },
+      { "answer": "light weight and huge" }
     ]
   },
   {
-    "id": 0,
-    "subject": "BIOLOGY",
-    "standard": 6,
-    "chapter": 1,
-    "question": "quizStandard6 - quizChapter1 - question 1",
-    "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
-    ]
-  },
-  {
-    "id": 0,
+    "id": "B-6-1-0",
     "subject": "BIOLOGY",
     "standard": 6,
     "chapter": 1,
-    "question": "Would you like to answer this question?",
+    "question": "who is responsible to monitor and control entry into and out of the plant cell?",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "vacuole" },
+      { "answer": "cell membrane", "isCorrect": true },
+      { "answer": "ribosomes" },
+      { "answer": "chloroplast" }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-1-1",
     "subject": "BIOLOGY",
     "standard": 6,
     "chapter": 1,
-    "question": "Would you like to answer this question?",
+    "question": "which rigid layer structure surrounds the plant cell and provides support and structure?",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Chloroplast" },
+      { "answer": "Cell wall", "isCorrect": true },
+      { "answer": "Nucleus" },
+      { "answer": "Mitochondria" }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-1-2",
     "subject": "BIOLOGY",
     "standard": 6,
     "chapter": 1,
-    "question": "Would you like to answer this question?",
+    "question": "Which of the following produces energy to fuel activities of the cell?",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Plastids" },
+      { "answer": "Chloroplast" },
+      { "answer": "Mitochondria", "isCorrect": true },
+      { "answer": "Ribosomes" }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-1-3",
     "subject": "BIOLOGY",
     "standard": 6,
     "chapter": 1,
-    "question": "Would you like to answer this question?",
+    "question": "Which of the following component of plant cell absent in animal cell?",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Cell wall", "isCorrect": true },
+      { "answer": "Nucleus" },
+      { "answer": "Cell membrane" },
+      { "answer": "Cytoplasm" }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-1-4",
     "subject": "BIOLOGY",
     "standard": 6,
     "chapter": 1,
-    "question": "Would you like to answer this question?",
+    "question": "Cell membrane is also known as ___ membrane.",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Permeable" },
+      { "answer": "Semi permeable" },
+      { "answer": "Impermeable" },
+      { "answer": "Selectively permeable", "isCorrect": true }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-1-5",
     "subject": "BIOLOGY",
     "standard": 6,
     "chapter": 1,
-    "question": "Would you like to answer this question?",
+    "question": "Which of the following pair of organelles does not contain DNA?",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Chloroplast and vacuoles" },
+      { "answer": "Lysosomes and vacuoles", "isCorrect": true },
+      { "answer": "Mitochondria and lysosomes" },
+      { "answer": "Nuclear envelope and mitochondria" }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-1-6",
     "subject": "BIOLOGY",
     "standard": 6,
     "chapter": 1,
-    "question": "Would you like to answer this question?",
+    "question": "What is the location of genes in a cell?",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Cytoplasm" },
+      { "answer": "Ribosomes" },
+      { "answer": "Centrosomes" },
+      { "answer": "Chromosomes", "isCorrect": true }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-1-7",
     "subject": "BIOLOGY",
     "standard": 6,
     "chapter": 1,
-    "question": "Would you like to answer this question?",
+    "question": "Identify the type of cell that contains a cell wall, large central vacuole and a nucleus at the periphery.",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Yeast cell" },
+      { "answer": "Animal cell" },
+      { "answer": "Plant cell", "isCorrect": true },
+      { "answer": "Bacterial cell" }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-1-8",
     "subject": "BIOLOGY",
     "standard": 6,
     "chapter": 1,
-    "question": "Would you like to answer this question?",
+    "question": "Which type of cell in our body contains more mitochondria than other cell types?",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Heart cell", "isCorrect": true },
+      { "answer": "Skin cell" },
+      { "answer": "Bone cell" },
+      { "answer": "Fat cell" }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-1-9",
     "subject": "BIOLOGY",
-    "standard": 7,
-    "chapter": 0,
-    "question": "quizStandard7 - quizChapter0 - question 1",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Tonoplast surrounds which of the following organelles?",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Vacuoles", "isCorrect": true },
+      { "answer": "Plastids" },
+      { "answer": "Nucleus" },
+      { "answer": "Cytoplasm" }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-2-0",
     "subject": "BIOLOGY",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "standard": 6,
+    "chapter": 2,
+    "question": "What is known as the voice box?",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Larynx", "isCorrect": true },
+      { "answer": "Epiglottis" },
+      { "answer": "Trachea" },
+      { "answer": "Pharynx" }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-2-1",
     "subject": "BIOLOGY",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "standard": 6,
+    "chapter": 2,
+    "question": "which is the part of the brain responsible for thinking and memory.",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Medulla" },
+      { "answer": "Cerebrum", "isCorrect": true },
+      { "answer": "Cerebellum" },
+      { "answer": "Spinal cord" }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-2-2",
     "subject": "BIOLOGY",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "standard": 6,
+    "chapter": 2,
+    "question": "___ is the part of the human eye is transplanted from a dead donor to a living person.",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Sclera" },
+      { "answer": "Iris" },
+      { "answer": "Cornea", "isCorrect": true },
+      { "answer": "Retina" }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-2-3",
     "subject": "BIOLOGY",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Which gland is present in pairs in human body?",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Adrenal", "isCorrect": true },
+      { "answer": "Liver" },
+      { "answer": "Pineal" },
+      { "answer": "Pancreas" }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-2-4",
     "subject": "BIOLOGY",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Skin, hair, and nails are part of which system?",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Integumentary", "isCorrect": true },
+      { "answer": "Digestive" },
+      { "answer": "Lymphatic" },
+      { "answer": "Endocrine" }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-2-5",
     "subject": "BIOLOGY",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "standard": 6,
+    "chapter": 2,
+    "question": "What are the tiny air sacs at the ends of the bronchi tubes in the lungs?",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Alveoli", "isCorrect": true },
+      { "answer": "Bronchi" },
+      { "answer": "Trachea" },
+      { "answer": "Villi" }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-2-6",
     "subject": "BIOLOGY",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Which of the following is the group of similar cells performing the same function?",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Organ" },
+      { "answer": "Organ system" },
+      { "answer": "Limbs" },
+      { "answer": "Tissue", "isCorrect": true }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-2-7",
     "subject": "BIOLOGY",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Cartilage is a ___",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "connective tissue", "isCorrect": true },
+      { "answer": "muscular tissue" },
+      { "answer": "epithelial tissue" },
+      { "answer": "germinal tissue" }
     ]
   },
   {
-    "id": 0,
+    "id": "B-6-2-8",
     "subject": "BIOLOGY",
-    "standard": 7,
-    "chapter": 0,
-    "question": "Would you like to answer this question?",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Which of the following gland produces somatotropin hormone?",
     "answerOptions": [
-      { "answer": "Option A" },
-      { "answer": "Option B" },
-      { "answer": "Option C", "isCorrect": true },
-      { "answer": "Option D" }
+      { "answer": "Adrenal" },
+      { "answer": "Pituitary", "isCorrect": true },
+      { "answer": "Pancreas" },
+      { "answer": "Thyroid" }
+    ]
+  },
+  {
+    "id": "B-6-2-9",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "During digestion of proteins are converted into ___.",
+    "answerOptions": [
+      { "answer": "Amino acids", "isCorrect": true },
+      { "answer": "Glucose" },
+      { "answer": "Fats" },
+      { "answer": "Fibers" }
+    ]
+  },
+  {
+    "id": "B-6-3-0",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Which of the following is communicable disease?",
+    "answerOptions": [
+      { "answer": "Common cold", "isCorrect": true },
+      { "answer": "Cancer" },
+      { "answer": "Diabetes" },
+      { "answer": "Cardiovascular diseases" }
+    ]
+  },
+  {
+    "id": "B-6-3-1",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "which pathogen causes cholera in humans?",
+    "answerOptions": [
+      { "answer": "Fungal" },
+      { "answer": "Protozoan" },
+      { "answer": "Bacterial", "isCorrect": true },
+      { "answer": "Viral" }
+    ]
+  },
+  {
+    "id": "B-6-3-2",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Which of the following is correct for Hypertension?",
+    "answerOptions": [
+      { "answer": "Decrease in blood pressure" },
+      { "answer": "Increase in blood pressure", "isCorrect": true },
+      { "answer": "Increase in heart rate" },
+      { "answer": "Decrease in heart rate" }
+    ]
+  },
+  {
+    "id": "B-6-3-3",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Anti-histamines and steroids give a quick relief from which of the following symptoms?",
+    "answerOptions": [
+      { "answer": "Allergy", "isCorrect": true },
+      { "answer": "Headache" },
+      { "answer": "Nausea" },
+      { "answer": "Cough" }
+    ]
+  },
+  {
+    "id": "B-6-3-4",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Which of the following term represents Insects that can transmit diseases?",
+    "answerOptions": [
+      { "answer": "reservoirs" },
+      { "answer": "carriers" },
+      { "answer": "incubators" },
+      { "answer": "vectors", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "B-6-3-5",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Tuberculosis is often transmitted via ___",
+    "answerOptions": [
+      { "answer": "Airborne particles transmission", "isCorrect": true },
+      { "answer": "Indirect contact" },
+      { "answer": "Direct contact" },
+      { "answer": "Vectorborne transmission" }
+    ]
+  },
+  {
+    "id": "B-6-3-6",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Coughing and sneezing can spread through ___",
+    "answerOptions": [
+      { "answer": "Droplet", "isCorrect": true },
+      { "answer": "Vectorborne" },
+      { "answer": "Direct contact" },
+      { "answer": "Indirect contact" }
+    ]
+  },
+  {
+    "id": "B-6-3-7",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Which of the following are a place within which microorganisms can thrive and reproduce?",
+    "answerOptions": [
+      { "answer": "Virus" },
+      { "answer": "Fungi" },
+      { "answer": "Pathogen" },
+      { "answer": "Reservoir", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "B-6-3-8",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Which of the following is not a non communicable disease?",
+    "answerOptions": [
+      { "answer": "Heart atttack" },
+      { "answer": "Covid", "isCorrect": true },
+      { "answer": "Diabetes" },
+      { "answer": "High B.P." }
+    ]
+  },
+  {
+    "id": "B-6-3-9",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Doctor would most likely prescribe an antibiotic to treat ___ pathogen.",
+    "answerOptions": [
+      { "answer": "Virus" },
+      { "answer": "Fungi" },
+      { "answer": "Algae" },
+      { "answer": "Bacteria", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "B-6-4-0",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Which of the following term represents the ability of a population to increase under ideal environmental conditions ?",
+    "answerOptions": [
+      { "answer": "Carrying capacity" },
+      { "answer": "Natality" },
+      { "answer": "Absolute natality" },
+      { "answer": "Biotic potential", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "B-6-4-1",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Which of the following term represents the conditions and organisms in the immediate vicinity of a plant or animal?",
+    "answerOptions": [
+      { "answer": "Macrohabitat" },
+      { "answer": "Microhabitat", "isCorrect": true },
+      { "answer": "Aquatic Habitat" },
+      { "answer": "None of the options" }
+    ]
+  },
+  {
+    "id": "B-6-4-2",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "From the following identify natural place of an organism or community?",
+    "answerOptions": [
+      { "answer": "Niche" },
+      { "answer": "Habitat", "isCorrect": true },
+      { "answer": "Habit" },
+      { "answer": "Biome" }
+    ]
+  },
+  {
+    "id": "B-6-4-3",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "From the following identify the part of earth which supports the biodiversity?",
+    "answerOptions": [
+      { "answer": "Sanctuary" },
+      { "answer": "Biosphere", "isCorrect": true },
+      { "answer": "Biotic community" },
+      { "answer": "Ecosystem reserve" }
+    ]
+  },
+  {
+    "id": "B-6-4-4",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Hibernation and aestivation are ___ adaptation.",
+    "answerOptions": [
+      { "answer": "psycological" },
+      { "answer": "behavioural", "isCorrect": true },
+      { "answer": "structural" },
+      { "answer": "organisational" }
+    ]
+  },
+  {
+    "id": "B-6-4-5",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Which of the following waste material do the birds excrete?",
+    "answerOptions": [
+      { "answer": "Ammonia" },
+      { "answer": "Uric acid", "isCorrect": true },
+      { "answer": "Urea" },
+      { "answer": "Nitrogen" }
+    ]
+  },
+  {
+    "id": "B-6-4-6",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Yaks have large ___, which assist them to compensate for the scarcity of oxygen in high altitudes.",
+    "answerOptions": [
+      { "answer": "lungs", "isCorrect": true },
+      { "answer": "heart" },
+      { "answer": "brain" },
+      { "answer": "limbs" }
+    ]
+  },
+  {
+    "id": "B-6-4-7",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Birds respire by which of the following organ?",
+    "answerOptions": [
+      { "answer": "Lung" },
+      { "answer": "Gills" },
+      { "answer": "Trachea" },
+      { "answer": "Air sacs", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "B-6-4-8",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Which of the following is an example of adaption of desert plants?",
+    "answerOptions": [
+      { "answer": "Possess bulbs or corns" },
+      { "answer": "Sunken stomata" },
+      { "answer": "Thick cuticles" },
+      { "answer": "All of the given options", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "B-6-4-9",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Money plant can climb on trees by help of which of the following structure?",
+    "answerOptions": [
+      { "answer": "Leaves" },
+      { "answer": "Clasping roots", "isCorrect": true },
+      { "answer": "Sunlight" },
+      { "answer": "Stem" }
+    ]
+  },
+  {
+    "id": "M-6-0-0",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "The place value of 6 in 24,963 is ___",
+    "answerOptions": [
+      { "answer": "ones" },
+      { "answer": "tens", "isCorrect": true },
+      { "answer": "hundreds" },
+      { "answer": "thousands" }
+    ]
+  },
+  {
+    "id": "M-6-0-1",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Determine the sum of the place values of two 2's in the number 7123128",
+    "answerOptions": [
+      { "answer": "20200" },
+      { "answer": "200200" },
+      { "answer": "2020" },
+      { "answer": "20020", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-0-2",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "What is the difference between the greatest 6-digit number and the smallest 6-digit number?",
+    "answerOptions": [
+      { "answer": "899,100" },
+      { "answer": "999,100" },
+      { "answer": "899,999", "isCorrect": true },
+      { "answer": "890,999" }
+    ]
+  },
+  {
+    "id": "M-6-0-3",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "A car travel 1,440 km in 12 hrs, what will be the speed of the car per hour?",
+    "answerOptions": [
+      { "answer": "220 km/hr" },
+      { "answer": "120 km/hr", "isCorrect": true },
+      { "answer": "230 km/hr" },
+      { "answer": "45 km/hr" }
+    ]
+  },
+  {
+    "id": "M-6-0-4",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "A weighs 70 kg, B weighs 60 kg, C weighs 40 kg, D weighs 50 kg and E weighs 30 kg then what is the average weight of all?",
+    "answerOptions": [
+      { "answer": "70 kg" },
+      { "answer": "50 kg", "isCorrect": true },
+      { "answer": "55 kg" },
+      { "answer": "30 kg" }
+    ]
+  },
+  {
+    "id": "M-6-0-5",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "A bank has a total amount of 30 million.So, it has ___crores",
+    "answerOptions": [
+      { "answer": "0.3" },
+      { "answer": "300" },
+      { "answer": "3", "isCorrect": true },
+      { "answer": "3000" }
+    ]
+  },
+  {
+    "id": "M-6-0-6",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "If the number 7254*98 is divisible by 11, the digit at * is?",
+    "answerOptions": [
+      { "answer": "1" },
+      { "answer": "3" },
+      { "answer": "5" },
+      { "answer": "6", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-0-7",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Find the value of the following mathematical statement: 24 - 3 + 18/6 * 2. (Note: * is multiplication)",
+    "answerOptions": [
+      { "answer": "27", "isCorrect": true },
+      { "answer": "24" },
+      { "answer": "14" },
+      { "answer": "3" }
+    ]
+  },
+  {
+    "id": "M-6-0-8",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "a + b = b + a. This is known as which property?",
+    "answerOptions": [
+      { "answer": "Commutative", "isCorrect": true },
+      { "answer": "Identity" },
+      { "answer": "Associative" },
+      { "answer": "None of the options" }
+    ]
+  },
+  {
+    "id": "M-6-0-9",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Which is the correct statement about prime numbers?",
+    "answerOptions": [
+      { "answer": "A prime number has only 1 factor, and infinite multiples." },
+      { "answer": "A prime number has only 2 factor, and 2 multiples." },
+      {
+        "answer": "A prime number has only 2 factor, and infinite multiples.",
+        "isCorrect": true
+      },
+      { "answer": "A prime number has only 2 factor, and one multiple." }
     ]
   }
 ]

@@ -379,8 +379,12 @@ export default function ExplorerHome() {
                             Standard V
                           </MenuItem>
                           <MenuItem value={6}>Standard VI</MenuItem>
-                          <MenuItem value={7}>Standard VII</MenuItem>
-                          <MenuItem value={8}>Standard VIII</MenuItem>
+                          <MenuItem value={7} disabled>
+                            Standard VII
+                          </MenuItem>
+                          <MenuItem value={8} disabled>
+                            Standard VIII
+                          </MenuItem>
                           <MenuItem value={9} disabled>
                             Standard IX
                           </MenuItem>
