@@ -13,6 +13,7 @@ import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
 import MenuIcon from "@mui/icons-material/Menu";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import PolicyIcon from "@mui/icons-material/Policy";
+import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import AppBar from "@mui/material/AppBar";
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
@@ -165,9 +166,7 @@ export default function MenuAppBar() {
                 />
               </ListItemButton>
             </ListItem>
-          </List>
-          <Divider />
-          <List>
+            <Divider />
             <ListItem key={"menuContact"} disablePadding>
               <ListItemButton onClick={() => Router.push("/menu/contact")}>
                 <ListItemIcon>
@@ -176,8 +175,6 @@ export default function MenuAppBar() {
                 <ListItemText primary={"Who we are"} />
               </ListItemButton>
             </ListItem>
-          </List>
-          <List>
             <ListItem key={"menuSupport"} disablePadding>
               <ListItemButton onClick={() => Router.push("/menu/support")}>
                 <ListItemIcon>
@@ -186,36 +183,36 @@ export default function MenuAppBar() {
                 <ListItemText primary={"Support"} />
               </ListItemButton>
             </ListItem>
-          </List>
 
-          <Divider />
-          <ListItem key={"menuPolicy"} disablePadding>
-            <ListItemButton onClick={() => Router.push("/menu/policy")}>
-              <ListItemIcon>
-                <PolicyIcon />
-              </ListItemIcon>
-              <ListItemText primary={"Our policies"} />
-            </ListItemButton>
-          </ListItem>
-          <ListItem key={"menuCredits"} disablePadding>
-            <ListItemButton onClick={() => Router.push("/menu/credits")}>
-              <ListItemIcon>
-                <HandshakeIcon />
-              </ListItemIcon>
-              <ListItemText primary={"Credits"} />
-            </ListItemButton>
-          </ListItem>
-          <ListItem key={"menuBlog"} disablePadding>
-            <ListItemButton onClick={() => Router.push("/menu/blog")}>
-              <ListItemIcon>
-                <AutoStoriesIcon sx={{ color: "purple" }} />
-              </ListItemIcon>
-              <ListItemText
-                sx={{ color: "purple" }}
-                primary={"Chronicles of Bodhi"}
-              />
-            </ListItemButton>
-          </ListItem>
+            <Divider />
+            <ListItem key={"menuPolicy"} disablePadding>
+              <ListItemButton onClick={() => Router.push("/menu/policy")}>
+                <ListItemIcon>
+                  <PolicyIcon />
+                </ListItemIcon>
+                <ListItemText primary={"Our policies"} />
+              </ListItemButton>
+            </ListItem>
+            <ListItem key={"menuCredits"} disablePadding>
+              <ListItemButton onClick={() => Router.push("/menu/credits")}>
+                <ListItemIcon>
+                  <HandshakeIcon />
+                </ListItemIcon>
+                <ListItemText primary={"Credits"} />
+              </ListItemButton>
+            </ListItem>
+            <ListItem key={"menuBlog"} disablePadding>
+              <ListItemButton onClick={() => Router.push("/menu/blog")}>
+                <ListItemIcon>
+                  <AutoStoriesIcon sx={{ color: "purple" }} />
+                </ListItemIcon>
+                <ListItemText
+                  sx={{ color: "purple" }}
+                  primary={"Chronicles of Bodhi"}
+                />
+              </ListItemButton>
+            </ListItem>
+          </List>
         </Grid>
       </Grid>
     </Box>
@@ -266,7 +263,18 @@ export default function MenuAppBar() {
                 <ListItemIcon>
                   <ManageAccountsIcon />
                 </ListItemIcon>
-                <ListItemText primary={"Profile"} />
+                <ListItemText primary={"My Profile"} />
+              </ListItemButton>
+            </ListItem>
+            <ListItem key={"menuAward"} disablePadding>
+              <ListItemButton onClick={() => Router.push("/menu/award")}>
+                <ListItemIcon>
+                  <EmojiEventsIcon sx={{ color: "deeppink" }} />
+                </ListItemIcon>
+                <ListItemText
+                  primary={"My Rewards"}
+                  sx={{ color: "deeppink" }}
+                />
               </ListItemButton>
             </ListItem>
             {user ? (
@@ -275,7 +283,7 @@ export default function MenuAppBar() {
                   <ListItemIcon>
                     <LogoutIcon />
                   </ListItemIcon>
-                  <ListItemText primary={"Logout"} />
+                  <ListItemText primary={"Sign out"} />
                 </ListItemButton>
               </ListItem>
             ) : (
@@ -284,7 +292,7 @@ export default function MenuAppBar() {
                   <ListItemIcon>
                     <LoginIcon />
                   </ListItemIcon>
-                  <ListItemText primary={"Login"} />
+                  <ListItemText primary={"Sign in"} />
                 </ListItemButton>
               </ListItem>
             )}

@@ -31,7 +31,7 @@ export default function AboutHome() {
               <Typography variant="h3">
                 edplore <br />
               </Typography>
-              <Typography className={styles.greyText} variant="h6">
+              <Typography>
                 edplore = educate + explore <br /> <br />
                 This is an ed-game (educational game) aimed at school-goers with
                 the goal to increase interest towards STEM subjects like

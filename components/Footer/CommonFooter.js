@@ -64,7 +64,7 @@ export default function CommonFooter() {
           <Typography variant="caption" color="initial">
             Created with
             <FavoriteIcon fontSize="small" color="error" />
-            by a family of educators for the young ignited minds.
+            by a family of educators just for the young ignited minds.
           </Typography>
         </Box>
 
@@ -136,7 +136,7 @@ export default function CommonFooter() {
             Created with
             <FavoriteIcon fontSize="small" color="error" />
             by a family of educators <br />
-            for the young ignited minds.
+            just for the young ignited minds.
           </Typography>
         </Box>
 

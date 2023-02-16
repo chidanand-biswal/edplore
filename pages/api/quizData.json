@@ -2267,5 +2267,271 @@
       },
       { "answer": "A prime number has only 2 factor, and one multiple." }
     ]
+  },
+  {
+    "id": "M-6-1-0",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "In a bag there are 32 balls of which 20 are red and rest is blue. Find the ratio of red balls to blue balls.",
+    "answerOptions": [
+      { "answer": "7 : 3" },
+      { "answer": "5 : 3", "isCorrect": true },
+      { "answer": "4 : 3" },
+      { "answer": "2 : 3" }
+    ]
+  },
+  {
+    "id": "M-6-1-1",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "If during the addition of fractions, if denominators are different, they are made equal by finding their ___.",
+    "answerOptions": [
+      { "answer": "Subtraction of HCF from LCM" },
+      { "answer": "Addition of LCM & HCF" },
+      { "answer": "HCF" },
+      { "answer": "LCM", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-1-2",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "I have 5 blue shirts and 9 black shirts. Find the ratio of blue shirts to total number of shirt.",
+    "answerOptions": [
+      { "answer": "9 : 5" },
+      { "answer": "5 : 9" },
+      { "answer": "14 : 5" },
+      { "answer": "5 : 14", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-1-3",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "There are 180 workers in a company,out of which 75 are female. Find the ratio of the number of female to the number of male.",
+    "answerOptions": [
+      { "answer": "3/11" },
+      { "answer": "3/5" },
+      { "answer": "5/9" },
+      { "answer": "5/7", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-1-4",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Which of the following ratios form proportions with 3:7?",
+    "answerOptions": [
+      { "answer": "9:49" },
+      { "answer": "9:29" },
+      { "answer": "21:49", "isCorrect": true },
+      { "answer": "4:49" }
+    ]
+  },
+  {
+    "id": "M-6-1-5",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Find the value of X for the proportion, 21:X :: 63:135",
+    "answerOptions": [
+      { "answer": "45", "isCorrect": true },
+      { "answer": "55" },
+      { "answer": "35" },
+      { "answer": "25" }
+    ]
+  },
+  {
+    "id": "M-6-1-6",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "A train has to cover 100km out of which it has covered 30km. How much distance is covered in percentage?",
+    "answerOptions": [
+      { "answer": "60%" },
+      { "answer": "50%" },
+      { "answer": "40%" },
+      { "answer": "30%", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-1-7",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "On a test with 20 questions, a student received 80% mark. How many questions on this test did the student get right?",
+    "answerOptions": [
+      { "answer": "12" },
+      { "answer": "14" },
+      { "answer": "16", "isCorrect": true },
+      { "answer": "18" }
+    ]
+  },
+  {
+    "id": "M-6-1-8",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Neo puts 150 INR into his Bank account as a saving every month. Find his monthly income if this is 20% of his monthly income.",
+    "answerOptions": [
+      { "answer": "750 INR", "isCorrect": true },
+      { "answer": "150 INR" },
+      { "answer": "500 INR" },
+      { "answer": "1500 INR" }
+    ]
+  },
+  {
+    "id": "M-6-1-9",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "The speed of a car is 72 km/hr. Find its speed in m/s.",
+    "answerOptions": [
+      { "answer": "40 m/s" },
+      { "answer": "10 m/s" },
+      {
+        "answer": "20 m/s",
+        "isCorrect": true
+      },
+      { "answer": "80 m/s" }
+    ]
+  },
+  {
+    "id": "M-6-2-0",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Find x where 4(x - 2) + 8(x - 5) = 12",
+    "answerOptions": [
+      { "answer": "12" },
+      { "answer": "5", "isCorrect": true },
+      { "answer": "4" },
+      { "answer": "1" }
+    ]
+  },
+  {
+    "id": "M-6-2-1",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Find z where 2z - 6 = 8",
+    "answerOptions": [
+      { "answer": "2" },
+      { "answer": "7", "isCorrect": true },
+      { "answer": "14" },
+      { "answer": "0" }
+    ]
+  },
+  {
+    "id": "M-6-2-2",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Calculate the value of the given expression if x = -9. Expression: 8x + 3(x + 4)",
+    "answerOptions": [
+      { "answer": "72" },
+      { "answer": "87" },
+      { "answer": "-72" },
+      { "answer": "-87", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-2-3",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "The 5 in 5x is known as ___ .",
+    "answerOptions": [
+      { "answer": "degree" },
+      { "answer": "constant" },
+      { "answer": "coefficient", "isCorrect": true },
+      { "answer": "variable" }
+    ]
+  },
+  {
+    "id": "M-6-2-4",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "When 8 times x divided by p gives 3, then what will be the algebraic expression?",
+    "answerOptions": [
+      { "answer": "8x = 3" },
+      { "answer": "8x / p = 3", "isCorrect": true },
+      { "answer": "8/p = 3" },
+      { "answer": "px/8 = 3" }
+    ]
+  },
+  {
+    "id": "M-6-2-5",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Frame the algebraic expression. Length of the rectangular garden is 5 m less than 6 times the breadth of the hall. What is the expression of the length, if breadth is in x meters?",
+    "answerOptions": [
+      { "answer": "6x + 5" },
+      { "answer": "6x - 5", "isCorrect": true },
+      { "answer": "5 - 6x" },
+      { "answer": "6 - 5x" }
+    ]
+  },
+  {
+    "id": "M-6-2-6",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "An algebraic expression consisting of just one term is called a ___",
+    "answerOptions": [
+      { "answer": "monomial", "isCorrect": true },
+      { "answer": "binomial" },
+      { "answer": "trinomial" },
+      { "answer": "polynomial" }
+    ]
+  },
+  {
+    "id": "M-6-2-7",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Find the value of y where  4y + 15 = 69 - 5y",
+    "answerOptions": [
+      { "answer": "1/6" },
+      { "answer": "6", "isCorrect": true },
+      { "answer": "54" },
+      { "answer": "-6" }
+    ]
+  },
+  {
+    "id": "M-6-2-8",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Three years ago, my age was p years. what was my age eight years ago ?",
+    "answerOptions": [
+      { "answer": "p - 3" },
+      { "answer": "p + 8" },
+      { "answer": "p - 8" },
+      { "answer": "p - 5", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-2-9",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "On observing the pattern, find the next term. 1,1,2,3,5,?",
+    "answerOptions": [
+      { "answer": "13" },
+      { "answer": "7" },
+      {
+        "answer": "8",
+        "isCorrect": true
+      },
+      { "answer": "5" }
+    ]
   }
 ]
