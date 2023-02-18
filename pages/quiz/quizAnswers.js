@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 
 import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
 import Box from "@mui/material/Box";
@@ -14,11 +15,13 @@ import styles from "../../styles/Home.module.css";
 import { default as data } from "../api/mockData.json";
 
 export default function QuizAnswerHome() {
+  const { currentQuizData } = useSelector((state) => state.currentQuizData);
+
   let [page, setPage] = useState(1);
   const PER_PAGE = 1;
 
-  const count = Math.ceil(data.length / PER_PAGE);
-  const _DATA = usePagination(data, PER_PAGE);
+  const count = Math.ceil(currentQuizData.length / PER_PAGE);
+  const _DATA = usePagination(currentQuizData, PER_PAGE);
 
   const handleChange = (e, p) => {
     setPage(p);

@@ -481,7 +481,7 @@ export default function QuizMain() {
                           spacing={2}
                           className={styles.spacerOne}
                         >
-                          <Grid item>
+                          {/*<Grid item>
                             <div>
                               <Link href="/quiz/quizAnswers">
                                 <a>
@@ -494,7 +494,7 @@ export default function QuizMain() {
                                 </a>
                               </Link>
                             </div>
-                          </Grid>
+                    </Grid>*/}
                           <Grid item>
                             <div>
                               <Link href="/power">
@@ -503,7 +503,7 @@ export default function QuizMain() {
                                     variant="contained"
                                     className={styles.buttonLaunch}
                                   >
-                                    WHAT&apos;S NEXT?
+                                    WHAT&apos;S NEXT UP FOR ME?
                                   </Button>
                                 </a>
                               </Link>
@@ -532,7 +532,7 @@ export default function QuizMain() {
                                     variant="outlined"
                                     className={styles.buttonLaunch}
                                   >
-                                    HOW DID IT GO?
+                                    WHERE DID I GO WRONG?
                                   </Button>
                                 </a>
                               </Link>
@@ -546,7 +546,7 @@ export default function QuizMain() {
                                     variant="contained"
                                     className={styles.buttonLaunch}
                                   >
-                                    GO BACK TO GURUKUL
+                                    LET ME REVISIT GURUKUL
                                   </Button>
                                 </a>
                               </Link>
