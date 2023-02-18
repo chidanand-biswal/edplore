@@ -12,16 +12,12 @@ export default function CardLearn(props) {
       <Card variant="outlined" className={styles.cardLearn}>
         <React.Fragment>
           <CardContent>
-            <Box sx={{ paddingBottom: "0.75rem" }}>
-              <Typography variant="h5" component="div">
+            <Box sx={{ paddingBottom: "0.5rem" }}>
+              <Typography variant="h6" component="div">
                 {props.title}
               </Typography>
             </Box>
-            <Box sx={{ minWidth: 275 }}>
-              <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                {props.message}
-              </Typography>
-            </Box>
+            <Box sx={{ minWidth: 275 }}>{props.message}</Box>
           </CardContent>
           <CardActions></CardActions>
         </React.Fragment>

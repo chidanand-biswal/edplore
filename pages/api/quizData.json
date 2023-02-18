@@ -2533,5 +2533,404 @@
       },
       { "answer": "5" }
     ]
+  },
+  {
+    "id": "M-6-3-0",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Sum of three angles of a quadrilateral is 310 degrees. What will be the measurement of the fourth angle in degrees?",
+    "answerOptions": [
+      { "answer": "60" },
+      { "answer": "50", "isCorrect": true },
+      { "answer": "40" },
+      { "answer": "10" }
+    ]
+  },
+  {
+    "id": "M-6-3-1",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Lines which always remain at same distance are called ___ .",
+    "answerOptions": [
+      { "answer": "Concurrent lines" },
+      { "answer": "Intersecting lines" },
+      { "answer": "Parallel lines", "isCorrect": true },
+      { "answer": "Collinear lines" }
+    ]
+  },
+  {
+    "id": "M-6-3-2",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Three or more points in a plane which lie on the same line are called ___ .",
+    "answerOptions": [
+      { "answer": "Non-linear points" },
+      { "answer": "Colateral points" },
+      { "answer": "Exterior Points" },
+      { "answer": "Collinear Points", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-3-3",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "What has an infinite length only on one side of it?",
+    "answerOptions": [
+      { "answer": "Ray", "isCorrect": true },
+      { "answer": "Chord" },
+      { "answer": "Line" },
+      { "answer": "Line segment" }
+    ]
+  },
+  {
+    "id": "M-6-3-4",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "How many sides, vertices and angle does the quardilateral have?",
+    "answerOptions": [
+      { "answer": "4, 3, 4" },
+      { "answer": "4, 4, 4", "isCorrect": true },
+      { "answer": "3, 3, 3" },
+      { "answer": "3, 4, 3" }
+    ]
+  },
+  {
+    "id": "M-6-3-5",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "A perpendicular drawn from a vertex to the opposite side is called ___ .",
+    "answerOptions": [
+      { "answer": "median" },
+      { "answer": "altitude", "isCorrect": true },
+      { "answer": "perpendicular bisector" },
+      { "answer": "angle bisector" }
+    ]
+  },
+  {
+    "id": "M-6-3-6",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Complimentary angles are angles which have a sum of ___",
+    "answerOptions": [
+      { "answer": "90 degrees", "isCorrect": true },
+      { "answer": "180 degrees" },
+      { "answer": "360 degrees" },
+      { "answer": "45 degrees" }
+    ]
+  },
+  {
+    "id": "M-6-3-7",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "A cuboid has how many vertices?",
+    "answerOptions": [
+      { "answer": "4" },
+      { "answer": "8", "isCorrect": true },
+      { "answer": "3" },
+      { "answer": "6" }
+    ]
+  },
+  {
+    "id": "M-6-3-8",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "How many lines of symmetry does a square have?",
+    "answerOptions": [
+      { "answer": "1" },
+      { "answer": "2" },
+      { "answer": "3" },
+      { "answer": "4", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-3-9",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Which of the following cannot be the sides of a triangle?",
+    "answerOptions": [
+      { "answer": "20cm, 20cm, 10 cm." },
+      { "answer": "10 cm, 10cm, 4 cm." },
+      {
+        "answer": "10cm, 6cm, 4 cm.",
+        "isCorrect": true
+      },
+      { "answer": "30cm, 30 cm, 20 cm. " }
+    ]
+  },
+  {
+    "id": "M-6-4-0",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Perimeter of a regular heptagon of side 20 cm will be?",
+    "answerOptions": [
+      { "answer": "120" },
+      { "answer": "140", "isCorrect": true },
+      { "answer": "100" },
+      { "answer": "160" }
+    ]
+  },
+  {
+    "id": "M-6-4-1",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "The length and the breadth of a rectangular field are in the ratio 5:3. If its perimeter is 128 m, find the dimensions of the field.",
+    "answerOptions": [
+      { "answer": "50 m, 34 m" },
+      { "answer": "30 m, 18 m" },
+      { "answer": "40 m, 24 m", "isCorrect": true },
+      { "answer": "42 m, 22 m" }
+    ]
+  },
+  {
+    "id": "M-6-4-2",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "A rectangular park has length of 30m and breadth of 20 m. Neo takes 5 rounds of park. Find the total distance covered by Neo?",
+    "answerOptions": [
+      { "answer": "50 m" },
+      { "answer": "300 m" },
+      { "answer": "400 m" },
+      { "answer": "500 m", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-4-3",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "The length and breadth of the rectangle are 38 cm and 12 cm respectively. Find the side of the square whose perimeter is equal to that of the rectangle.",
+    "answerOptions": [
+      { "answer": "20 cm", "isCorrect": true },
+      { "answer": "30 cm" },
+      { "answer": "40 cm" },
+      { "answer": "10 cm" }
+    ]
+  },
+  {
+    "id": "M-6-4-4",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "What will the Lateral Surface Area of the Cuboid if l = length, b = breadth, h = height",
+    "answerOptions": [
+      { "answer": "2 * (l + b + h)" },
+      { "answer": "2h * (l + b)", "isCorrect": true },
+      { "answer": "2*l*b*h" },
+      { "answer": "2b * (l + h)" }
+    ]
+  },
+  {
+    "id": "M-6-4-5",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Calculate the volume of a cuboid with dimensions of 1 cm by 2 cm by 3 cm.",
+    "answerOptions": [
+      { "answer": "6 square cm" },
+      { "answer": "6 cubic cm", "isCorrect": true },
+      { "answer": "3 square cm" },
+      { "answer": "3 cubic cm" }
+    ]
+  },
+  {
+    "id": "M-6-4-6",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": " ___ is the 2-D space or region occupied by a closed figure, while ___ is the distance around a closed figure.",
+    "answerOptions": [
+      { "answer": "area, perimeter", "isCorrect": true },
+      { "answer": "perimeter, area" },
+      { "answer": "volume, perimeter" },
+      { "answer": "volume, area" }
+    ]
+  },
+  {
+    "id": "M-6-4-7",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Each side of a square plot of land is 50m. find the cost of fencing the plot at the rate of 30 INR per meter?",
+    "answerOptions": [
+      { "answer": "600 INR" },
+      { "answer": "6000 INR", "isCorrect": true },
+      { "answer": "60 INR" },
+      { "answer": "660 INR" }
+    ]
+  },
+  {
+    "id": "M-6-4-8",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Express 68 grams in kilograms.",
+    "answerOptions": [
+      { "answer": "6800 kg" },
+      { "answer": "0.68 kg" },
+      { "answer": "6.8 kg" },
+      { "answer": "0.068 kg", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-4-9",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "(30 kg 250 g) + (5 kg 150 g) = ?",
+    "answerOptions": [
+      { "answer": "30 kg 400 g" },
+      { "answer": "35 kg 500 g" },
+      {
+        "answer": "35 kg 400 g",
+        "isCorrect": true
+      },
+      { "answer": "35 kg 300 g" }
+    ]
+  },
+  {
+    "id": "M-6-5-0",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "The ___ is calculated by dividing the sum of all the observations by the total number of observations.",
+    "answerOptions": [
+      { "answer": "Range" },
+      { "answer": "Mean", "isCorrect": true },
+      { "answer": "Mode" },
+      { "answer": "Median" }
+    ]
+  },
+  {
+    "id": "M-6-5-1",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "The ___ is defined as the middle value of a sorted list of numbers.",
+    "answerOptions": [
+      { "answer": "Range" },
+      { "answer": "Mean" },
+      { "answer": "Mode" },
+      { "answer": "Median", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-5-2",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "A ___ is defined as the value that has a higher frequency in a given set of values.",
+    "answerOptions": [
+      { "answer": "Range" },
+      { "answer": "Mean" },
+      { "answer": "Mode", "isCorrect": true },
+      { "answer": "Median" }
+    ]
+  },
+  {
+    "id": "M-6-5-3",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "The ___ can be defined as the difference between the highest observation and lowest observation.",
+    "answerOptions": [
+      { "answer": "Range", "isCorrect": true },
+      { "answer": "Mean" },
+      { "answer": "Mode" },
+      { "answer": "Median" }
+    ]
+  },
+  {
+    "id": "M-6-5-4",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "Find the median of 4, 5, 6 and 7.",
+    "answerOptions": [
+      { "answer": "5" },
+      { "answer": "5.5", "isCorrect": true },
+      { "answer": "6" },
+      { "answer": "4" }
+    ]
+  },
+  {
+    "id": "M-6-5-5",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "find median of 5, 7, 4, 8, 6",
+    "answerOptions": [
+      { "answer": "4" },
+      { "answer": "5" },
+      { "answer": "6", "isCorrect": true },
+      { "answer": "7" }
+    ]
+  },
+  {
+    "id": "M-6-5-6",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "The given dataset {2,2,2,3,4,4,5,5,5} is ___ .",
+    "answerOptions": [
+      { "answer": "bimodal", "isCorrect": true },
+      { "answer": "trimodal" },
+      { "answer": "multimodal" },
+      { "answer": "non-modal" }
+    ]
+  },
+  {
+    "id": "M-6-5-7",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "Find the mode of the dataset {2,2,2,3,4,4,5,5,5,7,8,8,8}",
+    "answerOptions": [
+      { "answer": "3, 7" },
+      { "answer": "2, 5, 8", "isCorrect": true },
+      { "answer": "2, 4, 5, 8" },
+      { "answer": "2, 3, 4, 5, 7, 8" }
+    ]
+  },
+  {
+    "id": "M-6-5-8",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "Find the range of given observations: 30, 20, 10, 40, 60, 50",
+    "answerOptions": [
+      { "answer": "20" },
+      { "answer": "30" },
+      { "answer": "40" },
+      { "answer": "50", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-5-9",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "When the given data are arranged in ___ order, then the ___ observation is the median of the data",
+    "answerOptions": [
+      { "answer": "Ascending, highest" },
+      { "answer": "Descending, lowest" },
+      {
+        "answer": "Ascending/Descending, middle most",
+        "isCorrect": true
+      },
+      { "answer": "Ascending, lowest" }
+    ]
   }
 ]
