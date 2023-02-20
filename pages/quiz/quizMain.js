@@ -515,6 +515,8 @@ export default function QuizMain() {
                       <Box>
                         <h3 className={styles.greyText}>
                           OOPS! Looks like you still have things to learn.
+                          <br />
+                          But worry not, for we have you covered.
                         </h3>
                         <Grid
                           container

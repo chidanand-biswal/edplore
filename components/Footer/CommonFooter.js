@@ -40,11 +40,18 @@ export default function CommonFooter() {
           </Box>
           <Divider orientation="vertical" flexItem />
           <Box sx={{ padding: "0 0.5rem" }}>
-            <FacebookIcon fontSize="medium" />
+            <a
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=100090510970087"
+            >
+              <FacebookIcon fontSize="medium" />
+            </a>
           </Box>
           <Divider orientation="vertical" flexItem />
           <Box sx={{ padding: "0 0.5rem" }}>
-            <TwitterIcon fontSize="medium" />
+            <a target="_blank" href="https://twitter.com/EdploreOfficial">
+              <TwitterIcon fontSize="medium" />
+            </a>
           </Box>
           <Divider orientation="vertical" flexItem />
           <Box sx={{ padding: "0 0.5rem" }}>
@@ -110,11 +117,18 @@ export default function CommonFooter() {
           </Box>
           <Divider orientation="vertical" flexItem />
           <Box sx={{ padding: "0 0.5rem" }}>
-            <FacebookIcon fontSize="medium" />
+            <a
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=100090510970087"
+            >
+              <FacebookIcon fontSize="medium" />
+            </a>
           </Box>
           <Divider orientation="vertical" flexItem />
           <Box sx={{ padding: "0 0.5rem" }}>
-            <TwitterIcon fontSize="medium" />
+            <a target="_blank" href="https://twitter.com/EdploreOfficial">
+              <TwitterIcon fontSize="medium" />
+            </a>
           </Box>
           <Divider orientation="vertical" flexItem />
           <Box sx={{ padding: "0 0.5rem" }}>

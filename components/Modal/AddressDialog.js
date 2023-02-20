@@ -48,22 +48,34 @@ export default function AddressDialog(props) {
         </div>
 
         <DialogActions sx={{ justifyContent: "center", paddingBottom: "2rem" }}>
-          <Button
-            onClick={() => {
-              Router.push("/campaign/");
-            }}
-            variant="outlined"
+          <Grid
+            container
+            direction="column"
+            alignItems="center"
+            justifyContent="center"
+            spacing={2}
           >
-            I will update later
-          </Button>
-          <Button
-            onClick={() => {
-              Router.push("/explorer/");
-            }}
-            variant="contained"
-          >
-            I will update right now
-          </Button>
+            <Grid item>
+              <Button
+                onClick={() => {
+                  Router.push("/explorer/");
+                }}
+                variant="contained"
+              >
+                I will update now
+              </Button>
+            </Grid>
+            <Grid item>
+              <Button
+                onClick={() => {
+                  Router.push("/campaign/");
+                }}
+                variant="outlined"
+              >
+                I will update later
+              </Button>
+            </Grid>
+          </Grid>
         </DialogActions>
       </Dialog>
     </div>
