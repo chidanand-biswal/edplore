@@ -18,7 +18,11 @@ export default function CardSmallCustomOption(props) {
         return (
           <CardMedia
             component="img"
-            height="50rem"
+            sx={{
+              width: "3.5rem",
+              height: "3.5rem",
+              display: "inline",
+            }}
             src="/assets/physics.png"
             alt="Physics"
           />
@@ -27,7 +31,11 @@ export default function CardSmallCustomOption(props) {
         return (
           <CardMedia
             component="img"
-            height="50rem"
+            sx={{
+              width: "3.5rem",
+              height: "3.5rem",
+              display: "inline",
+            }}
             src="/assets/chemistry.png"
             alt="Chemistry"
           />
@@ -36,7 +44,11 @@ export default function CardSmallCustomOption(props) {
         return (
           <CardMedia
             component="img"
-            height="50rem"
+            sx={{
+              width: "3.5rem",
+              height: "3.5rem",
+              display: "inline",
+            }}
             src="/assets/mathematics.png"
             alt="Mathematics"
           />
@@ -45,7 +57,11 @@ export default function CardSmallCustomOption(props) {
         return (
           <CardMedia
             component="img"
-            height="50rem"
+            sx={{
+              width: "3.5rem",
+              height: "3.5rem",
+              display: "inline",
+            }}
             src="/assets/biology.png"
             alt="Biology"
           />
