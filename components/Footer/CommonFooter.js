@@ -3,6 +3,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Divider from "@mui/material/Divider";
@@ -36,12 +37,19 @@ export default function CommonFooter() {
           }}
         >
           <Box sx={{ padding: "0 0.5rem" }}>
-            <LinkedInIcon fontSize="medium" />
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com/edplore.official/"
+            >
+              <InstagramIcon fontSize="medium" />
+            </a>
           </Box>
           <Divider orientation="vertical" flexItem />
           <Box sx={{ padding: "0 0.5rem" }}>
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://www.facebook.com/profile.php?id=100090510970087"
             >
               <FacebookIcon fontSize="medium" />
@@ -49,7 +57,11 @@ export default function CommonFooter() {
           </Box>
           <Divider orientation="vertical" flexItem />
           <Box sx={{ padding: "0 0.5rem" }}>
-            <a target="_blank" href="https://twitter.com/EdploreOfficial">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://twitter.com/EdploreOfficial"
+            >
               <TwitterIcon fontSize="medium" />
             </a>
           </Box>
@@ -113,12 +125,19 @@ export default function CommonFooter() {
           }}
         >
           <Box sx={{ padding: "0 0.5rem" }}>
-            <LinkedInIcon fontSize="medium" />
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com/edplore.official/"
+            >
+              <InstagramIcon fontSize="medium" />
+            </a>
           </Box>
           <Divider orientation="vertical" flexItem />
           <Box sx={{ padding: "0 0.5rem" }}>
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://www.facebook.com/profile.php?id=100090510970087"
             >
               <FacebookIcon fontSize="medium" />
@@ -126,7 +145,11 @@ export default function CommonFooter() {
           </Box>
           <Divider orientation="vertical" flexItem />
           <Box sx={{ padding: "0 0.5rem" }}>
-            <a target="_blank" href="https://twitter.com/EdploreOfficial">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://twitter.com/EdploreOfficial"
+            >
               <TwitterIcon fontSize="medium" />
             </a>
           </Box>
