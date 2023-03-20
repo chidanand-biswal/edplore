@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 import MenuAppBar from "../../components/AppBar/MenuAppBar";
-import CardSmallCustomOption from "../../components/Card/CardSmallCustomOption";
+import CardSmallCustom from "../../components/Card/CardSmallCustom";
 import ToolbarFooter from "../../components/Footer/ToolbarFooter";
 import ExplorerInfoDialog from "../../components/Modal/ExplorerInfoDialog";
 import styles from "../../styles/Home.module.css";
@@ -39,11 +39,7 @@ export default function ILaunchHome() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1 }}
                   >
-                    <CardSmallCustomOption
-                      source="karma"
-                      title="karma"
-                      message="Karma"
-                    />
+                    <CardSmallCustom source="karma" title="karma" />
                   </motion.div>
                 </Grid>
                 <Grid item>
@@ -52,11 +48,7 @@ export default function ILaunchHome() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1.5 }}
                   >
-                    <CardSmallCustomOption
-                      source="chakra"
-                      title="chakra"
-                      message="Chakra"
-                    />
+                    <CardSmallCustom source="chakra" title="chakra" />
                   </motion.div>
                 </Grid>
               </Grid>
@@ -64,7 +56,7 @@ export default function ILaunchHome() {
             <Divider>
               <Grid>
                 <Typography className={styles.openingLines}>
-                  Excited to know what all these are? <br />
+                  Excited to discover what these are? <br />
                   Wait no more!
                 </Typography>
               </Grid>
@@ -83,11 +75,7 @@ export default function ILaunchHome() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 2 }}
                   >
-                    <CardSmallCustomOption
-                      source="badge"
-                      title="badge"
-                      message="Kavach"
-                    />
+                    <CardSmallCustom source="badge" title="badge" />
                   </motion.div>
                 </Grid>
 
@@ -97,11 +85,7 @@ export default function ILaunchHome() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 2.5 }}
                   >
-                    <CardSmallCustomOption
-                      source="superFast"
-                      title="superFast"
-                      message="Vajra"
-                    />
+                    <CardSmallCustom source="superFast" title="superFast" />
                   </motion.div>
                 </Grid>
               </Grid>
