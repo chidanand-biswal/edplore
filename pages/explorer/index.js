@@ -613,7 +613,7 @@ export default function ExplorerHome() {
                     >
                       <Grid item>
                         <div>
-                          <Link href="/launch">
+                          <Link href="/launch/path">
                             <a>
                               <Button
                                 variant="outlined"
@@ -662,7 +662,7 @@ export default function ExplorerHome() {
                       </Grid>
                       <Grid item>
                         <div>
-                          <Link href="/launch">
+                          <Link href="/launch/path">
                             <a>
                               <Button
                                 variant="outlined"

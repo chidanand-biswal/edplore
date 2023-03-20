@@ -12,6 +12,7 @@ import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import MenuAppBarHome from "../components/AppBar/MenuAppBarHome";
 import CommonFooter from "../components/Footer/CommonFooter";
+import CommonFooterHome from "../components/Footer/CommonFooterHome";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -24,32 +25,43 @@ export default function Home() {
   }, []);
 
   return loadingLogo ? (
-    <Box className={styles.container}>
+    <Box className={styles.containerHome}>
       <Zoom in={true} style={{ transitionDelay: "1000ms" }}>
         <Grid container direction="row">
-          <Grid item className={styles.main}>
+          <Grid item className={styles.mainLoad}>
             <Head>
               <title>edplore</title>
               <meta name="description" content="Edplore" />
               <link rel="icon" href="/konark.png" />
             </Head>
-
+            {/** 
             <h1 className={styles.title}>
               edpl
               <ExploreIcon fontSize="large" />
               re
             </h1>
-            <h2>educate | explore</h2>
+            */}
+            <Box
+              component="img"
+              sx={{
+                height: "7rem",
+                width: "7rem",
+              }}
+              src="/assets/konark_sun.svg"
+            />
+            <Typography variant="h5" color="#fafafa">
+              educate | explore
+            </Typography>
           </Grid>
         </Grid>
       </Zoom>
     </Box>
   ) : (
-    <Box className={styles.container}>
+    <Box className={styles.containerHome}>
       <MenuAppBarHome />
 
       <Grid container direction="row">
-        <Grid item className={styles.main}>
+        <Grid item className={styles.mainHome}>
           <Grid className={styles.spacerOne}>
             <motion.div
               initial={{ opacity: 1, scale: 2, y: "8rem" }}
@@ -62,7 +74,7 @@ export default function Home() {
                   height: "5rem",
                   width: "5rem",
                 }}
-                src="/assets/konark_sun.svg"
+                src="/assets/compass.png"
               />
             </motion.div>
           </Grid>
@@ -73,7 +85,7 @@ export default function Home() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 2 }}
             >
-              <Typography className={styles.openingLines}>
+              <Typography className={styles.openingLinesHome}>
                 The Realms of Bodhi <br />
                 <br />
               </Typography>
@@ -83,7 +95,7 @@ export default function Home() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 3 }}
             >
-              <Typography className={styles.openingLines}>
+              <Typography className={styles.openingLinesHome}>
                 Legends tell it is still out there.
                 <br />
                 Is it true? Or just a myth? <br />
@@ -95,7 +107,7 @@ export default function Home() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 4 }}
             >
-              <Typography className={styles.openingLines}>
+              <Typography className={styles.openingLinesHome}>
                 An epic quest awaits!
               </Typography>
             </motion.div>
@@ -118,7 +130,11 @@ export default function Home() {
                         <Button
                           variant="contained"
                           className={styles.buttonExplore}
-                          sx={{ fontSize: "larger" }}
+                          sx={{
+                            fontSize: "larger",
+                            backgroundColor: "#fafafa",
+                            color: "#1976d2",
+                          }}
                         >
                           RESUME QUEST
                         </Button>
@@ -130,7 +146,11 @@ export default function Home() {
                         <Button
                           variant="contained"
                           className={styles.buttonExplore}
-                          sx={{ fontSize: "larger" }}
+                          sx={{
+                            fontSize: "larger",
+                            backgroundColor: "#fafafa",
+                            color: "#1976d2",
+                          }}
                         >
                           EXPL
                           <ExploreIcon fontSize="small" />
@@ -146,7 +166,7 @@ export default function Home() {
         </Grid>
       </Grid>
 
-      <CommonFooter />
+      <CommonFooterHome />
     </Box>
   );
 }

@@ -13,7 +13,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import * as React from "react";
 import { padding } from "@mui/system";
 
-export default function CommonFooter() {
+export default function CommonFooterHome() {
   const bigScreenInd = useMediaQuery("(min-width:900px)");
 
   return bigScreenInd ? (
@@ -23,6 +23,9 @@ export default function CommonFooter() {
         width: "100%",
         position: "fixed",
         bottom: 0,
+        backgroundColor: "#FF3CAC",
+        backgroundImage:
+          "linear-gradient(270deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%)",
       }}
       component="footer"
       square
@@ -43,7 +46,7 @@ export default function CommonFooter() {
               rel="noreferrer"
               href="https://www.instagram.com/edplore.official/"
             >
-              <InstagramIcon fontSize="medium" />
+              <InstagramIcon fontSize="medium" style={{ color: "#fafafa" }} />
             </a>
           </Box>
           <Divider orientation="vertical" flexItem />
@@ -53,7 +56,7 @@ export default function CommonFooter() {
               rel="noreferrer"
               href="https://www.facebook.com/profile.php?id=100090510970087"
             >
-              <FacebookIcon fontSize="medium" />
+              <FacebookIcon fontSize="medium" style={{ color: "#fafafa" }} />
             </a>
           </Box>
           <Divider orientation="vertical" flexItem />
@@ -63,16 +66,17 @@ export default function CommonFooter() {
               rel="noreferrer"
               href="https://twitter.com/EdploreOfficial"
             >
-              <TwitterIcon fontSize="medium" />
+              <TwitterIcon fontSize="medium" style={{ color: "#fafafa" }} />
             </a>
           </Box>
           <Divider orientation="vertical" flexItem />
           <Box sx={{ padding: "0 0.5rem" }}>
             <a target="_top" href="mailto:edplore.help@gmail.com">
-              <EmailIcon fontSize="medium" />
+              <EmailIcon fontSize="medium" style={{ color: "#fafafa" }} />
             </a>
           </Box>
         </Box>
+        {/** 
         <Box
           sx={{
             flexGrow: 1,
@@ -90,6 +94,7 @@ export default function CommonFooter() {
             by a family of educators just for the young ignited minds.
           </Typography>
         </Box>
+*/}
         <Box
           sx={{
             flexGrow: 1,
@@ -98,7 +103,7 @@ export default function CommonFooter() {
             mb: 1,
           }}
         >
-          <Typography variant="caption" color="initial">
+          <Typography variant="caption" color="#fafafa">
             ©{new Date().getFullYear()} BISWAL Technologies. All rights
             reserved.
           </Typography>
@@ -113,6 +118,9 @@ export default function CommonFooter() {
         position: "sticky",
         bottom: 0,
         borderBottomWidth: "0rem",
+        backgroundColor: "#FF3CAC",
+        backgroundImage:
+          "linear-gradient(270deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%)",
       }}
       component="footer"
       square
@@ -133,7 +141,7 @@ export default function CommonFooter() {
               rel="noreferrer"
               href="https://www.instagram.com/edplore.official/"
             >
-              <InstagramIcon fontSize="medium" />
+              <InstagramIcon fontSize="medium" style={{ color: "#fafafa" }} />
             </a>
           </Box>
           <Divider orientation="vertical" flexItem />
@@ -143,7 +151,7 @@ export default function CommonFooter() {
               rel="noreferrer"
               href="https://www.facebook.com/profile.php?id=100090510970087"
             >
-              <FacebookIcon fontSize="medium" />
+              <FacebookIcon fontSize="medium" style={{ color: "#fafafa" }} />
             </a>
           </Box>
           <Divider orientation="vertical" flexItem />
@@ -153,16 +161,17 @@ export default function CommonFooter() {
               rel="noreferrer"
               href="https://twitter.com/EdploreOfficial"
             >
-              <TwitterIcon fontSize="medium" />
+              <TwitterIcon fontSize="medium" style={{ color: "#fafafa" }} />
             </a>
           </Box>
           <Divider orientation="vertical" flexItem />
           <Box sx={{ padding: "0 0.5rem" }}>
             <a target="_top" href="mailto:edplore.help@gmail.com">
-              <EmailIcon fontSize="medium" />
+              <EmailIcon fontSize="medium" style={{ color: "#fafafa" }} />
             </a>
           </Box>
         </Box>
+        {/** 
         <Box
           sx={{
             justifyContent: "center",
@@ -185,6 +194,7 @@ export default function CommonFooter() {
             just for the young ignited minds.
           </Typography>
         </Box>
+*/}
         <Box
           sx={{
             flexGrow: 1,
@@ -193,7 +203,7 @@ export default function CommonFooter() {
             mb: 1,
           }}
         >
-          <Typography variant="caption" color="initial">
+          <Typography variant="caption" color="#fafafa">
             ©{new Date().getFullYear()} BISWAL Technologies. All rights
             reserved.
           </Typography>

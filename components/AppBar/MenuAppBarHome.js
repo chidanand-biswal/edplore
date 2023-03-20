@@ -102,7 +102,7 @@ export default function MenuAppBarHome() {
 
   const signOut = async () => {
     auth.signOut();
-    Router.push("/launch");
+    Router.push("/launch/path");
   };
 
   const handleMenu = (event) => {
