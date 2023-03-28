@@ -56,8 +56,13 @@ export default function ILaunchHome() {
             <Divider>
               <Grid>
                 <Typography className={styles.openingLines}>
-                  Excited to discover what these are? <br />
-                  Wait no more!
+                  The Ancient Lore says <br />
+                  The One who traverses the Realms
+                  <br />
+                  is witness to rare Runes & Artifacts
+                  <br /> and gets rewarded! <br />
+                  <br />
+                  Are you not excited to discover these?
                 </Typography>
               </Grid>
             </Divider>
@@ -112,7 +117,7 @@ export default function ILaunchHome() {
                         className={styles.buttonLaunch}
                         sx={{ minWidth: "15rem" }}
                       >
-                        CHOOSE PATH
+                        ENTER THE REALMS OF BODHI
                       </Button>
                     </a>
                   </Link>
@@ -137,7 +142,7 @@ export default function ILaunchHome() {
                         className={styles.buttonLaunch}
                         sx={{ minWidth: "15rem" }}
                       >
-                        CHOOSE PATH
+                        ENTER THE REALMS OF BODHI
                       </Button>
                     </a>
                   </Link>

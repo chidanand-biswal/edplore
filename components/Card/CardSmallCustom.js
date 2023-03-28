@@ -52,7 +52,7 @@ export default function CardSmallCustom(props) {
 
   return (
     <Box>
-      <Card className={styles.smallCard} elevation={3}>
+      <Card className={styles.smallCardLaunch}>
         <React.Fragment>
           <CardContent>{renderCardMedia(props.source)}</CardContent>
         </React.Fragment>

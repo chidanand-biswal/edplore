@@ -131,7 +131,7 @@ export default function Home() {
                           variant="contained"
                           className={styles.buttonExplore}
                           sx={{
-                            fontSize: "larger",
+                            fontSize: "x-large",
                             backgroundColor: "#fafafa",
                             color: "#1976d2",
                           }}
@@ -147,13 +147,13 @@ export default function Home() {
                           variant="contained"
                           className={styles.buttonExplore}
                           sx={{
-                            fontSize: "larger",
+                            fontSize: "x-large",
                             backgroundColor: "#fafafa",
                             color: "#1976d2",
                           }}
                         >
                           EXPL
-                          <ExploreIcon fontSize="small" />
+                          <ExploreIcon fontSize="medium" />
                           RE
                         </Button>
                       </a>
