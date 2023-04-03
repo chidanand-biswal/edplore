@@ -55,14 +55,16 @@ export default function ILaunchHome() {
             </Grid>
             <Divider>
               <Grid>
-                <Typography className={styles.openingLines}>
-                  The Ancient Lore says <br />
-                  The One who traverses the Realms
+                <Typography className={styles.openingLinesLaunch}>
+                  &quot;Thus spoke an ancient lore, <br />
+                  Runes & Artifacts do wait for
                   <br />
-                  is witness to rare Runes & Artifacts
-                  <br /> and gets rewarded! <br />
-                  <br />
-                  Are you not excited to discover these?
+                  The One who traverses the Realms;
+                  <br /> To reward & to revere forever!&quot;
+                </Typography>
+                <br />
+                <Typography className={styles.openingLinesLaunchVariant}>
+                  What are you waiting for?
                 </Typography>
               </Grid>
             </Divider>

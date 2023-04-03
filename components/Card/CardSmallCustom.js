@@ -54,7 +54,7 @@ export default function CardSmallCustom(props) {
     <Box>
       <Card className={styles.smallCardLaunch}>
         <React.Fragment>
-          <CardContent>{renderCardMedia(props.source)}</CardContent>
+          <Box sx={{ padding: "1rem" }}>{renderCardMedia(props.source)}</Box>
         </React.Fragment>
       </Card>
     </Box>
