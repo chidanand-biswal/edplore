@@ -1,0 +1,262 @@
+[
+  {
+    "id": "P-6-0-0",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "What is the distance from elbow to the tip of the middle finger?",
+    "answerOptions": [
+      { "answer": "Ribbon" },
+      { "answer": "Inch tape" },
+      { "answer": "Cubit", "isCorrect": true },
+      { "answer": "None of these" }
+    ]
+  },
+  {
+    "id": "P-6-0-1",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "To and fro motion of an object about its position is also known as ___.",
+    "answerOptions": [
+      { "answer": "Straight motion" },
+      { "answer": "Oscillatory motion", "isCorrect": true },
+      { "answer": "Rectilinear motion" },
+      { "answer": "None of these" }
+    ]
+  },
+  {
+    "id": "P-6-0-2",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "In which type of motion the object changes its position with time along a straight line?",
+    "answerOptions": [
+      { "answer": "Circular motion" },
+      { "answer": "Oscillatory motion" },
+      { "answer": "Rectilinear motion", "isCorrect": true },
+      { "answer": "None of these" }
+    ]
+  },
+  {
+    "id": "P-6-0-3",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "S.I. Unit of length is ___.",
+    "answerOptions": [
+      { "answer": "Metre", "isCorrect": true },
+      { "answer": "Kilogram" },
+      { "answer": "Metre per second" },
+      { "answer": "Degree per second" }
+    ]
+  },
+  {
+    "id": "P-6-0-4",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "The known fixed quantity used to measure the unknown quantity by comparison is called ___.",
+    "answerOptions": [
+      { "answer": "Amount" },
+      { "answer": "Frequency" },
+      { "answer": "Magnitude" },
+      { "answer": "Unit", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "P-6-0-5",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "What is a rough or approximate measurement by senses?",
+    "answerOptions": [
+      { "answer": "Amount" },
+      { "answer": "Precision measurement" },
+      { "answer": "Scientific measurement" },
+      { "answer": "Estimation", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "P-6-0-6",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "In which motion an object repeats its motion after a fixed interval of time?",
+    "answerOptions": [
+      { "answer": "Periodic motion", "isCorrect": true },
+      { "answer": "Circular motion" },
+      { "answer": "Rotational motion" },
+      { "answer": "None of these" }
+    ]
+  },
+  {
+    "id": "P-6-0-7",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "In which motion an object as a whole moves about an axis?",
+    "answerOptions": [
+      { "answer": "Periodic motion" },
+      { "answer": "Circular motion" },
+      { "answer": "Rotational motion", "isCorrect": true },
+      { "answer": "None of these" }
+    ]
+  },
+  {
+    "id": "P-6-0-8",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "In which motion in which the objects remain at the same distance from a fixed point?",
+    "answerOptions": [
+      { "answer": "Periodic motion" },
+      { "answer": "Circular motion", "isCorrect": true },
+      { "answer": "Rotational motion" },
+      { "answer": "None of these" }
+    ]
+  },
+  {
+    "id": "P-6-0-9",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "The French created a standard Unit of measurement called as ___.",
+    "answerOptions": [
+      { "answer": "S.I. Unit" },
+      { "answer": "Imperial system" },
+      { "answer": "Metric system", "isCorrect": true },
+      { "answer": "None of these" }
+    ]
+  },
+  {
+    "id": "P-6-1-0",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Incomplete or partial shadows are known as:",
+    "answerOptions": [
+      { "answer": "Penumbra", "isCorrect": true },
+      { "answer": "Umbra" },
+      { "answer": "Reflection" },
+      { "answer": "Refraction" }
+    ]
+  },
+  {
+    "id": "P-6-1-1",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Complete shadows are known as:",
+    "answerOptions": [
+      { "answer": "Penumbra" },
+      { "answer": "Umbra", "isCorrect": true },
+      { "answer": "Reflection" },
+      { "answer": "Refraction" }
+    ]
+  },
+  {
+    "id": "P-6-1-2",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "When light rays are stopped by an opaque object then ___ are produced.",
+    "answerOptions": [
+      { "answer": "Reflection" },
+      { "answer": "Shadow", "isCorrect": true },
+      { "answer": "Refraction" },
+      { "answer": "None of these" }
+    ]
+  },
+  {
+    "id": "P-6-1-3",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Change in direction of light on entering the another transparent substance is:",
+    "answerOptions": [
+      { "answer": "Reflection" },
+      { "answer": "Shadow" },
+      { "answer": "Refraction", "isCorrect": true },
+      { "answer": "None of these" }
+    ]
+  },
+  {
+    "id": "P-6-1-4",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "The process of light turning back after striking the shiny side of mirror is called:",
+    "answerOptions": [
+      { "answer": "Reflection", "isCorrect": true },
+      { "answer": "Shadow" },
+      { "answer": "Refraction" },
+      { "answer": "None of these" }
+    ]
+  },
+  {
+    "id": "P-6-1-5",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Substances through which light can pass partly are said to be:",
+    "answerOptions": [
+      { "answer": "Transparent" },
+      { "answer": "Translucent", "isCorrect": true },
+      { "answer": "Opaque" },
+      { "answer": "None of these" }
+    ]
+  },
+  {
+    "id": "P-6-1-6",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Substances through which light cannot pass at all are said to be:",
+    "answerOptions": [
+      { "answer": "Transparent" },
+      { "answer": "Translucent" },
+      { "answer": "Opaque", "isCorrect": true },
+      { "answer": "None of these" }
+    ]
+  },
+  {
+    "id": "P-6-1-7",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Substances like glass, through which light passes easily, are said to be:",
+    "answerOptions": [
+      { "answer": "Transparent", "isCorrect": true },
+      { "answer": "Translucent" },
+      { "answer": "Opaque" },
+      { "answer": "None of these" }
+    ]
+  },
+  {
+    "id": "P-6-1-8",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Those objects give out light of its own are known as:",
+    "answerOptions": [
+      { "answer": "Transparent" },
+      { "answer": "Translucent" },
+      { "answer": "Non-luminous" },
+      { "answer": "Luminous", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "P-6-1-9",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "What information do we get from shadows?",
+    "answerOptions": [
+      { "answer": "About the size of objects" },
+      { "answer": "About the shape of objects", "isCorrect": true },
+      { "answer": "About the colour of objects" },
+      { "answer": "All of these" }
+    ]
+  }
+]

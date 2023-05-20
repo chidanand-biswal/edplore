@@ -25,7 +25,7 @@ export default function Home() {
   }, []);
 
   return loadingLogo ? (
-    <Box className={styles.containerHome}>
+    <Box>
       <Zoom in={true} style={{ transitionDelay: "1000ms" }}>
         <Grid container direction="row">
           <Grid item className={styles.mainLoad}>
@@ -49,9 +49,7 @@ export default function Home() {
               }}
               src="/assets/konark_sun.svg"
             />
-            <Typography variant="h5" color="#fafafa">
-              educate | explore
-            </Typography>
+            <Typography variant="h5">educate | explore</Typography>
           </Grid>
         </Grid>
       </Zoom>

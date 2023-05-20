@@ -16,7 +16,8 @@ import MenuAppBar from "../../components/AppBar/MenuAppBar";
 import standardArenaMapData from "../../static/standardArenaMap.json";
 import { setCurrentQuizData } from "../../store/quiz/action";
 import styles from "../../styles/Home.module.css";
-import quizData from "../api/quizData.json";
+import quizDataCBSE from "../api/quizDataCBSE.json";
+import quizDataICSE from "../api/quizDataICSE.json";
 import { Stack } from "@mui/material";
 
 const RenderTime = ({ remainingTime }) => {
@@ -100,6 +101,7 @@ export default function QuizHome() {
   const [openAlertWarn, setOpenAlertWarn] = React.useState(true);
   const { realmActive } = useSelector((state) => state.realmActive);
   const { standardDetails } = useSelector((state) => state.standardDetails);
+  const { boardDetails } = useSelector((state) => state.boardDetails);
 
   const { realmProgress } = useSelector((state) => state.realmProgress);
 
@@ -155,9 +157,12 @@ export default function QuizHome() {
     calculateRealmProgressByStandard("MATHEMATICS");
   const realmProgressBiology = calculateRealmProgressByStandard("BIOLOGY");
 
+  const quizData = boardDetails === "CBSE" ? quizDataCBSE : quizDataICSE;
+
   const setCurrentQuiz = () => {
     console.log(`Realm active is ::: ${realmActive}.`);
     console.log(`standard is ::: ${standardDetails}.`);
+    console.log(`board is ::: ${boardDetails}.`);
 
     switch (realmActive) {
       case "PHYSICS":
@@ -201,7 +206,7 @@ export default function QuizHome() {
 
   const findArenaName = () => {
     const filteredArenaList = standardArenaMapData.standardArenaMap.filter(
-      (data) => data.standard === standardDetails
+      (data) => data.standard === standardDetails && data.board === boardDetails
     );
 
     switch (realmActive) {

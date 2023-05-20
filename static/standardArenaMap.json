@@ -2,6 +2,7 @@
   "standardArenaMap": [
     {
       "standard": 6,
+      "board": "ICSE",
       "stepsPhysics": [
         {
           "id": 0,
@@ -119,6 +120,124 @@
           "id": 4,
           "label": "Adaptation",
           "description": "Habitat and Adaptation"
+        }
+      ]
+    },
+    {
+      "standard": 6,
+      "board": "CBSE",
+      "stepsPhysics": [
+        {
+          "id": 0,
+          "label": "Motion and Measurement",
+          "description": "Motion and Measurement of Distances"
+        },
+        {
+          "id": 1,
+          "label": "Light, Shadows and Reflections",
+          "description": "Transparent, opaque and translucent objects, Mirrors and reflections"
+        },
+        {
+          "id": 2,
+          "label": "Electricity and Circuits",
+          "description": "Electric cell, Circuits, Switch, Conductors and Insulators"
+        },
+        {
+          "id": 3,
+          "label": "Magnets",
+          "description": "Concepts of Magnetism"
+        }
+      ],
+
+      "stepsChemistry": [
+        {
+          "id": 0,
+          "label": "Fibre to Fabric",
+          "description": "Variety, Plant Fibres and Fibre making processes"
+        },
+        {
+          "id": 1,
+          "label": "Materials",
+          "description": "Sorting materials into groups and Properties"
+        },
+        {
+          "id": 2,
+          "label": "Separation of Substances",
+          "description": "Different methods of separation"
+        },
+        {
+          "id": 3,
+          "label": "Changes",
+          "description": "Changes Around us, reversible and irreversible changes"
+        },
+        {
+          "id": 4,
+          "label": "Air",
+          "description": "Importance, usage, resources and concepts of air"
+        }
+      ],
+      "stepsMathematics": [
+        {
+          "id": 0,
+          "label": "Number System",
+          "description": "Let's start here!"
+        },
+        {
+          "id": 1,
+          "label": "Ratio and Proportion",
+          "description": "You are here!"
+        },
+        {
+          "id": 2,
+          "label": "Algebra",
+          "description": "You are here!"
+        },
+        {
+          "id": 3,
+          "label": "Geometry",
+          "description": "You are here!"
+        },
+        {
+          "id": 4,
+          "label": "Mensuration",
+          "description": "You are here!"
+        },
+        {
+          "id": 5,
+          "label": "Data Handling",
+          "description": "You are here!"
+        }
+      ],
+      "stepsBiology": [
+        {
+          "id": 0,
+          "label": "Food",
+          "description": "Food Materials, Sources and Variety"
+        },
+        {
+          "id": 1,
+          "label": "Components of Food",
+          "description": "Nutrients, Deficiency Diseases and Balanced Diet"
+        },
+        {
+          "id": 2,
+          "label": "Plants",
+          "description": "Parts of Plants, Herbs, Shrubs and Trees"
+        },
+        {
+          "id": 3,
+          "label": "Body Movement",
+          "description": "Human Body and Its Movements, Gait of Animals"
+        },
+        {
+          "id": 4,
+          "label": "Living Organisms",
+          "description": "Characteristics and Habitats, Surroundings"
+        },
+        {
+          "id": 5,
+          "label": "Water",
+          "description": "Importance, usage, resources and concepts of water"
         }
       ]
     },

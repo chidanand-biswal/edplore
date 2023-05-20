@@ -63,6 +63,11 @@ export default function ILaunchHome() {
                   <br /> To reward & to revere forever!&quot;
                 </Typography>
                 <br />
+                <Typography className={styles.openingLinesLaunch}>
+                  Are you The One <br />
+                  who will make the prophecy come true?
+                </Typography>
+                <br />
                 <Typography className={styles.openingLinesLaunchVariant}>
                   What are you waiting for?
                 </Typography>

@@ -76,7 +76,7 @@ export default function ExplorerHome() {
   const bigScreenInd = useMediaQuery("(min-width:900px)");
   const [openAlert, setOpenAlert] = React.useState(true);
   const [openAddressAlert, setOpenAddressAlert] = React.useState(false);
-  const [cbseActive, setCbseActive] = React.useState(false);
+  const [cbseActive, setCbseActive] = React.useState(true);
   const [icseActive, setIcseActive] = React.useState(false);
   const [otherActive, setOtherActive] = React.useState(false);
   const [showAddress, setShowAddress] = React.useState(false);
@@ -181,7 +181,9 @@ export default function ExplorerHome() {
   };
 
   const updateBoardInStore = () => {
-    dispatch(addBoardDetails(board));
+    dispatch(
+      addBoardDetails(cbseActive ? "CBSE" : icseActive ? "ICSE" : "CBSE")
+    );
   };
 
   const updateRealmProgressInStore = () => {
@@ -205,6 +207,7 @@ export default function ExplorerHome() {
   const submit = () => {
     updateUserNameInStore();
     updateStandardInStore();
+    updateBoardInStore();
     Router.push("/intro/introRealms");
     if (user) {
       updateRealmProgressInStore();
@@ -236,6 +239,18 @@ export default function ExplorerHome() {
       setUserName(userDataInDB.explorerName);
       setStandard(userDataInDB.activeStandard);
       setValName(true);
+      setCbseActive(
+        userDataInDB.selectedBoard != null &&
+          userDataInDB.selectedBoard === "CBSE"
+          ? true
+          : false
+      );
+      setIcseActive(
+        userDataInDB.selectedBoard != null &&
+          userDataInDB.selectedBoard === "ICSE"
+          ? true
+          : false
+      );
     };
     const fetchUserMetaData = async () => {
       let userMetaData = await getExplorerMetaData(user.uid);
@@ -410,6 +425,8 @@ export default function ExplorerHome() {
                           color="primary"
                           onClick={() => {
                             setCbseActive(!cbseActive);
+                            setIcseActive(false);
+                            setOtherActive(false);
                           }}
                         />
                         <Chip
@@ -418,6 +435,8 @@ export default function ExplorerHome() {
                           color="primary"
                           onClick={() => {
                             setIcseActive(!icseActive);
+                            setCbseActive(false);
+                            setOtherActive(false);
                           }}
                         />
                         <Chip
@@ -426,6 +445,8 @@ export default function ExplorerHome() {
                           color="primary"
                           onClick={() => {
                             setOtherActive(!otherActive);
+                            setCbseActive(false);
+                            setIcseActive(false);
                           }}
                         />
                       </Stack>

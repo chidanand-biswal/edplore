@@ -30,6 +30,7 @@ export async function getStaticProps() {
 export default function LearnHome() {
   const { realmActive } = useSelector((state) => state.realmActive);
   const { standardDetails } = useSelector((state) => state.standardDetails);
+  const { boardDetails } = useSelector((state) => state.boardDetails);
 
   const { realmProgress } = useSelector((state) => state.realmProgress);
 
@@ -91,7 +92,7 @@ export default function LearnHome() {
 
   const findArenaName = () => {
     const filteredArenaList = standardArenaMapData.standardArenaMap.filter(
-      (data) => data.standard === standardDetails
+      (data) => data.standard === standardDetails && data.board === boardDetails
     );
 
     switch (realmActive) {

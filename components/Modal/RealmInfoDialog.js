@@ -20,10 +20,11 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 export default function RealmInfoDialog(props) {
   const { standardDetails } = useSelector((state) => state.standardDetails);
+  const { boardDetails } = useSelector((state) => state.boardDetails);
 
   const findRealmWiseArenaList = (realm) => {
     const filteredArenaList = standardArenaMapData.standardArenaMap.filter(
-      (data) => data.standard === standardDetails
+      (data) => data.standard === standardDetails && data.board === boardDetails
     );
 
     switch (realm) {

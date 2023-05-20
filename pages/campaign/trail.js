@@ -24,6 +24,7 @@ export default function CampaignTrail() {
   const dispatch = useDispatch();
   const { realmActive } = useSelector((state) => state.realmActive);
   const { standardDetails } = useSelector((state) => state.standardDetails);
+  const { boardDetails } = useSelector((state) => state.boardDetails);
 
   const { realmProgress } = useSelector((state) => state.realmProgress);
 
@@ -107,7 +108,7 @@ export default function CampaignTrail() {
 
   const findActiveTrail = () => {
     const filteredArenaList = standardArenaMapData.standardArenaMap.filter(
-      (data) => data.standard === standardDetails
+      (data) => data.standard === standardDetails && data.board === boardDetails
     );
 
     switch (realmActive) {
@@ -292,7 +293,7 @@ export default function CampaignTrail() {
                 <Link href="/campaign/">
                   <a>
                     <Button variant="outlined" className={styles.buttonLaunch}>
-                      I WANT TO CHOOSE ANOTHER REALM
+                      LET ME CHOOSE ANOTHER REALM
                     </Button>
                   </a>
                 </Link>

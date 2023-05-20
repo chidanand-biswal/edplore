@@ -107,6 +107,7 @@ export default function QuizMain() {
   const { userDetails } = useSelector((state) => state.userDetails);
   const { realmActive } = useSelector((state) => state.realmActive);
   const { standardDetails } = useSelector((state) => state.standardDetails);
+  const { boardDetails } = useSelector((state) => state.boardDetails);
   const { realmProgress } = useSelector((state) => state.realmProgress);
 
   const realmProgressArray = realmProgress ? realmProgress : [];
@@ -343,7 +344,8 @@ export default function QuizMain() {
         updateMedal ? medalCount + 1 : medalCount,
         updateSuperfast ? superFastCount + 1 : superFastCount,
         userDetails,
-        standardDetails
+        standardDetails,
+        boardDetails
       );
     }
   };
