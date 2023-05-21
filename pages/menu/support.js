@@ -1,5 +1,6 @@
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
@@ -56,16 +57,28 @@ export default function SupportHome() {
                   </Grid>
                 </Grid>
                 <Grid item>
-                  <Grid item>
-                    <Grid container direction="row">
-                      <Grid item>
-                        <PhoneIcon />
-                      </Grid>
-                      <Grid item sx={{ padding: "0 1rem" }}>
-                        <Typography className={styles.openingLines}>
-                          <a href="tel:+918583878899">+91 85 83 87 88 99</a>
-                        </Typography>
-                      </Grid>
+                  <Grid container direction="row">
+                    <Grid item>
+                      <PhoneIcon />
+                    </Grid>
+                    <Grid item sx={{ padding: "0 1rem" }}>
+                      <Typography className={styles.openingLines}>
+                        <a href="tel:+918583878899">+91 85 83 87 88 99</a>
+                      </Typography>
+                    </Grid>
+                  </Grid>
+                </Grid>
+                <Grid item>
+                  <Grid container direction="row">
+                    <Grid item>
+                      <WhatsAppIcon />
+                    </Grid>
+                    <Grid item sx={{ padding: "0 1rem" }}>
+                      <Typography className={styles.openingLines}>
+                        <a href="whatsapp://send?text=Hello Team Edplore">
+                          +91 85 83 87 88 99
+                        </a>
+                      </Typography>
                     </Grid>
                   </Grid>
                 </Grid>

@@ -55,6 +55,10 @@ export default function ILaunchHome() {
             </Grid>
             <Divider>
               <Grid>
+                <Typography className={styles.openingLinesLaunchVariant}>
+                  The Lore of Bodhi <br />
+                  <br />
+                </Typography>
                 <Typography className={styles.openingLinesLaunch}>
                   &quot;Thus spoke an ancient lore, <br />
                   Runes & Artifacts do wait for
@@ -63,11 +67,7 @@ export default function ILaunchHome() {
                   <br /> To reward & to revere forever!&quot;
                 </Typography>
                 <br />
-                <Typography className={styles.openingLinesLaunch}>
-                  Are you The One <br />
-                  who will make the prophecy come true?
-                </Typography>
-                <br />
+
                 <Typography className={styles.openingLinesLaunchVariant}>
                   What are you waiting for?
                 </Typography>

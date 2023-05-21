@@ -258,5 +258,399 @@
       { "answer": "About the colour of objects" },
       { "answer": "All of these" }
     ]
+  },
+  {
+    "id": "P-6-2-0",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "A simple device that either breaks the circuit or completes it to stop or start the flow of electric current is:",
+    "answerOptions": [
+      { "answer": "Cell" },
+      { "answer": "Switch", "isCorrect": true },
+      { "answer": "Network" },
+      { "answer": "None of these" }
+    ]
+  },
+  {
+    "id": "P-6-2-1",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "___  is a source of electricity.",
+    "answerOptions": [
+      { "answer": "Electricity cell", "isCorrect": true },
+      { "answer": "Current" },
+      { "answer": "Network" },
+      { "answer": "Switch" }
+    ]
+  },
+  {
+    "id": "P-6-2-2",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "When two or more elecricity cells are joined together in such a way that bulb lights up by this, then it is called:",
+    "answerOptions": [
+      { "answer": "Electricity cell" },
+      { "answer": "Current" },
+      { "answer": "Circuit" },
+      { "answer": "Battery", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "P-6-2-3",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Cell is a device which ___ .",
+    "answerOptions": [
+      {
+        "answer": "Converts chemical energy into electrical energy",
+        "isCorrect": true
+      },
+      { "answer": "Converts electrical energy into chemical energy" },
+      { "answer": "Converts chemical energy into light energy" },
+      { "answer": "Converts magentic energy into electrical energy" }
+    ]
+  },
+  {
+    "id": "P-6-2-4",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "The filament of a bulb is made up of ___ .",
+    "answerOptions": [
+      { "answer": "Platinum" },
+      { "answer": "Aluminium" },
+      { "answer": "Chromium" },
+      { "answer": "Tungsten", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "P-6-2-5",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "A substance which allows electricity to pass through it, is called___.",
+    "answerOptions": [
+      { "answer": "A conductor", "isCorrect": true },
+      { "answer": "An insulator" },
+      { "answer": "Luminous" },
+      { "answer": "Non-luminous" }
+    ]
+  },
+  {
+    "id": "P-6-2-6",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "A ___ is a device to tests whether the given substance is a conductor or not.",
+    "answerOptions": [
+      { "answer": "Conduction tester", "isCorrect": true },
+      { "answer": "Switch" },
+      { "answer": "Circuit" },
+      { "answer": "Network" }
+    ]
+  },
+  {
+    "id": "P-6-2-7",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": " ___ and ___ are used for covering the electrical wires.",
+    "answerOptions": [
+      { "answer": "Glass, Rubber" },
+      { "answer": "Rubber, Metal" },
+      { "answer": "Plastic, Leather" },
+      { "answer": "Rubber, Plastic", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "P-6-2-8",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Electricity is a form of ___.",
+    "answerOptions": [
+      { "answer": "Energy", "isCorrect": true },
+      { "answer": "Power" },
+      { "answer": "Force" },
+      { "answer": "Element" }
+    ]
+  },
+  {
+    "id": "P-6-2-9",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "The current flow from the ___ terminal of the electric cell to its ___ terminal.",
+    "answerOptions": [
+      { "answer": "Negative, Positive" },
+      { "answer": "Negative, Neutral" },
+      { "answer": "Positive, Negative", "isCorrect": true },
+      { "answer": "Positive, Neutral" }
+    ]
+  },
+  {
+    "id": "P-6-3-0",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "The needle of the compass always points in which direction?",
+    "answerOptions": [
+      { "answer": "North-South", "isCorrect": true },
+      { "answer": "South-East" },
+      { "answer": "East-West" },
+      { "answer": "West-North" }
+    ]
+  },
+  {
+    "id": "P-6-3-1",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "How many poles does the magnet have?",
+    "answerOptions": [
+      { "answer": "One" },
+      { "answer": "Two", "isCorrect": true },
+      { "answer": "Three" },
+      { "answer": "Four" }
+    ]
+  },
+  {
+    "id": "P-6-3-2",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Substances that do not stick to magnets are called:",
+    "answerOptions": [
+      { "answer": "Magnetic substances" },
+      { "answer": "Non-Magnetic substances ", "isCorrect": true },
+      { "answer": "Insulators" },
+      { "answer": "Super conductors" }
+    ]
+  },
+  {
+    "id": "P-6-3-3",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "What are the cautions to be taken to keep the magnetic properties of magnets. ",
+    "answerOptions": [
+      { "answer": "Do not heat it" },
+      { "answer": "Do not drop it" },
+      { "answer": "Do not hammer it" },
+      { "answer": "All of these", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "P-6-3-4",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "What does Magnetite contain?",
+    "answerOptions": [
+      { "answer": "Tungsten" },
+      { "answer": "Silver" },
+      { "answer": "Aluminium" },
+      { "answer": "Iron", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "P-6-3-5",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "The parts of a magnet where most of the iron filling stick are known as:",
+    "answerOptions": [
+      { "answer": "Only North pole" },
+      { "answer": "Both the Poles", "isCorrect": true },
+      { "answer": "mid-section" },
+      { "answer": "Only South pole" }
+    ]
+  },
+  {
+    "id": "P-6-3-6",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "The same poles of 2 magnets ___ when brought closer.",
+    "answerOptions": [
+      { "answer": "Repel each other", "isCorrect": true },
+      { "answer": "Attract each other" },
+      { "answer": "No effects on each other" },
+      { "answer": "Nullify property" }
+    ]
+  },
+  {
+    "id": "P-6-3-7",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Which is a magnetic substance?",
+    "answerOptions": [
+      { "answer": "Iron" },
+      { "answer": "Cobalt" },
+      { "answer": "Nickel" },
+      { "answer": "All of these", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "P-6-3-8",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "A freely suspended bar magnet rests in ___ .",
+    "answerOptions": [
+      { "answer": "North-South directions", "isCorrect": true },
+      { "answer": "East-West directions" },
+      { "answer": "Up-Down directions" },
+      { "answer": "No definite directions" }
+    ]
+  },
+  {
+    "id": "P-6-3-9",
+    "subject": "PHYSICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Which is a natural magnet?",
+    "answerOptions": [
+      { "answer": "Diamond" },
+      { "answer": "Magnetite", "isCorrect": true },
+      { "answer": "Bakelite" },
+      { "answer": "Leather" }
+    ]
+  },
+  {
+    "id": "C-6-0-0",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Some fibres such as cotton, jute, silk and wool obtained from plants and animals are called:",
+    "answerOptions": [
+      { "answer": "synthetic fibres" },
+      { "answer": "natural fibres", "isCorrect": true },
+      { "answer": "artificial fibres " },
+      { "answer": "man-made fibres" }
+    ]
+  },
+  {
+    "id": "C-6-0-1",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Some fibres made from chemical changes are called:",
+    "answerOptions": [
+      { "answer": "synthetic fibres", "isCorrect": true },
+      { "answer": "natural fibres" },
+      { "answer": "plant fibres " },
+      { "answer": "artificial fibres" }
+    ]
+  },
+  {
+    "id": "C-6-0-2",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Which soil is the best to grow jute plants ?",
+    "answerOptions": [
+      { "answer": "Black" },
+      { "answer": "Gravel" },
+      { "answer": "White" },
+      { "answer": "Alluvial", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "C-6-0-3",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Ropes and coir in mattresses are made from:",
+    "answerOptions": [
+      { "answer": "cotton fibres" },
+      { "answer": "jute fibres" },
+      { "answer": "coconut fibres", "isCorrect": true },
+      { "answer": "silken fibres" }
+    ]
+  },
+  {
+    "id": "C-6-0-4",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "From which parts of the plant cotton are obtained?",
+    "answerOptions": [
+      { "answer": "stem" },
+      { "answer": "seeds", "isCorrect": true },
+      { "answer": "leaves" },
+      { "answer": "flower" }
+    ]
+  },
+  {
+    "id": "C-6-0-5",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Rayon, nylon and polyester are:",
+    "answerOptions": [
+      { "answer": "synthetic fibres", "isCorrect": true },
+      { "answer": "natural fibres" },
+      { "answer": "plant fibres " },
+      { "answer": "artificial fibres" }
+    ]
+  },
+  {
+    "id": "C-6-0-6",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Which country is the inventor of cotton clothing? ",
+    "answerOptions": [
+      { "answer": "United Kingdom" },
+      { "answer": "United States" },
+      { "answer": "Germany" },
+      { "answer": "India", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "C-6-0-7",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Jute is obtained from which part of plant? ",
+    "answerOptions": [
+      { "answer": "Flower" },
+      { "answer": "Stem", "isCorrect": true },
+      { "answer": "Leaves" },
+      { "answer": "Root" }
+    ]
+  },
+
+  {
+    "id": "C-6-0-8",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "What is separation of cotton fibres from its seeds known as?",
+    "answerOptions": [
+      { "answer": "Ginning", "isCorrect": true },
+      { "answer": "Bailing" },
+      { "answer": "Spinning" },
+      { "answer": "Retting" }
+    ]
+  },
+  {
+    "id": "C-6-0-9",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "___ are made up of fibres.",
+    "answerOptions": [
+      { "answer": "Fabric" },
+      { "answer": "Cotton" },
+      { "answer": "Yarn", "isCorrect": true },
+      { "answer": "None of these" }
+    ]
   }
 ]
