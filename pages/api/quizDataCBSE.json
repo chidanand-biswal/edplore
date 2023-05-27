@@ -618,7 +618,7 @@
     "subject": "CHEMISTRY",
     "standard": 6,
     "chapter": 0,
-    "question": "Jute is obtained from which part of plant? ",
+    "question": "Jute is obtained from which part of plant?",
     "answerOptions": [
       { "answer": "Flower" },
       { "answer": "Stem", "isCorrect": true },
@@ -651,6 +651,656 @@
       { "answer": "Cotton" },
       { "answer": "Yarn", "isCorrect": true },
       { "answer": "None of these" }
+    ]
+  },
+  {
+    "id": "C-6-1-0",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Those substances which allow the transfer of heat through them are called:",
+    "answerOptions": [
+      { "answer": "conductors of heat", "isCorrect": true },
+      { "answer": "non-conductors of heat" },
+      { "answer": "translucent" },
+      { "answer": "opaque" }
+    ]
+  },
+  {
+    "id": "C-6-1-1",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "The materials across which things are only partially visible, are called:",
+    "answerOptions": [
+      { "answer": "transparent" },
+      { "answer": "translucent", "isCorrect": true },
+      { "answer": "opaque" },
+      { "answer": "conductor" }
+    ]
+  },
+  {
+    "id": "C-6-1-2",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Those liquids which do not mix well with water, are said to be ___ in water. ",
+    "answerOptions": [
+      { "answer": "miscible" },
+      { "answer": "immiscible", "isCorrect": true },
+      { "answer": "soluble" },
+      { "answer": "conductor" }
+    ]
+  },
+  {
+    "id": "C-6-1-3",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "The substance which dissolve in water is called: ",
+    "answerOptions": [
+      { "answer": "insoluble" },
+      { "answer": "immiscible" },
+      { "answer": "soluble", "isCorrect": true },
+      { "answer": "conductor" }
+    ]
+  },
+  {
+    "id": "C-6-1-4",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Wood and stone can be classified as ___ materials.",
+    "answerOptions": [
+      { "answer": "lustrous" },
+      { "answer": "non-lustrous", "isCorrect": true },
+      { "answer": "smooth" },
+      { "answer": "soft" }
+    ]
+  },
+  {
+    "id": "C-6-1-5",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Which one will show a metallic lustre?",
+    "answerOptions": [
+      { "answer": "Surfaces of all materials" },
+      { "answer": "Freshly cut surface of non-metal" },
+      { "answer": "Freshly cut surface of metal", "isCorrect": true },
+      { "answer": "None of these" }
+    ]
+  },
+  {
+    "id": "C-6-1-6",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Iron is a ___ material while stainless steel is not.",
+    "answerOptions": [
+      { "answer": "lustrous" },
+      { "answer": "heat conductor" },
+      { "answer": "transparent" },
+      { "answer": "magnetic", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "C-6-1-7",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Which of the given substances dissolves in water?",
+    "answerOptions": [
+      { "answer": "Sand" },
+      { "answer": "Sugar", "isCorrect": true },
+      { "answer": "Wax" },
+      { "answer": "Plastic" }
+    ]
+  },
+  {
+    "id": "C-6-1-8",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "What is the purpose of sorting materials into groups?",
+    "answerOptions": [
+      { "answer": "For convenience" },
+      { "answer": "To study properties" },
+      { "answer": "Both for conveniece and to study", "isCorrect": true },
+      { "answer": "Indeterminate" }
+    ]
+  },
+  {
+    "id": "C-6-1-9",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Which of the given substances floats in water?",
+    "answerOptions": [
+      { "answer": "Wood", "isCorrect": true },
+      { "answer": "Sugar" },
+      { "answer": "Iron" },
+      { "answer": "Salt" }
+    ]
+  },
+  {
+    "id": "C-6-2-0",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "A mixture of iodine and sand can be separated by:",
+    "answerOptions": [
+      { "answer": "Decantation" },
+      { "answer": "Centrifugation" },
+      { "answer": "Filtration" },
+      { "answer": "Sublimation", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "C-6-2-1",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "A mixture of tea leaves and iron filling can be separated by:",
+    "answerOptions": [
+      { "answer": "Filtration" },
+      { "answer": "Evaporation" },
+      { "answer": "Separating funnel" },
+      { "answer": "Magnet", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "C-6-2-2",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "A mixture of mustard oil and kerosene oil can be separated by:",
+    "answerOptions": [
+      { "answer": "Filtration" },
+      { "answer": "Evaporation" },
+      { "answer": "Separating funnel", "isCorrect": true },
+      { "answer": "Magnet" }
+    ]
+  },
+  {
+    "id": "C-6-2-3",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "A method of separation used when the components of a mixture are of different sizes is known as:",
+    "answerOptions": [
+      { "answer": "Separation" },
+      { "answer": "Winnowing" },
+      { "answer": "Sieving", "isCorrect": true },
+      { "answer": "Evaporation" }
+    ]
+  },
+  {
+    "id": "C-6-2-4",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "The method to separating seeds of paddy from its stalks is called:",
+    "answerOptions": [
+      { "answer": "Threshing", "isCorrect": true },
+      { "answer": "Winnowing" },
+      { "answer": "Sieving" },
+      { "answer": "Filtration" }
+    ]
+  },
+  {
+    "id": "C-6-2-5",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "A separation method which involves blowing of light particles by air is known as:",
+    "answerOptions": [
+      { "answer": "Threshing" },
+      { "answer": "Winnowing", "isCorrect": true },
+      { "answer": "Sieving" },
+      { "answer": "Filtration" }
+    ]
+  },
+  {
+    "id": "C-6-2-6",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "The process of setting down of heavier insoluble particles from a mixture is called:",
+    "answerOptions": [
+      { "answer": "Filtration" },
+      { "answer": "Separation" },
+      { "answer": "Evaporation" },
+      { "answer": "Sedimentation", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "C-6-2-7",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "The process of transferring clear liquid without disturbing sediments is known as:",
+    "answerOptions": [
+      { "answer": "Decantation", "isCorrect": true },
+      { "answer": "Separation" },
+      { "answer": "Evaporation" },
+      { "answer": "Sedimentation" }
+    ]
+  },
+  {
+    "id": "C-6-2-8",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "The process of separating a pure substance in the form of crystals from its hot saturated solution by cooling is called:",
+    "answerOptions": [
+      { "answer": "Crystallization", "isCorrect": true },
+      { "answer": "Filtration" },
+      { "answer": "Distillation" },
+      { "answer": "Evaporation" }
+    ]
+  },
+  {
+    "id": "C-6-2-9",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "The method of separation in which particles suspended in a liquid are rotated in a centrifuge machine and heavier particles settle down is called:",
+    "answerOptions": [
+      { "answer": "Crystallization" },
+      { "answer": "Centrifugation", "isCorrect": true },
+      { "answer": "Distillation" },
+      { "answer": "Evaporation" }
+    ]
+  },
+  {
+    "id": "C-6-3-0",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Reversible changes can also be called:",
+    "answerOptions": [
+      { "answer": "Temporary changes", "isCorrect": true },
+      { "answer": "Permanent changes" },
+      { "answer": "Fast changes" },
+      { "answer": "Slow change" }
+    ]
+  },
+  {
+    "id": "C-6-3-1",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "What is formed when a solid dissolves in liquid ?",
+    "answerOptions": [
+      { "answer": "Condensation" },
+      { "answer": "Solution", "isCorrect": true },
+      { "answer": "Evaporation" },
+      { "answer": "Fusion" }
+    ]
+  },
+  {
+    "id": "C-6-3-2",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "A process by which gas is turned into liquid is known as:",
+    "answerOptions": [
+      { "answer": "Solution" },
+      { "answer": "Fusion" },
+      { "answer": "Condensation", "isCorrect": true },
+      { "answer": "Evaporation" }
+    ]
+  },
+  {
+    "id": "C-6-3-3",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "A process in which liquid changes into gas is known as:",
+    "answerOptions": [
+      { "answer": "Solution" },
+      { "answer": "Fusion" },
+      { "answer": "Condensation" },
+      { "answer": "Evaporation", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "C-6-3-4",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Metals expand on ___ and contract on ___.",
+    "answerOptions": [
+      { "answer": "heating, cooling", "isCorrect": true },
+      { "answer": "cooling, heating" },
+      { "answer": "heating, boiling" },
+      { "answer": "cooling, freezing" }
+    ]
+  },
+  {
+    "id": "C-6-3-5",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Cooking of food is ___",
+    "answerOptions": [
+      { "answer": "Reversible change" },
+      { "answer": "Physical change" },
+      { "answer": "Chemical change", "isCorrect": true },
+      { "answer": "Temporary change" }
+    ]
+  },
+  {
+    "id": "C-6-3-6",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Melting of ice into water is ___",
+    "answerOptions": [
+      { "answer": "Reversible change" },
+      { "answer": "Physical change", "isCorrect": true },
+      { "answer": "Chemical change" },
+      { "answer": "Temporary change" }
+    ]
+  },
+  {
+    "id": "C-6-3-7",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Curdling of milk is ___",
+    "answerOptions": [
+      { "answer": "Reversible change" },
+      { "answer": "Physical change" },
+      { "answer": "Chemical change", "isCorrect": true },
+      { "answer": "Temporary change" }
+    ]
+  },
+  {
+    "id": "C-6-3-8",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Which of the following changes can be reversed?",
+    "answerOptions": [
+      { "answer": "Raw egg to boiled egg" },
+      { "answer": "Wet clothes to dry clothes", "isCorrect": true },
+      { "answer": "Bud to flower" },
+      { "answer": "cow dung to biogas" }
+    ]
+  },
+  {
+    "id": "C-6-3-9",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Metal rim is fixed to the wooden cart wheel by",
+    "answerOptions": [
+      { "answer": "Heating metal rim", "isCorrect": true },
+      { "answer": "Heating wooden wheel" },
+      { "answer": "Cooling metal rim" },
+      { "answer": "Cooling wooden wheel" }
+    ]
+  },
+  {
+    "id": "C-6-4-0",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Why do plants and animals consume oxygen?",
+    "answerOptions": [
+      { "answer": "Transpiration" },
+      { "answer": "Evaporation" },
+      { "answer": "Respiration", "isCorrect": true },
+      { "answer": "Condensation" }
+    ]
+  },
+  {
+    "id": "C-6-4-1",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Burning occurs in the presence of which gas?",
+    "answerOptions": [
+      { "answer": "Oxygen", "isCorrect": true },
+      { "answer": "Nitrogen" },
+      { "answer": "Carbon dioxide" },
+      { "answer": "Water vapour" }
+    ]
+  },
+  {
+    "id": "C-6-4-2",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Air in motion is called:",
+    "answerOptions": [
+      { "answer": "Air" },
+      { "answer": "Wind", "isCorrect": true },
+      { "answer": "Atmosphere" },
+      { "answer": "Rain" }
+    ]
+  },
+  {
+    "id": "C-6-4-3",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "The envelope of air that surrounds the earth is known as:",
+    "answerOptions": [
+      { "answer": "Air" },
+      { "answer": "Wind" },
+      { "answer": "Atmosphere", "isCorrect": true },
+      { "answer": "Space" }
+    ]
+  },
+  {
+    "id": "C-6-4-4",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Which gas in the atmosphere is essential for respiration?",
+    "answerOptions": [
+      { "answer": "Neon" },
+      { "answer": "Carbon dioxide" },
+      { "answer": "Nitrogen" },
+      { "answer": "Oxygen", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "C-6-4-5",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Which component of air is used by green plants to make their food?",
+    "answerOptions": [
+      { "answer": "Neon" },
+      { "answer": "Carbon dioxide", "isCorrect": true },
+      { "answer": "Nitrogen" },
+      { "answer": "Oxygen" }
+    ]
+  },
+  {
+    "id": "C-6-4-6",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "What is the percentage of carbon dioxide and few other noble gases, water vapour, dust particles?",
+    "answerOptions": [
+      { "answer": "1%", "isCorrect": true },
+      { "answer": "2%" },
+      { "answer": "3%" },
+      { "answer": "4%" }
+    ]
+  },
+  {
+    "id": "C-6-4-7",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "The properties of air are:",
+    "answerOptions": [
+      { "answer": "It has no colour" },
+      { "answer": "It occupies space" },
+      { "answer": "It is transparent" },
+      { "answer": "All of these", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "C-6-4-8",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Air is a ___.",
+    "answerOptions": [
+      { "answer": "Mixture", "isCorrect": true },
+      { "answer": "Element" },
+      { "answer": "Pure substance" },
+      { "answer": "Compound" }
+    ]
+  },
+  {
+    "id": "C-6-4-9",
+    "subject": "CHEMISTRY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Major part of the air is constituted by ___.",
+    "answerOptions": [
+      { "answer": "Nitrogen", "isCorrect": true },
+      { "answer": "Oxygen" },
+      { "answer": "Carbon dioxide" },
+      { "answer": "Carbon monoxide" }
+    ]
+  },
+  {
+    "id": "B-6-0-0",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Why should we cook food?",
+    "answerOptions": [
+      { "answer": "easily consumed by our body" },
+      { "answer": "easily absorbed by our body" },
+      { "answer": "Kills the harmful germs" },
+      { "answer": "All of these", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "B-6-0-1",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "In which of the category are human beings placed?",
+    "answerOptions": [
+      { "answer": "Carnivores" },
+      { "answer": "Omnivores", "isCorrect": true },
+      { "answer": "Herbivores" },
+      { "answer": "None of these" }
+    ]
+  },
+  {
+    "id": "B-6-0-2",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Parts of plants which can be eaten are known as:",
+    "answerOptions": [
+      { "answer": "seeds" },
+      { "answer": "roots" },
+      { "answer": "inedible parts" },
+      { "answer": "edible parts", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "B-6-0-3",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Those animals that eat only plants and plant products are called:",
+    "answerOptions": [
+      { "answer": "Omnivores" },
+      { "answer": "Herbivores", "isCorrect": true },
+      { "answer": "Carnivores" },
+      { "answer": "None of these" }
+    ]
+  },
+  {
+    "id": "B-6-0-4",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Sprouted seeds are very rich source of:",
+    "answerOptions": [
+      { "answer": "vitamins" },
+      { "answer": "proteins", "isCorrect": true },
+      { "answer": "carbohydrates" },
+      { "answer": "fats" }
+    ]
+  },
+  {
+    "id": "B-6-0-5",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "The milk producing animals are called:",
+    "answerOptions": [
+      { "answer": "wild animals" },
+      { "answer": "pet animals" },
+      { "answer": "milch animals", "isCorrect": true },
+      { "answer": "herbivores" }
+    ]
+  },
+  {
+    "id": "B-6-0-6",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Which is an oil yielding plant?",
+    "answerOptions": [
+      { "answer": "Wheat" },
+      { "answer": "Rice" },
+      { "answer": "Urad" },
+      { "answer": "Mustard", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "B-6-0-7",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Which plant gives us medicines?",
+    "answerOptions": [
+      { "answer": "Tulsi", "isCorrect": true },
+      { "answer": "Rice" },
+      { "answer": "Urad" },
+      { "answer": "Mustard" }
+    ]
+  },
+  {
+    "id": "B-6-0-8",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "The worker bee gathers pollen and nectar from ___.",
+    "answerOptions": [
+      { "answer": "leaf" },
+      { "answer": "stem" },
+      { "answer": "bud" },
+      { "answer": "flower", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "B-6-0-9",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 0,
+    "question": "We generally eat ___ of sugarcane plant and ___ of wheat plant.",
+    "answerOptions": [
+      { "answer": "stem, seed", "isCorrect": true },
+      { "answer": "root, leaf" },
+      { "answer": "flower, root" },
+      { "answer": "seed, stem" }
     ]
   }
 ]

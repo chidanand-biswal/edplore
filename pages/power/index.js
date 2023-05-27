@@ -24,6 +24,7 @@ export default function PowerHome() {
   const auth = getAuth();
   const [user, loading] = useAuthState(auth);
   const { standardDetails } = useSelector((state) => state.standardDetails);
+  const { boardDetails } = useSelector((state) => state.boardDetails);
 
   const { realmProgress } = useSelector((state) => state.realmProgress);
 
@@ -31,7 +32,8 @@ export default function PowerHome() {
 
   const calculateRealmProgressByStandard = (realm) => {
     let existingRealmProgressPerStandard = realmProgressArray.filter(
-      (element) => element.standard === standardDetails
+      (element) =>
+        element.standard === standardDetails && element.board === boardDetails
     );
     switch (realm) {
       case "PHYSICS":
@@ -260,7 +262,7 @@ export default function PowerHome() {
                     className={styles.buttonLaunch}
                     onClick={navigatePath}
                   >
-                    ARE YOU &apos;THE MYSTIC ONE&apos;?
+                    ARE YOU &apos;THE CHOSEN ONE&apos;?
                   </Button>
                 </div>
               </Zoom>

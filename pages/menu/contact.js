@@ -82,7 +82,9 @@ export default function ContactHome() {
                     </Grid>
                     <Grid item sx={{ padding: "0 1rem" }}>
                       <Typography className={styles.openingLines}>
-                        <a href="tel:+918583878899">+91 85 83 87 88 99</a>
+                        <a href="whatsapp://send?phone=+918583878899&text=Hello Team Edplore!">
+                          +91 85 83 87 88 99
+                        </a>
                       </Typography>
                     </Grid>
                   </Grid>

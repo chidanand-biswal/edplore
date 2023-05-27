@@ -75,7 +75,7 @@ export default function SupportHome() {
                     </Grid>
                     <Grid item sx={{ padding: "0 1rem" }}>
                       <Typography className={styles.openingLines}>
-                        <a href="whatsapp://send?text=Hello Team Edplore">
+                        <a href="whatsapp://send?phone=+918583878899&text=Hello Team Edplore!">
                           +91 85 83 87 88 99
                         </a>
                       </Typography>

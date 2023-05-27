@@ -48,7 +48,7 @@ export default function LaunchCampaignHome() {
                     <a>
                       <CardIconLargeOption
                         source="rookie"
-                        title="The Rookie"
+                        title="The Novice"
                         message="Let me first see what the hype is all about !"
                       />
                     </a>
@@ -65,7 +65,7 @@ export default function LaunchCampaignHome() {
                     <a>
                       <CardIconLargeOption
                         source="explorer"
-                        title="The Explorer"
+                        title="The Veteran"
                         message="I will first login and hit the ground running !!"
                       />
                     </a>
@@ -91,7 +91,7 @@ export default function LaunchCampaignHome() {
                     <a>
                       <CardIconLargeOption
                         source="explorer"
-                        title="The Explorer"
+                        title="The Veteran"
                         message="I will first login and hit the ground running !!"
                       />
                     </a>
@@ -108,7 +108,7 @@ export default function LaunchCampaignHome() {
                     <a>
                       <CardIconLargeOption
                         source="rookie"
-                        title="The Rookie"
+                        title="The Novice"
                         message="Let me first see what the hype is all about !"
                       />
                     </a>

@@ -46,6 +46,7 @@ export const mockData = {
 export default function KarmaHome() {
   const bigScreenInd = useMediaQuery("(min-width:380px)");
   const { standardDetails } = useSelector((state) => state.standardDetails);
+  const { boardDetails } = useSelector((state) => state.boardDetails);
 
   const { realmProgress } = useSelector((state) => state.realmProgress);
 
@@ -53,7 +54,8 @@ export default function KarmaHome() {
 
   const calculateRealmProgressByStandard = (realm) => {
     let existingRealmProgressPerStandard = realmProgressArray.filter(
-      (element) => element.standard === standardDetails
+      (element) =>
+        element.standard === standardDetails && element.board === boardDetails
     );
     switch (realm) {
       case "PHYSICS":

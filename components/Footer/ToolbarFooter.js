@@ -68,7 +68,7 @@ export default function ToolbarFooter() {
                   }}
                 >
                   <BrightnessHighIcon />
-                  <div>Kirti</div>
+                  <div>Score</div>
                 </IconButton>
 
                 <Divider orientation="vertical" flexItem />
@@ -180,7 +180,7 @@ export default function ToolbarFooter() {
                   }}
                 >
                   <BrightnessHighIcon />
-                  <div>Kirti</div>
+                  <div>Score</div>
                 </IconButton>
 
                 <Divider orientation="vertical" flexItem />

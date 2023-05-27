@@ -256,19 +256,20 @@ export default function QuizMain() {
     }
   };
 */
-  const calculateRealmProgressByStandard = () => {
-    let existingRealmProgressPerStandard = realmProgressArray.filter(
-      (element) => element.standard === standardDetails
+  const calculateRealmProgressByStandardAndBoard = () => {
+    let existingRealmProgressPerStandardAndBoard = realmProgressArray.filter(
+      (element) =>
+        element.standard === standardDetails && element.board === boardDetails
     );
     switch (realmActive) {
       case "PHYSICS":
         let existingRealmProgressPhysics =
-          existingRealmProgressPerStandard.length > 0
-            ? existingRealmProgressPerStandard[0].realmProgressPhysics
+          existingRealmProgressPerStandardAndBoard.length > 0
+            ? existingRealmProgressPerStandardAndBoard[0].realmProgressPhysics
             : 0;
 
         return realmProgressArray.map((element) =>
-          element.standard === standardDetails
+          element.standard === standardDetails && element.board === boardDetails
             ? {
                 ...element,
                 realmProgressPhysics: existingRealmProgressPhysics + 1,
@@ -278,12 +279,12 @@ export default function QuizMain() {
 
       case "CHEMISTRY":
         let existingRealmProgressChemistry =
-          existingRealmProgressPerStandard.length > 0
-            ? existingRealmProgressPerStandard[0].realmProgressChemistry
+          existingRealmProgressPerStandardAndBoard.length > 0
+            ? existingRealmProgressPerStandardAndBoard[0].realmProgressChemistry
             : 0;
 
         return realmProgressArray.map((element) =>
-          element.standard === standardDetails
+          element.standard === standardDetails && element.board === boardDetails
             ? {
                 ...element,
                 realmProgressChemistry: existingRealmProgressChemistry + 1,
@@ -292,12 +293,13 @@ export default function QuizMain() {
         );
       case "MATHEMATICS":
         let existingRealmProgressMathematics =
-          existingRealmProgressPerStandard.length > 0
-            ? existingRealmProgressPerStandard[0].realmProgressMathematics
+          existingRealmProgressPerStandardAndBoard.length > 0
+            ? existingRealmProgressPerStandardAndBoard[0]
+                .realmProgressMathematics
             : 0;
 
         return realmProgressArray.map((element) =>
-          element.standard === standardDetails
+          element.standard === standardDetails && element.board === boardDetails
             ? {
                 ...element,
                 realmProgressMathematics: existingRealmProgressMathematics + 1,
@@ -306,12 +308,12 @@ export default function QuizMain() {
         );
       case "BIOLOGY":
         let existingRealmProgressBiology =
-          existingRealmProgressPerStandard.length > 0
-            ? existingRealmProgressPerStandard[0].realmProgressBiology
+          existingRealmProgressPerStandardAndBoard.length > 0
+            ? existingRealmProgressPerStandardAndBoard[0].realmProgressBiology
             : 0;
 
         return realmProgressArray.map((element) =>
-          element.standard === standardDetails
+          element.standard === standardDetails && element.board === boardDetails
             ? {
                 ...element,
                 realmProgressBiology: existingRealmProgressBiology + 1,
@@ -329,18 +331,19 @@ export default function QuizMain() {
   ) => {
     console.log(`Realm to progress is ::: ${realmActive}.`);
     console.log(`Standard to progress is ::: ${standardDetails}.`);
-    const updatedRealmProgressByStandard = calculateRealmProgressByStandard();
+    const updatedRealmProgressByStandardAndBoard =
+      calculateRealmProgressByStandardAndBoard();
 
     console.log(realmProgressArray);
-    console.log(updatedRealmProgressByStandard);
+    console.log(updatedRealmProgressByStandardAndBoard);
 
-    dispatch(updateRealmProgress(updatedRealmProgressByStandard));
+    dispatch(updateRealmProgress(updatedRealmProgressByStandardAndBoard));
 
     if (user) {
       console.log("User is authenticated. So saving realm progress.");
       saveExplorerData(
         user.uid,
-        updatedRealmProgressByStandard,
+        updatedRealmProgressByStandardAndBoard,
         updateMedal ? medalCount + 1 : medalCount,
         updateSuperfast ? superFastCount + 1 : superFastCount,
         userDetails,

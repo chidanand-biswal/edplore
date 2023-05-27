@@ -67,6 +67,7 @@ export default function CampaignHome() {
   const dispatch = useDispatch();
   const { userDetails } = useSelector((state) => state.userDetails);
   const { standardDetails } = useSelector((state) => state.standardDetails);
+  const { boardDetails } = useSelector((state) => state.boardDetails);
 
   const { realmProgress } = useSelector((state) => state.realmProgress);
 
@@ -74,7 +75,8 @@ export default function CampaignHome() {
 
   const calculateRealmProgressByStandard = (realm) => {
     let existingRealmProgressPerStandard = realmProgressArray.filter(
-      (element) => element.standard === standardDetails
+      (element) =>
+        element.standard === standardDetails && element.board === boardDetails
     );
     switch (realm) {
       case "PHYSICS":

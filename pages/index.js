@@ -4,6 +4,7 @@ import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Zoom from "@mui/material/Zoom";
+import Divider from "@mui/material/Divider";
 import { getAuth } from "firebase/auth";
 import { motion } from "framer-motion";
 import Head from "next/head";
@@ -21,7 +22,7 @@ export default function Home() {
   const [user, loading] = useAuthState(auth);
 
   useEffect(() => {
-    setTimeout(() => showLoadingLogo(false), 3000);
+    setTimeout(() => showLoadingLogo(false), 3500);
   }, []);
 
   return loadingLogo ? (
@@ -44,12 +45,20 @@ export default function Home() {
             <Box
               component="img"
               sx={{
-                height: "7rem",
-                width: "7rem",
+                height: "5rem",
+                width: "5rem",
               }}
               src="/assets/konark_sun.svg"
             />
-            <Typography variant="h5">educate | explore</Typography>
+            <Box>
+              <Typography variant="h4" fontWeight={500}>
+                The Realms Of Bodhi
+              </Typography>
+            </Box>
+
+            <Box>
+              <Typography variant="h5">CHAPTER 1</Typography>
+            </Box>
           </Grid>
         </Grid>
       </Zoom>

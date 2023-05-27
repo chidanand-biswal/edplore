@@ -47,6 +47,7 @@ export default function CommonDialog(props) {
   */
 
   const { standardDetails } = useSelector((state) => state.standardDetails);
+  const { boardDetails } = useSelector((state) => state.boardDetails);
 
   const { realmProgress } = useSelector((state) => state.realmProgress);
 
@@ -54,7 +55,8 @@ export default function CommonDialog(props) {
 
   const calculateRealmProgressByStandard = (realm) => {
     let existingRealmProgressPerStandard = realmProgressArray.filter(
-      (element) => element.standard === standardDetails
+      (element) =>
+        element.standard === standardDetails && element.board === boardDetails
     );
     switch (realm) {
       case "PHYSICS":
@@ -158,15 +160,15 @@ export default function CommonDialog(props) {
       case 0:
         return "The Explorer";
       case 1:
-        return "The Rathi";
+        return "The Inspired One";
       case 2:
-        return "The Ati-Rathi";
+        return "The Awesome One";
       case 3:
-        return "The Maha-Rathi";
+        return "The Mystic One";
       case 4:
-        return "The Ati-Maha-Rathi";
+        return "The Chosen One";
       case 5:
-        return "The Maha-Maha-Rathi";
+        return "The Chosen One";
       default:
         return "";
     }
@@ -204,7 +206,7 @@ export default function CommonDialog(props) {
       case "badge":
         return (
           <div>
-            <DialogTitle>My Kirti Board</DialogTitle>
+            <DialogTitle>My Score Board</DialogTitle>
             <DialogContent dividers>
               <DialogContentText id="alert-dialog-slide-description">
                 <Grid container direction="row" spacing={1}>
@@ -292,7 +294,7 @@ export default function CommonDialog(props) {
               </DialogContentText>
             </DialogContent>
             <DialogContent dividers>
-              <Typography>Level: </Typography>
+              <Typography>My Level: </Typography>
               <Typography fontSize={20} color={"purple"}>
                 {calculateLevel()}
               </Typography>

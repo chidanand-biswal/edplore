@@ -15,7 +15,7 @@ export const getExplorerData = async (explorerId) => {
     console.log(err.message);
   });
 
-  if (explorerSnap.exists()) {
+  if (typeof explorerSnap != "undefined" && explorerSnap.exists()) {
     return explorerSnap.data();
   } else {
     console.log("No such document in edploreUser!");
@@ -91,7 +91,10 @@ export const getExplorerMetaData = async (explorerId) => {
     }
   );
 
-  if (explorerMetaDataSnap.exists()) {
+  if (
+    typeof explorerMetaDataSnap != "undefined" &&
+    explorerMetaDataSnap.exists()
+  ) {
     return explorerMetaDataSnap.data();
   } else {
     console.log("No such document in edploreUserMetaData!");
@@ -104,7 +107,6 @@ export const saveExplorerMetaData = (
   displayName,
   email,
   phoneNumber,
-  board,
   address
 ) => {
   console.log("saveExplorerMetaData");
@@ -112,7 +114,6 @@ export const saveExplorerMetaData = (
   console.log(displayName);
   console.log(email);
   console.log(phoneNumber);
-  console.log(board);
   console.log(address);
   const explorerMetaDataRef = doc(database, "edploreUserMetaData", explorerId);
 
@@ -120,7 +121,6 @@ export const saveExplorerMetaData = (
     displayName: displayName,
     email: email,
     phoneNumber: phoneNumber,
-    board: board,
     address: address,
   }).catch((err) => {
     console.log(err.message);

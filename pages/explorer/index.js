@@ -30,6 +30,7 @@ import { addStandardDetails } from "../../store/standardDetails/action";
 import { updateSuperFastCount } from "../../store/superFast/action";
 import { addUserDetails } from "../../store/userDetails/action";
 import { addBoardDetails } from "../../store/boardDetails/action";
+import { realmProgressInitialState } from "../../store/realmProgress/reducer";
 import { getAuth } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import styles from "../../styles/Home.module.css";
@@ -156,22 +157,6 @@ export default function ExplorerHome() {
     }
   };
 
-  const calculateBoardSelection = () => {
-    let boardSelectionArray = new Array();
-    if (cbseActive) {
-      boardSelectionArray.push("CBSE");
-    }
-
-    if (icseActive) {
-      boardSelectionArray.push("ICSE");
-    }
-
-    if (otherActive) {
-      boardSelectionArray.push("OTHER");
-    }
-    return boardSelectionArray;
-  };
-
   const updateUserNameInStore = () => {
     dispatch(addUserDetails(userName));
   };
@@ -189,7 +174,9 @@ export default function ExplorerHome() {
   const updateRealmProgressInStore = () => {
     dispatch(
       updateRealmProgress(
-        userData?.realmProgress ? userData.realmProgress : initialRealmProgress
+        userData?.realmProgress
+          ? userData.realmProgress
+          : realmProgressInitialState.realmProgress
       )
     );
   };
@@ -222,7 +209,6 @@ export default function ExplorerHome() {
           userNameFinal ? userNameFinal : user.displayName,
           email ? email : user.email,
           phoneNumber ? phoneNumber : user.phoneNumber,
-          calculateBoardSelection(),
           address
         );
       } catch (error) {
@@ -236,28 +222,27 @@ export default function ExplorerHome() {
     const fetchUserData = async () => {
       let userDataInDB = await getExplorerData(user.uid);
       setUserData(userDataInDB);
-      setUserName(userDataInDB.explorerName);
-      setStandard(userDataInDB.activeStandard);
+      setUserName(userDataInDB ? userDataInDB.explorerName : userName);
+      setStandard(userDataInDB ? userDataInDB.activeStandard : 6);
       setValName(true);
       setCbseActive(
-        userDataInDB.selectedBoard != null &&
-          userDataInDB.selectedBoard === "CBSE"
+        (userDataInDB != null && userDataInDB.selectedBoard === "CBSE") ||
+          userDataInDB == null
           ? true
           : false
       );
       setIcseActive(
-        userDataInDB.selectedBoard != null &&
-          userDataInDB.selectedBoard === "ICSE"
+        userDataInDB != null && userDataInDB.selectedBoard === "ICSE"
           ? true
           : false
       );
     };
     const fetchUserMetaData = async () => {
       let userMetaData = await getExplorerMetaData(user.uid);
-      setUserName(userMetaData.displayName);
-      setEmail(userMetaData.email);
-      setPhoneNumber(userMetaData.phoneNumber);
-      setAddress(userMetaData.address);
+      setUserName(userMetaData ? userMetaData.displayName : userName);
+      setEmail(userMetaData ? userMetaData.email : "");
+      setPhoneNumber(userMetaData ? userMetaData.phoneNumber : "");
+      setAddress(userMetaData ? userMetaData.address : "");
     };
 
     if (user) {

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
+import PersonIcon from "@mui/icons-material/Person";
+import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import BrightnessHighIcon from "@mui/icons-material/BrightnessHigh";
 import TipsAndUpdatesTwoToneIcon from "@mui/icons-material/TipsAndUpdatesTwoTone";
 import Badge from "@mui/material/Badge";
@@ -10,6 +12,10 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import Zoom from "@mui/material/Zoom";
+import Step from "@mui/material/Step";
+import StepContent from "@mui/material/StepContent";
+import StepLabel from "@mui/material/StepLabel";
+import Stepper from "@mui/material/Stepper";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import MenuAppBar from "../../components/AppBar/MenuAppBar";
@@ -20,6 +26,7 @@ import Router from "next/router";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { getExplorerMetaData } from "../../firebase/db/dbUtility";
 import AddressDialog from "../../components/Modal/AddressDialog";
+import FeedbackDialog from "../../components/Modal/FeedbackDialog";
 
 export default function FinalHome() {
   const auth = getAuth();
@@ -30,7 +37,9 @@ export default function FinalHome() {
   const [phoneNumber, setPhoneNumber] = React.useState("");
   const [address, setAddress] = React.useState("");
   const [openModal, setOpenModal] = React.useState(false);
+  const [openFeedbackModal, setOpenFeedbackModal] = React.useState(false);
   const { standardDetails } = useSelector((state) => state.standardDetails);
+  const { boardDetails } = useSelector((state) => state.boardDetails);
 
   const { realmProgress } = useSelector((state) => state.realmProgress);
 
@@ -38,7 +47,8 @@ export default function FinalHome() {
 
   const calculateRealmProgressByStandard = (realm) => {
     let existingRealmProgressPerStandard = realmProgressArray.filter(
-      (element) => element.standard === standardDetails
+      (element) =>
+        element.standard === standardDetails && element.board === boardDetails
     );
     switch (realm) {
       case "PHYSICS":
@@ -65,6 +75,41 @@ export default function FinalHome() {
         return 0;
     }
   };
+
+  const stepsLevel = [
+    {
+      id: 0,
+      label: "The Explorer",
+      description:
+        "So glad to see you here! Explore more and score more Chakras.",
+    },
+    {
+      id: 1,
+      label: "The Inspired One",
+      description:
+        "You really are inspired! Score one Chakra more to be the next.",
+    },
+    {
+      id: 2,
+      label: "The Awesome One",
+      description:
+        "You are just awesome! Score one Chakra more to be the next.",
+    },
+    {
+      id: 3,
+      label: "The Mystic One",
+      description:
+        "We now know you are the one promised. Score one Chakra more to be the next.",
+    },
+    {
+      id: 4,
+      label: "The Chosen One",
+      description:
+        "You are the Chosen One foretold in the prophecies! We salute you.",
+    },
+  ];
+
+  const [activeStep, setActiveStep] = React.useState(0);
 
   const { medalCount } = useSelector((state) => state.medalCount);
 
@@ -107,6 +152,10 @@ export default function FinalHome() {
     }
   };
 
+  const feedback = () => {
+    setOpenFeedbackModal(true);
+  };
+
   return (
     <Box className={styles.container}>
       <MenuAppBar />
@@ -122,10 +171,110 @@ export default function FinalHome() {
             >
               <Grid item>
                 <h2 className={styles.greyText}>
-                  The Mystic One <br />
+                  Your Journey So Far
+                  <br />
                 </h2>
               </Grid>
-
+              <Grid item>
+                <Grid
+                  container
+                  direction="column"
+                  alignItems="center"
+                  justifyContent="center"
+                >
+                  <Grid item sx={{ padding: "0.25rem" }}>
+                    <Paper elevation={8} sx={{ padding: "0.5rem" }}>
+                      <Badge
+                        badgeContent={realmProgressGeneral}
+                        color="primary"
+                        showZero
+                      >
+                        <BrightnessHighIcon
+                          fontSize="large"
+                          sx={{ color: "purple" }}
+                        />
+                      </Badge>
+                    </Paper>
+                  </Grid>
+                </Grid>
+              </Grid>
+              <Grid item>
+                <Paper elevation={3} sx={{ padding: "0.5rem" }}>
+                  <Stepper
+                    activeStep={realmProgressGeneral}
+                    orientation="vertical"
+                  >
+                    {stepsLevel.map((step, index) => (
+                      <Step key={step.label}>
+                        <StepLabel
+                          StepIconComponent={
+                            index === realmProgressGeneral ||
+                            index < realmProgressGeneral
+                              ? PersonIcon
+                              : PersonOutlineIcon
+                          }
+                        >
+                          <Typography color="text.primary">
+                            {step.label}
+                          </Typography>
+                        </StepLabel>
+                        <StepContent>
+                          <Typography color="text.secondary">
+                            {step.description}
+                          </Typography>
+                          <Grid
+                            container
+                            direction="row"
+                            alignItems="center"
+                            justifyContent="center"
+                            sx={{ padding: "0.25rem" }}
+                            spacing={2}
+                          >
+                            <Grid item>
+                              <Zoom
+                                in={true}
+                                style={{ transitionDelay: "3000ms" }}
+                              >
+                                <div>
+                                  <Button
+                                    variant="outlined"
+                                    className={styles.buttonLaunch}
+                                    onClick={feedback}
+                                  >
+                                    RATE US
+                                  </Button>
+                                </div>
+                              </Zoom>
+                            </Grid>
+                            <Grid item>
+                              <Zoom
+                                in={true}
+                                style={{ transitionDelay: "2000ms" }}
+                              >
+                                <div>
+                                  <Button
+                                    variant="contained"
+                                    className={styles.buttonLaunch}
+                                    onClick={navigate}
+                                  >
+                                    CONTINUE TO EXPLORE
+                                  </Button>
+                                </div>
+                              </Zoom>
+                            </Grid>
+                          </Grid>
+                        </StepContent>
+                      </Step>
+                    ))}
+                  </Stepper>
+                </Paper>
+              </Grid>
+              <Grid item sx={{ padding: "1rem" }}>
+                <Typography className={styles.openingLinesLaunch}>
+                  The greatest journey is the one within!
+                </Typography>
+              </Grid>
+              {/** 
               <Grid item className={styles.spacerOne}>
                 <motion.div
                   initial={{ opacity: 1, scale: 2, y: "8rem" }}
@@ -161,16 +310,19 @@ export default function FinalHome() {
                   </Typography>
                 </motion.div>
               </Grid>
+              
+            */}
             </Grid>
           </Box>
 
+          {/** 
           <Grid
             container
             direction="row"
             alignItems="center"
             justifyContent="center"
             spacing={2}
-            sx={{ padding: "1rem" }}
+            sx={{ padding: "0.25rem" }}
           >
             <Grid item>
               <motion.div
@@ -208,8 +360,8 @@ export default function FinalHome() {
                     <Grid item>
                       <Typography sx={{ fontWeight: "1" }}>
                         <TipsAndUpdatesTwoToneIcon />
-                        Win five &apos;Chakras&apos; to be <br />
-                        The Mystic One!
+                        Win four &apos;Chakras&apos; or more to be <br />
+                        The Chosen One!
                       </Typography>
                     </Grid>
                   </Grid>
@@ -217,29 +369,31 @@ export default function FinalHome() {
               </motion.div>
             </Grid>
           </Grid>
-
+        */}
+          {/** 
           <Grid
             container
             direction="row"
             alignItems="center"
             justifyContent="center"
+            sx={{ padding: "1rem" }}
             spacing={2}
-            sx={{ marginTop: "0.75rem" }}
           >
             <Grid item>
-              <Zoom in={true} style={{ transitionDelay: "4000ms" }}>
+              <Zoom in={true} style={{ transitionDelay: "3000ms" }}>
                 <div>
                   <Button
                     variant="contained"
                     className={styles.buttonLaunch}
-                    onClick={navigate}
+                    onClick={feedback}
                   >
-                    CONTINUE TO EXPLORE
+                    How ARE WE DOING? RATE US!
                   </Button>
                 </div>
               </Zoom>
             </Grid>
           </Grid>
+          */}
         </Grid>
       </Grid>
 
@@ -249,6 +403,14 @@ export default function FinalHome() {
           open={openModal}
           onClose={() => {
             setOpenModal(false);
+          }}
+        />
+      )}
+      {openFeedbackModal && (
+        <FeedbackDialog
+          open={openFeedbackModal}
+          onClose={() => {
+            setOpenFeedbackModal(false);
           }}
         />
       )}

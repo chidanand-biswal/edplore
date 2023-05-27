@@ -1,9 +1,18 @@
 import { realmProgressActionTypes } from "./action";
 
-const realmProgressInitialState = {
+export const realmProgressInitialState = {
   realmProgress: [
     {
       standard: 6,
+      board: "CBSE",
+      realmProgressPhysics: 0,
+      realmProgressChemistry: 0,
+      realmProgressMathematics: 0,
+      realmProgressBiology: 0,
+    },
+    {
+      standard: 6,
+      board: "ICSE",
       realmProgressPhysics: 0,
       realmProgressChemistry: 0,
       realmProgressMathematics: 0,
@@ -11,6 +20,15 @@ const realmProgressInitialState = {
     },
     {
       standard: 7,
+      board: "CBSE",
+      realmProgressPhysics: 0,
+      realmProgressChemistry: 0,
+      realmProgressMathematics: 0,
+      realmProgressBiology: 0,
+    },
+    {
+      standard: 7,
+      board: "ICSE",
       realmProgressPhysics: 0,
       realmProgressChemistry: 0,
       realmProgressMathematics: 0,
@@ -18,6 +36,15 @@ const realmProgressInitialState = {
     },
     {
       standard: 8,
+      board: "CBSE",
+      realmProgressPhysics: 0,
+      realmProgressChemistry: 0,
+      realmProgressMathematics: 0,
+      realmProgressBiology: 0,
+    },
+    {
+      standard: 8,
+      board: "ICSE",
       realmProgressPhysics: 0,
       realmProgressChemistry: 0,
       realmProgressMathematics: 0,
@@ -25,6 +52,15 @@ const realmProgressInitialState = {
     },
     {
       standard: 9,
+      board: "CBSE",
+      realmProgressPhysics: 0,
+      realmProgressChemistry: 0,
+      realmProgressMathematics: 0,
+      realmProgressBiology: 0,
+    },
+    {
+      standard: 9,
+      board: "ICSE",
       realmProgressPhysics: 0,
       realmProgressChemistry: 0,
       realmProgressMathematics: 0,
@@ -32,6 +68,15 @@ const realmProgressInitialState = {
     },
     {
       standard: 10,
+      board: "CBSE",
+      realmProgressPhysics: 0,
+      realmProgressChemistry: 0,
+      realmProgressMathematics: 0,
+      realmProgressBiology: 0,
+    },
+    {
+      standard: 10,
+      board: "ICSE",
       realmProgressPhysics: 0,
       realmProgressChemistry: 0,
       realmProgressMathematics: 0,

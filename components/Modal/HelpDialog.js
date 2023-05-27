@@ -58,7 +58,7 @@ export default function HelpDialog(props) {
                       <MenuItem value={2}>Arena Trail</MenuItem>
                       <MenuItem value={3}>Arena</MenuItem>
                       <MenuItem value={4}>Gurukul</MenuItem>
-                      <MenuItem value={5}>Kirti Board</MenuItem>
+                      <MenuItem value={5}>Score</MenuItem>
                       <MenuItem value={6}>Karma Quotient</MenuItem>
                       <MenuItem value={7}>Login/logout</MenuItem>
                     </Select>
