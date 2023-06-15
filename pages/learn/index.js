@@ -144,7 +144,7 @@ export default function LearnHome() {
       ? currentTutorialData
       : tutorialMock;
 
-  const bigScreenInd = useMediaQuery("(min-width:400px)");
+  const bigScreenInd = useMediaQuery("(min-width:450px)");
   let [page, setPage] = useState(1);
   const PER_PAGE = 1;
 

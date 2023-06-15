@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import SendIcon from "@mui/icons-material/Send";
 import ThumbsUpDownIcon from "@mui/icons-material/ThumbsUpDown";
 import ThumbDownOffAltIcon from "@mui/icons-material/ThumbDownOffAlt";
@@ -24,17 +25,42 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Stack from "@mui/material/Stack";
 
+import { getAuth } from "firebase/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { saveEdploreUserFeedback } from "../../firebase/db/dbUtility";
+
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
 export default function FeedbackDialog(props) {
+  const auth = getAuth();
+  const [user, loading] = useAuthState(auth);
+  const { userDetails } = useSelector((state) => state.userDetails);
   const [feedback1Up, setFeedback1Up] = React.useState(false);
   const [feedback1Down, setFeedback1Down] = React.useState(false);
   const [feedback2Up, setFeedback2Up] = React.useState(false);
   const [feedback2Down, setFeedback2Down] = React.useState(false);
   const [feedback3Up, setFeedback3Up] = React.useState(false);
   const [feedback3Down, setFeedback3Down] = React.useState(false);
+
+  const saveFeedback = () => {
+    if (user) {
+      saveEdploreUserFeedback(
+        user.uid,
+        feedback1Up ? true : false,
+        feedback2Up ? true : false,
+        feedback3Up ? true : false
+      );
+    } else if (process.env.NEXT_PUBLIC_SAVE_UNAUTH === "Y") {
+      saveEdploreUserFeedback(
+        userDetails,
+        feedback1Up ? true : false,
+        feedback2Up ? true : false,
+        feedback3Up ? true : false
+      );
+    }
+  };
 
   return (
     <div>
@@ -211,7 +237,10 @@ export default function FeedbackDialog(props) {
 
         <DialogActions sx={{ justifyContent: "center" }}>
           <Button
-            onClick={props.onClose}
+            onClick={() => {
+              saveFeedback();
+              props.onClose();
+            }}
             variant="contained"
             endIcon={<SendIcon />}
           >

@@ -6,6 +6,7 @@ import {
   collection,
   query,
   where,
+  Timestamp,
 } from "firebase/firestore";
 import { database } from "../firebaseApp";
 
@@ -122,6 +123,42 @@ export const saveExplorerMetaData = (
     email: email,
     phoneNumber: phoneNumber,
     address: address,
+  }).catch((err) => {
+    console.log(err.message);
+  });
+};
+
+export const saveQuizFeedback = (quizId, uid) => {
+  console.log("saveQuizFeedback");
+  console.log(quizId);
+  console.log(uid);
+
+  const quizFeedbackRef = doc(database, "edploreQuizFeedback", quizId);
+
+  setDoc(quizFeedbackRef, {
+    uid: uid,
+    reportTime: Timestamp.fromDate(new Date()),
+  }).catch((err) => {
+    console.log(err.message);
+  });
+};
+
+export const saveEdploreUserFeedback = (
+  uid,
+  paramOne,
+  paramTwo,
+  paramThree
+) => {
+  console.log("saveEdploreFeedback");
+  console.log(uid);
+
+  const edploreUserFeedbackRef = doc(database, "edploreUserFeedback", uid);
+
+  setDoc(edploreUserFeedbackRef, {
+    paramOne: paramOne,
+    paramTwo: paramTwo,
+    paramThree: paramThree,
+    reportTime: Timestamp.fromDate(new Date()),
   }).catch((err) => {
     console.log(err.message);
   });

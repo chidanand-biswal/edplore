@@ -5,6 +5,7 @@ import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
 import HourglassTopIcon from "@mui/icons-material/HourglassTop";
 import QuizIcon from "@mui/icons-material/Quiz";
 import StarIcon from "@mui/icons-material/Star";
+import AssignmentTurnedInIcon from "@mui/icons-material/AssignmentTurnedIn";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
@@ -22,7 +23,10 @@ import { useDispatch, useSelector } from "react-redux";
 import MenuAppBar from "../../components/AppBar/MenuAppBar";
 import CardQuizOption from "../../components/Card/CardQuizOption";
 import QuizDialog from "../../components/Modal/QuizDialog";
-import { saveExplorerData } from "../../firebase/db/dbUtility";
+import {
+  saveExplorerData,
+  saveQuizFeedback,
+} from "../../firebase/db/dbUtility";
 import { updateMedalCount } from "../../store/medal/action";
 import { updateRealmProgress } from "../../store/realmProgress/action";
 import { updateSuperFastCount } from "../../store/superFast/action";
@@ -171,6 +175,14 @@ export default function QuizMain() {
   const handleReport = () => {
     setOpenModal(true);
     setModalType("report");
+
+    const qid = questions[currentQuestion].id;
+
+    if (user) {
+      saveQuizFeedback(qid, user.uid);
+    } else if (process.env.NEXT_PUBLIC_SAVE_UNAUTH === "Y") {
+      saveQuizFeedback(qid, userDetails);
+    }
   };
 
   const handleLove = () => {
@@ -343,6 +355,17 @@ export default function QuizMain() {
       console.log("User is authenticated. So saving realm progress.");
       saveExplorerData(
         user.uid,
+        updatedRealmProgressByStandardAndBoard,
+        updateMedal ? medalCount + 1 : medalCount,
+        updateSuperfast ? superFastCount + 1 : superFastCount,
+        userDetails,
+        standardDetails,
+        boardDetails
+      );
+    } else if (process.env.NEXT_PUBLIC_SAVE_UNAUTH === "Y") {
+      console.log("User is NOT authenticated. So saving realm progress.");
+      saveExplorerData(
+        userDetails,
         updatedRealmProgressByStandardAndBoard,
         updateMedal ? medalCount + 1 : medalCount,
         updateSuperfast ? superFastCount + 1 : superFastCount,
@@ -734,7 +757,7 @@ export default function QuizMain() {
                               className={styles.cardIconButtonLabel}
                               onClick={handleSubmitButton}
                             >
-                              <ArrowForwardIosIcon />
+                              <AssignmentTurnedInIcon />
                               <div>Submit</div>
                             </IconButton>
                           ) : (

@@ -222,7 +222,7 @@ export default function CampaignTrail() {
 
               <Grid item>
                 <Typography variant="h5" sx={{ color: "#808080" }}>
-                  The Quest awaits you!
+                  An epic quest awaits you!
                 </Typography>
               </Grid>
             </Grid>

@@ -51,7 +51,7 @@ export default function QuizDialog(props) {
                   <FlagIcon fontSize="medium" color="primary" />
                 </Grid>
                 <Grid item sx={{ paddingLeft: "1rem" }}>
-                  You want to report this
+                  You have reported this.
                 </Grid>
               </Grid>
             </DialogTitle>

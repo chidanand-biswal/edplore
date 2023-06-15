@@ -40,6 +40,7 @@ export default function FinalHome() {
   const [openFeedbackModal, setOpenFeedbackModal] = React.useState(false);
   const { standardDetails } = useSelector((state) => state.standardDetails);
   const { boardDetails } = useSelector((state) => state.boardDetails);
+  const { userDetails } = useSelector((state) => state.userDetails);
 
   const { realmProgress } = useSelector((state) => state.realmProgress);
 

@@ -100,7 +100,7 @@ export default function Home() {
               transition={{ duration: 2 }}
             >
               <Typography className={styles.openingLinesHome}>
-                The Realms of Bodhi <br />
+                Realms of Bodhi <br />
                 <br />
               </Typography>
             </motion.div>
@@ -110,9 +110,9 @@ export default function Home() {
               transition={{ duration: 3 }}
             >
               <Typography className={styles.openingLinesHome}>
-                Legends tell it is still out there.
+                Legend says those are out there.
                 <br />
-                Is it true? Or just a myth? <br />
+                Is this true? Or just a myth? <br />
                 You stand right at the gateways. <br /> <br />
               </Typography>
             </motion.div>
