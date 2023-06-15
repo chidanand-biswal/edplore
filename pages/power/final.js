@@ -191,7 +191,7 @@ export default function FinalHome() {
                       >
                         <BrightnessHighIcon
                           fontSize="large"
-                          sx={{ color: "purple" }}
+                          sx={{ color: "OrangeRed" }}
                         />
                       </Badge>
                     </Paper>

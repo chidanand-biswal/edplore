@@ -43,7 +43,7 @@ export default function IntroHome() {
                     <CardIconOption
                       source="realms"
                       title="The Realms"
-                      message=""
+                      message="A glance at the Realms"
                     />
                   </a>
                 </Link>
@@ -59,8 +59,8 @@ export default function IntroHome() {
                   <a>
                     <CardIconOption
                       source="explorerIntro"
-                      title="The Explorer"
-                      message=""
+                      title="The Rules"
+                      message="Know the Rules to live by"
                     />
                   </a>
                 </Link>

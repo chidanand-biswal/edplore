@@ -37,7 +37,10 @@ export default function ExplorerInfoDialog(props) {
             <DialogTitle>
               <Grid container direction="row">
                 <Grid item>
-                  <PentagonIcon fontSize="large" color="primary" />
+                  <PentagonIcon
+                    fontSize="large"
+                    sx={{ color: "DarkMagenta" }}
+                  />
                 </Grid>
                 <Grid item sx={{ paddingLeft: "1rem" }}>
                   My Karma Quotient
@@ -68,7 +71,10 @@ export default function ExplorerInfoDialog(props) {
             <DialogTitle>
               <Grid container direction="row">
                 <Grid item>
-                  <LocalPoliceIcon fontSize="large" color="primary" />
+                  <LocalPoliceIcon
+                    fontSize="large"
+                    sx={{ color: "Goldenrod" }}
+                  />
                 </Grid>
                 <Grid item sx={{ paddingLeft: "1rem" }}>
                   Kavach
@@ -99,7 +105,10 @@ export default function ExplorerInfoDialog(props) {
             <DialogTitle>
               <Grid container direction="row">
                 <Grid item>
-                  <BrightnessHighIcon fontSize="large" color="primary" />
+                  <BrightnessHighIcon
+                    fontSize="large"
+                    sx={{ color: "OrangeRed" }}
+                  />
                 </Grid>
                 <Grid item sx={{ paddingLeft: "1rem" }}>
                   Chakra

@@ -205,7 +205,7 @@ export default function CampaignTrail() {
           <Box sx={{ width: "100%", padding: "1rem 0" }}>
             <Grid
               container
-              direction="row"
+              direction="column"
               alignItems="center"
               justifyContent="center"
             >
@@ -220,8 +220,10 @@ export default function CampaignTrail() {
                 />
               </Grid>
 
-              <Grid item sx={{ padding: "0 1rem" }}>
-                <h2 className={styles.greyText}>Your quest awaits you!</h2>
+              <Grid item>
+                <Typography variant="h5" sx={{ color: "#808080" }}>
+                  The Quest awaits you!
+                </Typography>
               </Grid>
             </Grid>
           </Box>

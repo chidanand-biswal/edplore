@@ -143,7 +143,10 @@ export default function PowerHome() {
                           color="primary"
                           showZero
                         >
-                          <LocalPoliceIcon fontSize="large" color="action" />
+                          <LocalPoliceIcon
+                            fontSize="large"
+                            sx={{ color: "Goldenrod" }}
+                          />
                         </Badge>
                       </Paper>
                     </Grid>
@@ -228,7 +231,7 @@ export default function PowerHome() {
                         >
                           <ElectricBoltIcon
                             fontSize="large"
-                            sx={{ color: "blue" }}
+                            sx={{ color: "RoyalBlue" }}
                           />
                         </Badge>
                       </Paper>

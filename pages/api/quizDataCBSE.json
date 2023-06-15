@@ -1302,5 +1302,1439 @@
       { "answer": "flower, root" },
       { "answer": "seed, stem" }
     ]
+  },
+  {
+    "id": "B-6-1-0",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "___ is caused by deficiency of Vitamin B1",
+    "answerOptions": [
+      { "answer": "Beriberi", "isCorrect": true },
+      { "answer": "Loss of vision" },
+      { "answer": "Scurvy" },
+      { "answer": "Anaemia" }
+    ]
+  },
+  {
+    "id": "B-6-1-1",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "___ is caused by deficiency of Vitamin C",
+    "answerOptions": [
+      { "answer": "Beriberi" },
+      { "answer": "Loss of vision" },
+      { "answer": "Scurvy", "isCorrect": true },
+      { "answer": "Anaemia" }
+    ]
+  },
+  {
+    "id": "B-6-1-2",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "___ is caused by deficiency of Vitamin D",
+    "answerOptions": [
+      { "answer": "Beriberi" },
+      { "answer": "Loss of vision" },
+      { "answer": "Scurvy" },
+      { "answer": "Rickets", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "B-6-1-3",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "___ is caused by deficiency of Iron",
+    "answerOptions": [
+      { "answer": "Beriberi" },
+      { "answer": "Anaemia", "isCorrect": true },
+      { "answer": "Scurvy" },
+      { "answer": "Rickets" }
+    ]
+  },
+  {
+    "id": "B-6-1-4",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Which Vitamin is required for maintaining good eye sight.",
+    "answerOptions": [
+      { "answer": "A", "isCorrect": true },
+      { "answer": "B" },
+      { "answer": "C" },
+      { "answer": "D" }
+    ]
+  },
+  {
+    "id": "B-6-1-5",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Which mineral keeps our bones healthy?",
+    "answerOptions": [
+      { "answer": "Sodium" },
+      { "answer": "Calcium", "isCorrect": true },
+      { "answer": "Iron" },
+      { "answer": "Lead" }
+    ]
+  },
+  {
+    "id": "B-6-1-6",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "___ are required for growth and repairs worn out cells in our body.",
+    "answerOptions": [
+      { "answer": "Carbohydrates" },
+      { "answer": "Vitamins" },
+      { "answer": "Protiens", "isCorrect": true },
+      { "answer": "Fats" }
+    ]
+  },
+  {
+    "id": "B-6-1-7",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "___ gives energy to our body to work and play.",
+    "answerOptions": [
+      { "answer": "Carbohydrates", "isCorrect": true },
+      { "answer": "Vitamins" },
+      { "answer": "Protiens" },
+      { "answer": "Fats" }
+    ]
+  },
+  {
+    "id": "B-6-1-8",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "What ___ percentage of human body weight is water?",
+    "answerOptions": [
+      { "answer": "70", "isCorrect": true },
+      { "answer": "75" },
+      { "answer": "80" },
+      { "answer": "85" }
+    ]
+  },
+  {
+    "id": "B-6-1-9",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Carbohydrates are made up of carbon, hydrogen and ___",
+    "answerOptions": [
+      { "answer": "Iron" },
+      { "answer": "Nitrogen" },
+      { "answer": "Oxygen", "isCorrect": true },
+      { "answer": "Water" }
+    ]
+  },
+  {
+    "id": "B-6-2-0",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "The thick vien in the middle of the leaf is ___",
+    "answerOptions": [
+      { "answer": "Petiole" },
+      { "answer": "Node" },
+      { "answer": "Midrib", "isCorrect": true },
+      { "answer": "Lamina" }
+    ]
+  },
+  {
+    "id": "B-6-2-1",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "The distribution of veins in the leaves is known as ___",
+    "answerOptions": [
+      { "answer": "Leaf venation", "isCorrect": true },
+      { "answer": "Petiole" },
+      { "answer": "Midrib" },
+      { "answer": "Lamina" }
+    ]
+  },
+  {
+    "id": "B-6-2-2",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "The part of a leaf by which it is attached to the stem is called ___",
+    "answerOptions": [
+      { "answer": "Leaf venation" },
+      { "answer": "Petiole", "isCorrect": true },
+      { "answer": "Midrib" },
+      { "answer": "Lamina" }
+    ]
+  },
+  {
+    "id": "B-6-2-3",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "The process by which water and minerals travel up the stem is called ___",
+    "answerOptions": [
+      { "answer": "Photosynthesis" },
+      { "answer": "Venation" },
+      { "answer": "Transpiration" },
+      { "answer": "Conduction", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "B-6-2-4",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Plants with weak stem that cannot stand upright and spread on the ground are called ___",
+    "answerOptions": [
+      { "answer": "Trees" },
+      { "answer": "Creepers", "isCorrect": true },
+      { "answer": "Shrubs" },
+      { "answer": "Herbs" }
+    ]
+  },
+  {
+    "id": "B-6-2-5",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Pollen grains are produced in ___",
+    "answerOptions": [
+      { "answer": "Stamen" },
+      { "answer": "Anthers", "isCorrect": true },
+      { "answer": "Pistil" },
+      { "answer": "Petiole" }
+    ]
+  },
+  {
+    "id": "B-6-2-6",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "The leaf has a network of veins on both sides of the midrib in ___",
+    "answerOptions": [
+      { "answer": "Simple venation" },
+      { "answer": "Complex venation" },
+      { "answer": "Parallel venation" },
+      { "answer": "Reticulate venation", "isCorrect": true }
+    ]
+  },
+
+  {
+    "id": "B-6-2-7",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "A process in which water comes out from the leaves in the form of vapour is ___",
+    "answerOptions": [
+      { "answer": "Photosynthesis" },
+      { "answer": "Transpiration", "isCorrect": true },
+      { "answer": "Venation" },
+      { "answer": "Conduction" }
+    ]
+  },
+  {
+    "id": "B-6-2-8",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "The arrangement of leaves at a node is ___",
+    "answerOptions": [
+      { "answer": "Phyllotaxy", "isCorrect": true },
+      { "answer": "Transpiration" },
+      { "answer": "Venation" },
+      { "answer": "Conduction" }
+    ]
+  },
+  {
+    "id": "B-6-2-9",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 2,
+    "question": "The swollen part of the pistil is ___",
+    "answerOptions": [
+      { "answer": "Petiole" },
+      { "answer": "Sepals" },
+      { "answer": "Petals" },
+      { "answer": "Ovary", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "B-6-3-0",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "The place where two or more bones meet together is called a ___",
+    "answerOptions": [
+      { "answer": "skeleton" },
+      { "answer": "tissue" },
+      { "answer": "cartilage" },
+      { "answer": "joint", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "B-6-3-1",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "___ are tough cords joining bones.",
+    "answerOptions": [
+      { "answer": "Tendons" },
+      { "answer": "Ligaments", "isCorrect": true },
+      { "answer": "Cartilage" },
+      { "answer": "Skeletal" }
+    ]
+  },
+  {
+    "id": "B-6-3-2",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "___ are cords joining bones to muscles.",
+    "answerOptions": [
+      { "answer": "Tendons", "isCorrect": true },
+      { "answer": "Ligaments" },
+      { "answer": "Cartilage" },
+      { "answer": "Skeletal" }
+    ]
+  },
+  {
+    "id": "B-6-3-3",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "The backbone is made up of small bones, each of which is called a ___",
+    "answerOptions": [
+      { "answer": "Tendons" },
+      { "answer": "Ligaments" },
+      { "answer": "Vertebra", "isCorrect": true },
+      { "answer": "Vertebra column" }
+    ]
+  },
+  {
+    "id": "B-6-3-4",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Soft and flexible bones are called ___",
+    "answerOptions": [
+      { "answer": "Tendons" },
+      { "answer": "Ligaments" },
+      { "answer": "Vertebra" },
+      { "answer": "Cartilages", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "B-6-3-5",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Which type of joint is in the elbow?",
+    "answerOptions": [
+      { "answer": "Ball & socket joint" },
+      { "answer": "Fixed joint" },
+      { "answer": "Hinge joint", "isCorrect": true },
+      { "answer": "Bone joint" }
+    ]
+  },
+  {
+    "id": "B-6-3-6",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "The joint between the shoulder and upper arm is called ___",
+    "answerOptions": [
+      { "answer": "Ball & socket joint", "isCorrect": true },
+      { "answer": "Fixed joint" },
+      { "answer": "Hinge joint" },
+      { "answer": "Bone joint" }
+    ]
+  },
+  {
+    "id": "B-6-3-7",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Name the longest and strongest bone in the body.",
+    "answerOptions": [
+      { "answer": "Back-bone" },
+      { "answer": "Collar bone" },
+      { "answer": "Thigh bone", "isCorrect": true },
+      { "answer": "Skull" }
+    ]
+  },
+  {
+    "id": "B-6-3-8",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "The pelvic bone formed is by fusion of ___ bone(s).",
+    "answerOptions": [
+      { "answer": "one" },
+      { "answer": "two" },
+      { "answer": "three", "isCorrect": true },
+      { "answer": "four" }
+    ]
+  },
+  {
+    "id": "B-6-3-9",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 3,
+    "question": "In which type of joint, one bone remains fixed while the other can moved freely in all directions?",
+    "answerOptions": [
+      { "answer": "Ball & socket joint", "isCorrect": true },
+      { "answer": "Fixed joint" },
+      { "answer": "Hinge joint" },
+      { "answer": "Bone joint" }
+    ]
+  },
+  {
+    "id": "B-6-4-0",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "All living things are made up of basic functional units called:",
+    "answerOptions": [
+      { "answer": "Cells", "isCorrect": true },
+      { "answer": "Limbs" },
+      { "answer": "D.N.A." },
+      { "answer": "Enzyme" }
+    ]
+  },
+  {
+    "id": "B-6-4-1",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "The production of off-spring and seeds is termed as:",
+    "answerOptions": [
+      { "answer": "Respiration" },
+      { "answer": "Secretion" },
+      { "answer": "Excretion" },
+      { "answer": "Reproduction", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "B-6-4-2",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "The process of getting rid of waste is called:",
+    "answerOptions": [
+      { "answer": "Excretion", "isCorrect": true },
+      { "answer": "Reproduction" },
+      { "answer": "Secretion" },
+      { "answer": "Respiration" }
+    ]
+  },
+  {
+    "id": "B-6-4-3",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "The process of exchange of carbon dioxide and oxygen is called:",
+    "answerOptions": [
+      { "answer": "Excretion" },
+      { "answer": "Respiration", "isCorrect": true },
+      { "answer": "Reproduction" },
+      { "answer": "Secretion" }
+    ]
+  },
+  {
+    "id": "B-6-4-4",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "The living things that are not capable of preparing their own food and depend on others are:",
+    "answerOptions": [
+      { "answer": "Autotrophs" },
+      { "answer": "Carnivores" },
+      { "answer": "Heterotrophs", "isCorrect": true },
+      { "answer": "Omnivores" }
+    ]
+  },
+  {
+    "id": "B-6-4-5",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "What is the process of taking food by organisms?",
+    "answerOptions": [
+      { "answer": "Adaptation" },
+      { "answer": "Nutrition", "isCorrect": true },
+      { "answer": "Respiration" },
+      { "answer": "Secretion" }
+    ]
+  },
+  {
+    "id": "B-6-4-6",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "The presence of specific features or certain habits which enable a plant or an animal to live in its surrounding is called:",
+    "answerOptions": [
+      { "answer": "Adaptation", "isCorrect": true },
+      { "answer": "Nutrition" },
+      { "answer": "Respiration" },
+      { "answer": "Secretion" }
+    ]
+  },
+  {
+    "id": "B-6-4-7",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "The sequential process in which one organism consumes the other in the form of food forms a:",
+    "answerOptions": [
+      { "answer": "Adaptation" },
+      { "answer": "Respiration" },
+      { "answer": "Food chain", "isCorrect": true },
+      { "answer": "Excretion" }
+    ]
+  },
+  {
+    "id": "B-6-4-8",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "The place where living organisms live is called:",
+    "answerOptions": [
+      { "answer": "Habitat", "isCorrect": true },
+      { "answer": "Biotic component" },
+      { "answer": "Eco system" },
+      { "answer": "Environment" }
+    ]
+  },
+  {
+    "id": "B-6-4-9",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 4,
+    "question": "___ are plants growing in hot and dry places.",
+    "answerOptions": [
+      { "answer": "Heterotrophs" },
+      { "answer": "Xerophytes", "isCorrect": true },
+      { "answer": "Autotrophs" },
+      { "answer": "Neophyte" }
+    ]
+  },
+  {
+    "id": "B-6-5-0",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 5,
+    "question": "The collection of rain water by various means is:",
+    "answerOptions": [
+      { "answer": "Water vapour" },
+      { "answer": "Water cycle" },
+      { "answer": "Water harvesting", "isCorrect": true },
+      { "answer": "None of these" }
+    ]
+  },
+  {
+    "id": "B-6-5-1",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 5,
+    "question": "Excessive rains causes ___",
+    "answerOptions": [
+      { "answer": "Drought" },
+      { "answer": "Floods", "isCorrect": true },
+      { "answer": "Earthquake" },
+      { "answer": "Cyclone" }
+    ]
+  },
+  {
+    "id": "B-6-5-2",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 5,
+    "question": "Lack of rain for long periods causes ___",
+    "answerOptions": [
+      { "answer": "Drought", "isCorrect": true },
+      { "answer": "Floods" },
+      { "answer": "Earthquake" },
+      { "answer": "Cyclone" }
+    ]
+  },
+  {
+    "id": "B-6-5-3",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 5,
+    "question": "The circulation of water between ocean and land is known as:",
+    "answerOptions": [
+      { "answer": "Evaporation" },
+      { "answer": "Water harvesting" },
+      { "answer": "Water cycle", "isCorrect": true },
+      { "answer": "Condensation" }
+    ]
+  },
+  {
+    "id": "B-6-5-4",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 5,
+    "question": "The process of water vapour changing into water droplets is:",
+    "answerOptions": [
+      { "answer": "Evaporation" },
+      { "answer": "Water harvesting" },
+      { "answer": "Water cycle" },
+      { "answer": "Condensation", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "B-6-5-5",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 5,
+    "question": "The process of water changing into its vapour is:",
+    "answerOptions": [
+      { "answer": "Evaporation", "isCorrect": true },
+      { "answer": "Water harvesting" },
+      { "answer": "Water cycle" },
+      { "answer": "Condensation" }
+    ]
+  },
+  {
+    "id": "B-6-5-6",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 5,
+    "question": "Plants loose water into air as water vapour through the process of:",
+    "answerOptions": [
+      { "answer": "Evaporation" },
+      { "answer": "Transpiration", "isCorrect": true },
+      { "answer": "Water cycle" },
+      { "answer": "Condensation" }
+    ]
+  },
+  {
+    "id": "B-6-5-7",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 5,
+    "question": "How can we conserve water?",
+    "answerOptions": [
+      { "answer": "By avoiding wastage" },
+      { "answer": "By more plantation" },
+      { "answer": "By using carefully" },
+      { "answer": "All of these", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "B-6-5-8",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 5,
+    "question": "What part of earth is covered with water?",
+    "answerOptions": [
+      { "answer": "One-third" },
+      { "answer": "Two-third", "isCorrect": true },
+      { "answer": "Half" },
+      { "answer": "One-tenth" }
+    ]
+  },
+  {
+    "id": "B-6-5-9",
+    "subject": "BIOLOGY",
+    "standard": 6,
+    "chapter": 5,
+    "question": "Which one is the purest form of water?",
+    "answerOptions": [
+      { "answer": "River water" },
+      { "answer": "Ground water" },
+      { "answer": "Rain water", "isCorrect": true },
+      { "answer": "Ocean water" }
+    ]
+  },
+  {
+    "id": "M-6-0-0",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "The smallest 8 digit number is called ___",
+    "answerOptions": [
+      { "answer": "Ten lakh" },
+      { "answer": "One lakh" },
+      { "answer": "Ten crore" },
+      { "answer": "One crore", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-0-1",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Which of the following options is true?",
+    "answerOptions": [
+      { "answer": "XCVIII > MCVIII" },
+      { "answer": "DCVIII < MCVIII", "isCorrect": true },
+      { "answer": "DCVIII = MCVIII" },
+      { "answer": "XCVIII < LXXXVII" }
+    ]
+  },
+  {
+    "id": "M-6-0-2",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Which of the following is the Roman numeral for the number 2765?",
+    "answerOptions": [
+      { "answer": "MMDCCXLV" },
+      { "answer": "MMDCXLXV" },
+      { "answer": "MMDCCLXV", "isCorrect": true },
+      { "answer": "MMCDCLXV" }
+    ]
+  },
+  {
+    "id": "M-6-0-3",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Which of the following options is correct according to the rules of writing Roman numerals?",
+    "answerOptions": [
+      { "answer": "DDXC" },
+      { "answer": "MDCLXXI", "isCorrect": true },
+      { "answer": "XDVII" },
+      { "answer": "CLLVV" }
+    ]
+  },
+  {
+    "id": "M-6-0-4",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "The natural numbers along with zero form the collection of ___",
+    "answerOptions": [
+      { "answer": "Whole numbers", "isCorrect": true },
+      { "answer": "Integers" },
+      { "answer": "Rational numbers" },
+      { "answer": "Real numbers" }
+    ]
+  },
+  {
+    "id": "M-6-0-5",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "3 * 10000 + 7 * 1000 + 9 * 100 + 0 * 10 + 4 is the same as ___",
+    "answerOptions": [
+      { "answer": "3794" },
+      { "answer": "37940" },
+      { "answer": "37904", "isCorrect": true },
+      { "answer": "379409" }
+    ]
+  },
+  {
+    "id": "M-6-0-6",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "If 1 is added to the greatest 7 digit number, it will be equal to ___",
+    "answerOptions": [
+      { "answer": "Ten crore" },
+      { "answer": "One thousand" },
+      { "answer": "One lakh" },
+      { "answer": "One crore", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-0-7",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "Which of the following statements is NOT true?",
+    "answerOptions": [
+      { "answer": "The HCF of two distinct prime numbers is 1" },
+      { "answer": "The HCF of two co prime numbers is 1" },
+      { "answer": "The HCF of two consecutive even numbers is 2" },
+      {
+        "answer": "The HCF of an even and an odd number is even",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "M-6-0-8",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "What are the numbers which have more than two factors called?",
+    "answerOptions": [
+      { "answer": "Even numbers" },
+      { "answer": "Prime numbers" },
+      { "answer": "Co-prime numbers" },
+      { "answer": "Composite numbers", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-0-9",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 0,
+    "question": "The value of 10 + 40 ÷ 8 * 2 - 9 is: ",
+    "answerOptions": [
+      { "answer": "9" },
+      { "answer": "10" },
+      { "answer": "11", "isCorrect": true },
+      { "answer": "12" }
+    ]
+  },
+  {
+    "id": "M-6-1-0",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "The mean proportion of 4 and 16 is: ",
+    "answerOptions": [
+      { "answer": "4" },
+      { "answer": "6" },
+      { "answer": "8", "isCorrect": true },
+      { "answer": "16" }
+    ]
+  },
+  {
+    "id": "M-6-1-1",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "There are 45 persons working in an office. If the number of females is 25 and the remaining are males, find the ratio of the number of females to number of males.",
+    "answerOptions": [
+      { "answer": "5 : 4", "isCorrect": true },
+      { "answer": "4 : 5" },
+      { "answer": "5 : 3" },
+      { "answer": "3 : 5" }
+    ]
+  },
+  {
+    "id": "M-6-1-2",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "7 : 12 is equivalent to ___",
+    "answerOptions": [
+      { "answer": "8 : 13" },
+      { "answer": "40 : 72" },
+      { "answer": "35 : 65" },
+      { "answer": "42 : 72", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-1-3",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Ratio of 1.6 kg to 200 gm is:",
+    "answerOptions": [
+      { "answer": "2 : 1" },
+      { "answer": "8 : 2" },
+      { "answer": "16 : 20" },
+      { "answer": "8 : 1", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-1-4",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "12, 21, 72, 126 are in proportion, then which statement is true?",
+    "answerOptions": [
+      { "answer": "12 * 126 = 21 * 72", "isCorrect": true },
+      { "answer": "12 * 21 = 72 * 126" },
+      { "answer": "12 * 72 = 21 * 126" },
+      { "answer": "None of these" }
+    ]
+  },
+  {
+    "id": "M-6-1-5",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Ratio of 1 hour to 300 seconds is: ",
+    "answerOptions": [
+      { "answer": "18 : 12" },
+      { "answer": "12 : 1", "isCorrect": true },
+      { "answer": "1000 : 300" },
+      { "answer": "6000 : 300" }
+    ]
+  },
+  {
+    "id": "M-6-1-6",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Which of the following is a proportion?",
+    "answerOptions": [
+      { "answer": "3,27,9,9" },
+      { "answer": "5,11,15,44" },
+      { "answer": "3,5,15,25", "isCorrect": true },
+      { "answer": "4,3,36,18" }
+    ]
+  },
+  {
+    "id": "M-6-1-7",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "If 4, 5, 8, x are in proportion then the value of x is :",
+    "answerOptions": [
+      { "answer": "4" },
+      { "answer": "5" },
+      { "answer": "10", "isCorrect": true },
+      { "answer": "8" }
+    ]
+  },
+  {
+    "id": "M-6-1-8",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "Identify the ratio of 4 seconds and  1/4 minute.",
+    "answerOptions": [
+      { "answer": "4 : 15", "isCorrect": true },
+      { "answer": "4 : 1/4" },
+      { "answer": "4 : 60" },
+      { "answer": "1 : 4" }
+    ]
+  },
+  {
+    "id": "M-6-1-9",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 1,
+    "question": "20 pens are divided between Neo and Trinity in the ratio of 3 : 2. Then which statement is true?",
+    "answerOptions": [
+      { "answer": "Neo - 8 pens, Trinity - 12 pens" },
+      { "answer": "Neo - 12 pens, Trinity - 8 pens", "isCorrect": true },
+      { "answer": "Neo - 16 pens, Trinity - 4 pens" },
+      { "answer": "Neo - 4 pens, Trinity - 16 pens" }
+    ]
+  },
+  {
+    "id": "M-6-2-0",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "The expression for the statement: 5 times the sum of x and y",
+    "answerOptions": [
+      { "answer": "5 + x + y" },
+      { "answer": "5 - x + y" },
+      { "answer": "5 * (x + y)", "isCorrect": true },
+      { "answer": "5 + (x * y)" }
+    ]
+  },
+  {
+    "id": "M-6-2-1",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Perimeter of the square, whose each side is n cm is:",
+    "answerOptions": [
+      { "answer": "4n", "isCorrect": true },
+      { "answer": "3n" },
+      { "answer": "2n" },
+      { "answer": "5n" }
+    ]
+  },
+  {
+    "id": "M-6-2-2",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "x + 5 = -11. Then x = ?",
+    "answerOptions": [
+      { "answer": "16" },
+      { "answer": "-16", "isCorrect": true },
+      { "answer": "6" },
+      { "answer": "-6" }
+    ]
+  },
+  {
+    "id": "M-6-2-3",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "Which of the following does 2n - 1 represent? ",
+    "answerOptions": [
+      { "answer": "1 subtracted from product of n and 2", "isCorrect": true },
+      { "answer": "difference of two times n and 2" },
+      { "answer": "2 subtracted from product of n and 1 " },
+      { "answer": "1 added to product of n and 2" }
+    ]
+  },
+  {
+    "id": "M-6-2-4",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "The expression for the statement: 5 less than x is 6 ",
+    "answerOptions": [
+      { "answer": "x + 6 = 5" },
+      { "answer": "x + 5 = 6" },
+      { "answer": "x - 6 = 5" },
+      { "answer": "x - 5 = 6", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-2-5",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "John present age is y years, what will be his age 5 years from now?",
+    "answerOptions": [
+      { "answer": "y + 5", "isCorrect": true },
+      { "answer": "y - 5" },
+      { "answer": "5y" },
+      { "answer": "y/5" }
+    ]
+  },
+  {
+    "id": "M-6-2-6",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "The expression for the statement: Five times x added to y",
+    "answerOptions": [
+      { "answer": "5x + y", "isCorrect": true },
+      { "answer": "5 * (x + y)" },
+      { "answer": "x + 5y" },
+      { "answer": "None of these" }
+    ]
+  },
+  {
+    "id": "M-6-2-7",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "A number is multiplied by 6 and 12 is added to the product. The result is 84. What is the number? ",
+    "answerOptions": [
+      { "answer": "-12" },
+      { "answer": "12", "isCorrect": true },
+      { "answer": "72" },
+      { "answer": "-72" }
+    ]
+  },
+  {
+    "id": "M-6-2-8",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "The ___ of the variable in an equation which satisfies the equation is called a solution to the equation.",
+    "answerOptions": [
+      { "answer": "term" },
+      { "answer": "value", "isCorrect": true },
+      { "answer": "factor" },
+      { "answer": "expression" }
+    ]
+  },
+  {
+    "id": "M-6-2-9",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 2,
+    "question": "x - 1 = -7. Then x = ?",
+    "answerOptions": [
+      { "answer": "6" },
+      { "answer": "-6", "isCorrect": true },
+      { "answer": "8" },
+      { "answer": "-8" }
+    ]
+  },
+  {
+    "id": "M-6-3-0",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "A point where three or more lines meet is called:",
+    "answerOptions": [
+      { "answer": "point of concurrence", "isCorrect": true },
+      { "answer": "point of divergence" },
+      { "answer": "collinear point" },
+      { "answer": "non-collinear point" }
+    ]
+  },
+  {
+    "id": "M-6-3-1",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "A ___ of a circle is a line segment joining any two points on the circle.",
+    "answerOptions": [
+      { "answer": "chord", "isCorrect": true },
+      { "answer": "diameter" },
+      { "answer": "radius" },
+      { "answer": "circumference" }
+    ]
+  },
+  {
+    "id": "M-6-3-2",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "The meeting point of a pair of adjacent sides of a polygon is called its: ",
+    "answerOptions": [
+      { "answer": "diagonal" },
+      { "answer": "vertex", "isCorrect": true },
+      { "answer": "adjacent angles" },
+      { "answer": "point of concurrence" }
+    ]
+  },
+  {
+    "id": "M-6-3-3",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Three or more points are collinear if they lie on the:  ",
+    "answerOptions": [
+      { "answer": "different lines" },
+      { "answer": "same surface" },
+      { "answer": "same line", "isCorrect": true },
+      { "answer": "different surfaces" }
+    ]
+  },
+  {
+    "id": "M-6-3-4",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "A quadrilateral having one pair of sides parallel is called:",
+    "answerOptions": [
+      { "answer": "square" },
+      { "answer": "trapezium", "isCorrect": true },
+      { "answer": "rectangle" },
+      { "answer": "None of these" }
+    ]
+  },
+  {
+    "id": "M-6-3-5",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "Where will the hand of a clock stop if it starts at 2 and makes 1/2 of a revolution, clockwise?",
+    "answerOptions": [
+      { "answer": "5" },
+      { "answer": "8", "isCorrect": true },
+      { "answer": "11" },
+      { "answer": "2" }
+    ]
+  },
+  {
+    "id": "M-6-3-6",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "When the sum of the measures of two angles is that of a right angle, then each one of them is?",
+    "answerOptions": [
+      { "answer": "obtuse angle" },
+      { "answer": "right angle" },
+      { "answer": "straight angle" },
+      { "answer": "acute angle", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-3-7",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "What fraction of a clockwise revolution does the hour hand of a clock turn through, when it goes from 7 to 10?",
+    "answerOptions": [
+      { "answer": "1/2" },
+      { "answer": "1/3" },
+      { "answer": "1/4", "isCorrect": true },
+      { "answer": "1/6" }
+    ]
+  },
+  {
+    "id": "M-6-3-8",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "A triangle having sides 6 cm, 6 cm, 6 cm is called:",
+    "answerOptions": [
+      { "answer": "scalene triangle" },
+      { "answer": "isosceles triangle" },
+      { "answer": "right-angled triangle" },
+      { "answer": "equilateral triangle", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-3-9",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 3,
+    "question": "How many perpendicular bisectors are required to trisect a line segment?",
+    "answerOptions": [
+      { "answer": "one" },
+      { "answer": "two", "isCorrect": true },
+      { "answer": "three" },
+      { "answer": "four" }
+    ]
+  },
+  {
+    "id": "M-6-4-0",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "1 sq. m is equal to:",
+    "answerOptions": [
+      { "answer": "100 sq. cm" },
+      { "answer": "1000 sq. cm" },
+      { "answer": "10000 sq. cm", "isCorrect": true },
+      { "answer": "10 sq. cm" }
+    ]
+  },
+  {
+    "id": "M-6-4-1",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "What is the amount of surface enclosed by a closed 2-dimentional figure called?",
+    "answerOptions": [
+      { "answer": "Volume" },
+      { "answer": "Area", "isCorrect": true },
+      { "answer": "Perimeter" },
+      { "answer": "Length" }
+    ]
+  },
+  {
+    "id": "M-6-4-2",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Perimeter of a rectangle with length 5 m and breadth 50 cm is:",
+    "answerOptions": [
+      { "answer": "10 m" },
+      { "answer": "11 m", "isCorrect": true },
+      { "answer": "12 m" },
+      { "answer": "13 m" }
+    ]
+  },
+  {
+    "id": "M-6-4-3",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "A table top is covered with 25 squares of equal size. The side of the square is 3 cm. What is the area of the table top?",
+    "answerOptions": [
+      { "answer": "300 cm" },
+      { "answer": "300 sq. cm" },
+      { "answer": "225 cm" },
+      { "answer": "225 sq. cm", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-4-4",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "The side of a square is 6 cm. If its side is doubled, then its new perimeter is?",
+    "answerOptions": [
+      { "answer": "48 cm", "isCorrect": true },
+      { "answer": "24 cm" },
+      { "answer": "12 cm" },
+      { "answer": "6 cm" }
+    ]
+  },
+  {
+    "id": "M-6-4-5",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Area of a square with perimeter 40 m is:",
+    "answerOptions": [
+      { "answer": "160 sq. m" },
+      { "answer": "100 sq. m", "isCorrect": true },
+      { "answer": "120 sq. m" },
+      { "answer": "40 sq. m" }
+    ]
+  },
+  {
+    "id": "M-6-4-6",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "An isosceles triangle has a measure of p units for its equal sides and q units for its unequal side. What is its perimeter?",
+    "answerOptions": [
+      { "answer": "2 (p + q) units" },
+      { "answer": "2p + q units", "isCorrect": true },
+      { "answer": "2q + p units" },
+      { "answer": "pq units" }
+    ]
+  },
+  {
+    "id": "M-6-4-7",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Area of a square having perimeter 16 cm is:",
+    "answerOptions": [
+      { "answer": "1 sq. cm" },
+      { "answer": "4 sq. cm" },
+      { "answer": "16 sq. cm", "isCorrect": true },
+      { "answer": "256 sq. cm" }
+    ]
+  },
+  {
+    "id": "M-6-4-8",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Perimeter of a regular hexagon whose side is 11 cm is:",
+    "answerOptions": [
+      { "answer": "66 cm", "isCorrect": true },
+      { "answer": "77 cm" },
+      { "answer": "88 cm" },
+      { "answer": "55 cm" }
+    ]
+  },
+  {
+    "id": "M-6-4-9",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 4,
+    "question": "Dharmapada went to a park 150 m long and 80 m wide. If he took one complete round on its boundary, then what is the distance covered by him?",
+    "answerOptions": [
+      { "answer": "230 m" },
+      { "answer": "690 m" },
+      { "answer": "920 m" },
+      { "answer": "460 m", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-5-0",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "What is the simplified form of the product of 12/24 and 36/72",
+    "answerOptions": [
+      { "answer": "16/24" },
+      { "answer": "1/2" },
+      { "answer": "1/6" },
+      { "answer": "1/4", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-5-1",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "What do you call fractions with different denominators?",
+    "answerOptions": [
+      { "answer": "Like fractions" },
+      { "answer": "Unlike fractions", "isCorrect": true },
+      { "answer": "Proper fractions" },
+      { "answer": "Improper fractions" }
+    ]
+  },
+  {
+    "id": "M-6-5-2",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "A fraction with numerator 1 is called:",
+    "answerOptions": [
+      { "answer": "Like fraction" },
+      { "answer": "Proper fraction" },
+      { "answer": "Unit fraction", "isCorrect": true },
+      { "answer": "Improper fraction" }
+    ]
+  },
+  {
+    "id": "M-6-5-3",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "What fraction of an hour is 40 minutes? ",
+    "answerOptions": [
+      { "answer": "1/2" },
+      { "answer": "2/3", "isCorrect": true },
+      { "answer": "3/4" },
+      { "answer": "4/10" }
+    ]
+  },
+  {
+    "id": "M-6-5-4",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "3/10 + 1/2 = ? ",
+    "answerOptions": [
+      { "answer": "3/5" },
+      { "answer": "2/5" },
+      { "answer": "1/5" },
+      { "answer": "4/5", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-5-5",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "35/8 when expressed as a mixed fraction is:",
+    "answerOptions": [
+      { "answer": "4 3/8", "isCorrect": true },
+      { "answer": "3 3/8" },
+      { "answer": "4 7/8" },
+      { "answer": "3 3/8" }
+    ]
+  },
+  {
+    "id": "M-6-5-6",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "12/52 is equal to:",
+    "answerOptions": [
+      { "answer": "2/13" },
+      { "answer": "3/13", "isCorrect": true },
+      { "answer": "4/13" },
+      { "answer": "5/13" }
+    ]
+  },
+  {
+    "id": "M-6-5-7",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "Which of the following fractions is the largest?",
+    "answerOptions": [
+      { "answer": "29/30" },
+      { "answer": "29/29" },
+      { "answer": "29/28" },
+      { "answer": "29/27", "isCorrect": true }
+    ]
+  },
+  {
+    "id": "M-6-5-8",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "A fraction whose numerator is less than its denominator is called a:",
+    "answerOptions": [
+      { "answer": "Unit fraction" },
+      { "answer": "Proper fraction", "isCorrect": true },
+      { "answer": "Like fraction" },
+      { "answer": "Improper fraction" }
+    ]
+  },
+  {
+    "id": "M-6-5-9",
+    "subject": "MATHEMATICS",
+    "standard": 6,
+    "chapter": 5,
+    "question": "2/5 + 3/10 + 11/20 = ?",
+    "answerOptions": [
+      { "answer": "25/20", "isCorrect": true },
+      { "answer": "22/35" },
+      { "answer": "16/20" },
+      { "answer": "16/35" }
+    ]
   }
 ]

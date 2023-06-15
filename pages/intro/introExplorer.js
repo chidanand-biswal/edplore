@@ -78,7 +78,7 @@ export default function IntroExplorerHome() {
             <Divider>
               <Grid>
                 <Typography className={styles.openingLines}>
-                  The Explorer
+                  Rules Of The Realms
                 </Typography>
               </Grid>
             </Divider>

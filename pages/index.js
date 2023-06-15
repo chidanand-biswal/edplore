@@ -22,7 +22,7 @@ export default function Home() {
   const [user, loading] = useAuthState(auth);
 
   useEffect(() => {
-    setTimeout(() => showLoadingLogo(false), 3500);
+    setTimeout(() => showLoadingLogo(false), 4500);
   }, []);
 
   return loadingLogo ? (
@@ -50,15 +50,22 @@ export default function Home() {
               }}
               src="/assets/konark_sun.svg"
             />
-            <Box>
-              <Typography variant="h4" fontWeight={500}>
-                The Realms Of Bodhi
+            <motion.div
+              initial={{ opacity: 0, scale: 0.25 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 2 }}
+            >
+              <Typography variant="h3" fontWeight={500}>
+                Realms Of Bodhi
               </Typography>
-            </Box>
-
-            <Box>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.25 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 3 }}
+            >
               <Typography variant="h5">CHAPTER 1</Typography>
-            </Box>
+            </motion.div>
           </Grid>
         </Grid>
       </Zoom>

@@ -35,7 +35,7 @@ export default function ILaunchHome() {
               >
                 <Grid item>
                   <motion.div
-                    initial={{ opacity: 0, scale: 0.5 }}
+                    initial={{ opacity: 0, scale: 0.1 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1 }}
                   >
@@ -44,9 +44,9 @@ export default function ILaunchHome() {
                 </Grid>
                 <Grid item>
                   <motion.div
-                    initial={{ opacity: 0, scale: 0.5 }}
+                    initial={{ opacity: 0, scale: 0.1 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 1.5 }}
+                    transition={{ duration: 2 }}
                   >
                     <CardSmallCustom source="chakra" title="chakra" />
                   </motion.div>
@@ -83,9 +83,9 @@ export default function ILaunchHome() {
               >
                 <Grid item>
                   <motion.div
-                    initial={{ opacity: 0, scale: 0.5 }}
+                    initial={{ opacity: 0, scale: 0.1 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 2 }}
+                    transition={{ duration: 3 }}
                   >
                     <CardSmallCustom source="badge" title="badge" />
                   </motion.div>
@@ -93,9 +93,9 @@ export default function ILaunchHome() {
 
                 <Grid item>
                   <motion.div
-                    initial={{ opacity: 0, scale: 0.5 }}
+                    initial={{ opacity: 0, scale: 0.1 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 2.5 }}
+                    transition={{ duration: 4 }}
                   >
                     <CardSmallCustom source="superFast" title="superFast" />
                   </motion.div>

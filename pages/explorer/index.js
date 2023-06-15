@@ -271,7 +271,7 @@ export default function ExplorerHome() {
                 className={styles.main}
                 sx={{ padding: "0 2rem 0 3.5rem" }}
               >
-                <h2 className={styles.greyText}>Tell more about yourself!</h2>
+                <h2 className={styles.greyText}>Tell us about yourself!</h2>
                 <Collapse in={openAlert}>
                   <Alert
                     severity="info"
@@ -310,9 +310,9 @@ export default function ExplorerHome() {
                       </IconButton>
                     }
                   >
-                    You can of course go on Quest without entering contact
-                    details. <br />
-                    However it is needed to ship your award if and when you win!
+                    Contact details are not mandatory for a Quest. <br />{" "}
+                    However we need these to ship your award if and when you
+                    win!
                   </Alert>
                 </Collapse>
                 <Box>
@@ -363,6 +363,7 @@ export default function ExplorerHome() {
                           onChange={handleStandardSelectChange}
                           defaultValue={""}
                         >
+                          {/** 
                           <MenuItem value={1} disabled>
                             Standard I
                           </MenuItem>
@@ -378,6 +379,7 @@ export default function ExplorerHome() {
                           <MenuItem value={5} disabled>
                             Standard V
                           </MenuItem>
+                          */}
                           <MenuItem value={6}>Standard VI</MenuItem>
                           <MenuItem value={7} disabled>
                             Standard VII

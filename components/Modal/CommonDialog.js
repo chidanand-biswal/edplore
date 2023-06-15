@@ -227,7 +227,10 @@ export default function CommonDialog(props) {
                             color="primary"
                             showZero
                           >
-                            <LocalPoliceIcon fontSize="large" color="action" />
+                            <LocalPoliceIcon
+                              fontSize="large"
+                              sx={{ color: "Goldenrod" }}
+                            />
                           </Badge>
                         </Grid>
 
@@ -254,7 +257,7 @@ export default function CommonDialog(props) {
                           >
                             <BrightnessHighIcon
                               fontSize="large"
-                              sx={{ color: "purple" }}
+                              sx={{ color: "OrangeRed" }}
                             />
                           </Badge>
                         </Grid>
@@ -282,7 +285,7 @@ export default function CommonDialog(props) {
                           >
                             <ElectricBoltIcon
                               fontSize="large"
-                              sx={{ color: "blue", borderColor: "pink" }}
+                              sx={{ color: "RoyalBlue" }}
                             />
                           </Badge>
                         </Grid>
@@ -309,7 +312,7 @@ export default function CommonDialog(props) {
             <DialogContent dividers>
               <DialogContentText id="alert-dialog-slide-description">
                 To see if you stand among the Leaders of Realms of Bodhi, you
-                must first login and start to explore the realms.
+                must first login.
               </DialogContentText>
             </DialogContent>
           </div>

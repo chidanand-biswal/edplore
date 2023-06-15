@@ -69,25 +69,25 @@ export default function CardSmallCustomOption(props) {
       case "superFast":
         return (
           <CardMedia>
-            <ElectricBoltIcon fontSize="large" color="primary" />
+            <ElectricBoltIcon fontSize="large" sx={{ color: "RoyalBlue" }} />
           </CardMedia>
         );
       case "karma":
         return (
           <CardMedia>
-            <PentagonIcon fontSize="large" color="primary" />
+            <PentagonIcon fontSize="large" sx={{ color: "DarkMagenta" }} />
           </CardMedia>
         );
       case "badge":
         return (
           <CardMedia>
-            <LocalPoliceIcon fontSize="large" color="primary" />
+            <LocalPoliceIcon fontSize="large" sx={{ color: "Goldenrod" }} />
           </CardMedia>
         );
       case "chakra":
         return (
           <CardMedia>
-            <BrightnessHighIcon fontSize="large" color="primary" />
+            <BrightnessHighIcon fontSize="large" sx={{ color: "OrangeRed" }} />
           </CardMedia>
         );
       default:

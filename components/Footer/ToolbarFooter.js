@@ -59,6 +59,9 @@ export default function ToolbarFooter() {
                 </IconButton>
                 <Divider orientation="vertical" flexItem />
                 <IconButton
+                  color={
+                    modalType === "badge" && openModal === true ? "primary" : ""
+                  }
                   aria-label="badge"
                   size="large"
                   className={styles.toolBarButtonLabel}
@@ -73,7 +76,9 @@ export default function ToolbarFooter() {
 
                 <Divider orientation="vertical" flexItem />
                 <IconButton
-                  color="primary"
+                  color={
+                    modalType === "karma" && openModal === true ? "primary" : ""
+                  }
                   aria-label="karma"
                   size="large"
                   className={styles.toolBarButtonLabel}
@@ -87,6 +92,7 @@ export default function ToolbarFooter() {
                 </IconButton>
                 <Divider orientation="vertical" flexItem />
                 <IconButton
+                  color={openLeaderModal === true ? "primary" : ""}
                   aria-label="leader"
                   size="large"
                   className={styles.toolBarButtonLabel}
@@ -99,6 +105,7 @@ export default function ToolbarFooter() {
                 </IconButton>
                 <Divider orientation="vertical" flexItem />
                 <IconButton
+                  color={openHelpModal === true ? "primary" : ""}
                   className={styles.toolBarButtonLabel}
                   onClick={() => {
                     setOpenHelpModal(true);
@@ -171,6 +178,9 @@ export default function ToolbarFooter() {
                 </IconButton>
                 <Divider orientation="vertical" flexItem />
                 <IconButton
+                  color={
+                    modalType === "badge" && openModal === true ? "primary" : ""
+                  }
                   aria-label="badge"
                   size="large"
                   className={styles.toolBarButtonLabel}
@@ -185,7 +195,9 @@ export default function ToolbarFooter() {
 
                 <Divider orientation="vertical" flexItem />
                 <IconButton
-                  color="primary"
+                  color={
+                    modalType === "karma" && openModal === true ? "primary" : ""
+                  }
                   aria-label="karma"
                   size="large"
                   className={styles.toolBarButtonLabel}
@@ -199,6 +211,7 @@ export default function ToolbarFooter() {
                 </IconButton>
                 <Divider orientation="vertical" flexItem />
                 <IconButton
+                  color={openLeaderModal === true ? "primary" : ""}
                   aria-label="leader"
                   size="large"
                   className={styles.toolBarButtonLabel}
@@ -211,6 +224,7 @@ export default function ToolbarFooter() {
                 </IconButton>
                 <Divider orientation="vertical" flexItem />
                 <IconButton
+                  color={openHelpModal === true ? "primary" : ""}
                   className={styles.toolBarButtonLabel}
                   onClick={() => {
                     setOpenHelpModal(true);

@@ -173,13 +173,8 @@ export default function CampaignHome() {
 
       <Grid container direction="row">
         <Grid item className={styles.main}>
-          <Box sx={{ width: "100%", padding: "1rem 0" }}>
-            <Grid
-              container
-              direction="row"
-              alignItems="center"
-              justifyContent="center"
-            >
+          <Box sx={{ width: "100%", padding: "1rem 0 2rem 0" }}>
+            <Grid container direction="column" alignItems="center">
               <Grid item>
                 <Box
                   component="img"
@@ -191,8 +186,10 @@ export default function CampaignHome() {
                 />
               </Grid>
 
-              <Grid item sx={{ padding: "0 1rem" }}>
-                <h2 className={styles.greyText}>Choose your Realm</h2>
+              <Grid item>
+                <Typography variant="h5" sx={{ color: "#808080" }}>
+                  Choose your Realm
+                </Typography>
               </Grid>
             </Grid>
           </Box>

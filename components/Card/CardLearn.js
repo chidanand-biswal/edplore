@@ -17,7 +17,9 @@ export default function CardLearn(props) {
                 {props.title}
               </Typography>
             </Box>
-            <Box sx={{ minWidth: 275 }}>{props.message}</Box>
+            <Box sx={{ minWidth: 275 }}>
+              <Typography>{props.message}</Typography>
+            </Box>
           </CardContent>
           <CardActions></CardActions>
         </React.Fragment>

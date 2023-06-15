@@ -140,10 +140,10 @@ export default function KarmaHome() {
 
       <Grid container direction="row">
         <Grid item className={styles.main}>
-          <Box sx={{ width: "100%", paddingTop: "1rem" }}>
+          <Box sx={{ width: "100%", padding: "1rem 0" }}>
             <Grid
               container
-              direction="row"
+              direction="column"
               alignItems="center"
               justifyContent="center"
             >
@@ -158,8 +158,10 @@ export default function KarmaHome() {
                 />
               </Grid>
 
-              <Grid item sx={{ padding: "0 0.25rem 0.35rem 1rem" }}>
-                <h2 className={styles.greyText}>Know your Karma</h2>
+              <Grid item>
+                <Typography variant="h5" sx={{ color: "#808080" }}>
+                  Know your Karma
+                </Typography>
               </Grid>
             </Grid>
           </Box>

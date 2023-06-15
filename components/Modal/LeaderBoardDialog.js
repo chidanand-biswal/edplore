@@ -57,7 +57,7 @@ export default function LeaderBoardDialog(props) {
       fetchUserScoreData();
     } else {
       setMessage(
-        "To see if you stand among the Leaders of Realms of Bodhi, you must first login and start to explore the realms."
+        "If you wish to see where you stand among the Leaders of Realms of Bodhi; you must first login."
       );
     }
   }, []);

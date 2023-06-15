@@ -4,6 +4,7 @@ import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import Pagination from "@mui/material/Pagination";
 import Paper from "@mui/material/Paper";
+import { Typography } from "@mui/material";
 import Link from "next/link";
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
@@ -162,7 +163,7 @@ export default function LearnHome() {
       <Grid container direction="row">
         <Grid item className={styles.main}>
           <Box>
-            <Paper elevation={8} sx={{ padding: "0.5rem" }}>
+            <Paper elevation={8} sx={{ padding: "1rem" }}>
               <Box sx={{ width: "100%" }}>
                 <Grid
                   container
@@ -173,7 +174,7 @@ export default function LearnHome() {
                   <Grid item>
                     <Grid
                       container
-                      direction="row"
+                      direction="column"
                       alignItems="center"
                       justifyContent="center"
                     >
@@ -188,8 +189,10 @@ export default function LearnHome() {
                         />
                       </Grid>
 
-                      <Grid item sx={{ padding: "0 1rem" }}>
-                        <h2 className={styles.greyText}>Gurukul</h2>
+                      <Grid item>
+                        <Typography variant="h5" sx={{ color: "#808080" }}>
+                          Gurukul
+                        </Typography>
                       </Grid>
                     </Grid>
                   </Grid>

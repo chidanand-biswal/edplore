@@ -169,7 +169,7 @@ export default function IntroRealmsHome() {
                         className={styles.buttonLaunch}
                         sx={{ minWidth: "15rem" }}
                       >
-                        KNOW THE EXPLORER
+                        KNOW THE RULES
                       </Button>
                     </a>
                   </Link>
@@ -194,7 +194,7 @@ export default function IntroRealmsHome() {
                         className={styles.buttonLaunch}
                         sx={{ minWidth: "15rem" }}
                       >
-                        KNOW THE EXPLORER
+                        KNOW THE RULES
                       </Button>
                     </a>
                   </Link>

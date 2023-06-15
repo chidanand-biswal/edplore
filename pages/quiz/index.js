@@ -10,6 +10,7 @@ import IconButton from "@mui/material/IconButton";
 import Collapse from "@mui/material/Collapse";
 import CloseIcon from "@mui/icons-material/Close";
 import AlertTitle from "@mui/material/AlertTitle";
+import { Typography } from "@mui/material";
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
 import MenuAppBar from "../../components/AppBar/MenuAppBar";
@@ -263,11 +264,11 @@ export default function QuizHome() {
 
       <Grid container direction="row">
         <Grid item className={styles.main}>
-          <Paper elevation={8} sx={{ marginTop: "2rem", padding: "0.5rem" }}>
+          <Paper elevation={8} sx={{ padding: "1rem" }}>
             <Box sx={{ width: "100%" }}>
               <Grid
                 container
-                direction="row"
+                direction="column"
                 alignItems="center"
                 justifyContent="center"
               >
@@ -282,15 +283,17 @@ export default function QuizHome() {
                   />
                 </Grid>
 
-                <Grid item sx={{ padding: "0 1rem" }}>
-                  <h3 className={styles.greyText}>{findArenaName()}</h3>
+                <Grid item>
+                  <Typography variant="h5" sx={{ color: "#808080" }}>
+                    {findArenaName()}
+                  </Typography>
                 </Grid>
               </Grid>
             </Box>
           </Paper>
           <Paper elevation={8} sx={{ marginTop: "1rem", padding: "0.5rem" }}>
             <Box className={styles.mainSmall}>
-              <h3 className={styles.greyText}>Opening gates to Arena...</h3>
+              <h3 className={styles.greyText}>Opening gates to the Arena</h3>
               <div className={styles.timerWrapper}>
                 <CountdownCircleTimer
                   isPlaying

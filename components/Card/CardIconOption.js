@@ -32,7 +32,7 @@ export default function CardIconOption(props) {
               height: "5rem",
               display: "inline",
             }}
-            src="/assets/explorerIntro.png"
+            src="/assets/rules.png"
             alt="Physics"
           />
         );

@@ -213,7 +213,7 @@ background-image: linear-gradient(270deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%)
   text-align: center;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #1976d2;
+  border: 1px solid silver;
   border-radius: 30%;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 200px;

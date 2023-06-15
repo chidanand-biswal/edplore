@@ -460,9 +460,11 @@ export default function QuizMain() {
                           />
                         }
                       />
+                      {/** 
                       {star !== null && (
                         <Box sx={{ ml: 2 }}>{getLabelText(star)}</Box>
                       )}
+                      */}
                     </Box>
                   </Box>
                 </Paper>
