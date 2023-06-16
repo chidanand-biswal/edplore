@@ -147,7 +147,8 @@ export const saveEdploreUserFeedback = (
   uid,
   paramOne,
   paramTwo,
-  paramThree
+  paramThree,
+  feedbackDetail
 ) => {
   console.log("saveEdploreFeedback");
   console.log(uid);
@@ -158,6 +159,22 @@ export const saveEdploreUserFeedback = (
     paramOne: paramOne,
     paramTwo: paramTwo,
     paramThree: paramThree,
+    feedbackDetail: feedbackDetail,
+    reportTime: Timestamp.fromDate(new Date()),
+  }).catch((err) => {
+    console.log(err.message);
+  });
+};
+
+export const saveEdploreUserIssue = (uid, issueArea, issueDesc) => {
+  console.log("saveEdploreUserIssue");
+  console.log(uid);
+
+  const edploreUserIssueRef = doc(database, "edploreUserIssueTracker", uid);
+
+  setDoc(edploreUserIssueRef, {
+    issueArea: issueArea,
+    issueDesc: issueDesc,
     reportTime: Timestamp.fromDate(new Date()),
   }).catch((err) => {
     console.log(err.message);

@@ -44,20 +44,30 @@ export default function FeedbackDialog(props) {
   const [feedback3Up, setFeedback3Up] = React.useState(false);
   const [feedback3Down, setFeedback3Down] = React.useState(false);
 
+  const [feedbackDetail, setFeedbackDetail] = React.useState("");
+
+  const handleFeedbackDetail = (event) => {
+    if (event.target.value !== "") {
+      setFeedbackDetail(event.target.value);
+    }
+  };
+
   const saveFeedback = () => {
     if (user) {
       saveEdploreUserFeedback(
         user.uid,
         feedback1Up ? true : false,
         feedback2Up ? true : false,
-        feedback3Up ? true : false
+        feedback3Up ? true : false,
+        feedbackDetail
       );
     } else if (process.env.NEXT_PUBLIC_SAVE_UNAUTH === "Y") {
       saveEdploreUserFeedback(
         userDetails,
         feedback1Up ? true : false,
         feedback2Up ? true : false,
-        feedback3Up ? true : false
+        feedback3Up ? true : false,
+        feedbackDetail
       );
     }
   };
@@ -227,6 +237,7 @@ export default function FeedbackDialog(props) {
                       label="Additional feedback"
                       multiline
                       maxRows={3}
+                      onChange={handleFeedbackDetail}
                     />
                   </FormControl>
                 </Grid>

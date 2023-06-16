@@ -1,3 +1,5 @@
+import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import SendIcon from "@mui/icons-material/Send";
 import HelpCenterIcon from "@mui/icons-material/HelpCenter";
 import Button from "@mui/material/Button";
@@ -13,14 +15,44 @@ import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 import TextField from "@mui/material/TextField";
 import Slide from "@mui/material/Slide";
-import * as React from "react";
 import { Typography } from "@mui/material";
+
+import { getAuth } from "firebase/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { saveEdploreUserIssue } from "../../firebase/db/dbUtility";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
 export default function HelpDialog(props) {
+  const auth = getAuth();
+  const [user, loading] = useAuthState(auth);
+  const { userDetails } = useSelector((state) => state.userDetails);
+
+  const [issueArea, setIssueArea] = React.useState("");
+  const [issueDesc, setIssueDesc] = React.useState("");
+
+  const handleIssueArea = (event) => {
+    if (event.target.value !== "") {
+      setIssueArea(event.target.value);
+    }
+  };
+
+  const handleIssueDesc = (event) => {
+    if (event.target.value !== "") {
+      setIssueDesc(event.target.value);
+    }
+  };
+
+  const saveUserIssue = () => {
+    if (user) {
+      saveEdploreUserIssue(user.uid, issueArea, issueDesc);
+    } else {
+      saveEdploreUserIssue(userDetails, issueArea, issueDesc);
+    }
+  };
+
   return (
     <div>
       <Dialog
@@ -53,6 +85,7 @@ export default function HelpDialog(props) {
                       id="location-select-id"
                       label="location"
                       defaultValue=""
+                      onChange={handleIssueArea}
                     >
                       <MenuItem value={1}>Realm Selection</MenuItem>
                       <MenuItem value={2}>Arena Trail</MenuItem>
@@ -71,6 +104,7 @@ export default function HelpDialog(props) {
                       label="What"
                       multiline
                       maxRows={3}
+                      onChange={handleIssueDesc}
                     />
                   </FormControl>
                 </Grid>
@@ -81,7 +115,10 @@ export default function HelpDialog(props) {
 
         <DialogActions sx={{ justifyContent: "center", paddingBottom: "2rem" }}>
           <Button
-            onClick={props.onClose}
+            onClick={() => {
+              saveUserIssue();
+              props.onClose();
+            }}
             variant="contained"
             endIcon={<SendIcon />}
           >

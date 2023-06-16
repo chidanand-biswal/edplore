@@ -213,7 +213,7 @@ export default function QuizMain() {
     setStar(newScore);
 
     let updateMedal = false;
-    let updateSuperfast = false;
+    let updateSuperFast = false;
 
     if (newScore >= 10) {
       console.log(`Update Medal count because score is ::: ${newScore}.`);
@@ -232,15 +232,17 @@ export default function QuizMain() {
         console.log(
           `Update Vajra Count because time remaining is ::: ${timeProgress}.`
         );
-        updateSuperfast = true;
+        updateSuperFast = true;
         updateSuperFastCountInStore();
       } else {
         console.log(
           `DO NOT update Vajra Count because time remaining is ::: ${timeProgress}.`
         );
+        //REMOVE THIS LINE WHEN VAJRA LOGIC IS FIXED
+        updateSuperFast = true;
       }
 
-      updateActiveRealmProgressByStandardInStore(updateMedal, updateSuperfast);
+      updateActiveRealmProgressByStandardInStore(updateMedal, updateSuperFast);
     } else {
       console.log(`Realm to NOT progress because score is :::  ${newScore}.`);
     }
@@ -339,10 +341,12 @@ export default function QuizMain() {
 
   const updateActiveRealmProgressByStandardInStore = (
     updateMedal,
-    updateSuperfast
+    updateSuperFast
   ) => {
     console.log(`Realm to progress is ::: ${realmActive}.`);
     console.log(`Standard to progress is ::: ${standardDetails}.`);
+    console.log(`Kavach is ::: ${updateMedal}.`);
+    console.log(`Vajra is ::: ${updateSuperFast}.`);
     const updatedRealmProgressByStandardAndBoard =
       calculateRealmProgressByStandardAndBoard();
 
@@ -357,7 +361,7 @@ export default function QuizMain() {
         user.uid,
         updatedRealmProgressByStandardAndBoard,
         updateMedal ? medalCount + 1 : medalCount,
-        updateSuperfast ? superFastCount + 1 : superFastCount,
+        updateSuperFast ? superFastCount + 1 : superFastCount,
         userDetails,
         standardDetails,
         boardDetails
@@ -368,7 +372,7 @@ export default function QuizMain() {
         userDetails,
         updatedRealmProgressByStandardAndBoard,
         updateMedal ? medalCount + 1 : medalCount,
-        updateSuperfast ? superFastCount + 1 : superFastCount,
+        updateSuperFast ? superFastCount + 1 : superFastCount,
         userDetails,
         standardDetails,
         boardDetails
@@ -411,7 +415,7 @@ export default function QuizMain() {
     }
     setSelectedOptions(selectedOptions);
     if (minutes == 0 && seconds == 0) {
-      handleSubmitButton();
+      handleSubmitButton;
     }
   };
 
@@ -500,8 +504,9 @@ export default function QuizMain() {
                     {score >= 8 ? (
                       <Box>
                         <h3 className={styles.greyText}>
-                          Congratulations! You have won the battle and you can
-                          now progress to the next arena.
+                          Congratulations! <br />
+                          You have won the battle and you can now progress to
+                          the next arena.
                         </h3>
                         <Grid
                           container
@@ -544,7 +549,8 @@ export default function QuizMain() {
                     ) : (
                       <Box>
                         <h3 className={styles.greyText}>
-                          OOPS! Looks like you still have things to learn.
+                          OOPS! This does not look good. <br />
+                          Looks like you still have things to learn.
                           <br />
                           But worry not, for we have you covered.
                         </h3>
