@@ -56,6 +56,7 @@ export default function SupportHome() {
                     </Grid>
                   </Grid>
                 </Grid>
+                {/** 
                 <Grid item>
                   <Grid container direction="row">
                     <Grid item>
@@ -68,6 +69,7 @@ export default function SupportHome() {
                     </Grid>
                   </Grid>
                 </Grid>
+                */}
                 <Grid item>
                   <Grid container direction="row">
                     <Grid item>

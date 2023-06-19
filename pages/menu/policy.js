@@ -95,23 +95,56 @@ export default function PolicyHome() {
               </Tabs>
             </Box>
             <TabPanel value={value} index={0}>
-              <Grid sx={{ height: "10rem", overflowY: "scroll" }}>
+              <Grid sx={{ height: "20rem", overflowY: "scroll" }}>
                 EDPLORE TERMS OF SERVICE <br />
-                What is covered in these terms
                 <br />
                 We know it is tempting to skip these Terms of Service, but it is
                 important to establish what you can expect from us as you use
-                this application, and what we expect from you.
+                this application, and what we expect from you. <br />
+                You may provide and we may collect personal information about
+                you when you create a profile and subscribe to the service, such
+                as your email address and phone number. Your credit card
+                information is collected by third party payment processors
+                (e.g., Apple App Store or Google Play Store) and not by us. You
+                may also provide us with information about the child using the
+                Service, such as name or nickname and grade. You can choose not
+                to provide any information that is affirmatively requested of
+                you. However, this may limit your ability to use the Services.
+                We may also collect information from you if you communicate with
+                us over the phone or via email. This information may include
+                personal information. This information may be matched with and
+                stored in connection with personal information provided or
+                collected in connection with the Website.
               </Grid>
             </TabPanel>
             <TabPanel value={value} index={1}>
-              <Grid sx={{ height: "10rem", overflowY: "scroll" }}>
+              <Grid sx={{ height: "20rem", overflowY: "scroll" }}>
+                EDPLORE PRIVACY POLICY <br />
+                <br />
                 When you are in edplore, you are trusting us with your
                 information. We understand this is a big responsibility and work
                 hard to protect your information and put you in control. <br />
                 This Privacy Policy is meant to help you understand what
                 information we collect, why we collect it, and how you can
-                update, manage, export, and delete your information.
+                update, manage, export, and delete your information. <br />
+                The Website is not intended for children, does not market to
+                children, and does not knowingly collect personal information
+                from children. All references to &quot;children&quot; or
+                &quot;child&quot; in this Children&quot;s Privacy Policy shall
+                mean children under 10 years of age, and all references to the
+                term &quot;parent&quot; shall include legal guardians. If you
+                are under 10 years of age, then please do not use or access the
+                Website at any time or in any manner. If we learn that
+                personally identifiable information has been provided to us
+                and/or collected on the Website from persons under 10 years of
+                age and without verifiable parental consent, such as through a
+                support request, we take the appropriate steps to delete this
+                information. If you are a parent and discover that your child
+                under 10 years of age has provided personal information through
+                the Website, then you may alert us at edplore.help@gmail.com and
+                request that we delete that child&quot;s information from our
+                systems. A parent or teacher can visit his or her account at any
+                time to delete any information and/or the account.
               </Grid>
             </TabPanel>
           </Paper>

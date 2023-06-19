@@ -133,6 +133,7 @@ export default function QuizMain() {
 
   const { medalCount } = useSelector((state) => state.medalCount);
   const { superFastCount } = useSelector((state) => state.superFastCount);
+  const answerKeyFlag = superFastCount > 9 ? true : false;
 
   const { currentQuizData } = useSelector((state) => state.currentQuizData);
 
@@ -503,10 +504,12 @@ export default function QuizMain() {
                   <Box sx={{ width: "100%" }} className={styles.mainSmall}>
                     {score >= 8 ? (
                       <Box>
-                        <h3 className={styles.greyText}>
+                        <h3 className={styles.redText}>
                           Congratulations! <br />
-                          You have won the battle and you can now progress to
-                          the next arena.
+                        </h3>
+                        <h3 className={styles.greyText}>
+                          You have won the battle. <br />
+                          You can now progress to the next arena.
                         </h3>
                         <Grid
                           container
@@ -548,12 +551,25 @@ export default function QuizMain() {
                       </Box>
                     ) : (
                       <Box>
-                        <h3 className={styles.greyText}>
+                        <h3 className={styles.redText}>
                           OOPS! This does not look good. <br />
+                        </h3>
+                        <h3 className={styles.greyText}>
                           Looks like you still have things to learn.
                           <br />
                           But worry not, for we have you covered.
+                          <br />
                         </h3>
+                        <h5 className={styles.greyText}>
+                          Option for &quot;WHERE DID I GO WRONG&quot; in order
+                          to view Answer keys will be available only if
+                          <br />
+                          <ul>
+                            <li>You have achieved Karma Quotient &gt; 3</li>
+                            Or
+                            <li>You have at least 10 Vajra</li>
+                          </ul>
+                        </h5>
                         <Grid
                           container
                           direction="row"
@@ -563,18 +579,22 @@ export default function QuizMain() {
                           className={styles.spacerOne}
                         >
                           <Grid item>
-                            <div>
-                              <Link href="/quiz/quizAnswers">
-                                <a>
-                                  <Button
-                                    variant="outlined"
-                                    className={styles.buttonLaunch}
-                                  >
-                                    WHERE DID I GO WRONG?
-                                  </Button>
-                                </a>
-                              </Link>
-                            </div>
+                            {answerKeyFlag ? (
+                              <div>
+                                <Link href="/quiz/quizAnswers">
+                                  <a>
+                                    <Button
+                                      variant="outlined"
+                                      className={styles.buttonLaunch}
+                                    >
+                                      WHERE DID I GO WRONG?
+                                    </Button>
+                                  </a>
+                                </Link>
+                              </div>
+                            ) : (
+                              <div></div>
+                            )}
                           </Grid>
                           <Grid item>
                             <div>

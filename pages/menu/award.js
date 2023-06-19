@@ -37,12 +37,14 @@ export default function AwardHome() {
             <Grid container direction="column">
               <Grid item sx={{ padding: "1rem" }}>
                 <Typography>
-                  The Realms of Bodhi rewards the deserving and the honest.
+                  Yep, the legends are true! <br />
+                  Realms of Bodhi do reward the deserving and the honest.
                   <br />
-                  We promise to come back with policies & guidelines for awards:
-                  how to win and how to claim.
                   <br />
-                  Visit again soon!
+                  We are working to come back soon with policies & guidelines
+                  for awards: how to win and how to claim.
+                  <br />
+                  Keep visiting here!
                 </Typography>
               </Grid>
             </Grid>

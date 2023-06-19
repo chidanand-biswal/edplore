@@ -58,8 +58,8 @@ export default function ProfileHome() {
               </Grid>
 
               <Grid className={styles.spacerOne}>
-                <Typography variant="h4">
-                  Explorer profile <br />
+                <Typography variant="h5">
+                  My Profile <br />
                 </Typography>
                 <Grid className={styles.spacerOne}></Grid>
                 <Typography variant="h6" sx={{ color: "#808080" }}>
@@ -81,14 +81,11 @@ export default function ProfileHome() {
                 />
               </Grid>
               <Grid className={styles.spacerOne}>
-                <Typography variant="h4">
-                  Explorer profile <br />
-                </Typography>
-                <Grid className={styles.spacerOne}></Grid>
                 <Typography variant="h6">
                   You are not yet logged in. <br />
-                  Login to &apos;edplore&apos; to fully experience the Realms of
-                  Bodhi.
+                  You are missing out on all the fun! <br />
+                  Do not wait. Login to &apos;edplore&apos; to fully experience
+                  the Realms of Bodhi.
                 </Typography>
               </Grid>
             </Box>

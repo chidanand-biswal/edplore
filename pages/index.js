@@ -110,7 +110,7 @@ export default function Home() {
               transition={{ duration: 3 }}
             >
               <Typography className={styles.openingLinesHome}>
-                Legend says those are out there.
+                Legend says it is out there somewhere.
                 <br />
                 Is this true? Or just a myth? <br />
                 You stand right at the gateways. <br /> <br />

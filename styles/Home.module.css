@@ -526,6 +526,10 @@ vertical-align: bottom;
   color: #808080;
 }
 
+.redText {
+  color: #D2042D;
+}
+
 .quizCardText {
   color: #000851;  
   font-weight: 600;
