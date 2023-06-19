@@ -270,9 +270,9 @@ export default function CampaignTrail() {
                 </Stepper>
               )}
               {activeStep === activeTrail.length && (
-                <Typography>
+                <h5 className={styles.redText}>
                   All steps completed - you&apos;re awesome!
-                </Typography>
+                </h5>
               )}
             </Box>
           </Paper>
@@ -297,7 +297,7 @@ export default function CampaignTrail() {
               </div>
             </Grid>
             <Grid item>
-              {bigScreenInd && (
+              {bigScreenInd && activeStep !== activeTrail.length && (
                 <div>
                   <Button
                     variant="contained"

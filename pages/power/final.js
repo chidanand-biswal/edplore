@@ -136,9 +136,9 @@ export default function FinalHome() {
   useEffect(() => {
     const fetchUserMetaData = async () => {
       let userMetaData = await getExplorerMetaData(user.uid);
-      setUserName(userMetaData.displayName);
-      setAddress(userMetaData.address);
-      setPhoneNumber(userMetaData.phoneNumber);
+      setUserName(userMetaData.displayName ? userMetaData.displayName : "");
+      setAddress(userMetaData.address ? userMetaData.address : "");
+      setPhoneNumber(userMetaData.phoneNumber ? userMetaData.phoneNumber : "");
     };
     if (user) {
       fetchUserMetaData();
@@ -146,7 +146,7 @@ export default function FinalHome() {
   }, [userName]);
 
   const navigate = () => {
-    if (address.length > 0) {
+    if (address !== "" && address.length > 0) {
       Router.push("/campaign/");
     } else {
       setOpenModal(true);
