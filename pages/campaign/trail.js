@@ -81,12 +81,6 @@ export default function CampaignTrail() {
     calculateRealmProgressByStandard("MATHEMATICS");
   const realmProgressBiology = calculateRealmProgressByStandard("BIOLOGY");
 
-  console.log("realmActive::: " + realmActive);
-  console.log("realmProgressPhysics::: " + realmProgressPhysics);
-  console.log("realmProgressChemistry::: " + realmProgressChemistry);
-  console.log("realmProgressMathematics::: " + realmProgressMathematics);
-  console.log("realmProgressBiology::: " + realmProgressBiology);
-
   const bigScreenInd = useMediaQuery("(min-width:800px)");
 
   const findCurrentStep = () => {

@@ -50,8 +50,6 @@ const validationSchema = yup.object().shape({
 
 const userNameValidator = async (value, allValues) => {
   try {
-    console.log("userNameValidator");
-    console.log(allValues);
     await validationSchema.validateAt("userName", allValues);
   } catch (validationError) {
     console.log(validationError);
@@ -61,8 +59,6 @@ const userNameValidator = async (value, allValues) => {
 
 const emailValidator = async (value, allValues) => {
   try {
-    console.log("emailValidator");
-    console.log(allValues);
     await validationSchema.validateAt("email", allValues);
   } catch (validationError) {
     console.log(validationError);

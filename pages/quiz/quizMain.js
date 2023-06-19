@@ -151,13 +151,10 @@ export default function QuizMain() {
   const [star, setStar] = React.useState(0);
 
   const handleAnswerOption = (answer) => {
-    console.log("handleAnswerOption");
-    console.log(selectedOptions);
     setSelectedOptions([
       (selectedOptions[currentQuestion] = { answerByUser: answer }),
     ]);
     setSelectedOptions([...selectedOptions]);
-    console.log(selectedOptions);
 
     setProgress((prevProgress) =>
       prevProgress >= 100 ? 10 : prevProgress + 10
@@ -346,18 +343,13 @@ export default function QuizMain() {
   ) => {
     console.log(`Realm to progress is ::: ${realmActive}.`);
     console.log(`Standard to progress is ::: ${standardDetails}.`);
-    console.log(`Kavach is ::: ${updateMedal}.`);
-    console.log(`Vajra is ::: ${updateSuperFast}.`);
     const updatedRealmProgressByStandardAndBoard =
       calculateRealmProgressByStandardAndBoard();
-
-    console.log(realmProgressArray);
-    console.log(updatedRealmProgressByStandardAndBoard);
 
     dispatch(updateRealmProgress(updatedRealmProgressByStandardAndBoard));
 
     if (user) {
-      console.log("User is authenticated. So saving realm progress.");
+      console.log("User is authenticated. Saving realm progress.");
       saveExplorerData(
         user.uid,
         updatedRealmProgressByStandardAndBoard,
@@ -368,7 +360,7 @@ export default function QuizMain() {
         boardDetails
       );
     } else if (process.env.NEXT_PUBLIC_SAVE_UNAUTH === "Y") {
-      console.log("User is NOT authenticated. So saving realm progress.");
+      console.log("User is NOT authenticated. Saving realm progress.");
       saveExplorerData(
         userDetails,
         updatedRealmProgressByStandardAndBoard,

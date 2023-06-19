@@ -14,6 +14,7 @@ import CardSmallCustomOption from "../../components/Card/CardSmallCustomOption";
 import ToolbarFooter from "../../components/Footer/ToolbarFooter";
 import { updateRealmActive } from "../../store/realm/action";
 import styles from "../../styles/Home.module.css";
+import standardArenaMapData from "../../static/standardArenaMap.json";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -127,8 +128,40 @@ export default function CampaignHome() {
 
   const [tabIndex, setTabIndex] = React.useState(0);
 
-  const calculateRealmProgressData = (realmProgress) => {
-    const exploredProgress = realmProgress * 10;
+  const filteredArenaList = standardArenaMapData.standardArenaMap.filter(
+    (data) => data.standard === standardDetails && data.board === boardDetails
+  );
+
+  const findTotalRealmSize = (realmActive) => {
+    switch (realmActive) {
+      case "PHYSICS":
+        return typeof filteredArenaList[0] != "undefined"
+          ? filteredArenaList[0].stepsPhysics.length
+          : 5;
+      case "CHEMISTRY":
+        return typeof filteredArenaList[0] != "undefined"
+          ? filteredArenaList[0].stepsChemistry.length
+          : 5;
+      case "MATHEMATICS":
+        return typeof filteredArenaList[0] != "undefined"
+          ? filteredArenaList[0].stepsMathematics.length
+          : 5;
+      case "BIOLOGY":
+        return typeof filteredArenaList[0] != "undefined"
+          ? filteredArenaList[0].stepsBiology.length
+          : 5;
+      default:
+        return 5;
+    }
+  };
+
+  const realmTotalSizePhysics = findTotalRealmSize("PHYSICS");
+  const realmTotalSizeChemistry = findTotalRealmSize("CHEMISTRY");
+  const realmTotalSizeMathematics = findTotalRealmSize("MATHEMATICS");
+  const realmTotalSizeBiology = findTotalRealmSize("BIOLOGY");
+
+  const calculateRealmProgressData = (realmProgress, totalRealmSize) => {
+    const exploredProgress = (realmProgress / totalRealmSize) * 100;
     const unExploredProgress = 100 - exploredProgress;
 
     let labels = ["Explored", "Unexplored"];
@@ -203,13 +236,25 @@ export default function CampaignHome() {
             <Pie
               data={
                 tabIndex === 0
-                  ? calculateRealmProgressData(realmProgressPhysics)
+                  ? calculateRealmProgressData(
+                      realmProgressPhysics,
+                      realmTotalSizePhysics
+                    )
                   : tabIndex === 1
-                  ? calculateRealmProgressData(realmProgressChemistry)
+                  ? calculateRealmProgressData(
+                      realmProgressChemistry,
+                      realmTotalSizeChemistry
+                    )
                   : tabIndex === 2
-                  ? calculateRealmProgressData(realmProgressMathematics)
+                  ? calculateRealmProgressData(
+                      realmProgressMathematics,
+                      realmTotalSizeMathematics
+                    )
                   : tabIndex === 3
-                  ? calculateRealmProgressData(realmProgressBiology)
+                  ? calculateRealmProgressData(
+                      realmProgressBiology,
+                      realmTotalSizeBiology
+                    )
                   : realmProgressDataMock
               }
               options={{

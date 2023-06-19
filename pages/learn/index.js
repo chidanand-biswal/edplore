@@ -136,9 +136,6 @@ export default function LearnHome() {
     }
   };
 
-  console.log("LearnHome");
-  console.log(currentTutorialData);
-
   const data =
     typeof currentTutorialData != "undefined" && currentTutorialData.length > 0
       ? currentTutorialData
